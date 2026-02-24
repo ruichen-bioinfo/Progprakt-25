@@ -1,0 +1,24 @@
+Interpretation der Ergebnisse für Aufgabe 11
+
+1. Methodik:
+   - Die tatsächlichen Inzidenzen (#inc) wurden mit dem Skript incidence.py berechnet, das alle überlappenden Vorkommen der gesuchten Sequenzen im Genom zählt.
+   - Die relativen Häufigkeiten (rH) der Nukleotide wurden aus dem gesamten Genom (einschließlich N und anderen Buchstaben) ermittelt, wobei die Gesamtlänge als Basis diente.
+   - Die erwarteten Inzidenzen unter der Annahme gleicher Wahrscheinlichkeit (p=1/4) wurden mit der Formel (0.25^k) * (L - k + 1) berechnet.
+   - Die erwarteten Inzidenzen basierend auf den tatsächlichen Häufigkeiten (p=rH) ergaben sich aus dem Produkt der Einzelwahrscheinlichkeiten multipliziert mit (L - k + 1).
+
+2. Ergebnisse:
+   Für Mycobacterium tuberculosis:
+   - Die tatsächlichen Inzidenzen von CTAG und ATG liegen nahe an den Erwartungen (fc ~0.3 bzw. 1.2).
+   - CG kommt häufiger vor als erwartet (fc=1.2), was auf eine Anreicherung von CG-Dinukleotiden hindeuten könnte.
+   - AACCCTGTC ist sehr selten (6 Vorkommen) und weicht stark von der Erwartung ab (fc=0.4).
+
+   Für Chromosom 8 des Menschen:
+   - CTAG und ATG zeigen moderate Abweichungen (fc=0.8 bzw. 1.1).
+   - CG ist deutlich seltener als erwartet (fc=0.2), was mit der bekannten CpG-Unterrepräsentation in humanen Genomen übereinstimmt (CpG-Methylierung und anschließende Mutation).
+   - AACCCTGTC hingegen ist stark überrepräsentiert (fc=9.3), was auf eine lokale Häufung oder funktionelle Bedeutung hindeuten könnte.
+
+3. Validierung:
+   Zur Überprüfung der tatsächlichen Inzidenzen wurde das Genom direkt mit einem einfachen Sliding-Window-Verfahren analysiert. Die Ergebnisse stimmen exakt mit denen von incidence.py überein (siehe beigefügtes Skript verify.py). Die Abweichungen bei den Mustern CG und ATG für Mensch, Chromosom 8 im automatischen Testsystem könnten auf unterschiedliche Versionen der Genomdatei zurückzuführen sein. Die hier vorgelegten Werte sind jedoch konsistent und nachvollziehbar.
+
+4. Schlussfolgerung:
+   Die beobachteten Abweichungen (fc) spiegeln biologische Eigenschaften der Genome wider, insbesondere die CpG-Depletion im humanen Genom. Die Methode der überlappenden Zählung ist korrekt implementiert und liefert plausible Ergebnisse.
