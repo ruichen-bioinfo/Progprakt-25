@@ -1,0 +1,46 @@
+Was bedeutet ChIP-seq, was RNA-seq?:
+
+	Die verschiedenen experimentellen Methoden:
+	RNA-Sequencing -> Misst Genexpression
+	ChIP-seq = Chromatin Immunoprecipitation sequencing -> misst wo bestimmte Proteine an die DNA binden 
+	z.B. Histon Modifikation (mithilfe von Antikörpern)
+
+
+In welcher Zelllinie wurden die meisten verschiedenen Antikörper verwendet?:
+
+	K562 (195)
+
+
+Wofür stehen NFBK, Pol2 und H3K27me3?:
+
+	NFBK: nuclear factor 'kappa-light-chain-enhancer' of activated B-cells
+	ist ein Transkritionsfaktor, der für die Regulation der Immunantwort, Zellproliferation
+	und Apoptose bedeutend ist.
+
+	Pol2: RNA Polymerase II
+	ist ein Enzym (Polymerase) was die Transkription der DNA katalysiert
+
+	H3K27me3: Epigenetische Histon Modifikation
+	Tri-methylierung an Lysin 27 am Histon H3 Protein
+
+
+Für welche Zelllinien gibt es sowohl ChIP-seq Experimente für H3K27me3 als auch RNA-seq Experimente?:
+
+	A549
+	AG04450
+	BJ
+	GM12878
+	H1-hESC
+	HMEC
+	HSMM
+	HUVEC
+	HeLa-S3
+	HepG2
+	K562
+	NHEK
+	NHLF
+	SK-N-SH_RA
+
+
+
+Pfad für encode.csv: /mnt/extstud/praktikum/bioprakt/Data/encode.csv

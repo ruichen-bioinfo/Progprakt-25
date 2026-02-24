@@ -1,0 +1,18 @@
+Aufgabe 4: Mysteriöser Virus
+
+1. Aus welchem Organismus stammt die Sequenz?
+Die BLAST-Suche zeigt als beste Treffer Sequenzen von Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2). Die Übereinstimmung beträgt 100 % Sequenzidentität bei vollständiger Query Coverage und hat einen E‑Value von 0.0. Daher stammt die untersuchte DNA‑Sequenz sehr wahrscheinlich von SARS‑CoV‑2.
+
+2. Wie viele Sequenzen wurden durchsucht?
+Laut BLAST Search Summary wurden in der Datenbank insgesamt 120.070.683 Sequenzen durchsucht.
+
+3. Was bedeuten die E‑values?
+Der E‑Value gibt an, wie viele Treffer mit ähnlicher Qualität zufällig in der Datenbank erwartet werden. Ein kleiner E‑Value bedeutet eine hohe statistische Signifikanz der Übereinstimmung. Ein E‑Value von 0.0 sagt, dass die gefundene Übereinstimmung praktisch nicht zufällig ist.
+
+4. Welches virale Gen ist in der Sequenz enthalten?
+Die Sequenz gehört zu einem Abschnitt des Genoms von SARS‑CoV‑2 und entspricht einem Bereich eines viralen kodierenden Gens im SARS‑CoV‑2‑Genom.
+
+5. Artikel zum Gen/Protein (PubMed)
+Zum Beispiel:
+Chen B, Farzan M, Choe H. SARS‑CoV‑2 spike protein: structure, viral entry and variants. Nature Reviews Microbiology, 2025.
+Der Artikel beschreibt Struktur und Funktion viraler Proteine von SARS‑CoV‑2 sowie deren Rolle beim Eindringen des Virus in Wirtszellen.
