@@ -1,12 +1,35 @@
 #!/bin/bash
-liste="$1"
-user="$2"
-process="$3"
-output="$4"
+liste=""
+user=""
+process=""
+output=""
 
-ArrayListe=($liste)
-
-for x in "${ArrayListe[@]}"
-do
-./isrunning.sh "$x" "$2"
+while getopts "h:u:p:o:" opt; do
+ case "$opt" in
+  h)
+    liste="$OPTARG"
+    ;;
+  u)
+    user="$OPTARG"
+    ;;
+  p)
+    process="$OPTARG"
+    ;;
+  o)
+    output="$OPTARG"
+    ;;
+ esac
 done
+
+HostnameList=()
+while read -r line; do
+ HostnameList+=("$line")
+done < "$liste"
+
+> "$output"
+
+while read -r host; do
+ echo "prüfe $host:" >> "$output" 
+ ./isrunning.sh "$host" "$user" >> "$output"
+done < "$HostnameList"
+
