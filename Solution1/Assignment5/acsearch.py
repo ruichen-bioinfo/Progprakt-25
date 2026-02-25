@@ -1,24 +1,44 @@
 #!/usr/bin/env python3
-import argparse
 import sys
+import os
+import argparse
+import urllib.request
+import urllib.error
 
-import requests
+def get_fasta(ac):
+    url = f"https://rest.uniprot.org/uniprotkb/{ac}.fasta"
+    try:
+        # url
+        with urllib.request.urlopen(url) as response:
+            return response.read().decode('utf-8')
+    except urllib.error.HTTPError:
+        return f"Error: AC '{ac}' not found."
+    except Exception as e:
+        return f"Error: {e}"
 
-parser = argparse.ArgumentParser()
-parser.add_argument("--ac")
-args = parser.parse_args()
-seqid = args.ac
-
-URL = f"https://rest.uniprot.org/uniprotkb/{seqid}.fasta"
-
-try:
-    response = requests.get(URL)
-    if response.status_code == 200:
-        print(response.text)
+def main():
+    # CGI
+    if 'REQUEST_METHOD' in os.environ:
+        import cgi
+        import cgitb
+        cgitb.enable()
+        
+        print("Content-Type: text/plain\n")
+        
+        form = cgi.FieldStorage()
+        ac = form.getvalue('ac', '').strip()
+        
+        if ac:
+            print(get_fasta(ac))
+        else:
+            print("Error: No Accession Number provided.")
+            
+    # CLI as for add in
     else:
-        pass
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--ac", required=True)
+        args = parser.parse_args()
+        print(get_fasta(args.ac))
 
-except requests.exceptions.RequestException:
-    pass
-
-
+if __name__ == "__main__":
+    main()
