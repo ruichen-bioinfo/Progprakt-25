@@ -1,0 +1,17 @@
+Raetsel:
+ssh bioclient6
+cd /tmp
+
+ls -l
+
+diese Datei /tmp/ppurld.out hat user sinn 
+
+less less /tmp/ppurld.out
+
+uggcf://jjj.ovb.vsv.yzh.qr/svyrf/cebcen/erf
+
+=> ROT13 verschlüsselung
+https://www.bio.ifi.lmu.de/files/propra/res
+
+dann mit plotter geplottet
+2. Spalte X, 3. Spalte Y
