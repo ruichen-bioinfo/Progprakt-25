@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 8: Genome Report</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; }
+        .form-group { margin-bottom: 20px; border: 1px solid #ddd; padding: 15px; border-radius: 5px; background: #f9f9f9; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input[type="text"] { width: 100%; padding: 8px; box-sizing: border-box; }
+        button { background: #e67e22; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; }
+        button:hover { background: #d35400; }
+        a { text-decoration: none; color: #3498db; }
+        .hint { font-size: 0.9em; color: #666; margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+    <p><a href="gruppe11.html">&larr; Back to Dashboard</a></p>
+
+    <h1>Aufgabe 8: Genome Report Search</h1>
+    <p>Search for <strong>complete</strong> bacterial genomes from NCBI matching your regex.</p>
+    
+ 
+    <form action="cgi-bin/genome_length.py" method="get">
+        
+        <div class="form-group">
+            <label>Organism Name (Regex):</label>
+            <input type="text" name="organism" placeholder="e.g. Escherichia.*coli  Mycobacterium" required>
+            <div class="hint">
+                You can enter multiple regex patterns separated by spaces.<br>
+                Example: <code>^Escherichia.*coli$</code>
+            </div>
+        </div>
+
+        <button type="submit">Search Genomes</button>
+    </form>
+
+</body>
+</html>
