@@ -141,6 +141,43 @@ def main():
         plt.tight_layout()
         plt.savefig(args.plot, dpi=150)
 
+def main():
+
+    if 'REQUEST_METHOD' in os.environ:
+        # CGI Mode
+        cgitb.enable()
+        print("Content-Type: text/plain\n") 
+        
+        form = cgi.FieldStorage()
+        
+
+        raw_patterns = form.getlist('organism')
+        patterns = []
+        
+ 
+        if not raw_patterns and 'organism' in form:
+             val = form.getvalue('organism')
+             if val: raw_patterns = [val]
+
+        for p in raw_patterns:
+            patterns.extend(p.split())
+            
+        if not patterns:
+            print("Error: No organism regex provided.")
+            return
+
+        process_search(patterns, DEFAULT_URL)
+        
+    else:
+        #CLI Mode 
+    
+        parser = argparse.ArgumentParser()
+        parser.add_argument("--organism", nargs="+", required=True)
+        parser.add_argument("--source", default=DEFAULT_URL)
+        args = parser.parse_args()
+
+        process_search(args.organism, args.source)
 
 if __name__ == "__main__":
     main()
+
