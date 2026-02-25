@@ -30,6 +30,11 @@ done < "$liste"
 
 for host in "${HostnameList[@]}"; do
  echo "prüfe $host:" >> "$output" 
- ./isrunning.sh "$host" "$user" >> "$output"
+ ssh "$host" "/mnt/extstud/praktikum/bioprakt/progprakt-11/Solution1/Assignment15/isrunning.sh $process $user" 
+ if [ $? -eq 1 ]; then
+  echo "Prozess laeuft auf $host" >> "$output"
+ else 
+  echo "Prozess laeuft nicht auf $host" >> "$output"
+ fi
 done 
 
