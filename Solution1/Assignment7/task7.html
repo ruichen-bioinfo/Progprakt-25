@@ -24,24 +24,24 @@
     <form action="cgi-bin/psscan.py" method="post">
 
         <div class="form-group">
-            <label>1. FASTA Sequenz eingeben:</label>
+            <label>1. FASTA Sequence Input:</label>
             <textarea name="fasta" placeholder=">Header&#10;MKTIIALSYIFCLVFADYKDDDD..."></textarea>
         </div>
 
         <div class="form-group">
             <label>2. Pattern Source Select:</label>
 
-            <p><strong>Option A: Manuelles Pattern</strong></p>
+            <p><strong>Option A: Manual Pattern</strong></p>
             <input type="text" name="pattern" placeholder="z.B. [LIVMF]-H-x(2)-G-{STC}">
 
             <p style="text-align: center; margin: 10px 0;">-- ODER --</p>
 
             <p><strong>Option B: Prosite ID (Web)</strong></p>
-            <input type="checkbox" name="use_web" id="use_web"> <label for="use_web" style="display:inline;">Vom Web laden</label>
+            <input type="checkbox" name="use_web" id="use_web"> <label for="use_web" style="display:inline;">Load From Web</label>
             <input type="text" name="prosite_id" placeholder="z.B. PS00001" style="margin-top:5px;">
         </div>
 
-        <button type="submit">Scan starten</button>
+        <button type="submit">Scan start</button>
         <input type="reset" value="Zurücksetzen" style="margin-left: 10px; padding: 10px;">
     </form>
 
