@@ -28,8 +28,8 @@ done < "$liste"
 
 > "$output"
 
-while read -r host; do
+for host in "${HostnameList[@]}"; do
  echo "prüfe $host:" >> "$output" 
  ./isrunning.sh "$host" "$user" >> "$output"
-done < "$HostnameList"
+done 
 
