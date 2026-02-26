@@ -13,7 +13,7 @@ args = parser.parse_args()
 spInput = args.input
 
 osname = ""
-source = "Swiss Prot"
+source = "SwissProt"
 description = ""
 function = ""
 oscategory = ""
@@ -58,10 +58,11 @@ werte = (accessionNumber, source, osname, seq, seqlength, description)
 
 print("vor Execute")
 cursor.execute(sql, werte)
-print("nach Ececute")
+print("nach Execute")
 cnx.commit()
 
 print("nach Insert")
+print("Rows inserted:", cursor.rowcount)
 cursor.close()
 cnx.close()
 
