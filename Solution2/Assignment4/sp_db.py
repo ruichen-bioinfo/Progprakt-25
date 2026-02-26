@@ -8,9 +8,9 @@ from db_config import DB_CONFIG
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--Input")
+parser.add_argument("--input")
 args = parser.parse_args()
-spDatei = args.Input
+spInput = args.input
 
 osname = ""
 source = "Swiss Prot"
@@ -22,9 +22,10 @@ with open (spInput, "r") as f:
     for line in f:
         spKuerzel = line[0:2]
         Inhalt = line[2:].strip()
-        if spKuerzel[0] == "ID":
-            seqname = Inhalt.split(" ")[0]
-            seqlength = Inhalt.split(";")[1].strip()
+        if spKuerzel == "ID":
+            parts = Inhalt.split()
+            seqname = parts[0]
+            seqlength = int(parts[2])
 
         if spKuerzel == "AC":
             #AccessionNumber ist primärer Schlüssel für Datenbank
@@ -42,13 +43,7 @@ with open (spInput, "r") as f:
         if spKuerzel == "OC":
             oscategory += (spKuerzel[1])
 
-        if spKuerzel == "SQ":
-            sq = True
-
-        if spKuerzel == "//":
-            sq = False
-
-        while sq:
+        if spKuerzel == "SQ" or spKuerzel == "  ":
             seq += Inhalt
 
 try:
@@ -58,12 +53,15 @@ except mysql.connector.Error as err:
     print(f"Connection failed: {err}")
     sys.exit(1)
 
-sql = "INSERT INTO sequences (source, organism, sequence, length, description) VALUES (%s, %s, %s, %s, %s)"
-werte = f"{source}, {osname}, {seq}, {seqlength} {description}"
+sql = "INSERT INTO sequences (accession, source, organism, sequence, length, description) VALUES (%s, %s, %s, %s, %s, %s)"
+werte = (accessionNumber, source, osname, seq, seqlength, description)
 
+print("vor Execute")
 cursor.execute(sql, werte)
+print("nach Ececute")
+cnx.commit()
 
-
+print("nach Insert")
 cursor.close()
 cnx.close()
 
