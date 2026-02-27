@@ -1,0 +1,6 @@
+Load from RCSB: load =xxxx(PID)
+shows secondary structure: cartoon
+colorize: color structure
+save image as PNG: write image <width> <height> PNG <filename>
+exit
+run it from terminal: java -jar Jmol.jar
