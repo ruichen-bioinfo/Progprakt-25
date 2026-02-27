@@ -1,0 +1,156 @@
+ID   TI214_TOBAC             Reviewed;        1901 AA.
+AC   P12222; P12220; P12224; Q32721; Q3HKA6;
+DT   01-OCT-1989, integrated into UniProtKB/Swiss-Prot.
+DT   01-APR-1993, sequence version 2.
+DT   28-JAN-2026, entry version 90.
+DE   RecName: Full=Protein TIC 214 {ECO:0000250|UniProtKB:P56785};
+DE   AltName: Full=Translocon at the inner envelope membrane of chloroplasts 214 {ECO:0000250|UniProtKB:P56785};
+DE            Short=AtTIC214 {ECO:0000250|UniProtKB:P56785};
+GN   Name=TIC214 {ECO:0000250|UniProtKB:P56785}; Synonyms=ycf1;
+OS   Nicotiana tabacum (Common tobacco).
+OG   Plastid; Chloroplast.
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   asterids; lamiids; Solanales; Solanaceae; Nicotianoideae; Nicotianeae;
+OC   Nicotiana.
+OX   NCBI_TaxID=4097;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=cv. Bright Yellow 4;
+RX   PubMed=16453699; DOI=10.1002/j.1460-2075.1986.tb04464.x;
+RA   Shinozaki K., Ohme M., Tanaka M., Wakasugi T., Hayashida N.,
+RA   Matsubayashi T., Zaita N., Chunwongse J., Obokata J.,
+RA   Yamaguchi-Shinozaki K., Ohto C., Torazawa K., Meng B.-Y., Sugita M.,
+RA   Deno H., Kamogashira T., Yamada K., Kusuda J., Takaiwa F., Kato A.,
+RA   Tohdoh N., Shimada H., Sugiura M.;
+RT   "The complete nucleotide sequence of the tobacco chloroplast genome: its
+RT   gene organization and expression.";
+RL   EMBO J. 5:2043-2049(1986).
+RN   [2]
+RP   SEQUENCE REVISION.
+RX   PubMed=1731088; DOI=10.1016/0022-2836(92)90718-y;
+RA   Wolfe K.H., Morden C.W., Palmer J.D.;
+RT   "Small single-copy region of plastid DNA in the non-photosynthetic
+RT   angiosperm Epifagus virginiana contains only two genes. Differences among
+RT   dicots, monocots and bryophytes in gene organization at a non-bioenergetic
+RT   locus.";
+RL   J. Mol. Biol. 223:95-104(1992).
+RN   [3]
+RP   SEQUENCE REVISION.
+RC   STRAIN=cv. Bright Yellow 4;
+RA   Wakasugi T., Sugita M., Tsudzuki T., Sugiura M.;
+RT   "Updated gene map of tobacco chloroplast DNA.";
+RL   Plant Mol. Biol. Rep. 16:231-241(1998).
+RN   [4]
+RP   ESSENTIAL FOR GROWTH.
+RC   STRAIN=cv. Petit Havana;
+RX   PubMed=10792825; DOI=10.1046/j.1365-313x.2000.00722.x;
+RA   Drescher A., Ruf S., Calsa T. Jr., Carrer H., Bock R.;
+RT   "The two largest chloroplast genome-encoded open reading frames of higher
+RT   plants are essential genes.";
+RL   Plant J. 22:97-104(2000).
+CC   -!- FUNCTION: Involved in protein precursor import into chloroplasts. May
+CC       be part of an intermediate translocation complex acting as a protein-
+CC       conducting channel at the inner envelope.
+CC       {ECO:0000250|UniProtKB:P56785}.
+CC   -!- SUBUNIT: Part of the Tic complex. {ECO:0000250|UniProtKB:P56785}.
+CC   -!- SUBCELLULAR LOCATION: Plastid, chloroplast inner membrane
+CC       {ECO:0000250|UniProtKB:P56785}; Multi-pass membrane protein
+CC       {ECO:0000255}.
+CC   -!- SIMILARITY: Belongs to the TIC214 family. {ECO:0000305}.
+CC   -!- SEQUENCE CAUTION:
+CC       Sequence=CAA77394.1; Type=Erroneous gene model prediction; Evidence={ECO:0000305};
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; Z00044; CAA77394.1; ALT_SEQ; Genomic_DNA.
+DR   EMBL; Z00044; CAJ32485.1; -; Genomic_DNA.
+DR   PIR; A05036; A05036.
+DR   PIR; A05217; A05217.
+DR   PIR; A05218; A05218.
+DR   RefSeq; NP_054553.1; NC_001879.2.
+DR   AlphaFoldDB; P12222; -.
+DR   KEGG; nta:1466307; -.
+DR   OMA; NREMHIK; -.
+DR   OrthoDB; 1618367at2759; -.
+DR   Proteomes; UP000790787; Unplaced.
+DR   GO; GO:0009706; C:chloroplast inner membrane; IEA:UniProtKB-SubCell.
+DR   GO; GO:0015031; P:protein transport; IEA:UniProtKB-KW.
+DR   InterPro; IPR008896; TIC214.
+DR   PANTHER; PTHR33163:SF40; PROTEIN TIC 214; 1.
+DR   PANTHER; PTHR33163; PROTEIN TIC 214-RELATED; 1.
+DR   Pfam; PF05758; Ycf1; 1.
+PE   3: Inferred from homology;
+KW   Chloroplast; Membrane; Plastid; Plastid inner membrane; Protein transport;
+KW   Reference proteome; Transmembrane; Transmembrane helix; Transport.
+FT   CHAIN           1..1901
+FT                   /note="Protein TIC 214"
+FT                   /id="PRO_0000217307"
+FT   TRANSMEM        18..38
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        64..84
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        87..107
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        124..144
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        172..192
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   TRANSMEM        221..241
+FT                   /note="Helical"
+FT                   /evidence="ECO:0000255"
+FT   REGION          248..299
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          797..817
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          1591..1618
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        256..268
+FT                   /note="Acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        1591..1611
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   1901 AA;  226141 MW;  F3E6727102B94B04 CRC64;
+     MIFQSFLLGN LVSLCMKIIN SVVVVGLYYG FLTTFSIGPS YLFLLRALVM EEGTEKKVSA
+     TTGFITGQLM MFISIYYAPL HLALGRPHTI TVLALPYLLF HFFWNNHKHF FDYGSTTRNS
+     MRNLSIQCVF LNNLIFQLFN HFILPSSMLA RLVNIYLFRC NSKILFVTSG FVGWLIGHIL
+     FMKWLGLVLV WIRQNHSIRS NKYIRSNKYL VLELRNSMAR IFSILLFITC VYYLGRIPSP
+     ILTKKLKEAS KTEERVESEE ERDVEIETAS EMKGTKQEQE GSTEEDPYPS PSLFSEERWD
+     PDKIDETEEI RVNGKDKIKD KFHSHLTETG YNNINTSNSP IYDYEDSYLN NNNTGNTEIF
+     KLQLLDKKNE NKDLFWFQQP LVSLLFDYNR WNRPFRYIKN NRFEQAIRTE MSQYFFNTCK
+     SDGKQRISFT YPPSLSTFWK MIKRRIPLLS LQKTLPNELD NQWISTNKEK SNNLNKEFLN
+     RLEVLDKESF SLDILETRTR LCNDDTKKEY VPKMYDPLLN GPYRGTIKKK FSPSIINNTS
+     LENLKERVRI NRIHTIFLPN TDYQELEQKV DTVAKKPLST EIDEFLTLIN EFGNEPKSSL
+     NLKDLSLFSD QEQGRVNSEK RTKFVKFVFN AIAPNGTTSE KKSIGIKEIS KKIPRWSHKL
+     ITELEQQSGD YQEGVPLDHQ IRSRKAKRVV IFTANNQNND PDTKDTDTAD QDQTKEVALI
+     RYSQQPDFRR GIIKGSMRAQ RRKTVIWKLF QANVHSPLFL DRITPPFLFS FDISGLIKPI
+     FRNWSGKEGE FKILESREEQ TKREEKKEKD KKGENKRKEK ARIEIAEAWD TIPFAQIIRG
+     YMLITQSILR KYIVLPSLII AKNLGRMLVL QLPEWSEDLQ EWNREMHIKC TYNGVQLSET
+     EFPKNWLKDG IQIKILFPFC LKPWHISKLY SSRGELMKKK KQKDDFCFLT VWGMEAELPF
+     GSPRKRPSFF EPIFKELEKK IGKFKKKYFI TLKVFKGKIK LFRRISKETK KWLIKSSLFI
+     KKMKKELSKV NPIVLFRLKE IDESNETKKE KDSLMSNQII NESFSQIESG NWPNSSLIES
+     KMKDLTDRTS TIKNQIERIT KEKKKVTPEI DISPNKTNNI KKFESPKKIF QILKRRNTRL
+     IWKFHYFLKL FIQRLYIDLF LSIINIPRIN TQLFLESTNK LIDKYISNNE INQEKINNQK
+     KIHFISTIKK SLYNISKKNS HIFFDLSYLS QAYVFYKLSQ PQVINLSKLR SVLQYNRTSF
+     FLKTKIKDYF RTLGIFHSEL KHKKLQSYRI NQWKNWLRRH YQYDLSQIRW SRLMPQKWRN
+     RVNQGCMAQN RNLNKWNSYE KDQLIHYKKE NDSELYSLAN QKDNFQKCYR YDLLAYKSIN
+     YEKKNDSFIS RLPFQVNKNL EISSNSNTSK HNLFDMLGNL HINNYLRKGN ILYIERNLDR
+     KYFDWKIIHF SLRQKEDIEA WVKIDTNSNP NTKIGINNYQ IIDKIDKKGF FYLTIHQNPE
+     NNQKNSKKAF FDWMGMNEKI LNRPILNLEF WFFPEFVPLY NVYKIKPWII PSKLLLLNLN
+     TNENVSQNKN INKNQKQNFF LRSNKKIKNR IQEAKEPASQ GEKERGSDIE NKGNLGPVLS
+     KHQNALKKDY AESDTKKGKK KKQYKSNTEA ELDLFLKRYL LFQLRWNDAL NQRMIENIKV
+     YCLLLRLINP SKIAISSIQR REMSLDIMLI QKNLTLTELM KKGILIIEPI RLSVKNNGQF
+     IMYQTIGISL VHKSKHQTNQ RYPEQRYVDK KNFDEFILQP QTQRINTDKN HFDLLVPENI
+     LWSRRRRELR IRSLFNSLNW NGIDRNSVFC NENNVKNWSQ FLDERKPLYK EKNELIKLKF
+     FLWPNYRLED LACMNRYWFD TNNGSRFSIL RIHMYPQLKI N
+//

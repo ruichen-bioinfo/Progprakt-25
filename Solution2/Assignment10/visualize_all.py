@@ -1,19 +1,40 @@
 #!/usr/bin/env python3
+
+
 import argparse
 import os
 import sys
 import subprocess
+import tempfile
+import urllib.request
+import urllib.error
 from math import sqrt
-from get_pdb import fetch_pdb  # get_pdb
+# from get_pdb import fetch_pdb
+# Import function from ASS8
 
-# ---------- secondary structure (HELIX/SHEET) ----------
+PDB_URL = "https://files.rcsb.org/download/{pid}.pdb"
+
+def fetch_pdb(pid: str) -> str:
+
+    pid = pid.strip().upper()
+    url = PDB_URL.format(pid=pid)
+    try:
+        with urllib.request.urlopen(url) as response:
+            data = response.read()
+        return data.decode("utf-8", errors="replace")
+    except urllib.error.HTTPError as e:
+        raise IOError(f"HTTP error {e.code}: {e.reason}")
+    except urllib.error.URLError as e:
+        raise IOError(f"URL error: {e.reason}")
+
+
 def parse_secondary_structure(lines):
-    
+    #Extract all residues from alpha and beta secondary structure as for chain and residue number
+
     ss_residues = set()
     for line in lines:
         if line.startswith('HELIX'):
-            # ana (0‑based)
-            # head chain: col 19, head residue: col 21-25, tail: col 31, tail residue: col 33-37
+            # gap position for each row (0‑based reffering to real PDB files)
             start_chain = line[19] if len(line) > 19 else ''
             start_res_str = line[21:25].strip()
             end_chain = line[31] if len(line) > 31 else ''
@@ -24,7 +45,6 @@ def parse_secondary_structure(lines):
                 for r in range(start, end + 1):
                     ss_residues.add((start_chain, r))
         elif line.startswith('SHEET'):
-            # singularity check!
             start_chain = line[19] if len(line) > 19 else ''
             start_res_str = line[21:25].strip()
             end_chain = line[31] if len(line) > 31 else ''
@@ -33,28 +53,31 @@ def parse_secondary_structure(lines):
                 start = int(start_res_str)
                 end = int(end_res_str)
                 for r in range(start, end + 1):
-                    ss_residues.add((start_chain, r))
+                    ss_residues.add((start_chain, r)) #Copy paste simply, its the same extract protocol
     return ss_residues
 
+
 def distance(p1, p2):
+    # Euclidean distance
     return sqrt((p1[0]-p2[0])**2 + (p1[1]-p2[1])**2 + (p1[2]-p2[2])**2)
 
+
 def analyze_pdb(pdb_text):
-   
+    # Scan and record all the datastructure we can find inside a pdb for later calculations on box and distance
     lines = pdb_text.splitlines()
     ss_residues = parse_secondary_structure(lines)
 
-    ca_coords = []          #  Cα 
-    cb_coords = []          #  Cβ 
-    all_coords = []         #  Atom for box
-    residues_seen = set()   # calc'ed resi (chain, resnum)
+    ca_coords = []          # Cα‑coordinance
+    cb_coords = []          # Cβ‑coordinance
+    all_coords = []         # all Atom coordinance for box calc later with comparing min max
+    residues_seen = set()   # (chain, resnum)
     ss_count = 0
     total_residues = 0
 
     for line in lines:
         if not line.startswith('ATOM'):
             continue
-        # read resi,atom and location
+        # PDB‑rows!
         atom_name = line[12:16].strip()
         chain = line[21].strip()
         res_str = line[22:26].strip()
@@ -68,24 +91,23 @@ def analyze_pdb(pdb_text):
         all_coords.append((x, y, z))
         key = (chain, res_num)
 
-        # Collect Cα  Cβ
         if atom_name == 'CA':
             ca_coords.append((x, y, z))
         elif atom_name == 'CB':
             cb_coords.append((x, y, z))
 
-        # Secondary structure ratio
+        # count only as once
         if key not in residues_seen:
             residues_seen.add(key)
             total_residues += 1
             if key in ss_residues:
                 ss_count += 1
 
-    # Euclidean distance
+    # head and tail for the  Cα / Cβ as in protein
     ca_dist = distance(ca_coords[0], ca_coords[-1]) if len(ca_coords) >= 2 else 0.0
     cb_dist = distance(cb_coords[0], cb_coords[-1]) if len(cb_coords) >= 2 else 0.0
 
-    #Box
+    # parallel box drawing for 3D structure
     if all_coords:
         xs = [p[0] for p in all_coords]
         ys = [p[1] for p in all_coords]
@@ -109,51 +131,66 @@ def analyze_pdb(pdb_text):
         'ss_ratio': ss_ratio
     }
 
+
 def generate_image(pdb_id, output_dir):
 
-    jmol_path = "/mnt/extsoft/software/jmol/jmol.sh"   # pathway
+    #headless client for jmolData.jar
+
+    jmol_data_jar = "/mnt/extsoft/software/jmol/JmolData.jar"
     out_file = os.path.join(output_dir, f"{pdb_id}.png")
-    # USAGE: jmol.sh -i "load ={pdb_id}; cartoon; write image {out_file}; quit"
-    cmd = [jmol_path, "-i", f'load ={pdb_id}; cartoon; write image "{out_file}"; quit']
+
+    # Script command in  ram
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.jmol', delete=False) as f:
+        script = f"load ={pdb_id}\ncartoon\nwrite image {out_file}\nquit\n"
+        f.write(script)
+        script_path = f.name
+
+    cmd = ['java', '-jar', jmol_data_jar, '--script', script_path]
     try:
-        subprocess.run(cmd, check = True,stdout = subprocess.PIPE, stderr=subprocess.PIPE)
+        subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        os.unlink(script_path)          # jar headless cleanup
         return True
     except subprocess.CalledProcessError as e:
-        print(f"Jmol wrong!: {e.stderr.decode() if e.stderr else ''}", file=sys.stderr)
+        print(f"Jmol‑Error in {pdb_id}: {e.stderr.decode() if e.stderr else ''}",
+              file=sys.stderr)
+        os.unlink(script_path)
         return False
 
+
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--id', nargs='+', required=True, help='PDB IDs')
-    parser.add_argument('--output', help='Verzeichnis für Bilder (optional)')
+    parser = argparse.ArgumentParser(
+        description='Calculate structure parameters and call out a cartoon image on PDB‑IDs.'
+    )
+    parser.add_argument('--id', nargs='+', required=True,
+                        help='One or more PDB‑IDs (eg. 1MBN 1TIM)')
+    parser.add_argument('--output', help='Dictionary for the PNG‑Bilder (optional)')
     args = parser.parse_args()
 
     if args.output and not os.path.exists(args.output):
         os.makedirs(args.output)
 
     for pid in args.id:
-        print(pid)
+
         try:
             pdb_text = fetch_pdb(pid)
         except Exception as e:
-            print(f"  Fehler beim Herunterladen: {e}", file=sys.stderr)
+            print(f"  Error with downloads: {e}", file=sys.stderr)
             continue
 
         data = analyze_pdb(pdb_text)
 
-        print(f"  Anteil AS in Sekundaerstruktur {data['ss_ratio']:.4f}")
-        print(f"  Abstand C_alpha {data['ca_dist']:.4f}")
-        print(f"  Abstand C_beta {data['cb_dist']:.4f}")
-        print(f"  X-Groesse {data['x_len']:.4f}")
-        print(f"  Y-Groesse {data['y_len']:.4f}")
-        print(f"  Z-Groesse {data['z_len']:.4f}")
-        print(f"  Volumen {data['volume']:.4f}")
+        # Out put with 4 commapos
+        print(f"{pid}\tAnteil AS in Sekundaerstruktur\t{data['ss_ratio']:.4f}")
+        print(f"{pid}\tAbstand C_alpha\t{data['ca_dist']:.4f}")
+        print(f"{pid}\tAbstand C_beta\t{data['cb_dist']:.4f}")
+        print(f"{pid}\tX-Groesse\t{data['x_len']:.4f}")
+        print(f"{pid}\tY-Groesse\t{data['y_len']:.4f}")
+        print(f"{pid}\tZ-Groesse\t{data['z_len']:.4f}")
+        print(f"{pid}\tVolumen\t{data['volume']:.4f}")
 
         if args.output:
-            if generate_image(pid, args.output):
-                print(f"  Bild gespeichert: {args.output}/{pid}.png")
-            else:
-                print("  Fehler bei Bildgenerierung.")
+               generate_image(pid, args.output)
+
 
 if __name__ == '__main__':
     main()
