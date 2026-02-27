@@ -12,8 +12,10 @@ parser.add_argument("--input")
 args = parser.parse_args()
 spInput = args.input
 
+genename = ""
 osname = ""
 source = "SwissProt"
+type = "Protein"
 description = ""
 function = ""
 oscategory = ""
@@ -46,6 +48,9 @@ with open (spInput, "r") as f:
         if spKuerzel == "SQ" or spKuerzel == "  ":
             seq += Inhalt
 
+        if spKuerzel == "KW":
+            Keywords = Inhalt.split(";")
+
 try:
     cnx = mysql.connector.connect(**DB_CONFIG)
     cursor = cnx.cursor()
@@ -53,8 +58,12 @@ except mysql.connector.Error as err:
     print(f"Connection failed: {err}")
     sys.exit(1)
 
-sql = "INSERT INTO sequences (accession, source, organism, sequence, length, description) VALUES (%s, %s, %s, %s, %s, %s)"
-werte = (accessionNumber, source, osname, seq, seqlength, description)
+
+#CHECKEN OB SCHON IN DATENBANK DRIN!
+
+sql = "INSERT INTO sequences (accession, source, seq_type, organism, sequence, length, description,gene_name) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
+
+werte = (accessionNumber, source, type, osname, seq, seqlength, description, genename)
 
 print("vor Execute")
 cursor.execute(sql, werte)
