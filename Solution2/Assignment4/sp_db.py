@@ -12,6 +12,13 @@ parser.add_argument("--input")
 args = parser.parse_args()
 spInput = args.input
 
+try:
+    cnx = mysql.connector.connect(**DB_CONFIG)
+    cursor = cnx.cursor()
+except mysql.connector.Error as err:
+    print(f"Connection failed: {err}")
+    sys.exit(1)
+
 genename = ""
 osname = ""
 source = "SwissProt"
@@ -21,6 +28,59 @@ function = ""
 oscategory = ""
 seq = ""
 Keywords = []
+accessionNumber = ""
+seqlength = 0
+
+def saveseq(cursor, accessionNumber, source, type, osname, seq, seqlength,
+    description, genename, Keywords):
+    #CHECKEN OB SCHON IN DATENBANK DRIN!
+    sql = "SELECT id FROM sequences WHERE accession=%s AND source=%s AND seq_type=%s"
+    werte = (accessionNumber, source, type)
+    cursor.execute(sql, werte)
+    result = cursor.fetchone()
+
+    if result is None:
+        sql = "INSERT INTO sequences (accession, source, seq_type, organism, sequence, length, description,gene_name) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
+
+        werte = (accessionNumber, source, type, osname, seq, seqlength, description, genename)
+        cursor.execute(sql, werte)
+        seq_id = cursor.lastrowid
+
+    else:
+        seq_id = result[0]
+
+    for keyword in Keywords:
+        keyword = keyword.strip().rstrip(".")
+        #wegen diesen {ECO:... } (Evidence Codes)
+        keyword = keyword.split("{")[0].strip()
+        if keyword == "":
+            continue
+
+        cursor.execute("""
+            INSERT INTO keywords (keyword)
+            VALUES (%s)
+            ON DUPLICATE KEY UPDATE id = LAST_INSERT_ID(id)
+        """, (keyword,))
+
+        kw_id = cursor.lastrowid
+
+        cursor.execute("""
+            INSERT INTO seq_keywords (seq_id, kw_id)
+            VALUES (%s, %s)
+            ON DUPLICATE KEY UPDATE seq_id = seq_id
+        """, (seq_id, kw_id))
+
+
+
+    print("Rows inserted:", cursor.rowcount)
+    if cursor.rowcount == 0:
+        print(f"{accessionNumber} already in DB")
+    else:
+        print(f"sequence added: {accessionNumber}")
+
+
+
+
 with open (spInput, "r") as f:
     for line in f:
         spKuerzel = line[0:2]
@@ -30,12 +90,29 @@ with open (spInput, "r") as f:
             seqname = parts[0]
             seqlength = int(parts[2])
 
+        if line.startswith("//"):
+            saveseq(cursor, accessionNumber, source,
+                    type, osname, seq, seqlength, description, genename, Keywords)
+            genename = ""
+            osname = ""
+            source = "SwissProt"
+            type = "Protein"
+            description = ""
+            function = ""
+            oscategory = ""
+            seq = ""
+            Keywords = []
+            accessionNumber = ""
+            seqlength = 0
+            continue
+
+
         if spKuerzel == "AC":
             #AccessionNumber ist primärer Schlüssel für Datenbank
             accessionNumber = Inhalt.split(";")[0]
 
         if spKuerzel == "OS":
-            osname += Inhalt
+            osname += " " + Inhalt
 
         if spKuerzel == "DE":
             description += Inhalt
@@ -46,59 +123,25 @@ with open (spInput, "r") as f:
         if spKuerzel == "OC":
             oscategory += (spKuerzel[1])
 
-        if spKuerzel == "SQ" or spKuerzel == "  ":
-            seq += Inhalt
+        if line.startswith("SQ"):
+            continue
+
+        if line.startswith("     "):
+            seq += line.strip().replace(" ", "")
+
+        current_kw_line = ""
 
         if spKuerzel == "KW":
-            Keywords.extend(Inhalt.split(";"))
+            current_kw_line += " " + Inhalt
 
-try:
-    cnx = mysql.connector.connect(**DB_CONFIG)
-    cursor = cnx.cursor()
-except mysql.connector.Error as err:
-    print(f"Connection failed: {err}")
-    sys.exit(1)
+            if ";" in Inhalt:
+                parts = current_kw_line.split(";")
+                Keywords.extend(parts)
+                current_kw_line = ""
 
-
-#CHECKEN OB SCHON IN DATENBANK DRIN!
-sql = "SELECT id FROM sequences WHERE accession=%s AND source=%s AND seq_type=%s"
-werte = (accessionNumber, source, type)
-cursor.execute(sql, werte)
-result = cursor.fetchone()
-
-if result is None:
-    sql = "INSERT INTO sequences (accession, source, seq_type, organism, sequence, length, description,gene_name) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
-
-    werte = (accessionNumber, source, type, osname, seq, seqlength, description, genename)
-    cursor.execute(sql, werte)
-    seq_id = cursor.lastrowid
-
-else:
-    seq_id = result[0]
-
-for keyword in Keywords:
-    keyword = keyword.strip().rstrip(".")
-    if keyword == "":
-        continue
-    sql = "INSERT INTO keywords (keyword) VALUES (%s)"
-    werte = (keyword,)
-    cursor.execute(sql, werte)
-
-    sql = "SELECT id FROM keywords WHERE keyword=%s"
-    cursor.execute(sql, werte)
-    kw_id = cursor.fetchone()[0]
-
-    sql = "INSERT INTO seq_keywords (seq_id, kw_id) VALUES (%s, %s)"
-    werte = (seq_id, kw_id)
-    cursor.execute(sql, werte)
-
-print("nach Execute")
 
 
 cnx.commit()
-
-print("nach Insert")
-print("Rows inserted:", cursor.rowcount)
 cursor.close()
 cnx.close()
 
