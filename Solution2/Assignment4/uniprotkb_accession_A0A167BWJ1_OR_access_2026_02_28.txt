@@ -1,0 +1,2979 @@
+ID   A0A1D8PSQ3_CANAL        Unreviewed;       393 AA.
+AC   A0A1D8PSQ3;
+DT   18-JAN-2017, integrated into UniProtKB/TrEMBL.
+DT   18-JAN-2017, sequence version 1.
+DT   28-JAN-2026, entry version 39.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:AOW31158.1};
+GN   Name=YDJ1 {ECO:0000313|CGD:CAL0000196010,
+GN   ECO:0000313|EMBL:AOW31158.1};
+GN   OrderedLocusNames=CAALFM_CR04200WA {ECO:0000313|EMBL:AOW31158.1},
+GN   orf19.8136 {ECO:0000313|CGD:CAL0000196010};
+OS   Candida albicans (strain SC5314 / ATCC MYA-2876) (Yeast).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes;
+OC   Debaryomycetaceae; Candida/Lodderomyces clade; Candida.
+OX   NCBI_TaxID=237561 {ECO:0000313|EMBL:AOW31158.1, ECO:0000313|Proteomes:UP000000559};
+RN   [1] {ECO:0000313|EMBL:AOW31158.1, ECO:0000313|Proteomes:UP000000559}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=SC5314 / ATCC MYA-2876 {ECO:0000313|Proteomes:UP000000559};
+RX   PubMed=15123810; DOI=10.1073/pnas.0401648101;
+RA   Jones T., Federspiel N.A., Chibana H., Dungan J., Kalman S., Magee B.B.,
+RA   Newport G., Thorstenson Y.R., Agabian N., Magee P.T., Davis R.W.,
+RA   Scherer S.;
+RT   "The diploid genome sequence of Candida albicans.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 101:7329-7334(2004).
+RN   [2] {ECO:0000313|EMBL:AOW31158.1, ECO:0000313|Proteomes:UP000000559}
+RP   GENOME REANNOTATION.
+RC   STRAIN=SC5314 / ATCC MYA-2876 {ECO:0000313|Proteomes:UP000000559};
+RX   PubMed=17419877; DOI=.1186/gb-2007-8-4-r52;
+RA   van het Hoog M., Rast T.J., Martchenko M., Grindle S., Dignard D.,
+RA   Hogues H., Cuomo C., Berriman M., Scherer S., Magee B.B., Whiteway M.,
+RA   Chibana H., Nantel A., Magee P.T.;
+RT   "Assembly of the Candida albicans genome into sixteen supercontigs aligned
+RT   on the eight chromosomes.";
+RL   Genome Biol. 8:RESEARCH52.1-RESEARCH52.12(2007).
+RN   [3] {ECO:0000313|EMBL:AOW31158.1, ECO:0000313|Proteomes:UP000000559}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=SC5314 / ATCC MYA-2876 {ECO:0000313|Proteomes:UP000000559};
+RX   PubMed=24025428; DOI=.1186/gb-2013-14-9-r97;
+RA   Muzzey D., Schwartz K., Weissman J.S., Sherlock G.;
+RT   "Assembly of a phased diploid Candida albicans genome facilitates allele-
+RT   specific measurements and provides a simple model for repeat and indel
+RT   structure.";
+RL   Genome Biol. 14:RESEARCH97.1-RESEARCH97.14(2013).
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; CP017630; AOW31158.1; -; Genomic_DNA.
+DR   RefSeq; XP_717369.2; XM_712276.2.
+DR   AlphaFoldDB; A0A1D8PSQ3; -.
+DR   SMR; A0A1D8PSQ3; -.
+DR   FunCoup; A0A1D8PSQ3; 1288.
+DR   STRING; 237561.A0A1D8PSQ3; -.
+DR   GeneID; 3640939; -.
+DR   KEGG; cal:CAALFM_CR04200WA; -.
+DR   CGD; CAL0000196010; YDJ1.
+DR   VEuPathDB; FungiDB:CR_04200W_A; -.
+DR   eggNOG; KOG0712; Eukaryota.
+DR   InParanoid; A0A1D8PSQ3; -.
+DR   OMA; RVCPTCV; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000000559; Chromosome R.
+DR   GO; GO:0005737; C:cytoplasm; IDA:CGD.
+DR   GO; GO:0005829; C:cytosol; IBA:GO_Central.
+DR   GO; GO:0005741; C:mitochondrial outer membrane; IDA:CGD.
+DR   GO; GO:0140602; C:nucleolar peripheral inclusion body; IEA:EnsemblFungi.
+DR   GO; GO:0005634; C:nucleus; IBA:GO_Central.
+DR   GO; GO:0048471; C:perinuclear region of cytoplasm; IEA:EnsemblFungi.
+DR   GO; GO:0140453; C:protein aggregate center; IEA:EnsemblFungi.
+DR   GO; GO:0072380; C:TRC complex; IEA:EnsemblFungi.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0001671; F:ATPase activator activity; IEA:EnsemblFungi.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051087; F:protein-folding chaperone binding; IBA:GO_Central.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:EnsemblFungi.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006458; P:'de novo' protein folding; IEA:EnsemblFungi.
+DR   GO; GO:0034605; P:cellular response to heat; IEA:EnsemblFungi.
+DR   GO; GO:0071470; P:cellular response to osmotic stress; IMP:CGD.
+DR   GO; GO:0034599; P:cellular response to oxidative stress; IMP:CGD.
+DR   GO; GO:0009267; P:cellular response to starvation; IEA:EnsemblFungi.
+DR   GO; GO:0051131; P:chaperone-mediated protein complex assembly; IEA:EnsemblFungi.
+DR   GO; GO:0140455; P:cytoplasm protein quality control; IEA:EnsemblFungi.
+DR   GO; GO:0036503; P:ERAD pathway; IEA:EnsemblFungi.
+DR   GO; GO:0140454; P:protein aggregate center assembly; IEA:EnsemblFungi.
+DR   GO; GO:0042026; P:protein refolding; IBA:GO_Central.
+DR   GO; GO:0045047; P:protein targeting to ER; IEA:EnsemblFungi.
+DR   GO; GO:0006626; P:protein targeting to mitochondrion; IMP:CGD.
+DR   GO; GO:0035719; P:tRNA import into nucleus; IEA:EnsemblFungi.
+DR   GO; GO:0006511; P:ubiquitin-dependent protein catabolic process; IEA:EnsemblFungi.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000036; Type I HSP40 co-chaperone; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000000559};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..70
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          125..208
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         125..208
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          370..393
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   393 AA;  42732 MW;  44AD7AC5B72E7ED4 CRC64;
+     MVKDTKFYDA LGVSPNASDA ELKKAYRKAA LKYHPDKNPS PEAAEKFKEL SHAYEILSDD
+     QKREIYDQYG EEGLSGQGAG GFGMNADDIF AQFFGGGFHG GPQRPSRGKD IKHSIACSLE
+     ELYKGKTVKL ALNKTVLCGE CKGRGGAEGK VAQCPDCHGN GMKFVTKQMG PMIQRFQTVC
+     DKCQGTGDLI DPKDRCKKCN GKKTESERKI LEVHVKPGMK DGDHITFAGE GDQTPGVTPG
+     DVVFIISQKP HPVFQRKGND LLIEQEIELA TALAGGEIAF KHISGDWVRI EIPAGEVIAP
+     GSIKMVEGFG MPVRTHKGNL IIHFNVKFPE NNFADEESLK KLASLLPKPK EVKIPADADV
+     DDCTMVPAKL EQSNPYESDE EAHGGPGVQC ASQ
+//
+ID   MAS5_YEAST              Reviewed;         409 AA.
+AC   P25491; D6W1B6;
+DT   01-MAY-1992, integrated into UniProtKB/Swiss-Prot.
+DT   01-MAY-1992, sequence version 1.
+DT   28-JAN-2026, entry version 229.
+DE   RecName: Full=Mitochondrial protein import protein MAS5;
+DE   AltName: Full=Yeast dnaJ protein 1;
+DE   Flags: Precursor;
+GN   Name=YDJ1; Synonyms=MAS5; OrderedLocusNames=YNL064C;
+GN   ORFNames=N2418, YNL2418C;
+OS   Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Saccharomycetes;
+OC   Saccharomycetales; Saccharomycetaceae; Saccharomyces.
+OX   NCBI_TaxID=559292;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA], AND SUBCELLULAR LOCATION.
+RX   PubMed=1869583; DOI=10.1083/jcb.114.4.609;
+RA   Caplan A.J., Douglas M.G.;
+RT   "Characterization of YDJ1: a yeast homologue of the bacterial dnaJ
+RT   protein.";
+RL   J. Cell Biol. 114:609-621(1991).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RX   PubMed=1729605; DOI=10.1128/mcb.12.1.283-291.1992;
+RA   Atencio D.P., Yaffe M.P.;
+RT   "MAS5, a yeast homolog of DnaJ involved in mitochondrial protein import.";
+RL   Mol. Cell. Biol. 12:283-291(1992).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   STRAIN=S288c / FY1676;
+RX   PubMed=8533472; DOI=10.1002/yea.320111008;
+RA   Bergez P., Doignon F., Crouzet M.;
+RT   "The sequence of a 44 420 bp fragment located on the left arm of chromosome
+RT   XIV from Saccharomyces cerevisiae.";
+RL   Yeast 11:967-974(1995).
+RN   [4]
+RP   ERRATUM OF PUBMED:8533472.
+RX   PubMed=8904343;
+RX   DOI=10.1002/(sici)1097-0061(19960315)12:3<297::aid-yea940>3.0.co;2-d;
+RA   Bergez P., Doignon F., Crouzet M.;
+RL   Yeast 12:297-297(1996).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=ATCC 204508 / S288c;
+RX   PubMed=9169873; DOI=10.1038/387s093;
+RA   Philippsen P., Kleine K., Poehlmann R., Duesterhoeft A., Hamberg K.,
+RA   Hegemann J.H., Obermaier B., Urrestarazu L.A., Aert R., Albermann K.,
+RA   Altmann R., Andre B., Baladron V., Ballesta J.P.G., Becam A.-M.,
+RA   Beinhauer J.D., Boskovic J., Buitrago M.J., Bussereau F., Coster F.,
+RA   Crouzet M., D'Angelo M., Dal Pero F., De Antoni A., del Rey F., Doignon F.,
+RA   Domdey H., Dubois E., Fiedler T.A., Fleig U., Floeth M., Fritz C.,
+RA   Gaillardin C., Garcia-Cantalejo J.M., Glansdorff N., Goffeau A.,
+RA   Gueldener U., Herbert C.J., Heumann K., Heuss-Neitzel D., Hilbert H.,
+RA   Hinni K., Iraqui Houssaini I., Jacquet M., Jimenez A., Jonniaux J.-L.,
+RA   Karpfinger-Hartl L., Lanfranchi G., Lepingle A., Levesque H., Lyck R.,
+RA   Maftahi M., Mallet L., Maurer C.T.C., Messenguy F., Mewes H.-W., Moestl D.,
+RA   Nasr F., Nicaud J.-M., Niedenthal R.K., Pandolfo D., Pierard A.,
+RA   Piravandi E., Planta R.J., Pohl T.M., Purnelle B., Rebischung C.,
+RA   Remacha M.A., Revuelta J.L., Rinke M., Saiz J.E., Sartorello F.,
+RA   Scherens B., Sen-Gupta M., Soler-Mira A., Urbanus J.H.M., Valle G.,
+RA   Van Dyck L., Verhasselt P., Vierendeels F., Vissers S., Voet M.,
+RA   Volckaert G., Wach A., Wambutt R., Wedler H., Zollner A., Hani J.;
+RT   "The nucleotide sequence of Saccharomyces cerevisiae chromosome XIV and its
+RT   evolutionary implications.";
+RL   Nature 387:93-98(1997).
+RN   [6]
+RP   GENOME REANNOTATION.
+RC   STRAIN=ATCC 204508 / S288c;
+RX   PubMed=24374639; DOI=10.1534/g3.113.008995;
+RA   Engel S.R., Dietrich F.S., Fisk D.G., Binkley G., Balakrishnan R.,
+RA   Costanzo M.C., Dwight S.S., Hitz B.C., Karra K., Nash R.S., Weng S.,
+RA   Wong E.D., Lloyd P., Skrzypek M.S., Miyasato S.R., Simison M., Cherry J.M.;
+RT   "The reference genome sequence of Saccharomyces cerevisiae: Then and now.";
+RL   G3 (Bethesda) 4:389-398(2014).
+RN   [7]
+RP   ISOPRENYLATION AT CYS-406.
+RX   PubMed=1527016; DOI=10.1016/s0021-9258(19)37044-9;
+RA   Caplan A.J., Tsai J., Casey P.J., Douglas M.G.;
+RT   "Farnesylation of YDJ1p is required for function at elevated growth
+RT   temperatures in Saccharomyces cerevisiae.";
+RL   J. Biol. Chem. 267:18890-18895(1992).
+RN   [8]
+RP   FUNCTION, AND SUBUNIT.
+RX   PubMed=11689685; DOI=10.1128/mcb.21.23.7923-7932.2001;
+RA   Hon T., Lee H.C., Hach A., Johnson J.L., Craig E.A., Erdjument-Bromage H.,
+RA   Tempst P., Zhang L.;
+RT   "The Hsp70-Ydj1 molecular chaperone represses the activity of the heme
+RT   activator protein Hap1 in the absence of heme.";
+RL   Mol. Cell. Biol. 21:7923-7932(2001).
+RN   [9]
+RP   SUBCELLULAR LOCATION [LARGE SCALE ANALYSIS].
+RX   PubMed=14562095; DOI=10.1038/nature02026;
+RA   Huh W.-K., Falvo J.V., Gerke L.C., Carroll A.S., Howson R.W.,
+RA   Weissman J.S., O'Shea E.K.;
+RT   "Global analysis of protein localization in budding yeast.";
+RL   Nature 425:686-691(2003).
+RN   [10]
+RP   LEVEL OF PROTEIN EXPRESSION [LARGE SCALE ANALYSIS].
+RX   PubMed=14562106; DOI=10.1038/nature02046;
+RA   Ghaemmaghami S., Huh W.-K., Bower K., Howson R.W., Belle A., Dephoure N.,
+RA   O'Shea E.K., Weissman J.S.;
+RT   "Global analysis of protein expression in yeast.";
+RL   Nature 425:737-741(2003).
+RN   [11]
+RP   IDENTIFICATION BY MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RX   PubMed=18407956; DOI=10.1074/mcp.m700468-mcp200;
+RA   Albuquerque C.P., Smolka M.B., Payne S.H., Bafna V., Eng J., Zhou H.;
+RT   "A multidimensional chromatography technology for in-depth phosphoproteome
+RT   analysis.";
+RL   Mol. Cell. Proteomics 7:1389-1396(2008).
+RN   [12]
+RP   UBIQUITINATION [LARGE SCALE ANALYSIS] AT LYS-198, AND IDENTIFICATION BY
+RP   MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RX   PubMed=22106047; DOI=10.1002/pmic.201100166;
+RA   Starita L.M., Lo R.S., Eng J.K., von Haller P.D., Fields S.;
+RT   "Sites of ubiquitin attachment in Saccharomyces cerevisiae.";
+RL   Proteomics 12:236-240(2012).
+RN   [13]
+RP   X-RAY CRYSTALLOGRAPHY (2.7 ANGSTROMS) OF 103-350 IN COMPLEX WITH SUBSTRATE
+RP   ANALOGS, SUBUNIT, AND MUTAGENESIS OF PHE-335.
+RX   PubMed=14656432; DOI=10.1016/j.str.2003.10.012;
+RA   Li J., Qian X., Sha B.;
+RT   "The crystal structure of the yeast Hsp40 Ydj1 complexed with its peptide
+RT   substrate.";
+RL   Structure 11:1475-1483(2003).
+RN   [14]
+RP   X-RAY CRYSTALLOGRAPHY (2.07 ANGSTROMS) OF 258-378.
+RX   PubMed=15701512; DOI=10.1016/j.jmb.2004.12.040;
+RA   Wu Y., Li J., Jin Z., Fu Z., Sha B.;
+RT   "The crystal structure of the C-terminal fragment of yeast Hsp40 Ydj1
+RT   reveals novel dimerization motif for Hsp40.";
+RL   J. Mol. Biol. 346:1005-1011(2005).
+CC   -!- FUNCTION: Probably involved in mitochondrial protein import. Is also
+CC       required for efficient translocation of pre-pro-alpha-factor. Involved
+CC       in heme regulation of HAP1, as a component of the high-molecular-weight
+CC       (HMC) complex. {ECO:0000269|PubMed:11689685}.
+CC   -!- SUBUNIT: Homodimer. Interacts with HAP1. Component of the HMC including
+CC       HAP1, SRO9 and YDJ1. {ECO:0000269|PubMed:11689685,
+CC       ECO:0000269|PubMed:14656432}.
+CC   -!- INTERACTION:
+CC       P25491; P89105: CTR9; NbExp=2; IntAct=EBI-10420, EBI-5283;
+CC       P25491; P32324: EFT2; NbExp=4; IntAct=EBI-10420, EBI-6333;
+CC       P25491; P02829: HSP82; NbExp=3; IntAct=EBI-10420, EBI-8659;
+CC       P25491; Q12285: MDY2; NbExp=2; IntAct=EBI-10420, EBI-34904;
+CC       P25491; P32641: RAD24; NbExp=3; IntAct=EBI-10420, EBI-14675;
+CC       P25491; P06839: RAD3; NbExp=4; IntAct=EBI-10420, EBI-14762;
+CC       P25491; Q12118: SGT2; NbExp=3; IntAct=EBI-10420, EBI-31784;
+CC       P25491; P10591: SSA1; NbExp=3; IntAct=EBI-10420, EBI-8591;
+CC       P25491; P32589: SSE1; NbExp=3; IntAct=EBI-10420, EBI-8648;
+CC       P25491; P10081: TIF2; NbExp=3; IntAct=EBI-10420, EBI-9017;
+CC       P25491; Q7LKB1: SUP35; Xeno; NbExp=3; IntAct=EBI-10420, EBI-8411471;
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm. Cytoplasm, perinuclear region.
+CC       Note=Concentrated in a perinuclear ring as well as in the cytoplasm.
+CC   -!- INDUCTION: YDJ1 is a heat shock gene whose expression increases
+CC       moderately at elevated temperatures.
+CC   -!- MISCELLANEOUS: Present with 119000 molecules/cell in log phase SD
+CC       medium. {ECO:0000269|PubMed:14562106}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; X56560; CAA39910.1; -; Genomic_DNA.
+DR   EMBL; S74758; AAB20771.1; -; Genomic_DNA.
+DR   EMBL; U12141; AAA99647.1; -; Genomic_DNA.
+DR   EMBL; Z71340; CAA95937.1; -; Genomic_DNA.
+DR   EMBL; BK006947; DAA10482.1; -; Genomic_DNA.
+DR   PIR; S26703; S26703.
+DR   RefSeq; NP_014335.1; NM_001182902.1.
+DR   PDB; 1NLT; X-ray; 2.70 A; A=103-350.
+DR   PDB; 1XAO; X-ray; 2.07 A; A/B=258-378.
+DR   PDB; 5VSO; NMR; -; A=1-70.
+DR   PDBsum; 1NLT; -.
+DR   PDBsum; 1XAO; -.
+DR   PDBsum; 5VSO; -.
+DR   AlphaFoldDB; P25491; -.
+DR   SMR; P25491; -.
+DR   BioGRID; 35759; 983.
+DR   ComplexPortal; CPX-1276; HMC complex.
+DR   ComplexPortal; CPX-1882; HAP1 transcriptional repressor complex, SSA1 variant.
+DR   ComplexPortal; CPX-1883; HAP1 transcriptional repressor complex, SSA2 variant.
+DR   DIP; DIP-2251N; -.
+DR   FunCoup; P25491; 1581.
+DR   IntAct; P25491; 904.
+DR   MINT; P25491; -.
+DR   STRING; 4932.YNL064C; -.
+DR   TCDB; 8.A.192.1.6; the dnaj homolog (dnaj) family.
+DR   iPTMnet; P25491; -.
+DR   PaxDb; 4932-YNL064C; -.
+DR   PeptideAtlas; P25491; -.
+DR   EnsemblFungi; YNL064C_mRNA; YNL064C; YNL064C.
+DR   GeneID; 855661; -.
+DR   KEGG; sce:YNL064C; -.
+DR   AGR; SGD:S000005008; -.
+DR   SGD; S000005008; YDJ1.
+DR   VEuPathDB; FungiDB:YNL064C; -.
+DR   eggNOG; KOG0712; Eukaryota.
+DR   HOGENOM; CLU_017633_10_0_1; -.
+DR   InParanoid; P25491; -.
+DR   OMA; RVCPTCV; -.
+DR   OrthoDB; 550424at2759; -.
+DR   BioCyc; YEAST:G3O-33094-MONOMER; -.
+DR   Reactome; R-SCE-3371497; HSP90 chaperone cycle for steroid hormone receptors (SHR) in the presence of ligand.
+DR   Reactome; R-SCE-9841251; Mitochondrial unfolded protein response (UPRmt).
+DR   BioGRID-ORCS; 855661; 0 hits in 10 CRISPR screens.
+DR   CD-CODE; 67785C55; Hypersomatic shock foci.
+DR   CD-CODE; A777E0F8; P-body.
+DR   CD-CODE; E03F929F; Stress granule.
+DR   EvolutionaryTrace; P25491; -.
+DR   PRO; PR:P25491; -.
+DR   Proteomes; UP000002311; Chromosome XIV.
+DR   RNAct; P25491; protein.
+DR   GO; GO:0005737; C:cytoplasm; IBA:GO_Central.
+DR   GO; GO:0005829; C:cytosol; IDA:SGD.
+DR   GO; GO:0005634; C:nucleus; IBA:GO_Central.
+DR   GO; GO:0048471; C:perinuclear region of cytoplasm; IDA:SGD.
+DR   GO; GO:0017053; C:transcription repressor complex; NAS:ComplexPortal.
+DR   GO; GO:0072380; C:TRC complex; IDA:SGD.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0001671; F:ATPase activator activity; IDA:SGD.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051087; F:protein-folding chaperone binding; IBA:GO_Central.
+DR   GO; GO:0051082; F:unfolded protein binding; IDA:SGD.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006458; P:'de novo' protein folding; IMP:SGD.
+DR   GO; GO:0034605; P:cellular response to heat; IMP:SGD.
+DR   GO; GO:0009267; P:cellular response to starvation; IMP:SGD.
+DR   GO; GO:0051131; P:chaperone-mediated protein complex assembly; IDA:CAFA.
+DR   GO; GO:0036503; P:ERAD pathway; IMP:SGD.
+DR   GO; GO:0045892; P:negative regulation of DNA-templated transcription; NAS:ComplexPortal.
+DR   GO; GO:0042026; P:protein refolding; IDA:SGD.
+DR   GO; GO:0045047; P:protein targeting to ER; IMP:SGD.
+DR   GO; GO:0006626; P:protein targeting to mitochondrion; IMP:SGD.
+DR   GO; GO:0015031; P:protein transport; IEA:UniProtKB-KW.
+DR   GO; GO:0070482; P:response to oxygen levels; NAS:ComplexPortal.
+DR   GO; GO:0035719; P:tRNA import into nucleus; IMP:SGD.
+DR   GO; GO:0006511; P:ubiquitin-dependent protein catabolic process; IMP:SGD.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000036; Type I HSP40 co-chaperone; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   1: Evidence at protein level;
+KW   3D-structure; Chaperone; Cytoplasm; Isopeptide bond; Lipoprotein;
+KW   Metal-binding; Methylation; Prenylation; Protein transport;
+KW   Reference proteome; Repeat; Stress response; Transport; Ubl conjugation;
+KW   Zinc; Zinc-finger.
+FT   CHAIN           1..406
+FT                   /note="Mitochondrial protein import protein MAS5"
+FT                   /id="PRO_0000071093"
+FT   PROPEP          407..409
+FT                   /note="Removed in mature form"
+FT                   /evidence="ECO:0000305"
+FT                   /id="PRO_0000396684"
+FT   DOMAIN          4..72
+FT                   /note="J"
+FT   REPEAT          143..150
+FT                   /note="CXXCXGXG motif"
+FT   REPEAT          159..166
+FT                   /note="CXXCXGXG motif"
+FT   REPEAT          185..192
+FT                   /note="CXXCXGXG motif"
+FT   REPEAT          201..208
+FT                   /note="CXXCXGXG motif"
+FT   ZN_FING         130..213
+FT                   /note="CR-type"
+FT   REGION          1..172
+FT                   /note="Necessary for HAP1 repression in the absence of
+FT                   heme"
+FT   REGION          382..409
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   BINDING         116
+FT                   /ligand="substrate"
+FT   BINDING         135..137
+FT                   /ligand="substrate"
+FT   BINDING         143
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /ligand_label="1"
+FT   BINDING         146
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /ligand_label="1"
+FT   BINDING         159
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /ligand_label="2"
+FT   BINDING         162
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /ligand_label="2"
+FT   BINDING         185
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /ligand_label="2"
+FT   BINDING         188
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /ligand_label="2"
+FT   BINDING         201
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /ligand_label="1"
+FT   BINDING         204
+FT                   /ligand="Zn(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29105"
+FT                   /ligand_label="1"
+FT   BINDING         215..216
+FT                   /ligand="substrate"
+FT   BINDING         247..249
+FT                   /ligand="substrate"
+FT   SITE            335
+FT                   /note="Involved in dimerization"
+FT   MOD_RES         406
+FT                   /note="Cysteine methyl ester"
+FT                   /evidence="ECO:0000305"
+FT   LIPID           406
+FT                   /note="S-farnesyl cysteine"
+FT                   /evidence="ECO:0000269|PubMed:1527016"
+FT   CROSSLNK        198
+FT                   /note="Glycyl lysine isopeptide (Lys-Gly) (interchain with
+FT                   G-Cter in ubiquitin)"
+FT                   /evidence="ECO:0007744|PubMed:22106047"
+FT   MUTAGEN         335
+FT                   /note="F->D: Prevents dimerization."
+FT                   /evidence="ECO:0000269|PubMed:14656432"
+FT   HELIX           6..11
+FT                   /evidence="ECO:0007829|PDB:5VSO"
+FT   HELIX           19..33
+FT                   /evidence="ECO:0007829|PDB:5VSO"
+FT   TURN            35..37
+FT                   /evidence="ECO:0007829|PDB:5VSO"
+FT   HELIX           41..57
+FT                   /evidence="ECO:0007829|PDB:5VSO"
+FT   HELIX           60..69
+FT                   /evidence="ECO:0007829|PDB:5VSO"
+FT   STRAND          116..122
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   HELIX           126..129
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   STRAND          131..142
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   TURN            144..148
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   STRAND          150..152
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   TURN            153..155
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   STRAND          162..166
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   STRAND          168..182
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   STRAND          189..193
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   STRAND          202..204
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   STRAND          209..220
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   STRAND          229..232
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   STRAND          247..253
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   STRAND          260..262
+FT                   /evidence="ECO:0007829|PDB:1XAO"
+FT   STRAND          265..273
+FT                   /evidence="ECO:0007829|PDB:1XAO"
+FT   HELIX           274..279
+FT                   /evidence="ECO:0007829|PDB:1XAO"
+FT   STRAND          281..286
+FT                   /evidence="ECO:0007829|PDB:1XAO"
+FT   STRAND          288..290
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   STRAND          292..297
+FT                   /evidence="ECO:0007829|PDB:1XAO"
+FT   TURN            299..302
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   STRAND          308..311
+FT                   /evidence="ECO:0007829|PDB:1XAO"
+FT   STRAND          319..321
+FT                   /evidence="ECO:0007829|PDB:1NLT"
+FT   STRAND          327..334
+FT                   /evidence="ECO:0007829|PDB:1XAO"
+FT   HELIX           343..352
+FT                   /evidence="ECO:0007829|PDB:1XAO"
+FT   STRAND          367..371
+FT                   /evidence="ECO:0007829|PDB:1XAO"
+SQ   SEQUENCE   409 AA;  44671 MW;  E4539F3618DD9CF2 CRC64;
+     MVKETKFYDI LGVPVTATDV EIKKAYRKCA LKYHPDKNPS EEAAEKFKEA SAAYEILSDP
+     EKRDIYDQFG EDGLSGAGGA GGFPGGGFGF GDDIFSQFFG AGGAQRPRGP QRGKDIKHEI
+     SASLEELYKG RTAKLALNKQ ILCKECEGRG GKKGAVKKCT SCNGQGIKFV TRQMGPMIQR
+     FQTECDVCHG TGDIIDPKDR CKSCNGKKVE NERKILEVHV EPGMKDGQRI VFKGEADQAP
+     DVIPGDVVFI VSERPHKSFK RDGDDLVYEA EIDLLTAIAG GEFALEHVSG DWLKVGIVPG
+     EVIAPGMRKV IEGKGMPIPK YGGYGNLIIK FTIKFPENHF TSEENLKKLE EILPPRIVPA
+     IPKKATVDEC VLADFDPAKY NRTRASRGGA NYDSDEEEQG GEGVQCASQ
+//
+ID   A0A167BWJ1_9ASCO        Unreviewed;       410 AA.
+AC   A0A167BWJ1;
+DT   06-JUL-2016, integrated into UniProtKB/TrEMBL.
+DT   06-JUL-2016, sequence version 1.
+DT   28-JAN-2026, entry version 30.
+DE   SubName: Full=Type I HSP40 co-chaperone YDJ1 {ECO:0000313|EMBL:ANB10917.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:ANB10917.1};
+GN   ORFNames=AWJ20_3711 {ECO:0000313|EMBL:ANB10917.1};
+OS   Sugiyamaella lignohabitans.
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Dipodascomycetes;
+OC   Dipodascales; Trichomonascaceae; Sugiyamaella.
+OX   NCBI_TaxID=796027 {ECO:0000313|EMBL:ANB10917.1, ECO:0000313|Proteomes:UP000189580};
+RN   [1] {ECO:0000313|EMBL:ANB10917.1, ECO:0000313|Proteomes:UP000189580}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=CBS 10342 {ECO:0000313|EMBL:ANB10917.1,
+RC   ECO:0000313|Proteomes:UP000189580};
+RA   Bellasio M., Peymann A., Valli M., Sipitzky M., Graf A., Sauer M., Marx H.,
+RA   Mattanovich D.;
+RT   "Complete genome sequence and transcriptome regulation of the pentose
+RT   utilising yeast Sugiyamaella lignohabitans.";
+RL   Submitted (FEB-2016) to the EMBL/GenBank/DDBJ databases.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; CP014500; ANB10917.1; -; Genomic_DNA.
+DR   RefSeq; XP_018733394.1; XM_018880734.1.
+DR   AlphaFoldDB; A0A167BWJ1; -.
+DR   GeneID; 30035763; -.
+DR   KEGG; slb:AWJ20_3711; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000189580; Chromosome c.
+DR   GO; GO:0140602; C:nucleolar peripheral inclusion body; IEA:EnsemblFungi.
+DR   GO; GO:0048471; C:perinuclear region of cytoplasm; IEA:EnsemblFungi.
+DR   GO; GO:0140453; C:protein aggregate center; IEA:EnsemblFungi.
+DR   GO; GO:0072380; C:TRC complex; IEA:EnsemblFungi.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0001671; F:ATPase activator activity; IEA:EnsemblFungi.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:EnsemblFungi.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006458; P:'de novo' protein folding; IEA:EnsemblFungi.
+DR   GO; GO:0034605; P:cellular response to heat; IEA:EnsemblFungi.
+DR   GO; GO:0009267; P:cellular response to starvation; IEA:EnsemblFungi.
+DR   GO; GO:0051131; P:chaperone-mediated protein complex assembly; IEA:EnsemblFungi.
+DR   GO; GO:0140455; P:cytoplasm protein quality control; IEA:EnsemblFungi.
+DR   GO; GO:0036503; P:ERAD pathway; IEA:EnsemblFungi.
+DR   GO; GO:0140454; P:protein aggregate center assembly; IEA:EnsemblFungi.
+DR   GO; GO:0042026; P:protein refolding; IEA:EnsemblFungi.
+DR   GO; GO:0045047; P:protein targeting to ER; IEA:EnsemblFungi.
+DR   GO; GO:0006626; P:protein targeting to mitochondrion; IEA:EnsemblFungi.
+DR   GO; GO:0035719; P:tRNA import into nucleus; IEA:EnsemblFungi.
+DR   GO; GO:0006511; P:ubiquitin-dependent protein catabolic process; IEA:EnsemblFungi.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000036; Type I HSP40 co-chaperone; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000189580};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..71
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          135..218
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         135..218
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          383..410
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   410 AA;  44587 MW;  E78E4F5A32E03470 CRC64;
+     MVKDTKLYDI LGVSPDATDS QIKKAYRVNA LKYHPDKNQH SPEAADKFKE VSSAYEVLSD
+     EQKRQVYDTY GMEGLSGQGG PDMGNAEDLF SHFFGGMGGM GGMGGMFGGG APSGPRKSKD
+     IMHAIRATLE DLYKGKVSKL ALKKTVICKT CDGKGGKEGA VKTCPGCKGQ GMKFVTRQMG
+     NVIQRFQTVC PDCNGEGQII DPKDRCKTCL GKKTTEEKKI LQVHIDKGMA NGQKIVFQGE
+     GDQGPGIIPG DVIFVVNEQP HEKFERRGDD LLYKVKIDLL TALAGGSFGI KHLDGEWLKV
+     EIIPGEVIAP GSFKLIEGKG MPSYRHHNFG NMIVEFEVEF PKDNFATPEQ LAALETVLPP
+     RAKLEIPADV HAEEVILADL DPSKYQSGGA MEEDDDDMHA GGERVQCASQ
+//
+ID   A0A167E2T6_METRR        Unreviewed;       414 AA.
+AC   A0A167E2T6; A0A5C6GHT4;
+DT   06-JUL-2016, integrated into UniProtKB/TrEMBL.
+DT   06-JUL-2016, sequence version 1.
+DT   28-JAN-2026, entry version 33.
+DE   SubName: Full=Protein mitochondrial targeting protein (Mas1) {ECO:0000313|EMBL:OAA43221.1};
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:TWU76869.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:TWU76869.1};
+GN   ORFNames=ED733_006337 {ECO:0000313|EMBL:TWU76869.1}, NOR_04588
+GN   {ECO:0000313|EMBL:OAA43221.1};
+OS   Metarhizium rileyi (strain RCEF 4871) (Nomuraea rileyi).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Sordariomycetes;
+OC   Hypocreomycetidae; Hypocreales; Clavicipitaceae; Metarhizium.
+OX   NCBI_TaxID=1649241 {ECO:0000313|EMBL:OAA43221.1, ECO:0000313|Proteomes:UP000243498};
+RN   [1] {ECO:0000313|EMBL:OAA43221.1, ECO:0000313|Proteomes:UP000243498}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=RCEF 4871 {ECO:0000313|EMBL:OAA43221.1,
+RC   ECO:0000313|Proteomes:UP000243498};
+RX   PubMed=27071652; DOI=10.1093/gbe/evw082;
+RA   Shang Y., Xiao G., Zheng P., Cen K., Zhan S., Wang C.;
+RT   "Divergent and convergent evolution of fungal pathogenicity.";
+RL   Genome Biol. Evol. 8:1374-1387(2016).
+RN   [2] {ECO:0000313|Proteomes:UP000317257}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Cep018-CH2 {ECO:0000313|Proteomes:UP000317257};
+RA   Binneck E., Lastra C.C.L., Sosa-Gomez D.R.;
+RT   "The complete genome of Metarhizium rileyi, a key fungal pathogen of
+RT   Lepidoptera.";
+RL   Submitted (DEC-2018) to the EMBL/GenBank/DDBJ databases.
+RN   [3] {ECO:0000313|EMBL:TWU76869.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Cep018-CH2 {ECO:0000313|EMBL:TWU76869.1};
+RX   PubMed=31488537;
+RA   Binneck E., Lastra C.C.L., Sosa-Gomez D.R.;
+RT   "Genome Sequence of Metarhizium rileyi, a Microbial Control Agent for
+RT   Lepidoptera.";
+RL   Microbiol. Resour. Announc. 8:e00897-19(2019).
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:OAA43221.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AZHC01000012; OAA43221.1; -; Genomic_DNA.
+DR   EMBL; SBHS01000004; TWU76869.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0A167E2T6; -.
+DR   STRING; 1081105.A0A167E2T6; -.
+DR   OMA; RVCPTCV; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000243498; Unassembled WGS sequence.
+DR   Proteomes; UP000317257; Unassembled WGS sequence.
+DR   GO; GO:0140602; C:nucleolar peripheral inclusion body; IEA:EnsemblFungi.
+DR   GO; GO:0048471; C:perinuclear region of cytoplasm; IEA:EnsemblFungi.
+DR   GO; GO:0140453; C:protein aggregate center; IEA:EnsemblFungi.
+DR   GO; GO:0072380; C:TRC complex; IEA:EnsemblFungi.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0001671; F:ATPase activator activity; IEA:EnsemblFungi.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:EnsemblFungi.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006458; P:'de novo' protein folding; IEA:EnsemblFungi.
+DR   GO; GO:0034605; P:cellular response to heat; IEA:EnsemblFungi.
+DR   GO; GO:0009267; P:cellular response to starvation; IEA:EnsemblFungi.
+DR   GO; GO:0051131; P:chaperone-mediated protein complex assembly; IEA:EnsemblFungi.
+DR   GO; GO:0140455; P:cytoplasm protein quality control; IEA:EnsemblFungi.
+DR   GO; GO:0036503; P:ERAD pathway; IEA:EnsemblFungi.
+DR   GO; GO:0140454; P:protein aggregate center assembly; IEA:EnsemblFungi.
+DR   GO; GO:0042026; P:protein refolding; IEA:EnsemblFungi.
+DR   GO; GO:0045047; P:protein targeting to ER; IEA:EnsemblFungi.
+DR   GO; GO:0006626; P:protein targeting to mitochondrion; IEA:EnsemblFungi.
+DR   GO; GO:0035719; P:tRNA import into nucleus; IEA:EnsemblFungi.
+DR   GO; GO:0006511; P:ubiquitin-dependent protein catabolic process; IEA:EnsemblFungi.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000003; DnaJ subfamily A member 2; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000243498};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          5..70
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          134..217
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         134..217
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          371..414
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   414 AA;  45226 MW;  58D0B8708BBE95DB CRC64;
+     MSSEDYYVVL GIERTASEAE IKKAYRKTAL QNHPDKNPGN AEAEAKFKLA TEAYEVLTDS
+     QKRSIYDQYG KEGLNGAGGG GSGMPAEDLF AQFFGGGGFG GMGGMFGGGS SRGPPKARTI
+     HHTHKVSLED IYRGKVSKLA LQRSIICPKC DGLGGKKGAV SKCSGCDGHG MKTMMRQMGP
+     MIQRFQTVCP DCNGEGEIIK DKDRCKQCSG KKTIVDRKVL HVHVDKGVRS GTKVEFRGEG
+     DQSPGVQAGD VVFEIEQKPH TRFKRKDDDL LYNCDIELVT ALAGGTIYIE HLDDRWLAID
+     ILPGESIAPE SVKMVRGQGM PSHRHHDFGN LFIHFNVKFP EKNWTQDQSA FAALQKILPQ
+     PLVQNIPPAE AMTEPADLED MDGRSQNRVF GSPGVEEDEE DGHPGAERVQ CASQ
+//
+ID   A0A7C8VG47_ORBOL        Unreviewed;       410 AA.
+AC   A0A7C8VG47;
+DT   10-FEB-2021, integrated into UniProtKB/TrEMBL.
+DT   10-FEB-2021, sequence version 1.
+DT   28-JAN-2026, entry version 15.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:KAF3280553.1, ECO:0000313|EMBL:KAF3280554.1};
+GN   Name=YDJ1_1 {ECO:0000313|EMBL:KAF3280553.1};
+GN   ORFNames=TWF970_002769 {ECO:0000313|EMBL:KAF3280553.1};
+OS   Orbilia oligospora (Nematode-trapping fungus) (Arthrobotrys oligospora).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Orbiliomycetes;
+OC   Orbiliales; Orbiliaceae; Orbilia.
+OX   NCBI_TaxID=2813651 {ECO:0000313|EMBL:KAF3280553.1, ECO:0000313|Proteomes:UP000474640};
+RN   [1] {ECO:0000313|EMBL:KAF3280553.1, ECO:0000313|Proteomes:UP000474640}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=TWF970 {ECO:0000313|EMBL:KAF3280553.1,
+RC   ECO:0000313|Proteomes:UP000474640};
+RA   Palmer J.M.;
+RL   Submitted (JAN-2020) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:KAF3280553.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; JAABOJ010000018; KAF3280553.1; -; Genomic_DNA.
+DR   EMBL; JAABOJ010000018; KAF3280554.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0A7C8VG47; -.
+DR   OMA; RVCPTCV; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000474640; Unassembled WGS sequence.
+DR   GO; GO:0140602; C:nucleolar peripheral inclusion body; IEA:EnsemblFungi.
+DR   GO; GO:0048471; C:perinuclear region of cytoplasm; IEA:EnsemblFungi.
+DR   GO; GO:0140453; C:protein aggregate center; IEA:EnsemblFungi.
+DR   GO; GO:0072380; C:TRC complex; IEA:EnsemblFungi.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0001671; F:ATPase activator activity; IEA:EnsemblFungi.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:EnsemblFungi.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006458; P:'de novo' protein folding; IEA:EnsemblFungi.
+DR   GO; GO:0034605; P:cellular response to heat; IEA:EnsemblFungi.
+DR   GO; GO:0009267; P:cellular response to starvation; IEA:EnsemblFungi.
+DR   GO; GO:0051131; P:chaperone-mediated protein complex assembly; IEA:EnsemblFungi.
+DR   GO; GO:0140455; P:cytoplasm protein quality control; IEA:EnsemblFungi.
+DR   GO; GO:0036503; P:ERAD pathway; IEA:EnsemblFungi.
+DR   GO; GO:0140454; P:protein aggregate center assembly; IEA:EnsemblFungi.
+DR   GO; GO:0042026; P:protein refolding; IEA:EnsemblFungi.
+DR   GO; GO:0045047; P:protein targeting to ER; IEA:EnsemblFungi.
+DR   GO; GO:0006626; P:protein targeting to mitochondrion; IEA:EnsemblFungi.
+DR   GO; GO:0035719; P:tRNA import into nucleus; IEA:EnsemblFungi.
+DR   GO; GO:0006511; P:ubiquitin-dependent protein catabolic process; IEA:EnsemblFungi.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000024; Mitochondrial protein import protein MAS5; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..70
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          134..217
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         134..217
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          386..410
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        399..410
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   410 AA;  45280 MW;  2764B689A18BE224 CRC64;
+     MVKDMKYYQS LGVEADATEA QLKKAYRLNA LKYHPDKNPS PEAAEKFKEL SHAYEILSDP
+     QKRQVYDQYG EEGLSGAGAD MGMSAEDLFS QFFGGMGGMG GMFGGGGSMQ QQGPKRSRDI
+     VHVHKVSLED LYKGKTSKLA LQKTVVCGKC NGIGGKEGSV TKCKGCGGAG MKTMMRQMGP
+     MIQRFQTVCP DCNGEKEIIK EKDKCKACQG KKTVFERKVI HVPVDKGMKD GQRITFQGEG
+     DAGPDIIPGD VIFVIEQKPH ARFQRKDDNL FYKAEIDLLT ALAGGTIAIE HLDERWLQVQ
+     ILPGEVISPG ELKIVRGQGM PSYRHHDYGD MFIQFEIKFP PKHFADEDVI LKLNEILPPR
+     PASEIPADAM VDDVNVEELD AQAQARAVNG PMDEDDDEHP GHERVQCASQ
+//
+ID   A0A8X7NS49_CANPA        Unreviewed;       403 AA.
+AC   A0A8X7NS49;
+DT   14-DEC-2022, integrated into UniProtKB/TrEMBL.
+DT   14-DEC-2022, sequence version 1.
+DT   28-JAN-2026, entry version 12.
+DE   SubName: Full=Mitochondrial protein import protein MAS5 {ECO:0000313|EMBL:KAF6058629.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:KAF6058629.1};
+GN   ORFNames=FOB60_000211 {ECO:0000313|EMBL:KAF6058629.1};
+OS   Candida parapsilosis (Yeast).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes;
+OC   Debaryomycetaceae; Candida/Lodderomyces clade; Candida.
+OX   NCBI_TaxID=5480 {ECO:0000313|EMBL:KAF6058629.1, ECO:0000313|Proteomes:UP000590412};
+RN   [1] {ECO:0000313|EMBL:KAF6058629.1}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=FDAARGOS_652 {ECO:0000313|EMBL:KAF6058629.1};
+RA   Campos J., Goldberg B., Tallon L., Sadzewicz L., Vavikolanu K., Mehta A.,
+RA   Aluvathingal J., Nadendla S., Nandy P., Geyer C., Yan Y., Sichtig H.;
+RT   "FDA dAtabase for Regulatory Grade micrObial Sequences (FDA-ARGOS):
+RT   Supporting development and validation of Infectious Disease Dx tests.";
+RL   Submitted (MAR-2020) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:KAF6058629.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; JABWAB010000001; KAF6058629.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0A8X7NS49; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000590412; Unassembled WGS sequence.
+DR   GO; GO:0140602; C:nucleolar peripheral inclusion body; IEA:EnsemblFungi.
+DR   GO; GO:0048471; C:perinuclear region of cytoplasm; IEA:EnsemblFungi.
+DR   GO; GO:0140453; C:protein aggregate center; IEA:EnsemblFungi.
+DR   GO; GO:0072380; C:TRC complex; IEA:EnsemblFungi.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0001671; F:ATPase activator activity; IEA:EnsemblFungi.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:EnsemblFungi.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006458; P:'de novo' protein folding; IEA:EnsemblFungi.
+DR   GO; GO:0034605; P:cellular response to heat; IEA:EnsemblFungi.
+DR   GO; GO:0009267; P:cellular response to starvation; IEA:EnsemblFungi.
+DR   GO; GO:0051131; P:chaperone-mediated protein complex assembly; IEA:EnsemblFungi.
+DR   GO; GO:0140455; P:cytoplasm protein quality control; IEA:EnsemblFungi.
+DR   GO; GO:0036503; P:ERAD pathway; IEA:EnsemblFungi.
+DR   GO; GO:0140454; P:protein aggregate center assembly; IEA:EnsemblFungi.
+DR   GO; GO:0042026; P:protein refolding; IEA:EnsemblFungi.
+DR   GO; GO:0045047; P:protein targeting to ER; IEA:EnsemblFungi.
+DR   GO; GO:0006626; P:protein targeting to mitochondrion; IEA:EnsemblFungi.
+DR   GO; GO:0035719; P:tRNA import into nucleus; IEA:EnsemblFungi.
+DR   GO; GO:0006511; P:ubiquitin-dependent protein catabolic process; IEA:EnsemblFungi.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000036; Type I HSP40 co-chaperone; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..70
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          127..210
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         127..210
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          367..403
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        368..385
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   403 AA;  44305 MW;  C19915C0E5CD85EE CRC64;
+     MVKDTKFYDA LGVSPTASDT ELKKAYRKAA LKYHPDKNST PEAVEKFKEI SHAYEILSDE
+     QKRDIYDQYG EEGLSGQGGP GMNAEDIFSQ FFGGGFGGGF GGGPQRPTRG KDIKHSIGCT
+     LEDLYKGKTT KLALNKTVLC SDCEGRGGAE GKVKECPDCH GSGMKFVTRQ MGPMIQRFQT
+     VCDKCQGSGD LCDPKDRCTT CKGKKTQTER KILQVHIDPG MKDGQRIVFS GEGDQEPGIT
+     PGDVIFVVDE RPDANFQRKG NDLYREYEVD LLTALAGGEI AFKHISGDWI KINITPGEVI
+     APGEMKIIEG QGMPIYRHGG KGNLIIKFSV AFPPNHFADE DKLKELASIL PPRKQVQIPE
+     GAEVDECDMV KYDPAKHQQR RRDAYDSDEE DGQGHPGVQC ASQ
+//
+ID   A3M086_PICST            Unreviewed;       404 AA.
+AC   A3M086;
+DT   03-APR-2007, integrated into UniProtKB/TrEMBL.
+DT   24-JUL-2007, sequence version 2.
+DT   28-JAN-2026, entry version 114.
+DE   SubName: Full=Yeast dnaJ homolog (Nuclear envelope protein) heat shock protein {ECO:0000313|EMBL:ABN68672.2};
+GN   Name=YDJ1 {ECO:0000313|EMBL:ABN68672.2};
+GN   ORFNames=PICST_85654 {ECO:0000313|EMBL:ABN68672.2};
+OS   Scheffersomyces stipitis (strain ATCC 58785 / CBS 6054 / NBRC 10063 / NRRL
+OS   Y-11545) (Yeast) (Pichia stipitis).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes;
+OC   Debaryomycetaceae; Scheffersomyces.
+OX   NCBI_TaxID=322104 {ECO:0000313|EMBL:ABN68672.2, ECO:0000313|Proteomes:UP000002258};
+RN   [1] {ECO:0000313|EMBL:ABN68672.2, ECO:0000313|Proteomes:UP000002258}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=ATCC 58785 / CBS 6054 / NBRC 10063 / NRRL Y-11545
+RC   {ECO:0000313|Proteomes:UP000002258};
+RX   PubMed=17334359; DOI=10.1038/nbt1290;
+RA   Jeffries T.W., Grigoriev I.V., Grimwood J., Laplaza J.M., Aerts A.,
+RA   Salamov A., Schmutz J., Lindquist E., Dehal P., Shapiro H., Jin Y.S.,
+RA   Passoth V., Richardson P.M.;
+RT   "Genome sequence of the lignocellulose-bioconverting and xylose-fermenting
+RT   yeast Pichia stipitis.";
+RL   Nat. Biotechnol. 25:319-326(2007).
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; CP000502; ABN68672.2; -; Genomic_DNA.
+DR   RefSeq; XP_001386701.2; XM_001386664.1.
+DR   AlphaFoldDB; A3M086; -.
+DR   FunCoup; A3M086; 1274.
+DR   STRING; 322104.A3M086; -.
+DR   GeneID; 4840913; -.
+DR   KEGG; pic:PICST_85654; -.
+DR   eggNOG; KOG0712; Eukaryota.
+DR   HOGENOM; CLU_017633_10_0_1; -.
+DR   InParanoid; A3M086; -.
+DR   OMA; RVCPTCV; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000002258; Chromosome 8.
+DR   GO; GO:0140602; C:nucleolar peripheral inclusion body; IEA:EnsemblFungi.
+DR   GO; GO:0048471; C:perinuclear region of cytoplasm; IEA:EnsemblFungi.
+DR   GO; GO:0140453; C:protein aggregate center; IEA:EnsemblFungi.
+DR   GO; GO:0072380; C:TRC complex; IEA:EnsemblFungi.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0001671; F:ATPase activator activity; IEA:EnsemblFungi.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:EnsemblFungi.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006458; P:'de novo' protein folding; IEA:EnsemblFungi.
+DR   GO; GO:0034605; P:cellular response to heat; IEA:EnsemblFungi.
+DR   GO; GO:0009267; P:cellular response to starvation; IEA:EnsemblFungi.
+DR   GO; GO:0051131; P:chaperone-mediated protein complex assembly; IEA:EnsemblFungi.
+DR   GO; GO:0140455; P:cytoplasm protein quality control; IEA:EnsemblFungi.
+DR   GO; GO:0036503; P:ERAD pathway; IEA:EnsemblFungi.
+DR   GO; GO:0140454; P:protein aggregate center assembly; IEA:EnsemblFungi.
+DR   GO; GO:0042026; P:protein refolding; IEA:EnsemblFungi.
+DR   GO; GO:0045047; P:protein targeting to ER; IEA:EnsemblFungi.
+DR   GO; GO:0006626; P:protein targeting to mitochondrion; IEA:EnsemblFungi.
+DR   GO; GO:0035719; P:tRNA import into nucleus; IEA:EnsemblFungi.
+DR   GO; GO:0006511; P:ubiquitin-dependent protein catabolic process; IEA:EnsemblFungi.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000036; Type I HSP40 co-chaperone; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000002258};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Stress response {ECO:0000313|EMBL:ABN68672.2};
+KW   Viral envelope protein {ECO:0000313|EMBL:ABN68672.2};
+KW   Virion {ECO:0000313|EMBL:ABN68672.2};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..70
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          127..210
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         127..210
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          369..404
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        373..385
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   404 AA;  43969 MW;  364CD1464EDD66A3 CRC64;
+     MVKETKFYDV LGVSPSASDS EMKKAYRKAA LKYHPDKNPS PEAAEKFKEI SHAYEILSDD
+     QKREIYDSYG EEGLSGQGGP GGMGAEDIFS QFFGGGFGGM GGGPQRPSRG KDIKHSISCT
+     LEELYKGRTA KLALNKTILC KTCNGLGGKE GKIKKCSGCN GSGMKFVTRQ MGPMIQRFQT
+     VCDQCQGTGD ICDPKDRCTA CKGKKTQAER KILQVHIDPG MKDGQRVVFS GEGDQEPGIT
+     PGDVVFVVDE KQHDKYTRKG NDLYYEAEVD LLTALAGGEI AFKHVSGDYI KIDIIPGDVI
+     SPGLVKVVEN QGMPVYRQGG RGNLFIKFNI KFPAKNFTSE ENLKTLESVL PARTKVSIPK
+     GAEVDDVEIV DVDPYKHSNN RRDTYDSDEE EGGQGGAGVQ CASQ
+//
+ID   N4W109_COLOR            Unreviewed;       421 AA.
+AC   N4W109;
+DT   26-JUN-2013, integrated into UniProtKB/TrEMBL.
+DT   26-JUN-2013, sequence version 1.
+DT   28-JAN-2026, entry version 48.
+DE   SubName: Full=Mitochondrial protein import protein MAS5 {ECO:0000313|EMBL:TDZ26731.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:TDZ26731.1};
+GN   ORFNames=Cob_v000939 {ECO:0000313|EMBL:TDZ26731.1};
+OS   Colletotrichum orbiculare (strain 104-T / ATCC 96160 / CBS 514.97 / LARS
+OS   414 / MAFF 240422) (Cucumber anthracnose fungus) (Colletotrichum
+OS   lagenarium).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Sordariomycetes;
+OC   Hypocreomycetidae; Glomerellales; Glomerellaceae; Colletotrichum;
+OC   Colletotrichum orbiculare species complex.
+OX   NCBI_TaxID=1213857 {ECO:0000313|EMBL:TDZ26731.1, ECO:0000313|Proteomes:UP000014480};
+RN   [1] {ECO:0000313|Proteomes:UP000014480}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=104-T / ATCC 96160 / CBS 514.97 / LARS 414 / MAFF 240422
+RC   {ECO:0000313|Proteomes:UP000014480};
+RX   PubMed=23252678; DOI=10.1111/nph.12085;
+RA   Gan P., Ikeda K., Irieda H., Narusaka M., O'Connell R.J., Narusaka Y.,
+RA   Takano Y., Kubo Y., Shirasu K.;
+RT   "Comparative genomic and transcriptomic analyses reveal the hemibiotrophic
+RT   stage shift of Colletotrichum fungi.";
+RL   New Phytol. 197:1236-1249(2013).
+RN   [2] {ECO:0000313|Proteomes:UP000014480}
+RP   GENOME REANNOTATION.
+RC   STRAIN=104-T / ATCC 96160 / CBS 514.97 / LARS 414 / MAFF 240422
+RC   {ECO:0000313|Proteomes:UP000014480};
+RX   PubMed=30893003; DOI=10.1094/MPMI-12-18-0352-A;
+RA   Gan P., Tsushima A., Narusaka M., Narusaka Y., Takano Y., Kubo Y.,
+RA   Shirasu K.;
+RT   "Genome sequence resources for four phytopathogenic fungi from the
+RT   Colletotrichum orbiculare species complex.";
+RL   Mol. Plant Microbe Interact. 32:1088-1090(2019).
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:TDZ26731.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AMCV02000001; TDZ26731.1; -; Genomic_DNA.
+DR   AlphaFoldDB; N4W109; -.
+DR   STRING; 1213857.N4W109; -.
+DR   eggNOG; KOG0712; Eukaryota.
+DR   HOGENOM; CLU_017633_10_2_1; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000014480; Unassembled WGS sequence.
+DR   GO; GO:0140602; C:nucleolar peripheral inclusion body; IEA:EnsemblFungi.
+DR   GO; GO:0048471; C:perinuclear region of cytoplasm; IEA:EnsemblFungi.
+DR   GO; GO:0140453; C:protein aggregate center; IEA:EnsemblFungi.
+DR   GO; GO:0072380; C:TRC complex; IEA:EnsemblFungi.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0001671; F:ATPase activator activity; IEA:EnsemblFungi.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:EnsemblFungi.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006458; P:'de novo' protein folding; IEA:EnsemblFungi.
+DR   GO; GO:0034605; P:cellular response to heat; IEA:EnsemblFungi.
+DR   GO; GO:0009267; P:cellular response to starvation; IEA:EnsemblFungi.
+DR   GO; GO:0051131; P:chaperone-mediated protein complex assembly; IEA:EnsemblFungi.
+DR   GO; GO:0140455; P:cytoplasm protein quality control; IEA:EnsemblFungi.
+DR   GO; GO:0036503; P:ERAD pathway; IEA:EnsemblFungi.
+DR   GO; GO:0140454; P:protein aggregate center assembly; IEA:EnsemblFungi.
+DR   GO; GO:0042026; P:protein refolding; IEA:EnsemblFungi.
+DR   GO; GO:0045047; P:protein targeting to ER; IEA:EnsemblFungi.
+DR   GO; GO:0006626; P:protein targeting to mitochondrion; IEA:EnsemblFungi.
+DR   GO; GO:0035719; P:tRNA import into nucleus; IEA:EnsemblFungi.
+DR   GO; GO:0006511; P:ubiquitin-dependent protein catabolic process; IEA:EnsemblFungi.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000003; DnaJ subfamily A member 2; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723};
+KW   Reference proteome {ECO:0000313|Proteomes:UP000014480};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771}.
+SQ   SEQUENCE   421 AA;  45992 MW;  CECB29B5494B8430 CRC64;
+     MVKETKLYDT LGVKPEANDQ ELRKAYKTNA LKYHPDKNAH NPEAEEKFKE ISHAYEILSD
+     SQKRAVYDQY GEAGLEGGAG GGGGGMAAED LFAQFFGGGS FGGGLGGMFG GGGMPNRGPP
+     KARTIHHTHK VSLEDVYRGK ISKLALQRSI ICSKCEGRGG KEGAVKRCTG CDGHGMKTMM
+     RQMGPMIQRF QTVCPDCNGE GEMIKDKDRC KHCSGKKTVV DRKVLHVHVD RGVRSGTKVE
+     FRGEGDQAPG IQAGDVVFEI EQKPHTRFTR KDDDLLYQCE IELVTALAGG TIYIEHLDER
+     WLSVEILPGE AIAPDTVKMI RGQGMPSPRH HDFGNLYIQF SVKFPEKNWT DDATAFEALQ
+     KLLPAPSLQT VPPPEAMTEP ADLEDMDNSA NARAFAGAGG SMEEEDEDGH PHGERVQCAS
+     Q
+//
+ID   Q6FNQ1_CANGA            Unreviewed;       407 AA.
+AC   Q6FNQ1;
+DT   19-JUL-2004, integrated into UniProtKB/TrEMBL.
+DT   19-JUL-2004, sequence version 1.
+DT   28-JAN-2026, entry version 138.
+DE   RecName: Full=Mitochondrial protein import protein MAS5 {ECO:0008006|Google:ProtNLM};
+GN   Name=YDJ1 {ECO:0000313|CGD:CAL0133394};
+GN   OrderedLocusNames=CAGL0J09966g {ECO:0000313|CGD:CAL0133394,
+GN   ECO:0000313|EMBL:CAG61094.1};
+OS   Candida glabrata (strain ATCC 2001 / BCRC 20586 / JCM 3761 / NBRC 0622 /
+OS   NRRL Y-65 / CBS 138) (Yeast) (Nakaseomyces glabratus).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Saccharomycetes;
+OC   Saccharomycetales; Saccharomycetaceae; Nakaseomyces.
+OX   NCBI_TaxID=284593 {ECO:0000313|EMBL:CAG61094.1, ECO:0000313|Proteomes:UP000002428};
+RN   [1] {ECO:0000313|EMBL:CAG61094.1, ECO:0000313|Proteomes:UP000002428}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=ATCC 2001 / BCRC 20586 / JCM 3761 / NBRC 0622 / NRRL Y-65 / CBS
+RC   138 {ECO:0000313|Proteomes:UP000002428};
+RX   PubMed=15229592; DOI=10.1038/nature02579;
+RG   Genolevures;
+RA   Dujon B., Sherman D., Fischer G., Durrens P., Casaregola S., Lafontaine I.,
+RA   de Montigny J., Marck C., Neuveglise C., Talla E., Goffard N., Frangeul L.,
+RA   Aigle M., Anthouard V., Babour A., Barbe V., Barnay S., Blanchin S.,
+RA   Beckerich J.M., Beyne E., Bleykasten C., Boisrame A., Boyer J.,
+RA   Cattolico L., Confanioleri F., de Daruvar A., Despons L., Fabre E.,
+RA   Fairhead C., Ferry-Dumazet H., Groppi A., Hantraye F., Hennequin C.,
+RA   Jauniaux N., Joyet P., Kachouri R., Kerrest A., Koszul R., Lemaire M.,
+RA   Lesur I., Ma L., Muller H., Nicaud J.M., Nikolski M., Oztas S.,
+RA   Ozier-Kalogeropoulos O., Pellenz S., Potier S., Richard G.F., Straub M.L.,
+RA   Suleau A., Swennene D., Tekaia F., Wesolowski-Louvel M., Westhof E.,
+RA   Wirth B., Zeniou-Meyer M., Zivanovic I., Bolotin-Fukuhara M., Thierry A.,
+RA   Bouchier C., Caudron B., Scarpelli C., Gaillardin C., Weissenbach J.,
+RA   Wincker P., Souciet J.L.;
+RT   "Genome evolution in yeasts.";
+RL   Nature 430:35-44(2004).
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; CR380956; CAG61094.1; -; Genomic_DNA.
+DR   RefSeq; XP_448143.1; XM_448143.1.
+DR   AlphaFoldDB; Q6FNQ1; -.
+DR   FunCoup; Q6FNQ1; 1372.
+DR   STRING; 284593.Q6FNQ1; -.
+DR   GeneID; 2889428; -.
+DR   KEGG; cgr:2889428; -.
+DR   CGD; CAL0133394; YDJ1.
+DR   VEuPathDB; FungiDB:CAGL0J09966g; -.
+DR   eggNOG; KOG0712; Eukaryota.
+DR   HOGENOM; CLU_017633_10_0_1; -.
+DR   InParanoid; Q6FNQ1; -.
+DR   OMA; RVCPTCV; -.
+DR   Proteomes; UP000002428; Chromosome J.
+DR   GO; GO:0140602; C:nucleolar peripheral inclusion body; IEA:EnsemblFungi.
+DR   GO; GO:0048471; C:perinuclear region of cytoplasm; IEA:EnsemblFungi.
+DR   GO; GO:0140453; C:protein aggregate center; IEA:EnsemblFungi.
+DR   GO; GO:0072380; C:TRC complex; IEA:EnsemblFungi.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0001671; F:ATPase activator activity; IEA:EnsemblFungi.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:EnsemblFungi.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006458; P:'de novo' protein folding; IEA:EnsemblFungi.
+DR   GO; GO:0034605; P:cellular response to heat; IEA:EnsemblFungi.
+DR   GO; GO:0009267; P:cellular response to starvation; IEA:EnsemblFungi.
+DR   GO; GO:0051131; P:chaperone-mediated protein complex assembly; IEA:EnsemblFungi.
+DR   GO; GO:0140455; P:cytoplasm protein quality control; IEA:EnsemblFungi.
+DR   GO; GO:0036503; P:ERAD pathway; IEA:EnsemblFungi.
+DR   GO; GO:0140454; P:protein aggregate center assembly; IEA:EnsemblFungi.
+DR   GO; GO:0042026; P:protein refolding; IEA:EnsemblFungi.
+DR   GO; GO:0045047; P:protein targeting to ER; IEA:EnsemblFungi.
+DR   GO; GO:0006626; P:protein targeting to mitochondrion; IEA:EnsemblFungi.
+DR   GO; GO:0035719; P:tRNA import into nucleus; IEA:EnsemblFungi.
+DR   GO; GO:0006511; P:ubiquitin-dependent protein catabolic process; IEA:EnsemblFungi.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000036; Type I HSP40 co-chaperone; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000002428};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..70
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          128..211
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         128..211
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          373..407
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   407 AA;  44375 MW;  A5AFCEF7BCBF2011 CRC64;
+     MVKDTKLYDT LGVSPGASDA EIKKAYRKSA LKYHPDKNPS EEAAEKFKEV SSAYEILSDS
+     QKREVYDQFG EEGLSGNGGA GFPGGFGFGE DIFSQFFGGA TGGRPRGPQR GRDIKHEMAA
+     SLEELYKGRT AKLALNKQIL CKSCEGRGGK EGAVKKCSSC NGQGIKFVTR QMGPMIQRFQ
+     TECDVCHGTG DIIDAKDRCK SCNGKKVDNE RKILEVRIEP GMKDGQKIVF KGEADQAPDV
+     IPGDVVFVIS EKPHKHFQRA GDDLIYEAEI DLLTALAGGQ FALEHVSGDW LKVDIVPGEV
+     IAPGARKIVE GKGMPIQKYG GYGNLLIKFN IKFPENHFTS EENLKKLEEI LPPRRQINIP
+     AKAQVDDCVL SEFDPSKFGQ SNGRSGANYD SDDEDAHGGE GVQCASQ
+//
+ID   A0A1B8G8G9_9PEZI        Unreviewed;       418 AA.
+AC   A0A1B8G8G9;
+DT   02-NOV-2016, integrated into UniProtKB/TrEMBL.
+DT   23-MAY-2018, sequence version 2.
+DT   18-JUN-2025, entry version 30.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:OBT92124.2};
+GN   Name=YDJ1 {ECO:0000313|EMBL:OBT92124.2};
+GN   ORFNames=VE01_10068 {ECO:0000313|EMBL:OBT92124.2};
+OS   Pseudogymnoascus verrucosus.
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Leotiomycetes;
+OC   Thelebolales; Thelebolaceae; Pseudogymnoascus.
+OX   NCBI_TaxID=342668 {ECO:0000313|EMBL:OBT92124.2, ECO:0000313|Proteomes:UP000091956};
+RN   [1] {ECO:0000313|EMBL:OBT92124.2, ECO:0000313|Proteomes:UP000091956}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=UAMH 10579 {ECO:0000313|EMBL:OBT92124.2,
+RC   ECO:0000313|Proteomes:UP000091956};
+RA   Palmer J.M., Drees K.P., Foster J.T., Lindner D.L.;
+RT   "Comparative genomics of Pseudogymnoascus destructans, the fungus causing
+RT   white-nose syndrome of bats.";
+RL   Submitted (MAR-2016) to the EMBL/GenBank/DDBJ databases.
+RN   [2] {ECO:0000313|Proteomes:UP000091956}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=UAMH 10579 {ECO:0000313|Proteomes:UP000091956};
+RX   PubMed=29295979; DOI=10.1038/s41467-017-02441-z;
+RA   Palmer J.M., Drees K.P., Foster J.T., Lindner D.L.;
+RT   "Extreme sensitivity to ultraviolet light in the fungal pathogen causing
+RT   white-nose syndrome of bats.";
+RL   Nat. Commun. 9:35-35(2018).
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; KV460273; OBT92124.2; -; Genomic_DNA.
+DR   RefSeq; XP_059319286.1; XM_059464125.1.
+DR   AlphaFoldDB; A0A1B8G8G9; -.
+DR   STRING; 342668.A0A1B8G8G9; -.
+DR   GeneID; 84234270; -.
+DR   Proteomes; UP000091956; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000024; Mitochondrial protein import protein MAS5; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000091956};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..71
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          137..220
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         137..220
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          388..418
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   418 AA;  45551 MW;  94032A10A7DF6F26 CRC64;
+     MAKDTKFYDL LNVSPTCTEA ELKKAYKVGA LKHHPDKNAH NPDAADKFKD LSHAYEILSD
+     PQKRQIYDQY GEEGLEGGGG GGGMNAEDLF SQFFGGGGGV FGGGGGMFGG GMGQRGPPKA
+     RTIHHVHKVS LEDIYRGKVS KLALQKSVIC SKCDGRGGKE GAVKKCTGCD GHGMKTMMRQ
+     MGPMIQRFQT VCPDCNGEGE IIREKDKCKQ CNGKKTVVER KVLHVHVDRG VQSGHKIEFR
+     GEGDQTPGVQ PGDVVFEIEQ KPHARFQRKG DDIFYSAEID LVTALAGGNI FVEHLDERWL
+     SVDILPGEVI NPGSVKMVRG QGMPSHRHHD FGNLYIQFDV KFPEKNWTAN PAEFDALKSI
+     LPPTVQPILP PAETMTEAVD LEDVDASQQA RAAGHGMMDD EDEDGHPAGA ERVQCASQ
+//
+ID   A0A420XY23_9PEZI        Unreviewed;       421 AA.
+AC   A0A420XY23;
+DT   08-MAY-2019, integrated into UniProtKB/TrEMBL.
+DT   08-MAY-2019, sequence version 1.
+DT   18-JUN-2025, entry version 16.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:RKU40563.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:RKU40563.1};
+GN   ORFNames=DL546_000503 {ECO:0000313|EMBL:RKU40563.1};
+OS   Coniochaeta pulveracea.
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Sordariomycetes;
+OC   Sordariomycetidae; Coniochaetales; Coniochaetaceae; Coniochaeta.
+OX   NCBI_TaxID=177199 {ECO:0000313|EMBL:RKU40563.1, ECO:0000313|Proteomes:UP000275385};
+RN   [1] {ECO:0000313|EMBL:RKU40563.1, ECO:0000313|Proteomes:UP000275385}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=CAB683 {ECO:0000313|EMBL:RKU40563.1,
+RC   ECO:0000313|Proteomes:UP000275385};
+RA   Borstlap C.J., De Witt R.N., Botha A., Volschenk H.;
+RT   "Draft genome of the lignicolous fungus Coniochaeta pulveracea.";
+RL   Submitted (AUG-2018) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:RKU40563.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; QVQW01000098; RKU40563.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0A420XY23; -.
+DR   STRING; 177199.A0A420XY23; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000275385; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000024; Mitochondrial protein import protein MAS5; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000275385};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..71
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          136..219
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         136..219
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          389..421
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   421 AA;  46102 MW;  FF1970D396A2C2CB CRC64;
+     MVKESKYYDI LGVQPTATEE ELKKAYRKNA LKYHPDKNNG DPAMEAKFKE ISKAYEILGD
+     KQKRDIYDQY GEAGLEGGAG AGGMAAEDLF AQFFGGGGGG FGGLGGMFGG GQPRGPPKAR
+     TIHHTHKVSL EDIYRGKVSK LALQRSIICP KCEGRGGKEG AVKKCAGCDG HGTKTMMRQM
+     GPMIQRFQTV CPDCNGEGEQ INAKDRCKQC HGKKTVVDRK VLHVHVDRGV KSGTKVEFRG
+     EGDQAPGIQA GDVVFEIEQK PHPRFTRRDD DLLYHADIEL VTALAGGTIY VEHLDERWLS
+     IEILPGEAIA PGAVKMVRGQ GMPSYRHHDY GNLYIQFNVK FPEKGWTQDP HVFEELRKLL
+     PPPQVINIPP NESMSEPADL EDVDAQTARA FGGADGADGM AMDEDDEDGH PHGERVQCAS
+     Q
+//
+ID   A0A4V6QF18_COLTR        Unreviewed;       421 AA.
+AC   A0A4V6QF18;
+DT   31-JUL-2019, integrated into UniProtKB/TrEMBL.
+DT   31-JUL-2019, sequence version 1.
+DT   18-JUN-2025, entry version 17.
+DE   SubName: Full=Mitochondrial protein import protein MAS5 {ECO:0000313|EMBL:TDZ73277.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:TDZ73277.1};
+GN   ORFNames=CTRI78_v001364 {ECO:0000313|EMBL:TDZ73277.1};
+OS   Colletotrichum trifolii.
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Sordariomycetes;
+OC   Hypocreomycetidae; Glomerellales; Glomerellaceae; Colletotrichum;
+OC   Colletotrichum orbiculare species complex.
+OX   NCBI_TaxID=5466 {ECO:0000313|EMBL:TDZ73277.1, ECO:0000313|Proteomes:UP000295703};
+RN   [1] {ECO:0000313|EMBL:TDZ73277.1, ECO:0000313|Proteomes:UP000295703}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=543-2 {ECO:0000313|EMBL:TDZ73277.1,
+RC   ECO:0000313|Proteomes:UP000295703};
+RA   Gan P., Shirasu K.;
+RT   "Genome sequence and assembly of Colletotrichum trifolii.";
+RL   Submitted (DEC-2018) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:TDZ73277.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; RYZW01000007; TDZ73277.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0A4V6QF18; -.
+DR   STRING; 5466.A0A4V6QF18; -.
+DR   Proteomes; UP000295703; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000003; DnaJ subfamily A member 2; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000295703};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..71
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          139..222
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         139..222
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          367..421
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   421 AA;  46018 MW;  890DE4733486F03D CRC64;
+     MVKETKLYDT LGVKPEANDQ ELRKAYKTNA LKYHPDKNAH NPEAEEKFKE ISHAYEILSD
+     SQKRAVYDQY GEAGLEGGAG GGGGGMPAED LFAQFFGGGS FGGGLGGMFG GGGMPNRGPP
+     KARTIHHTHK VSLEDVYRGK ISKLALQRSI ICSKCEGRGG KEGAVKRCTG CDGHGMKTMM
+     RQMGPMIQRF QTVCPDCNGE GEMIKDKDRC KHCSGKKTVV DRKVLHVHVD RGVRSGTKVE
+     FRGEGDQAPG IQAGDVVFEI EQKPHTRFTR KDDDLLYQCE IELVTALAGG TIYIEHLDER
+     WLSVEILPGE AIAPDTVKMI RGQGMPSPRH HDFGNLYIQF SVKFPEKNWT DDATAFEALQ
+     KLLPAPSLQT VPPPEAMTEP ADLEDMDNSA NARAFAGAGG SMEEEDEDGH PHGERVQCAS
+     Q
+//
+ID   A0A7C8PBA5_ORBOL        Unreviewed;       410 AA.
+AC   A0A7C8PBA5;
+DT   10-FEB-2021, integrated into UniProtKB/TrEMBL.
+DT   10-FEB-2021, sequence version 1.
+DT   18-JUN-2025, entry version 16.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:TGJ65018.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:TGJ65018.1};
+GN   ORFNames=EYR41_009024 {ECO:0000313|EMBL:TGJ65018.1};
+OS   Orbilia oligospora (Nematode-trapping fungus) (Arthrobotrys oligospora).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Orbiliomycetes;
+OC   Orbiliales; Orbiliaceae; Orbilia.
+OX   NCBI_TaxID=2813651 {ECO:0000313|EMBL:TGJ65018.1, ECO:0000313|Proteomes:UP000297595};
+RN   [1] {ECO:0000313|EMBL:TGJ65018.1, ECO:0000313|Proteomes:UP000297595}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=TWF154 {ECO:0000313|EMBL:TGJ65018.1,
+RC   ECO:0000313|Proteomes:UP000297595};
+RA   Vidal-Diez De Ulzurrun G.;
+RT   "Nematode-trapping fungi genome.";
+RL   Submitted (MAR-2019) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:TGJ65018.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; SOZJ01000006; TGJ65018.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0A7C8PBA5; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000297595; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000024; Mitochondrial protein import protein MAS5; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771}.
+FT   REGION          386..410
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        399..410
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   410 AA;  45333 MW;  2761CF327AEFC9AA CRC64;
+     MVKDMKYYQS LGVEADATEA QLKKAYRLNA LKYHPDKNPS PEAAEKFKEL SHAYEILSDP
+     QKRQVYDQYG EEGLSGAGAD MGMSAEDLFS QFFGGMGGMG GMFGGGGNMQ QQGPKRSRDI
+     VHVHKVSLED LYKGKTSKLA LQKTVVCGKC NGIGGKEGSV TKCKGCGGAG MKTMMRQMGP
+     MIQRFQTVCP DCNGEKEIIK EKDKCKACQG KKTVFERKVI HVPVDKGMKD GQRITFQGEG
+     DAGPDIIPGD VIFVIEQKPH ARFQRKDDNL FYKAEIDLLT ALAGGTIAIE HLDERWLQVQ
+     ILPGEVISPG ELKIVRGQGM PSYRHHDYGD MFIQFEIKFP PKHFADEDVI LKLNEILPPR
+     PALEIPADAM VDDVNVEELD AQAQARAVNG PMDEDDDEHP GHERVQCASQ
+//
+ID   A0A7D9GZ25_DEKBR        Unreviewed;       405 AA.
+AC   A0A7D9GZ25;
+DT   10-FEB-2021, integrated into UniProtKB/TrEMBL.
+DT   10-FEB-2021, sequence version 1.
+DT   18-JUN-2025, entry version 13.
+DE   SubName: Full=DEBR0S2_12706g1_1 {ECO:0000313|EMBL:VUG17646.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:VUG17646.1};
+GN   ORFNames=DEBR0S2_12706G {ECO:0000313|EMBL:VUG17646.1};
+OS   Dekkera bruxellensis (Brettanomyces custersii).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes;
+OC   Pichiales; Pichiaceae; Brettanomyces.
+OX   NCBI_TaxID=5007 {ECO:0000313|EMBL:VUG17646.1, ECO:0000313|Proteomes:UP000478008};
+RN   [1] {ECO:0000313|EMBL:VUG17646.1, ECO:0000313|Proteomes:UP000478008}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RA   Friedrich A., Schacherer J.;
+RL   Submitted (JUL-2019) to the EMBL/GenBank/DDBJ databases.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; CABFWN010000002; VUG17646.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0A7D9GZ25; -.
+DR   Proteomes; UP000478008; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000041; Chaperone protein DNAj, putative; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000036; Type I HSP40 co-chaperone; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000478008};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..70
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          127..208
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         127..208
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          372..405
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   405 AA;  44579 MW;  A158A34C64348E3B CRC64;
+     MVAETKLYDT LGVSPDATPA QLKKAYRKMA LKYHPDKNHE PGAAEKFKDI TSAYQVLSDD
+     RKREIYDQVG EEGLKGNGGM GDMGGMDGSD IFSQFFGFGG GRQSQGPKKG KDIRHTVSCT
+     LEQLYKGRTA KLALNKTVIC KACNGKGGKN VKKCATCNGT GMEFVTRQMG PMIQRFQTTC
+     DVCHGEGDIM NEKDRCGKCH GKKVIEERKI LEVHINPGMK AGEKIVFHGE SDQYPDTIAG
+     DVIIVVDEKP DKTFTRKGDD LYYEAKIDLL TALAGGQIGF KHLNGDFLKL ELVPGEVIAP
+     ESVRVLEGKG MPIEKMGDYG NLFVKFTVKF PPNHFASEQQ LKNLEKILPA RPKLQIPKGA
+     EVDDSCQLVD YDPVKHSGRK SRAGNGYYEE DDEAGGQPNV QCSQQ
+//
+ID   A0A7R7ZJF8_ASPCH        Unreviewed;       414 AA.
+AC   A0A7R7ZJF8;
+DT   02-JUN-2021, integrated into UniProtKB/TrEMBL.
+DT   02-JUN-2021, sequence version 1.
+DT   28-JAN-2026, entry version 13.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:BCR84288.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:BCR84288.1};
+GN   ORFNames=ACHE_11690A {ECO:0000313|EMBL:BCR84288.1};
+OS   Aspergillus chevalieri (Eurotium chevalieri).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Eurotiomycetes;
+OC   Eurotiomycetidae; Eurotiales; Aspergillaceae; Aspergillus;
+OC   Aspergillus subgen. Aspergillus.
+OX   NCBI_TaxID=182096 {ECO:0000313|EMBL:BCR84288.1, ECO:0000313|Proteomes:UP000637239};
+RN   [1] {ECO:0000313|EMBL:BCR84288.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=M1 {ECO:0000313|EMBL:BCR84288.1};
+RG   Aspergillus chevalieri M1 genome sequencing consortium;
+RA   Kazuki M., Futagami T.;
+RL   Submitted (JAN-2021) to the EMBL/GenBank/DDBJ databases.
+RN   [2] {ECO:0000313|EMBL:BCR84288.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=M1 {ECO:0000313|EMBL:BCR84288.1};
+RA   Kadooka C., Mori K., Futagami T.;
+RT   "Aspergillus chevalieri M1 genome sequence.";
+RL   Submitted (FEB-2021) to the EMBL/GenBank/DDBJ databases.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AP024416; BCR84288.1; -; Genomic_DNA.
+DR   RefSeq; XP_043132810.1; XM_043276287.1.
+DR   AlphaFoldDB; A0A7R7ZJF8; -.
+DR   GeneID; 66978647; -.
+DR   KEGG; ache:ACHE_11690A; -.
+DR   Proteomes; UP000637239; Chromosome 1.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000024; Mitochondrial protein import protein MAS5; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000637239};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..71
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          134..217
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         134..217
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          371..414
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   414 AA;  45220 MW;  DE2C85D0E285438C CRC64;
+     MVKDTKLYDI LGVPETASEA QLKSAYKKGA LKYHPDKNAD NPEAAEKFKE LSHAYEILSD
+     SDKRGIYDQL GEEGLEGGGA GGGMGAEDLF AQFFGGGGGP FGGMFGGGMR DTGPKKARTI
+     HHVHKVNLED IYRGKVSKLA LQKSVICSGC EGRGGKEGAV KSCTGCNGSG MKTMMRQMGP
+     MIQRFQTVCP DCNGEGEMIR DKDRCKKCNG KKTVVERKVL HVHVDKGIRN GHKVEFRGEG
+     DQIPGVMAGD VVFEIETKPH PRFQRKDDDL FYQVEIDLLT ALAGGSFSVE HLDDRWLNVN
+     IAPGEVVTPG SIKVIQGQGM PSFRHHDHGN LYIQFDVKFP EKDQLQNLHL LEQVLPPRME
+     QTHAPADAMV EDFEPENVDS SEYSQARAQG AAGGMDEDDD DVPPGAERVQ CASQ
+//
+ID   A0A7R7ZUY9_ASPKA        Unreviewed;       433 AA.
+AC   A0A7R7ZUY9;
+DT   02-JUN-2021, integrated into UniProtKB/TrEMBL.
+DT   02-JUN-2021, sequence version 1.
+DT   28-JAN-2026, entry version 13.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:BCR95628.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:BCR95628.1};
+GN   ORFNames=AKAW2_20568S {ECO:0000313|EMBL:BCR95628.1};
+OS   Aspergillus kawachii (White koji mold) (Aspergillus awamori var. kawachi).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Eurotiomycetes;
+OC   Eurotiomycetidae; Eurotiales; Aspergillaceae; Aspergillus;
+OC   Aspergillus subgen. Circumdati.
+OX   NCBI_TaxID=1069201 {ECO:0000313|EMBL:BCR95628.1, ECO:0000313|Proteomes:UP000661280};
+RN   [1] {ECO:0000313|EMBL:BCR95628.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=IFO 4308 {ECO:0000313|EMBL:BCR95628.1};
+RG   Aspergillus luchuensis mut. kawachii IFO 4304 genome sequencing consortium;
+RA   Kazuki M., Futagami T.;
+RL   Submitted (JAN-2021) to the EMBL/GenBank/DDBJ databases.
+RN   [2] {ECO:0000313|EMBL:BCR95628.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=IFO 4308 {ECO:0000313|EMBL:BCR95628.1};
+RA   Mori K., Kadooka C., Goto M., Futagami T.;
+RT   "Aspergillus luchuensis mut. kawachii IFO 4304 genome sequence.";
+RL   Submitted (FEB-2021) to the EMBL/GenBank/DDBJ databases.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AP024426; BCR95628.1; -; Genomic_DNA.
+DR   RefSeq; XP_041539394.1; XM_041685295.1.
+DR   AlphaFoldDB; A0A7R7ZUY9; -.
+DR   GeneID; 64956953; -.
+DR   KEGG; aluc:AKAW2_20568S; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000661280; Chromosome 2.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000003; DnaJ subfamily A member 2; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000661280};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..71
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          133..216
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         133..216
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          395..433
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   433 AA;  47474 MW;  968E84C5DAF93C8E CRC64;
+     MVKETKFYDI LGVPPTASEA QLKSAYKKGA LKYHPDKNTN NPEAAEKFKE LSHAYETLSD
+     PQKRSLYDQL GEEGLEHGGA GGGMGAEDLF AQFFGGGGGF GGMFGGGMRD QGPKKARTIH
+     HVHKVNLEDI YRGKVSKLAL QKSVICPGCD GRGGKEGAVK SCTGCNGSGM KTMMRQMGPM
+     IQRFQTVCPD CNGEGEIIRE KDRCKRCNGK KTTVERKVLH VHVDRGVKNG HKIEFRGEGD
+     QMPGVLPGDV VFEIEQKPHP RFQRKDDDLF YQAEIDLLTA LGGGTINIEH LDDRWLTVTV
+     APGEVITPGM CFPSPTSTSA HQSNVLSAGA IKVIKGQGMP SYRHHDFGNL YIQFDVKFPE
+     KDQLKNLELL EQVLPPRMEQ TQPPQDAMIE DFELEDIDGS ETSQARAHGA ANSMDEDDDD
+     VPPGAERVQC ASQ
+//
+ID   A0A8H3IXY0_9LECA        Unreviewed;       414 AA.
+AC   A0A8H3IXY0;
+DT   19-JAN-2022, integrated into UniProtKB/TrEMBL.
+DT   19-JAN-2022, sequence version 1.
+DT   28-JAN-2026, entry version 12.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:CAF9937508.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:CAF9937508.1};
+GN   ORFNames=IMSHALPRED_000438 {ECO:0000313|EMBL:CAF9937508.1};
+OS   Imshaugia aleurites.
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Lecanoromycetes;
+OC   OSLEUM clade; Lecanoromycetidae; Lecanorales; Lecanorineae; Parmeliaceae;
+OC   Imshaugia.
+OX   NCBI_TaxID=172621 {ECO:0000313|EMBL:CAF9937508.1, ECO:0000313|Proteomes:UP000664534};
+RN   [1] {ECO:0000313|EMBL:CAF9937508.1}
+RP   NUCLEOTIDE SEQUENCE.
+RA   Tagirdzhanova G.;
+RL   Submitted (MAR-2021) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:CAF9937508.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; CAJPDT010000100; CAF9937508.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0A8H3IXY0; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000664534; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000024; Mitochondrial protein import protein MAS5; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000664534};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..71
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          134..217
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         134..217
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          381..414
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   414 AA;  45508 MW;  1D05453482D0CF25 CRC64;
+     MVKETKFYDI LGVGPAATEA ELKTAYKKGA LKHHPDKNAH NPDAAEKFKD LSRAYEALSD
+     PQKRQLYDQY GEEGLEQGGG GGGMAAEDLF AQFFGGGGGA FGGMFGGGMR EQGPKKARTI
+     HHVHKVSLED IYRGKISKLA LQKSVICPTC DGRGGKEGAV KQCSGCNGAG MKTMMRQMGP
+     MIQRFQTVCP DCQGEGEIIR DKDRCKRCSG KKTVVERKVL HVHVDKGVKN GHKIDFRGEG
+     DQMPGVLAGD VQFEIEQKPH PRFQRKDDDL FFQAEIDVLT ALAGGSIHIE HLDDRWLTVN
+     IEPGEVISPG EVKMIRGQGM PSLRHHDFGN LYIQFDVKFP SPGFNTPEKI AMLEQILPER
+     KPQAIPPSDA MIDDFLLEDV DQSGQRRAQG ATGMEEEEED GVPQGAERMQ CASQ
+//
+ID   A0A8H7A5A0_PLEOS        Unreviewed;       396 AA.
+AC   A0A8H7A5A0;
+DT   19-JAN-2022, integrated into UniProtKB/TrEMBL.
+DT   19-JAN-2022, sequence version 1.
+DT   28-JAN-2026, entry version 11.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:KAF7440892.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:KAF7440892.1};
+GN   ORFNames=PC9H_001241 {ECO:0000313|EMBL:KAF7440892.1};
+OS   Pleurotus ostreatus (Oyster mushroom) (White-rot fungus).
+OC   Eukaryota; Fungi; Dikarya; Basidiomycota; Agaricomycotina; Agaricomycetes;
+OC   Agaricomycetidae; Agaricales; Pleurotineae; Pleurotaceae; Pleurotus.
+OX   NCBI_TaxID=5322 {ECO:0000313|EMBL:KAF7440892.1, ECO:0000313|Proteomes:UP000623687};
+RN   [1] {ECO:0000313|EMBL:KAF7440892.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=PC9 {ECO:0000313|EMBL:KAF7440892.1};
+RA   Palmer J.M.;
+RL   Submitted (JUL-2019) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:KAF7440892.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; JACETU010000001; KAF7440892.1; -; Genomic_DNA.
+DR   RefSeq; XP_036636736.1; XM_036770891.1.
+DR   AlphaFoldDB; A0A8H7A5A0; -.
+DR   GeneID; 59371082; -.
+DR   VEuPathDB; FungiDB:PC9H_001241; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000623687; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000041; Chaperone protein DNAj, putative; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000003; DnaJ subfamily A member 2; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000623687};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..67
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          125..208
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         125..208
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          369..396
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   396 AA;  43789 MW;  F04C9B7F6AA18355 CRC64;
+     MVKETKFYDL LEVPPNASEA DLKKAYRKKA LRLHPDKGGD PEVFKEVTHA YQVLSDPEKR
+     SIYDARGEAG LSEQGGMGGM DPQDLFSQLF GGGFFGGGSG RSQGPRKTKD LVHRVSVSLE
+     DLYKGKTTKL SLTRNIICVK CKGKGGKEGA VRQCGVCGGR GIKITMRQMG PMIQQIQSGC
+     DECSGTGEVI NQKDRCGTCK GKKVLSDKKL LEVHIDKGMK GGETIQFRGE SDQSPTAEPG
+     DVIIVIEEKP HERFTRKDND LIIEVDIDLL TALAGGQFAI KHLDERALLV KIEPGEVVKH
+     GDVKVIHGQG MPSRRHHEPG DMFVKLNVKF PEHMDPGVIH LLEQALPPRQ PLEKFPKNTV
+     IEEVHLADVD HHTRHNMSDD AMDEDHEEPR VQCANQ
+//
+ID   A0A9P6RQT3_9FUNG        Unreviewed;       407 AA.
+AC   A0A9P6RQT3;
+DT   13-SEP-2023, integrated into UniProtKB/TrEMBL.
+DT   13-SEP-2023, sequence version 1.
+DT   28-JAN-2026, entry version 9.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:KAG0325843.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:KAG0325843.1};
+GN   ORFNames=BGZ99_000109 {ECO:0000313|EMBL:KAG0325843.1};
+OS   Dissophora globulifera.
+OC   Eukaryota; Fungi; Fungi incertae sedis; Mucoromycota; Mortierellomycotina;
+OC   Mortierellomycetes; Mortierellales; Mortierellaceae; Dissophora.
+OX   NCBI_TaxID=979702 {ECO:0000313|EMBL:KAG0325843.1, ECO:0000313|Proteomes:UP000738325};
+RN   [1] {ECO:0000313|EMBL:KAG0325843.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=REB-010B {ECO:0000313|EMBL:KAG0325843.1};
+RX   PubMed=33364917;
+RA   Vandepol N., Liber J., Desiro A., Na H., Kennedy M., Barry K.,
+RA   Grigoriev I.V., Miller A.N., O'Donnell K., Stajich J.E., Bonito G.;
+RT   "Resolving the Mortierellaceae phylogeny through synthesis of multi-gene
+RT   phylogenetics and phylogenomics.";
+RL   Fungal Divers. 104:267-289(2020).
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:KAG0325843.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; JAAAIP010000100; KAG0325843.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0A9P6RQT3; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000738325; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000041; Chaperone protein DNAj, putative; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000003; DnaJ subfamily A member 2; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000738325};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..69
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          130..213
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         130..213
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          372..407
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        376..386
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   407 AA;  44272 MW;  87E8B643161D1894 CRC64;
+     MVKETKFYDA LEVDPSCSDA ELKKAYRKLA LKYHPDKTGG ATSERFQEIS HAYDILSDAN
+     KRGIYDQYGE AGLSGEGGPG GMGGGLSPED LFSHFFGGGG GGRSGRPSGP RRGKDVAHGL
+     KVSLEDLYKG KTTKLALQKN VICEHCEGRG GKEGAVKSCS TCHGQGYRVT LRQMGPMMQQ
+     IQQPCPDCRG EGEIINAKDK CKFCNGRKVS QVRKVLEVHI DRGMKDGRKI VFSGEGDQAP
+     GTVPGDVVIV LEQREHERFK RSGDDLFYDA KIDLVTALAG GKIQIPHLDD RVLLVEILPG
+     EVIKPGELKA VMGQGMPTER HHDFGNLYIQ FEIEFPASNW TDLAKIEQLR TIFPAAAQLP
+     APAKGAIVEE VSLTEMDPRQ KARAEQGHMG GDDDEEGGHP GVQCAQQ
+//
+ID   A0A9P6U8I5_9FUNG        Unreviewed;       407 AA.
+AC   A0A9P6U8I5;
+DT   13-SEP-2023, integrated into UniProtKB/TrEMBL.
+DT   13-SEP-2023, sequence version 1.
+DT   28-JAN-2026, entry version 10.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:KAG0264112.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:KAG0264112.1};
+GN   ORFNames=DFQ27_001406 {ECO:0000313|EMBL:KAG0264112.1};
+OS   Actinomortierella ambigua.
+OC   Eukaryota; Fungi; Fungi incertae sedis; Mucoromycota; Mortierellomycotina;
+OC   Mortierellomycetes; Mortierellales; Mortierellaceae; Actinomortierella.
+OX   NCBI_TaxID=1343610 {ECO:0000313|EMBL:KAG0264112.1, ECO:0000313|Proteomes:UP000807716};
+RN   [1] {ECO:0000313|EMBL:KAG0264112.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=BC1065 {ECO:0000313|EMBL:KAG0264112.1};
+RX   PubMed=33364917;
+RA   Vandepol N., Liber J., Desiro A., Na H., Kennedy M., Barry K.,
+RA   Grigoriev I.V., Miller A.N., O'Donnell K., Stajich J.E., Bonito G.;
+RT   "Resolving the Mortierellaceae phylogeny through synthesis of multi-gene
+RT   phylogenetics and phylogenomics.";
+RL   Fungal Divers. 104:267-289(2020).
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:KAG0264112.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; JAAAJB010000147; KAG0264112.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0A9P6U8I5; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000807716; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000003; DnaJ subfamily A member 2; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000807716};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..69
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          129..212
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         129..212
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          95..114
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          363..407
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        363..383
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   407 AA;  44845 MW;  B011C8A02EA6CAD7 CRC64;
+     MVKETKFYEI LEVDPSCSDN ELKKAYRKLA LKYHPDKTGG ATSEKFQEIS HAYDVLSDTQ
+     KRQVYDQYGE AGLSGEGGPG GGGMGGLSPE DLFSHFFGGG GPRSRPSGPR RGKDVAHGLK
+     VTLEDLYKGK TTKLALQKNV ICEKCEGRGG KEGAVKTCQT CNGQGVRLML RQIGPMMQQI
+     QQPCQDCRGE GEIINAKDKC KHCNGRKVTQ IRKVLEVHID RGMKDGRKIV FNGEGDQAPG
+     TVPGDVVIVL EQREHDRFKR SGDDLYYNAK IDLVTALAGG KIQIPHLDDR ILIVEILPGE
+     VIKPGDLKAV MGQGMPTERH HDHGNLYIQF EIEFPAAGWT DPATIEKLRT ILPVPQALPD
+     IPKEKHIEEV SLTEMDPRQK ARAEQGQQGY QDDDDEGGHP GVQCAQQ
+//
+ID   A0A9P6WQ32_9ASCO        Unreviewed;       404 AA.
+AC   A0A9P6WQ32;
+DT   13-SEP-2023, integrated into UniProtKB/TrEMBL.
+DT   13-SEP-2023, sequence version 1.
+DT   28-JAN-2026, entry version 10.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:KAG0691245.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:KAG0691245.1};
+GN   ORFNames=C6P40_003496 {ECO:0000313|EMBL:KAG0691245.1};
+OS   Pichia californica.
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes;
+OC   Pichiales; Pichiaceae; Pichia.
+OX   NCBI_TaxID=460514 {ECO:0000313|EMBL:KAG0691245.1, ECO:0000313|Proteomes:UP000697127};
+RN   [1] {ECO:0000313|EMBL:KAG0691245.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=Olga-1 {ECO:0000313|EMBL:KAG0691245.1};
+RA   Marcisauskas S., Kim Y., Blasche S.;
+RT   "Kefir isolates.";
+RL   Submitted (NOV-2020) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:KAG0691245.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; PUHW01000004; KAG0691245.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0A9P6WQ32; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000697127; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000036; Type I HSP40 co-chaperone; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000697127};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..70
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          125..206
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         125..206
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          367..404
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   404 AA;  44138 MW;  67680F38C1744D35 CRC64;
+     MVADTKLYDV LGVSPDATEQ QLKKAYRLGA LKFHPDKNPS PEAAEKFKEM TAAYEILSDS
+     EKRDLYDQYG EQGLNGGGMG GMGGMDPSDI FSQFFGGGGA RQQGPVRGRD IKHSLACSLE
+     ELYKGKVAKL ALNKTILCKD CDGKGGKNVQ KCSGCNGTGT KFVTRQMGPM IQRFQTQCDK
+     CNGQGDIMKE SDRCKNCKGK KVANERKILE VNVYPGMKEG QKVVFEGEGD QQPDVIPGDV
+     VFIIEEKPND LYTRKGDDLY INQKVDLLTA LAGGEIAFYH VSGEWIKIEI LAGEVIAPGS
+     TKVISGKGMP IPKHGGFGNL LVKFEVEFPP KNFTTEEKLK ELETILPARH VVKIPKGVSV
+     DDSCTLDDFD PSRHTSRSSN ARGGYYDEDD DEEGGQPGVQ CAQQ
+//
+ID   A0A9P7V688_9ASCO        Unreviewed;       405 AA.
+AC   A0A9P7V688;
+DT   13-SEP-2023, integrated into UniProtKB/TrEMBL.
+DT   13-SEP-2023, sequence version 1.
+DT   28-JAN-2026, entry version 10.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:KAG7192142.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:KAG7192142.1};
+GN   ORFNames=KQ657_002507 {ECO:0000313|EMBL:KAG7192142.1};
+OS   Scheffersomyces spartinae.
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Pichiomycetes;
+OC   Debaryomycetaceae; Scheffersomyces.
+OX   NCBI_TaxID=45513 {ECO:0000313|EMBL:KAG7192142.1, ECO:0000313|Proteomes:UP000790833};
+RN   [1] {ECO:0000313|EMBL:KAG7192142.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=ARV_011 {ECO:0000313|EMBL:KAG7192142.1};
+RA   Palmer J.M.;
+RL   Submitted (MAR-2021) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:KAG7192142.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; JAHMUF010000020; KAG7192142.1; -; Genomic_DNA.
+DR   RefSeq; XP_043047693.1; XM_043193267.1.
+DR   AlphaFoldDB; A0A9P7V688; -.
+DR   GeneID; 66115881; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP000790833; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000036; Type I HSP40 co-chaperone; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP000790833};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..70
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          129..212
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         129..212
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          377..405
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   405 AA;  44099 MW;  DDC7E65C261B9F7E CRC64;
+     MVKETKYYDA LGVSPSANEN ELRKAYRKAA LKYHPDKNPS PEAAEKFKEI SHAYDILSDE
+     QKREIYDSYG EDGLSGQGGM GGGMGADDIF SQFFGGGFGG AGGGASRGPA RGKDIKHLIT
+     CTLEELYKGR TAKLALNKTI LCKACDGRGG AEGKIKQCSS CHGQGMKFVT RQMGPMIQRF
+     QTVCDVCKGA GDICDPKDRC KECQGKKTQS ERKILQVHID PGMKDGQRIV FSGEGDQEPG
+     ITPGDVIFVV DEKPHELFTR KGADLYYEAT IDLLTALAGG EFAFKHISGD YIKVAILPGE
+     VISPGAIRVV ENKGMPIYRQ GGHGNLFVKF TVKFPESHFA EEDKLKLLEQ VLPARTAVNI
+     PKGSDVEDCD LVEVDVRKHQ QQNRKSAHDS DDEEGGQPGV QCATQ
+//
+ID   A0A9W8H7V7_9FUNG        Unreviewed;       405 AA.
+AC   A0A9W8H7V7;
+DT   08-NOV-2023, integrated into UniProtKB/TrEMBL.
+DT   08-NOV-2023, sequence version 1.
+DT   28-JAN-2026, entry version 9.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:KAJ2778025.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:KAJ2778025.1};
+GN   ORFNames=H4R18_004846 {ECO:0000313|EMBL:KAJ2778025.1};
+OS   Coemansia javaensis.
+OC   Eukaryota; Fungi; Fungi incertae sedis; Zoopagomycota; Kickxellomycotina;
+OC   Kickxellomycetes; Kickxellales; Kickxellaceae; Coemansia.
+OX   NCBI_TaxID=2761396 {ECO:0000313|EMBL:KAJ2778025.1, ECO:0000313|Proteomes:UP001140217};
+RN   [1] {ECO:0000313|EMBL:KAJ2778025.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=NBRC 105414 {ECO:0000313|EMBL:KAJ2778025.1};
+RA   Reynolds N.K., Stajich J.E., Barry K., Grigoriev I.V., Crous P.,
+RA   Smith M.E.;
+RT   "Phylogenomic reconstructions and comparative analyses of Kickxellomycotina
+RT   fungi.";
+RL   Submitted (JUL-2022) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:KAJ2778025.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; JANBUL010000254; KAJ2778025.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0A9W8H7V7; -.
+DR   OrthoDB; 550424at2759; -.
+DR   Proteomes; UP001140217; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000016; DnaJ (Hsp40) homolog, subfamily A, member 2; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000003; DnaJ subfamily A member 2; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Lipoprotein {ECO:0000256|ARBA:ARBA00023288};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Methylation {ECO:0000256|ARBA:ARBA00022481};
+KW   Prenylation {ECO:0000256|ARBA:ARBA00023289};
+KW   Reference proteome {ECO:0000313|Proteomes:UP001140217};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..68
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          127..210
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         127..210
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          377..405
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   405 AA;  44749 MW;  7810574F3D014D46 CRC64;
+     MVRETKFYEL LGVPPTADDA QLKKAYRKLA LQLHPDKNPD AGEQFKEVSH AYEVLSDPEK
+     RRVYDAYGEE GLNGGGMGGG VDAHDLFSEL FGGGMFGRGG RRGPSGPRRG RDIAHELKVS
+     LEDLYRGKTS KLRVEKRVVC PACEGRGGKE GSVRQCTRCR GHGIEVEMRQ MGPMVQQIQH
+     ECRGCGGAGE EIDPRHRCKK CMGIKVVTEN KQLEVNIDRG MKDGQKVTFS GEADQMPGVI
+     PGDIIIVVRE KEHPRFKRRG DDLFYEAEVD LVTALAGGNI HIKHLDDRVL DVAILPGEVI
+     RPDETKVIVG QGMPSHRHHN MGNMFVRFKV RFPEPNWTSE ANLKALEAIL PPREALPAVP
+     SGCVAEEVVL ASPDAHHQKK MADDMDEEYE DAHPQGGAGV QCAQQ
+//
+ID   A0AAD5U6M1_9FUNG        Unreviewed;       408 AA.
+AC   A0AAD5U6M1;
+DT   29-MAY-2024, integrated into UniProtKB/TrEMBL.
+DT   29-MAY-2024, sequence version 1.
+DT   28-JAN-2026, entry version 7.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:KAJ3226136.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:KAJ3226136.1};
+GN   ORFNames=HK099_005489 {ECO:0000313|EMBL:KAJ3226136.1};
+OS   Clydaea vesicula.
+OC   Eukaryota; Fungi; Fungi incertae sedis; Chytridiomycota;
+OC   Chytridiomycota incertae sedis; Chytridiomycetes; Lobulomycetales;
+OC   Lobulomycetaceae; Clydaea.
+OX   NCBI_TaxID=447962 {ECO:0000313|EMBL:KAJ3226136.1, ECO:0000313|Proteomes:UP001211065};
+RN   [1] {ECO:0000313|EMBL:KAJ3226136.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=JEL0476 {ECO:0000313|EMBL:KAJ3226136.1};
+RA   Stajich J.E., Amses K., Simmons R., Seto K., Myers J., Bonds A.,
+RA   Quandt C.A., Barry K., Liu P., Grigoriev I., Longcore J.E., James T.Y.;
+RT   "Phylogenomic resolution of chytrid fungi.";
+RL   Submitted (MAY-2020) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:KAJ3226136.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; JADGJW010000043; KAJ3226136.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0AAD5U6M1; -.
+DR   Proteomes; UP001211065; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 2.60.260.20:FF:000068; Chaperone protein dnaJ 3; 1.
+DR   FunFam; 1.10.287.110:FF:000041; Chaperone protein DNAj, putative; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000003; DnaJ subfamily A member 2; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP001211065};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..68
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          127..211
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         127..211
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          372..408
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   408 AA;  45086 MW;  2BB5246A02EB4E45 CRC64;
+     MVRDTKFYEL LEVDPGADEA TLKKAYRKQA LRFHPDKNPE DPNKFKDISH AYEILSDPQK
+     REAYDRFGEE GLQGGGGLHN PMNPEDLFAQ FFGGGGGFGG RQRPQGPRKG KDMSHSLKVT
+     LEDLYKGKVS KLALQKQVLC SKCDGKGGKD GAAPKKCTGC QGRGIKIVTR QIGPMIQQMQ
+     QQCPDCRGEG EIIKDKDRCK GCSGKKVVTE RKILEVFIDK GMFHGQKITF TGEGDQAPDI
+     IPGDIIIQVE QKEHARFERK GDDLYHKVEI DLLTSLAGGK FTIEHLDGRI LLVNILPGEV
+     IKPGDVKSIN GEGMPRPFDK GNLYVTFSIK FPEPNWVPAS LLPTLEQVLP PRKPLDNVTG
+     NTEVEECILS TVDPIEQQRN ARGGNRGQAH DEDDDEDGGQ PGVQCAQQ
+//
+ID   A0AAJ0CT94_9HYPO        Unreviewed;       415 AA.
+AC   A0AAJ0CT94;
+DT   24-JUL-2024, integrated into UniProtKB/TrEMBL.
+DT   24-JUL-2024, sequence version 1.
+DT   28-JAN-2026, entry version 7.
+DE   SubName: Full=Type I HSP40 co-chaperone {ECO:0000313|EMBL:KAK2601715.1};
+GN   Name=YDJ1 {ECO:0000313|EMBL:KAK2601715.1};
+GN   ORFNames=QQS21_004703 {ECO:0000313|EMBL:KAK2601715.1};
+OS   Conoideocrella luteorostrata.
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Pezizomycotina; Sordariomycetes;
+OC   Hypocreomycetidae; Hypocreales; Clavicipitaceae; Conoideocrella.
+OX   NCBI_TaxID=1105319 {ECO:0000313|EMBL:KAK2601715.1, ECO:0000313|Proteomes:UP001251528};
+RN   [1] {ECO:0000313|EMBL:KAK2601715.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   STRAIN=ARSEF 14590 {ECO:0000313|EMBL:KAK2601715.1};
+RA   Barrett H., Lovett B., Macias A.M., Stajich J.E., Kasson M.T.;
+RT   "Conoideocrella luteorostrata (Hypocreales: Clavicipitaceae), a potential
+RT   biocontrol fungus for elongate hemlock scale in United States Christmas
+RT   tree production areas.";
+RL   Submitted (JUN-2023) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:KAK2601715.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; JASWJB010000071; KAK2601715.1; -; Genomic_DNA.
+DR   AlphaFoldDB; A0AAJ0CT94; -.
+DR   Proteomes; UP001251528; Unassembled WGS sequence.
+DR   GO; GO:0005524; F:ATP binding; IEA:InterPro.
+DR   GO; GO:0030544; F:Hsp70 protein binding; IEA:InterPro.
+DR   GO; GO:0051082; F:unfolded protein binding; IEA:InterPro.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006457; P:protein folding; IEA:InterPro.
+DR   GO; GO:0009408; P:response to heat; IEA:InterPro.
+DR   CDD; cd06257; DnaJ; 1.
+DR   CDD; cd10747; DnaJ_C; 1.
+DR   CDD; cd10719; DnaJ_zf; 1.
+DR   FunFam; 1.10.287.110:FF:000048; DnaJ family protein; 1.
+DR   FunFam; 2.10.230.10:FF:000001; DnaJ subfamily A member 2; 1.
+DR   FunFam; 2.60.260.20:FF:000003; DnaJ subfamily A member 2; 1.
+DR   Gene3D; 1.10.287.110; DnaJ domain; 1.
+DR   Gene3D; 2.10.230.10; Heat shock protein DnaJ, cysteine-rich domain; 1.
+DR   Gene3D; 2.60.260.20; Urease metallochaperone UreE, N-terminal domain; 2.
+DR   HAMAP; MF_01152; DnaJ; 1.
+DR   InterPro; IPR012724; DnaJ.
+DR   InterPro; IPR002939; DnaJ_C.
+DR   InterPro; IPR001623; DnaJ_domain.
+DR   InterPro; IPR018253; DnaJ_domain_CS.
+DR   InterPro; IPR044713; DNJA1/2-like.
+DR   InterPro; IPR008971; HSP40/DnaJ_pept-bd.
+DR   InterPro; IPR001305; HSP_DnaJ_Cys-rich_dom.
+DR   InterPro; IPR036410; HSP_DnaJ_Cys-rich_dom_sf.
+DR   InterPro; IPR036869; J_dom_sf.
+DR   PANTHER; PTHR43888; DNAJ-LIKE-2, ISOFORM A-RELATED; 1.
+DR   Pfam; PF00226; DnaJ; 1.
+DR   Pfam; PF01556; DnaJ_C; 1.
+DR   Pfam; PF00684; DnaJ_CXXCXGXG; 1.
+DR   PRINTS; PR00625; JDOMAIN.
+DR   SMART; SM00271; DnaJ; 1.
+DR   SUPFAM; SSF46565; Chaperone J-domain; 1.
+DR   SUPFAM; SSF57938; DnaJ/Hsp40 cysteine-rich domain; 1.
+DR   SUPFAM; SSF49493; HSP40/DnaJ peptide-binding domain; 2.
+DR   PROSITE; PS00636; DNAJ_1; 1.
+DR   PROSITE; PS50076; DNAJ_2; 1.
+DR   PROSITE; PS51188; ZF_CR; 1.
+PE   3: Inferred from homology;
+KW   Chaperone {ECO:0000256|ARBA:ARBA00023186};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}; Reference proteome {ECO:0000313|Proteomes:UP001251528};
+KW   Repeat {ECO:0000256|ARBA:ARBA00022737};
+KW   Zinc {ECO:0000256|ARBA:ARBA00022833, ECO:0000256|PROSITE-ProRule:PRU00546};
+KW   Zinc-finger {ECO:0000256|ARBA:ARBA00022771, ECO:0000256|PROSITE-
+KW   ProRule:PRU00546}.
+FT   DOMAIN          6..71
+FT                   /note="J"
+FT                   /evidence="ECO:0000259|PROSITE:PS50076"
+FT   DOMAIN          135..218
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000259|PROSITE:PS51188"
+FT   ZN_FING         135..218
+FT                   /note="CR-type"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU00546"
+FT   REGION          366..415
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   415 AA;  45611 MW;  14B83849A0215A1F CRC64;
+     MVKETKYYDT LGVSPSATEQ ELKKAYKVNA LKFHPDKNAH NPAAEEKFKE VSHAYEILSD
+     SQKRQIYDQY GEAGLEGGAG GGGGMAAEDL FAQFFGGGGF GGMGGMFGGM NNRGPPKART
+     IHHTHKVSLE DIYRGKISKL ALQRSIICPK CDGLGGKDGA VKKCPGCDGH GMKTMMRQMG
+     PMIQRFQTVC PDCNGEGEII KEKDRCKQCS GKKTIVDRKV LHVHVDKGVR SGTKVEFRGE
+     GDQAPGVQAG DVVFEIEQKP HARFTRKEDD LLYKCEIELV TALAGGTIYI EHLDDRWLSI
+     DILPGEAIYQ DAVKMVRGQG MPSFRHHDAG NLYIHFNVKF PEKHWTRDES AFASLRKVLP
+     SPALQNVPPA EAMTEPADLE DMDTHSQSRV FGSPGMDEDD EDGHPGAERV QCASQ
+//

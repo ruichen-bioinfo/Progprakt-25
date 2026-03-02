@@ -1,0 +1,12 @@
+Zur Identifikation moeglicher Off-Targets wurden die CRISPR-Sequenzen mit Bowtie (Version 1.3.1) gegen das humane Referenzgenom hg19 gemappt.
+
+Beispielaufruf:
+bowtie -v 3 -f -S -x /mnt/extstud/praktikum/bioprakt/Software/bowtie/bowtie-1.3.1/indexes/hg19 ecoli_crispr_100.fa ecoli_vs_hg19.sam
+
+Parameter:
+-v 3  → maximal 3 Mismatches erlaubt
+-f    → FASTA Input
+-S    → SAM Output
+-x    → hg19 Index
+
+Für E. coli hatten 58 von 100 getesteten CRISPR-Sequenzen mindestens einen Treffer im humanen Genom.

@@ -1,0 +1,3159 @@
+ID   SUS_DROME               Reviewed;        1325 AA.
+AC   P22293; O77427; Q8SYG7;
+DT   01-AUG-1991, integrated into UniProtKB/Swiss-Prot.
+DT   19-JUL-2005, sequence version 2.
+DT   28-JAN-2026, entry version 167.
+DE   RecName: Full=Protein suppressor of sable {ECO:0000303|PubMed:1703632};
+GN   Name=su(sable) {ECO:0000312|FlyBase:FBgn0003575};
+GN   Synonyms=su(s) {ECO:0000303|PubMed:1703632};
+GN   ORFNames=CG6222 {ECO:0000312|FlyBase:FBgn0003575};
+OS   Drosophila melanogaster (Fruit fly).
+OC   Eukaryota; Metazoa; Ecdysozoa; Arthropoda; Hexapoda; Insecta; Pterygota;
+OC   Neoptera; Endopterygota; Diptera; Brachycera; Muscomorpha; Ephydroidea;
+OC   Drosophilidae; Drosophila; Sophophora.
+OX   NCBI_TaxID=7227;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA], FUNCTION, SUBCELLULAR LOCATION, AND
+RP   DEVELOPMENTAL STAGE.
+RC   STRAIN=Oregon-R;
+RX   PubMed=1703632; DOI=10.1128/mcb.11.2.894-905.1991;
+RA   Voelker R.A., Gibson W., Graves J.P., Sterling J.F., Eisenberg M.T.;
+RT   "The Drosophila suppressor of sable gene encodes a polypeptide with regions
+RT   similar to those of RNA-binding proteins.";
+RL   Mol. Cell. Biol. 11:894-905(1991).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Berkeley;
+RX   PubMed=10731132; DOI=10.1126/science.287.5461.2185;
+RA   Adams M.D., Celniker S.E., Holt R.A., Evans C.A., Gocayne J.D.,
+RA   Amanatides P.G., Scherer S.E., Li P.W., Hoskins R.A., Galle R.F.,
+RA   George R.A., Lewis S.E., Richards S., Ashburner M., Henderson S.N.,
+RA   Sutton G.G., Wortman J.R., Yandell M.D., Zhang Q., Chen L.X., Brandon R.C.,
+RA   Rogers Y.-H.C., Blazej R.G., Champe M., Pfeiffer B.D., Wan K.H., Doyle C.,
+RA   Baxter E.G., Helt G., Nelson C.R., Miklos G.L.G., Abril J.F., Agbayani A.,
+RA   An H.-J., Andrews-Pfannkoch C., Baldwin D., Ballew R.M., Basu A.,
+RA   Baxendale J., Bayraktaroglu L., Beasley E.M., Beeson K.Y., Benos P.V.,
+RA   Berman B.P., Bhandari D., Bolshakov S., Borkova D., Botchan M.R., Bouck J.,
+RA   Brokstein P., Brottier P., Burtis K.C., Busam D.A., Butler H., Cadieu E.,
+RA   Center A., Chandra I., Cherry J.M., Cawley S., Dahlke C., Davenport L.B.,
+RA   Davies P., de Pablos B., Delcher A., Deng Z., Mays A.D., Dew I.,
+RA   Dietz S.M., Dodson K., Doup L.E., Downes M., Dugan-Rocha S., Dunkov B.C.,
+RA   Dunn P., Durbin K.J., Evangelista C.C., Ferraz C., Ferriera S.,
+RA   Fleischmann W., Fosler C., Gabrielian A.E., Garg N.S., Gelbart W.M.,
+RA   Glasser K., Glodek A., Gong F., Gorrell J.H., Gu Z., Guan P., Harris M.,
+RA   Harris N.L., Harvey D.A., Heiman T.J., Hernandez J.R., Houck J., Hostin D.,
+RA   Houston K.A., Howland T.J., Wei M.-H., Ibegwam C., Jalali M., Kalush F.,
+RA   Karpen G.H., Ke Z., Kennison J.A., Ketchum K.A., Kimmel B.E., Kodira C.D.,
+RA   Kraft C.L., Kravitz S., Kulp D., Lai Z., Lasko P., Lei Y., Levitsky A.A.,
+RA   Li J.H., Li Z., Liang Y., Lin X., Liu X., Mattei B., McIntosh T.C.,
+RA   McLeod M.P., McPherson D., Merkulov G., Milshina N.V., Mobarry C.,
+RA   Morris J., Moshrefi A., Mount S.M., Moy M., Murphy B., Murphy L.,
+RA   Muzny D.M., Nelson D.L., Nelson D.R., Nelson K.A., Nixon K., Nusskern D.R.,
+RA   Pacleb J.M., Palazzolo M., Pittman G.S., Pan S., Pollard J., Puri V.,
+RA   Reese M.G., Reinert K., Remington K., Saunders R.D.C., Scheeler F.,
+RA   Shen H., Shue B.C., Siden-Kiamos I., Simpson M., Skupski M.P., Smith T.J.,
+RA   Spier E., Spradling A.C., Stapleton M., Strong R., Sun E., Svirskas R.,
+RA   Tector C., Turner R., Venter E., Wang A.H., Wang X., Wang Z.-Y.,
+RA   Wassarman D.A., Weinstock G.M., Weissenbach J., Williams S.M., Woodage T.,
+RA   Worley K.C., Wu D., Yang S., Yao Q.A., Ye J., Yeh R.-F., Zaveri J.S.,
+RA   Zhan M., Zhang G., Zhao Q., Zheng L., Zheng X.H., Zhong F.N., Zhong W.,
+RA   Zhou X., Zhu S.C., Zhu X., Smith H.O., Gibbs R.A., Myers E.W., Rubin G.M.,
+RA   Venter J.C.;
+RT   "The genome sequence of Drosophila melanogaster.";
+RL   Science 287:2185-2195(2000).
+RN   [3]
+RP   GENOME REANNOTATION.
+RC   STRAIN=Berkeley;
+RX   PubMed=12537572; DOI=10.1186/gb-2002-3-12-research0083;
+RA   Misra S., Crosby M.A., Mungall C.J., Matthews B.B., Campbell K.S.,
+RA   Hradecky P., Huang Y., Kaminker J.S., Millburn G.H., Prochnik S.E.,
+RA   Smith C.D., Tupy J.L., Whitfield E.J., Bayraktaroglu L., Berman B.P.,
+RA   Bettencourt B.R., Celniker S.E., de Grey A.D.N.J., Drysdale R.A.,
+RA   Harris N.L., Richter J., Russo S., Schroeder A.J., Shu S.Q., Stapleton M.,
+RA   Yamada C., Ashburner M., Gelbart W.M., Rubin G.M., Lewis S.E.;
+RT   "Annotation of the Drosophila melanogaster euchromatic genome: a systematic
+RT   review.";
+RL   Genome Biol. 3:RESEARCH0083.1-RESEARCH0083.22(2002).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Oregon-R;
+RX   PubMed=10731137; DOI=10.1126/science.287.5461.2220;
+RA   Benos P.V., Gatt M.K., Ashburner M., Murphy L., Harris D., Barrell B.G.,
+RA   Ferraz C., Vidal S., Brun C., Demailles J., Cadieu E., Dreano S., Gloux S.,
+RA   Lelaure V., Mottier S., Galibert F., Borkova D., Minana B., Kafatos F.C.,
+RA   Louis C., Siden-Kiamos I., Bolshakov S., Papagiannakis G., Spanos L.,
+RA   Cox S., Madueno E., de Pablos B., Modolell J., Peter A., Schoettler P.,
+RA   Werner M., Mourkioti F., Beinert N., Dowe G., Schaefer U., Jaeckle H.,
+RA   Bucheton A., Callister D.M., Campbell L.A., Darlamitsou A., Henderson N.S.,
+RA   McMillan P.J., Salles C., Tait E.A., Valenti P., Saunders R.D.C.,
+RA   Glover D.M.;
+RT   "From sequence to chromosome: the tip of the X chromosome of D.
+RT   melanogaster.";
+RL   Science 287:2220-2222(2000).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=Berkeley; TISSUE=Embryo;
+RX   PubMed=12537569; DOI=10.1186/gb-2002-3-12-research0080;
+RA   Stapleton M., Carlson J.W., Brokstein P., Yu C., Champe M., George R.A.,
+RA   Guarin H., Kronmiller B., Pacleb J.M., Park S., Wan K.H., Rubin G.M.,
+RA   Celniker S.E.;
+RT   "A Drosophila full-length cDNA resource.";
+RL   Genome Biol. 3:RESEARCH0080.1-RESEARCH0080.8(2002).
+RN   [6]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-9.
+RX   PubMed=1963868; DOI=10.1093/genetics/126.4.1071;
+RA   Voelker R.A., Graves J.P., Gibson W., Eisenberg M.T.;
+RT   "Mobile element insertions causing mutations in the Drosophila suppressor
+RT   of sable locus occur in DNase I hypersensitive subregions of 5'-transcribed
+RT   nontranslated sequences.";
+RL   Genetics 126:1071-1082(1990).
+RN   [7]
+RP   FUNCTION, AND SUBCELLULAR LOCATION.
+RX   PubMed=9121479; DOI=10.1128/mcb.17.4.2291;
+RA   Murray M.V., Turnage M.A., Williamson K.J., Steinhauer W.R., Searles L.L.;
+RT   "The Drosophila suppressor of sable protein binds to RNA and associates
+RT   with a subset of polytene chromosome bands.";
+RL   Mol. Cell. Biol. 17:2291-2300(1997).
+RN   [8]
+RP   FUNCTION, AND SUBCELLULAR LOCATION.
+RX   PubMed=11027289; DOI=10.1128/mcb.20.21.8198-8208.2000;
+RA   Turnage M.A., Brewer-Jensen P., Bai W.L., Searles L.L.;
+RT   "Arginine-rich regions mediate the RNA binding and regulatory activities of
+RT   the protein encoded by the Drosophila melanogaster suppressor of sable
+RT   gene.";
+RL   Mol. Cell. Biol. 20:8198-8208(2000).
+RN   [9]
+RP   FUNCTION, AND SUBCELLULAR LOCATION.
+RX   PubMed=15082769; DOI=10.1128/mcb.24.9.3734-3746.2004;
+RA   Kuan Y.S., Brewer-Jensen P., Searles L.L.;
+RT   "Suppressor of sable, a putative RNA-processing protein, functions at the
+RT   level of transcription.";
+RL   Mol. Cell. Biol. 24:3734-3746(2004).
+RN   [10]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT SER-524; THR-604; SER-663 AND
+RP   THR-664, AND IDENTIFICATION BY MASS SPECTROMETRY.
+RC   TISSUE=Embryo;
+RX   PubMed=18327897; DOI=10.1021/pr700696a;
+RA   Zhai B., Villen J., Beausoleil S.A., Mintseris J., Gygi S.P.;
+RT   "Phosphoproteome analysis of Drosophila melanogaster embryos.";
+RL   J. Proteome Res. 7:1675-1682(2008).
+RN   [11]
+RP   FUNCTION, AND SUBCELLULAR LOCATION.
+RX   PubMed=19687295; DOI=10.1128/mcb.00039-09;
+RA   Kuan Y.S., Brewer-Jensen P., Bai W.L., Hunter C., Wilson C.B., Bass S.,
+RA   Abernethy J., Wing J.S., Searles L.L.;
+RT   "Drosophila suppressor of sable protein [Su(s)] promotes degradation of
+RT   aberrant and transposon-derived RNAs.";
+RL   Mol. Cell. Biol. 29:5590-5603(2009).
+RN   [12]
+RP   FUNCTION, AND INTERACTION WITH WDR82.
+RX   PubMed=26577379; DOI=10.1261/rna.048819.114;
+RA   Brewer-Jensen P., Wilson C.B., Abernethy J., Mollison L., Card S.,
+RA   Searles L.L.;
+RT   "Suppressor of sable [Su(s)] and Wdr82 down-regulate RNA from heat-shock-
+RT   inducible repetitive elements by a mechanism that involves transcription
+RT   termination.";
+RL   RNA 22:139-154(2016).
+CC   -!- FUNCTION: RNA-binding protein that suppresses transcription of some
+CC       RNAs (PubMed:11027289, PubMed:15082769, PubMed:1703632,
+CC       PubMed:19687295, PubMed:26577379, PubMed:9121479). Together with Wdr82,
+CC       part of a transcription termination checkpoint that promotes
+CC       transcription termination of RNAs and their subsequent degradation by
+CC       the nuclear exosome (PubMed:26577379). Promotes transcription
+CC       termination of aberrant RNAs, transcripts from genes containing a
+CC       transposon inserted at their very 5' end or RNAs from heat-shock-
+CC       inducible repetitive element (PubMed:1703632, PubMed:19687295,
+CC       PubMed:26577379). Binds RNA preferentially at a sequence that resembles
+CC       a cryptic 5'-splice site (PubMed:9121479).
+CC       {ECO:0000269|PubMed:11027289, ECO:0000269|PubMed:15082769,
+CC       ECO:0000269|PubMed:1703632, ECO:0000269|PubMed:19687295,
+CC       ECO:0000269|PubMed:26577379, ECO:0000269|PubMed:9121479}.
+CC   -!- SUBUNIT: Interacts with Wdr82. {ECO:0000269|PubMed:26577379}.
+CC   -!- SUBCELLULAR LOCATION: Nucleus {ECO:0000269|PubMed:11027289,
+CC       ECO:0000269|PubMed:1703632, ECO:0000269|PubMed:9121479}. Chromosome
+CC       {ECO:0000269|PubMed:15082769, ECO:0000269|PubMed:19687295}.
+CC       Note=Localizes to polytene chromosomes. {ECO:0000269|PubMed:15082769,
+CC       ECO:0000269|PubMed:19687295}.
+CC   -!- DEVELOPMENTAL STAGE: At all stages. {ECO:0000269|PubMed:1703632}.
+CC   -!- SIMILARITY: Belongs to the suppressor of sable family. {ECO:0000305}.
+CC   -!- SEQUENCE CAUTION:
+CC       Sequence=AAL49185.1; Type=Frameshift; Evidence={ECO:0000305};
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; M57889; AAA28920.1; -; Genomic_DNA.
+DR   EMBL; AE014298; AAF45534.1; -; Genomic_DNA.
+DR   EMBL; AL031581; CAA20886.1; -; Genomic_DNA.
+DR   EMBL; AY071563; AAL49185.1; ALT_FRAME; mRNA.
+DR   EMBL; X59364; CAA42010.1; -; Genomic_DNA.
+DR   PIR; T13386; T13386.
+DR   RefSeq; NP_001284753.1; NM_001297824.1.
+DR   RefSeq; NP_476754.1; NM_057406.4.
+DR   AlphaFoldDB; P22293; -.
+DR   SMR; P22293; -.
+DR   BioGRID; 57580; 31.
+DR   DIP; DIP-19699N; -.
+DR   FunCoup; P22293; 468.
+DR   IntAct; P22293; 28.
+DR   STRING; 7227.FBpp0070115; -.
+DR   GlyGen; P22293; 1 site.
+DR   iPTMnet; P22293; -.
+DR   PaxDb; 7227-FBpp0070115; -.
+DR   DNASU; 31012; -.
+DR   EnsemblMetazoa; FBtr0070120; FBpp0070115; FBgn0003575.
+DR   EnsemblMetazoa; FBtr0340082; FBpp0309081; FBgn0003575.
+DR   GeneID; 31012; -.
+DR   KEGG; dme:Dmel_CG6222; -.
+DR   AGR; FB:FBgn0003575; -.
+DR   CTD; 31012; -.
+DR   FlyBase; FBgn0003575; su(sable).
+DR   VEuPathDB; VectorBase:FBgn0003575; -.
+DR   eggNOG; KOG1040; Eukaryota.
+DR   HOGENOM; CLU_247398_0_0_1; -.
+DR   InParanoid; P22293; -.
+DR   OMA; HTPLRWQ; -.
+DR   OrthoDB; 411372at2759; -.
+DR   PhylomeDB; P22293; -.
+DR   Reactome; R-DME-6807505; RNA polymerase II transcribes snRNA genes.
+DR   Reactome; R-DME-9930044; Nuclear RNA decay.
+DR   BioGRID-ORCS; 31012; 0 hits in 3 CRISPR screens.
+DR   GenomeRNAi; 31012; -.
+DR   PRO; PR:P22293; -.
+DR   Proteomes; UP000000803; Chromosome X.
+DR   Bgee; FBgn0003575; Expressed in adult Malpighian tubule principal cell of initial segment in Malpighian tubule and 170 other cell types or tissues.
+DR   ExpressionAtlas; P22293; baseline and differential.
+DR   GO; GO:0005654; C:nucleoplasm; IDA:FlyBase.
+DR   GO; GO:0005634; C:nucleus; IBA:GO_Central.
+DR   GO; GO:0005700; C:polytene chromosome; IDA:FlyBase.
+DR   GO; GO:0003723; F:RNA binding; IDA:FlyBase.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006353; P:DNA-templated transcription termination; IEA:UniProtKB-KW.
+DR   GO; GO:0045892; P:negative regulation of DNA-templated transcription; IDA:FlyBase.
+DR   GO; GO:0032785; P:negative regulation of DNA-templated transcription, elongation; IDA:UniProtKB.
+DR   GO; GO:0071027; P:nuclear RNA surveillance; IDA:UniProtKB.
+DR   Gene3D; 4.10.1000.10; Zinc finger, CCCH-type; 1.
+DR   InterPro; IPR045124; Su(sable)-like.
+DR   InterPro; IPR000571; Znf_CCCH.
+DR   InterPro; IPR036855; Znf_CCCH_sf.
+DR   PANTHER; PTHR13119:SF12; PROTEIN SUPPRESSOR OF SABLE; 1.
+DR   PANTHER; PTHR13119; ZINC FINGER CCCH DOMAIN-CONTAINING PROTEI; 1.
+DR   SUPFAM; SSF90229; CCCH zinc finger; 2.
+DR   PROSITE; PS50103; ZF_C3H1; 2.
+PE   1: Evidence at protein level;
+KW   Chromosome; Coiled coil; Metal-binding; Nucleus; Phosphoprotein;
+KW   Reference proteome; Repeat; RNA-binding; Transcription;
+KW   Transcription regulation; Transcription termination; Zinc; Zinc-finger.
+FT   CHAIN           1..1325
+FT                   /note="Protein suppressor of sable"
+FT                   /id="PRO_0000072321"
+FT   ZN_FING         330..357
+FT                   /note="C3H1-type 1"
+FT                   /evidence="ECO:0000255|PROSITE-ProRule:PRU00723"
+FT   ZN_FING         358..381
+FT                   /note="C3H1-type 2"
+FT                   /evidence="ECO:0000255|PROSITE-ProRule:PRU00723"
+FT   REGION          1..36
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          74..326
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          138..327
+FT                   /note="Highly charged"
+FT   REGION          499..535
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          588..622
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          639..695
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          710..745
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          780..835
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          979..1058
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          1143..1170
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          1295..1325
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COILED          149..179
+FT                   /evidence="ECO:0000255"
+FT   COILED          276..296
+FT                   /evidence="ECO:0000255"
+FT   COILED          444..478
+FT                   /evidence="ECO:0000255"
+FT   COMPBIAS        9..30
+FT                   /note="Acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        119..131
+FT                   /note="Polar residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        149..158
+FT                   /note="Basic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        159..178
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        236..246
+FT                   /note="Gly residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        499..509
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        594..606
+FT                   /note="Polar residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        644..668
+FT                   /note="Acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        710..726
+FT                   /note="Polar residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        790..800
+FT                   /note="Low complexity"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        1003..1015
+FT                   /note="Pro residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        1021..1033
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        1042..1056
+FT                   /note="Low complexity"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        1149..1170
+FT                   /note="Gly residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        1295..1309
+FT                   /note="Gly residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   MOD_RES         524
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0000269|PubMed:18327897"
+FT   MOD_RES         604
+FT                   /note="Phosphothreonine"
+FT                   /evidence="ECO:0000269|PubMed:18327897"
+FT   MOD_RES         663
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0000269|PubMed:18327897"
+FT   MOD_RES         664
+FT                   /note="Phosphothreonine"
+FT                   /evidence="ECO:0000269|PubMed:18327897"
+FT   CONFLICT        687
+FT                   /note="E -> G (in Ref. 5; AAL49185)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        720..722
+FT                   /note="Missing (in Ref. 1; AAA28920)"
+FT                   /evidence="ECO:0000305"
+SQ   SEQUENCE   1325 AA;  143840 MW;  D5710DCF441DD48F CRC64;
+     MSVALADEPL IDLEEDLEDG EIDDDEEDEQ QSSKIQVQKK TFVGDDDVQF VGVEAKNQND
+     DEDVVYVGPS TDAVCLQNSN STKSKKPRPL EDDHASSIEL AIANALKKKG IEPPMPRMRS
+     SNQDTSDQSL EGSGEGLATA NPLLQSTRSS RRRKRKKERE REQKKDKEQQ NRSRRDENDV
+     SVVPGGVEDM DEYEMMNVRG GSPPPGGAAP PLSSCGQRFS GADWDMDDGS AATGAAGLGA
+     GGGGGYNSHS SYDSYSDEET NGPGLMNQRR RTRRDNEKEH QRGVNNRKRR DRDRLEGGLA
+     GSGSKRNRRD SGEGGGGGQE KMGGSNRVEP RKLELCKFYL MDCCAKRDKC SYMHKEFPCK
+     YYYLGMDCYA GDDCLFYHGE PLSEQLRNVL LKHMETAPKE ILGDFKRISR DIAIVQMTRR
+     HEQLCDQLNR ENTWNSIGCG LMGKRQDHQM QQQQQQLQHQ QLQQQQEQQQ TQQQAAADGG
+     GCIPSLLDMV INPPLSENKR KSRWTEKMGA KAAAGAAGSS ERDSTSPDAK PLPPHLDLAN
+     LSHVLSAENM AKLNKLGITN LEQMLQVPFG QLTEAGLTLV EIGEIQRKAE DAKPQTQAEL
+     ESSTPPSKRE TEANNSNSKS NGLIMVDYTQ YLKDAHVSFS GNDPLDDDRD DDEQLIIDDG
+     NDSTAEEDQQ PKKAKAPPAA THESSTEEAP LPSVFDLPSF MNNMLGQGSS ARQLLPASAT
+     SPNQENAHLP GGDQSTHKSA PIGGGTSTNV LGRILFGDKQ SDPEARAAFY RDIIRNPFKA
+     HSGDGDVDSS NENSNSNSHS LTPTPTPEPG SQSPKPEDHD QDMPELPVIA PALPPTTPSL
+     YVRRSMYDFD PVKEQEHGRQ ELLTEEKEQY QRDTDMRLPF EPMKHYMPAT EIDAAIFSHT
+     PIRWQLHEVT IEESSYAQIR ASALHKEQRE LRDPRMRRIL GLPETPDNSG PLGSVPIMGP
+     SSFSVDNIAR CATTIASPDL ETAVRDSTPS SPPPSVVNLP SMSVPPPSMR VPPPNIQVEK
+     PTVRTDPRRD PRRAVLQAPT KGASTANTTA PNASGGSKQI SEIRSLLQVS NWYNNLGTNN
+     KIMVNQQLAL VFTELKKFHQ LPNDAPKIFD VSFIVNNTTL QQIFAKLFIF VDDNGEVVQI
+     PEEPNGNGAA LGGGGDSGGG VGGGGGGGGV VLPNLSQPPP NLSQMLRLPP PNIRMLRMSG
+     MMMQMGNVGP PFNQPPPRGG LMGMPPNGNG LNQGVGNLGG LGQLGINQGG GPVPNGNPFN
+     PFGGNNGGGA GVMNNMNSMG NMGMGFNNFN NNGGRGGHFP GGGSGGNGNG NNRNQRGGNH
+     RNRNI
+//
+ID   SUS1_ARATH              Reviewed;         808 AA.
+AC   P49040; B9DFM1; Q56WF2;
+DT   01-FEB-1996, integrated into UniProtKB/Swiss-Prot.
+DT   14-APR-2009, sequence version 3.
+DT   28-JAN-2026, entry version 159.
+DE   RecName: Full=Sucrose synthase 1;
+DE            Short=AtSUS1;
+DE            EC=2.4.1.13;
+DE   AltName: Full=Sucrose-UDP glucosyltransferase 1;
+GN   Name=SUS1; OrderedLocusNames=At5g20830; ORFNames=T1M15.230;
+OS   Arabidopsis thaliana (Mouse-ear cress).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   rosids; malvids; Brassicales; Brassicaceae; Camelineae; Arabidopsis.
+OX   NCBI_TaxID=3702;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA], TISSUE SPECIFICITY, AND INDUCTION.
+RC   STRAIN=cv. C24;
+RX   PubMed=8220487; DOI=10.1046/j.1365-313x.1993.04020367.x;
+RA   Martin T., Frommer W.B., Salanoubat M., Willmitzer L.;
+RT   "Expression of an Arabidopsis sucrose synthase gene indicates a role in
+RT   metabolization of sucrose both during phloem loading and in sink organs.";
+RL   Plant J. 4:367-377(1993).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=cv. Columbia;
+RX   PubMed=11130714; DOI=10.1038/35048507;
+RA   Tabata S., Kaneko T., Nakamura Y., Kotani H., Kato T., Asamizu E.,
+RA   Miyajima N., Sasamoto S., Kimura T., Hosouchi T., Kawashima K., Kohara M.,
+RA   Matsumoto M., Matsuno A., Muraki A., Nakayama S., Nakazaki N., Naruo K.,
+RA   Okumura S., Shinpo S., Takeuchi C., Wada T., Watanabe A., Yamada M.,
+RA   Yasuda M., Sato S., de la Bastide M., Huang E., Spiegel L., Gnoj L.,
+RA   O'Shaughnessy A., Preston R., Habermann K., Murray J., Johnson D.,
+RA   Rohlfing T., Nelson J., Stoneking T., Pepin K., Spieth J., Sekhon M.,
+RA   Armstrong J., Becker M., Belter E., Cordum H., Cordes M., Courtney L.,
+RA   Courtney W., Dante M., Du H., Edwards J., Fryman J., Haakensen B.,
+RA   Lamar E., Latreille P., Leonard S., Meyer R., Mulvaney E., Ozersky P.,
+RA   Riley A., Strowmatt C., Wagner-McPherson C., Wollam A., Yoakum M., Bell M.,
+RA   Dedhia N., Parnell L., Shah R., Rodriguez M., Hoon See L., Vil D.,
+RA   Baker J., Kirchoff K., Toth K., King L., Bahret A., Miller B., Marra M.A.,
+RA   Martienssen R., McCombie W.R., Wilson R.K., Murphy G., Bancroft I.,
+RA   Volckaert G., Wambutt R., Duesterhoeft A., Stiekema W., Pohl T.,
+RA   Entian K.-D., Terryn N., Hartley N., Bent E., Johnson S., Langham S.-A.,
+RA   McCullagh B., Robben J., Grymonprez B., Zimmermann W., Ramsperger U.,
+RA   Wedler H., Balke K., Wedler E., Peters S., van Staveren M., Dirkse W.,
+RA   Mooijman P., Klein Lankhorst R., Weitzenegger T., Bothe G., Rose M.,
+RA   Hauf J., Berneiser S., Hempel S., Feldpausch M., Lamberth S.,
+RA   Villarroel R., Gielen J., Ardiles W., Bents O., Lemcke K., Kolesov G.,
+RA   Mayer K.F.X., Rudd S., Schoof H., Schueller C., Zaccaria P., Mewes H.-W.,
+RA   Bevan M., Fransz P.F.;
+RT   "Sequence and analysis of chromosome 5 of the plant Arabidopsis thaliana.";
+RL   Nature 408:823-826(2000).
+RN   [3]
+RP   GENOME REANNOTATION.
+RC   STRAIN=cv. Columbia;
+RX   PubMed=27862469; DOI=10.1111/tpj.13415;
+RA   Cheng C.Y., Krishnakumar V., Chan A.P., Thibaud-Nissen F., Schobel S.,
+RA   Town C.D.;
+RT   "Araport11: a complete reannotation of the Arabidopsis thaliana reference
+RT   genome.";
+RL   Plant J. 89:789-804(2017).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=cv. Columbia;
+RX   PubMed=19423640; DOI=10.1093/dnares/dsp009;
+RA   Iida K., Fukami-Kobayashi K., Toyoda A., Sakaki Y., Kobayashi M., Seki M.,
+RA   Shinozaki K.;
+RT   "Analysis of multiple occurrences of alternative splicing events in
+RT   Arabidopsis thaliana using novel sequenced full-length cDNAs.";
+RL   DNA Res. 16:155-164(2009).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] OF 521-808.
+RC   STRAIN=cv. Columbia;
+RA   Totoki Y., Seki M., Ishida J., Nakajima M., Enju A., Kamiya A.,
+RA   Narusaka M., Shin-i T., Nakagawa M., Sakamoto N., Oishi K., Kohara Y.,
+RA   Kobayashi M., Toyoda A., Sakaki Y., Sakurai T., Iida K., Akiyama K.,
+RA   Satou M., Toyoda T., Konagaya A., Carninci P., Kawai J., Hayashizaki Y.,
+RA   Shinozaki K.;
+RT   "Large-scale analysis of RIKEN Arabidopsis full-length (RAFL) cDNAs.";
+RL   Submitted (MAR-2005) to the EMBL/GenBank/DDBJ databases.
+RN   [6]
+RP   INDUCTION.
+RX   PubMed=10567234; DOI=10.1042/bj3440503;
+RA   Dejardin A., Sokolov L.N., Kleczkowski L.A.;
+RT   "Sugar/osmoticum levels modulate differential abscisic acid-independent
+RT   expression of two stress-responsive sucrose synthase genes in
+RT   Arabidopsis.";
+RL   Biochem. J. 344:503-509(1999).
+RN   [7]
+RP   GENE FAMILY, TISSUE SPECIFICITY, AND INDUCTION.
+RX   PubMed=14739263; DOI=10.1093/jxb/erh047;
+RA   Baud S., Vaultier M.N., Rochat C.;
+RT   "Structure and expression profile of the sucrose synthase multigene family
+RT   in Arabidopsis.";
+RL   J. Exp. Bot. 55:397-409(2004).
+RN   [8]
+RP   BIOTECHNOLOGY.
+RX   PubMed=17499718; DOI=10.1016/j.febslet.2007.04.074;
+RA   Masada S., Kawase Y., Nagatoshi M., Oguchi Y., Terasaka K., Mizukami H.;
+RT   "An efficient chemoenzymatic production of small molecule glucosides with
+RT   in situ UDP-glucose recycling.";
+RL   FEBS Lett. 581:2562-2566(2007).
+RN   [9]
+RP   IDENTIFICATION BY MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RC   STRAIN=cv. Landsberg erecta;
+RX   PubMed=17272265; DOI=10.1074/mcp.m600408-mcp200;
+RA   Maor R., Jones A., Nuehse T.S., Studholme D.J., Peck S.C., Shirasu K.;
+RT   "Multidimensional protein identification technology (MudPIT) analysis of
+RT   ubiquitinated proteins in plants.";
+RL   Mol. Cell. Proteomics 6:601-610(2007).
+RN   [10]
+RP   BIOPHYSICOCHEMICAL PROPERTIES, TISSUE SPECIFICITY, INDUCTION, AND
+RP   DISRUPTION PHENOTYPE.
+RX   PubMed=17257168; DOI=10.1111/j.1365-313x.2006.03011.x;
+RA   Bieniawska Z., Paul Barratt D.H., Garlick A.P., Thole V., Kruger N.J.,
+RA   Martin C., Zrenner R., Smith A.M.;
+RT   "Analysis of the sucrose synthase gene family in Arabidopsis.";
+RL   Plant J. 49:810-828(2007).
+RN   [11]
+RP   TISSUE SPECIFICITY.
+RX   PubMed=18635527; DOI=10.1093/jxb/ern180;
+RA   Fallahi H., Scofield G.N., Badger M.R., Chow W.S., Furbank R.T., Ruan Y.L.;
+RT   "Localization of sucrose synthase in developing seed and siliques of
+RT   Arabidopsis thaliana reveals diverse roles for SUS during development.";
+RL   J. Exp. Bot. 59:3283-3295(2008).
+RN   [12]
+RP   INDUCTION BY NUC.
+RX   PubMed=21265895; DOI=10.1111/j.1365-313x.2010.04432.x;
+RA   Seo P.J., Ryu J., Kang S.K., Park C.M.;
+RT   "Modulation of sugar metabolism by an INDETERMINATE DOMAIN transcription
+RT   factor contributes to photoperiodic flowering in Arabidopsis.";
+RL   Plant J. 65:418-429(2011).
+RN   [13]
+RP   BIOPHYSICOCHEMICAL PROPERTIES.
+RX   PubMed=22184213; DOI=10.1073/pnas.1117099109;
+RA   Baroja-Fernandez E., Munoz F.J., Li J., Bahaji A., Almagro G., Montero M.,
+RA   Etxeberria E., Hidalgo M., Sesma M.T., Pozueta-Romero J.;
+RT   "Sucrose synthase activity in the sus1/sus2/sus3/sus4 Arabidopsis mutant is
+RT   sufficient to support normal cellulose and starch production.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 109:321-326(2012).
+RN   [14]
+RP   X-RAY CRYSTALLOGRAPHY (2.8 ANGSTROMS) IN COMPLEX WITH SUBSTRATE, SUBUNIT,
+RP   AND FUNCTION.
+RX   PubMed=21865170; DOI=10.1074/jbc.m111.275974;
+RA   Zheng Y., Anderson S., Zhang Y., Garavito R.M.;
+RT   "The structure of sucrose synthase-1 from Arabidopsis thaliana and its
+RT   functional implications.";
+RL   J. Biol. Chem. 286:36108-36118(2011).
+CC   -!- FUNCTION: Sucrose-cleaving enzyme that provides UDP-glucose and
+CC       fructose for various metabolic pathways. {ECO:0000269|PubMed:21865170}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=an NDP-alpha-D-glucose + D-fructose = a ribonucleoside 5'-
+CC         diphosphate + sucrose + H(+); Xref=Rhea:RHEA:16241,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:17992, ChEBI:CHEBI:37721,
+CC         ChEBI:CHEBI:57930, ChEBI:CHEBI:76533; EC=2.4.1.13;
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Kinetic parameters:
+CC         KM=4.37 mM for D-fructose (synthetic reaction) at pH 9.4
+CC         {ECO:0000269|PubMed:17257168};
+CC         KM=0.04 mM for UDP-glucose (synthetic reaction) at pH 9.4
+CC         {ECO:0000269|PubMed:17257168};
+CC         KM=31.58 mM for sucrose (degradative reaction) at pH 6
+CC         {ECO:0000269|PubMed:17257168};
+CC         KM=53 mM for sucrose (degradative reaction) at pH 7
+CC         {ECO:0000269|PubMed:22184213};
+CC         KM=0.08 mM for UDP (degradative reaction) at pH 6
+CC         {ECO:0000269|PubMed:17257168};
+CC         KM=0.39 mM for UDP (degradative reaction) at pH 7
+CC         {ECO:0000269|PubMed:22184213};
+CC         KM=0.17 mM for ADP (degradative reaction) at pH 7
+CC         {ECO:0000269|PubMed:22184213};
+CC         Vmax=11.14 umol/min/mg enzyme for synthetic reaction at pH 9.4
+CC         {ECO:0000269|PubMed:17257168};
+CC         Vmax=4.68 umol/min/mg enzyme for degradative reaction at pH 6
+CC         {ECO:0000269|PubMed:17257168};
+CC         Vmax=585 umol/min/mg enzyme for degradative reaction at pH 7
+CC         {ECO:0000269|PubMed:22184213};
+CC       pH dependence:
+CC         Optimum pH is 6.0-7.0 for degradative reaction (PubMed:17257168,
+CC         PubMed:22184213). Optimum pH is 7.0 for synthetic reaction
+CC         (PubMed:22184213). Optimum pH is 9.0-9.5 for synthetic reaction
+CC         (PubMed:17257168). {ECO:0000269|PubMed:17257168,
+CC         ECO:0000269|PubMed:22184213};
+CC   -!- SUBUNIT: Homotetramer. {ECO:0000269|PubMed:21865170}.
+CC   -!- TISSUE SPECIFICITY: Expressed in the phloem of leaves and in roots.
+CC       Detected in the whole plant but more precisely confined to the
+CC       vasculature in cotyledons, mature leaves and siliques.
+CC       {ECO:0000269|PubMed:14739263, ECO:0000269|PubMed:17257168,
+CC       ECO:0000269|PubMed:18635527, ECO:0000269|PubMed:8220487}.
+CC   -!- INDUCTION: By cold, drought and anaerobic stress. By sugar or
+CC       osmoticum. By anoxia in the roots (at protein level). Up-regulated by
+CC       NUC/IDD8. {ECO:0000269|PubMed:10567234, ECO:0000269|PubMed:14739263,
+CC       ECO:0000269|PubMed:17257168, ECO:0000269|PubMed:21265895,
+CC       ECO:0000269|PubMed:8220487}.
+CC   -!- DISRUPTION PHENOTYPE: No visible phenotype.
+CC       {ECO:0000269|PubMed:17257168}.
+CC   -!- BIOTECHNOLOGY: A one-pot system for efficient enzymatic production of a
+CC       wide range of glucosides couples the activities of two recombinant
+CC       enzymes, UDP-glucose: curcumin glucosyltransferase from Catharanthus
+CC       roseus (CaUGT2) and sucrose synthase from Arabidopsis thaliana
+CC       (AtSUS1). UDP, a product inhibitor of UDP-glucosyltransferase, was
+CC       removed from the system and used for regeneration of UDP-glucose by the
+CC       second enzyme, AtSUS1. The productivity was increased several-fold and
+CC       UDP-glucose initially added to the reaction mixture could be reduced to
+CC       one-tenth of the normal level. {ECO:0000269|PubMed:17499718}.
+CC   -!- SIMILARITY: Belongs to the glycosyltransferase 1 family. Plant sucrose
+CC       synthase subfamily. {ECO:0000305}.
+CC   -!- SEQUENCE CAUTION:
+CC       Sequence=BAD94975.1; Type=Erroneous initiation; Note=Truncated N-terminus.; Evidence={ECO:0000305};
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; X70990; CAA50317.1; -; Genomic_DNA.
+DR   EMBL; AF296832; -; NOT_ANNOTATED_CDS; Genomic_DNA.
+DR   EMBL; CP002688; AED92894.1; -; Genomic_DNA.
+DR   EMBL; CP002688; AED92895.1; -; Genomic_DNA.
+DR   EMBL; CP002688; ANM71045.1; -; Genomic_DNA.
+DR   EMBL; AK316826; BAH19538.1; -; mRNA.
+DR   EMBL; AK222090; BAD94975.1; ALT_INIT; mRNA.
+DR   RefSeq; NP_001031915.1; NM_001036838.2.
+DR   RefSeq; NP_001332603.1; NM_001343687.1.
+DR   RefSeq; NP_197583.1; NM_122090.4.
+DR   PDB; 3S27; X-ray; 2.91 A; A/B/C/D/E/F/G/H=1-808.
+DR   PDB; 3S28; X-ray; 2.80 A; A/B/C/D/E/F/G/H=1-808.
+DR   PDB; 3S29; X-ray; 2.85 A; A/B/C/D/E/F/G/H=1-808.
+DR   PDBsum; 3S27; -.
+DR   PDBsum; 3S28; -.
+DR   PDBsum; 3S29; -.
+DR   AlphaFoldDB; P49040; -.
+DR   SMR; P49040; -.
+DR   BioGRID; 17481; 4.
+DR   FunCoup; P49040; 185.
+DR   STRING; 3702.P49040; -.
+DR   CAZy; GT4; Glycosyltransferase Family 4.
+DR   iPTMnet; P49040; -.
+DR   SwissPalm; P49040; -.
+DR   PaxDb; 3702-AT5G20830.1; -.
+DR   ProteomicsDB; 228313; -.
+DR   GeneID; 832206; -.
+DR   Gramene; AT5G20830.1; AT5G20830.1; AT5G20830.
+DR   Gramene; AT5G20830.2; AT5G20830.2; AT5G20830.
+DR   Gramene; AT5G20830.3; AT5G20830.3; AT5G20830.
+DR   KEGG; ath:AT5G20830; -.
+DR   Araport; AT5G20830; -.
+DR   TAIR; AT5G20830; SUS1.
+DR   eggNOG; KOG0853; Eukaryota.
+DR   HOGENOM; CLU_019158_1_0_1; -.
+DR   InParanoid; P49040; -.
+DR   OMA; SRCVSQG; -.
+DR   PhylomeDB; P49040; -.
+DR   BioCyc; ARA:AT5G20830-MONOMER; -.
+DR   BioCyc; MetaCyc:AT5G20830-MONOMER; -.
+DR   BRENDA; 2.4.1.13; 399.
+DR   CD-CODE; 4299E36E; Nucleolus.
+DR   EvolutionaryTrace; P49040; -.
+DR   PRO; PR:P49040; -.
+DR   Proteomes; UP000006548; Chromosome 5.
+DR   ExpressionAtlas; P49040; baseline and differential.
+DR   GO; GO:0005829; C:cytosol; HDA:TAIR.
+DR   GO; GO:0009506; C:plasmodesma; HDA:TAIR.
+DR   GO; GO:0016157; F:sucrose synthase activity; IDA:UniProtKB.
+DR   GO; GO:0071456; P:cellular response to hypoxia; HEP:TAIR.
+DR   GO; GO:0009409; P:response to cold; IEP:UniProtKB.
+DR   GO; GO:0009413; P:response to flooding; IEP:TAIR.
+DR   GO; GO:0009749; P:response to glucose; IEP:UniProtKB.
+DR   GO; GO:0001666; P:response to hypoxia; IEP:UniProtKB.
+DR   GO; GO:0010555; P:response to mannitol; IEP:UniProtKB.
+DR   GO; GO:0006970; P:response to osmotic stress; IEP:TAIR.
+DR   GO; GO:0072708; P:response to sorbitol; IEP:UniProtKB.
+DR   GO; GO:0009744; P:response to sucrose; IEP:UniProtKB.
+DR   GO; GO:0009414; P:response to water deprivation; IEP:UniProtKB.
+DR   GO; GO:0005985; P:sucrose metabolic process; IEA:InterPro.
+DR   FunFam; 1.20.120.1230:FF:000001; Sucrose synthase; 1.
+DR   FunFam; 3.10.450.330:FF:000001; Sucrose synthase; 1.
+DR   FunFam; 3.40.50.2000:FF:000004; Sucrose synthase; 1.
+DR   Gene3D; 1.20.120.1230; -; 1.
+DR   Gene3D; 3.10.450.330; -; 1.
+DR   Gene3D; 3.40.50.2000; Glycogen Phosphorylase B; 2.
+DR   InterPro; IPR001296; Glyco_trans_1.
+DR   InterPro; IPR000368; Sucrose_synth_GT-B1.
+DR   InterPro; IPR012820; Sucrose_synthase_pln/cyn.
+DR   InterPro; IPR056736; SUS_EPBD.
+DR   InterPro; IPR056735; SUS_N.
+DR   NCBIfam; TIGR02470; sucr_synth; 1.
+DR   PANTHER; PTHR45839; -; 1.
+DR   PANTHER; PTHR45839:SF7; SUCROSE SYNTHASE 1; 1.
+DR   Pfam; PF00534; Glycos_transf_1; 1.
+DR   Pfam; PF00862; GT-B_Sucrose_synth; 1.
+DR   Pfam; PF24862; SUS_EPBD; 1.
+DR   Pfam; PF24861; SUS_N; 1.
+DR   SUPFAM; SSF53756; UDP-Glycosyltransferase/glycogen phosphorylase; 1.
+PE   1: Evidence at protein level;
+KW   3D-structure; Glycosyltransferase; Reference proteome; Stress response;
+KW   Transferase.
+FT   CHAIN           1..808
+FT                   /note="Sucrose synthase 1"
+FT                   /id="PRO_0000204644"
+FT   REGION          277..754
+FT                   /note="GT-B glycosyltransferase"
+FT   CONFLICT        61
+FT                   /note="R -> Q (in Ref. 1; CAA50317)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        108
+FT                   /note="V -> L (in Ref. 1; CAA50317)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        222
+FT                   /note="S -> P (in Ref. 1; CAA50317)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        405
+FT                   /note="N -> D (in Ref. 1; CAA50317)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        434
+FT                   /note="C -> QC (in Ref. 1; CAA50317)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        609
+FT                   /note="V -> I (in Ref. 1; CAA50317)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        751..752
+FT                   /note="EK -> DE (in Ref. 1; CAA50317)"
+FT                   /evidence="ECO:0000305"
+FT   CONFLICT        799..800
+FT                   /note="Missing (in Ref. 1; CAA50317)"
+FT                   /evidence="ECO:0000305"
+FT   HELIX           16..18
+FT                   /evidence="ECO:0007829|PDB:3S29"
+FT   TURN            19..23
+FT                   /evidence="ECO:0007829|PDB:3S29"
+FT   HELIX           30..40
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          43..47
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           48..53
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   TURN            54..58
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           61..63
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   TURN            64..68
+FT                   /evidence="ECO:0007829|PDB:3S29"
+FT   HELIX           69..74
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          76..81
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          83..93
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          96..103
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          109..112
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           114..126
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          136..138
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           140..143
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           152..154
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           158..169
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   TURN            170..172
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           174..186
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          192..196
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           203..219
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           226..235
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           246..261
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           265..274
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          280..284
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          292..294
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           303..325
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          333..339
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          346..348
+FT                   /evidence="ECO:0007829|PDB:3S27"
+FT   STRAND          351..355
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          360..367
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          369..371
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          374..376
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   TURN            382..384
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           386..388
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           389..403
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          409..414
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           415..429
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          433..436
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           441..444
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   TURN            446..451
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           452..459
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           461..474
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          475..481
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           483..487
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          490..492
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           497..499
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          500..504
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   TURN            505..507
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          508..513
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          521..523
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   TURN            530..532
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   TURN            539..541
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           544..546
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           547..555
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          563..565
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          570..572
+FT                   /evidence="ECO:0007829|PDB:3S27"
+FT   STRAND          574..578
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   TURN            583..586
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           587..596
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           598..603
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          605..609
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           620..635
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          639..645
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           651..663
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          667..670
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          675..677
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           679..686
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          691..697
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           699..702
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   TURN            705..707
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   STRAND          710..712
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           717..733
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           736..751
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           755..776
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   TURN            777..779
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           780..793
+FT                   /evidence="ECO:0007829|PDB:3S28"
+FT   HELIX           795..801
+FT                   /evidence="ECO:0007829|PDB:3S28"
+SQ   SEQUENCE   808 AA;  92998 MW;  CDB56C6A57BD852E CRC64;
+     MANAERMITR VHSQRERLNE TLVSERNEVL ALLSRVEAKG KGILQQNQII AEFEALPEQT
+     RKKLEGGPFF DLLKSTQEAI VLPPWVALAV RPRPGVWEYL RVNLHALVVE ELQPAEFLHF
+     KEELVDGVKN GNFTLELDFE PFNASIPRPT LHKYIGNGVD FLNRHLSAKL FHDKESLLPL
+     LKFLRLHSHQ GKNLMLSEKI QNLNTLQHTL RKAEEYLAEL KSETLYEEFE AKFEEIGLER
+     GWGDNAERVL DMIRLLLDLL EAPDPCTLET FLGRVPMVFN VVILSPHGYF AQDNVLGYPD
+     TGGQVVYILD QVRALEIEML QRIKQQGLNI KPRILILTRL LPDAVGTTCG ERLERVYDSE
+     YCDILRVPFR TEKGIVRKWI SRFEVWPYLE TYTEDAAVEL SKELNGKPDL IIGNYSDGNL
+     VASLLAHKLG VTQCTIAHAL EKTKYPDSDI YWKKLDDKYH FSCQFTADIF AMNHTDFIIT
+     STFQEIAGSK ETVGQYESHT AFTLPGLYRV VHGIDVFDPK FNIVSPGADM SIYFPYTEEK
+     RRLTKFHSEI EELLYSDVEN KEHLCVLKDK KKPILFTMAR LDRVKNLSGL VEWYGKNTRL
+     RELANLVVVG GDRRKESKDN EEKAEMKKMY DLIEEYKLNG QFRWISSQMD RVRNGELYRY
+     ICDTKGAFVQ PALYEAFGLT VVEAMTCGLP TFATCKGGPA EIIVHGKSGF HIDPYHGDQA
+     ADTLADFFTK CKEDPSHWDE ISKGGLQRIE EKYTWQIYSQ RLLTLTGVYG FWKHVSNLDR
+     LEARRYLEMF YALKYRPLAQ AVPLAQDD
+//
+ID   SUS2_ARATH              Reviewed;         807 AA.
+AC   Q00917; F4K4S0; Q9FJ20;
+DT   01-APR-1993, integrated into UniProtKB/Swiss-Prot.
+DT   25-JAN-2012, sequence version 3.
+DT   28-JAN-2026, entry version 151.
+DE   RecName: Full=Sucrose synthase 2;
+DE            Short=AtSUS2;
+DE            EC=2.4.1.13;
+DE   AltName: Full=Sucrose-UDP glucosyltransferase 2;
+GN   Name=SUS2; Synonyms=SSA; OrderedLocusNames=At5g49190;
+GN   ORFNames=K21P3.6;
+OS   Arabidopsis thaliana (Mouse-ear cress).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   rosids; malvids; Brassicales; Brassicaceae; Camelineae; Arabidopsis.
+OX   NCBI_TaxID=3702;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   STRAIN=cv. Columbia;
+RX   PubMed=1531031; DOI=10.1007/bf00018465;
+RA   Chopra S., Del-Favero J., Dolferus R., Jacobs M.;
+RT   "Sucrose synthase of Arabidopsis: genomic cloning and sequence
+RT   characterization.";
+RL   Plant Mol. Biol. 18:131-134(1992).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=cv. Columbia;
+RX   PubMed=10048488; DOI=10.1093/dnares/5.6.379;
+RA   Asamizu E., Sato S., Kaneko T., Nakamura Y., Kotani H., Miyajima N.,
+RA   Tabata S.;
+RT   "Structural analysis of Arabidopsis thaliana chromosome 5. VIII. Sequence
+RT   features of the regions of 1,081,958 bp covered by seventeen physically
+RT   assigned P1 and TAC clones.";
+RL   DNA Res. 5:379-391(1998).
+RN   [3]
+RP   GENOME REANNOTATION.
+RC   STRAIN=cv. Columbia;
+RX   PubMed=27862469; DOI=10.1111/tpj.13415;
+RA   Cheng C.Y., Krishnakumar V., Chan A.P., Thibaud-Nissen F., Schobel S.,
+RA   Town C.D.;
+RT   "Araport11: a complete reannotation of the Arabidopsis thaliana reference
+RT   genome.";
+RL   Plant J. 89:789-804(2017).
+RN   [4]
+RP   INDUCTION.
+RX   PubMed=10567234; DOI=10.1042/bj3440503;
+RA   Dejardin A., Sokolov L.N., Kleczkowski L.A.;
+RT   "Sugar/osmoticum levels modulate differential abscisic acid-independent
+RT   expression of two stress-responsive sucrose synthase genes in
+RT   Arabidopsis.";
+RL   Biochem. J. 344:503-509(1999).
+RN   [5]
+RP   GENE FAMILY, TISSUE SPECIFICITY, DEVELOPMENTAL STAGE, AND DISRUPTION
+RP   PHENOTYPE.
+RX   PubMed=14739263; DOI=10.1093/jxb/erh047;
+RA   Baud S., Vaultier M.N., Rochat C.;
+RT   "Structure and expression profile of the sucrose synthase multigene family
+RT   in Arabidopsis.";
+RL   J. Exp. Bot. 55:397-409(2004).
+RN   [6]
+RP   TISSUE SPECIFICITY, AND DEVELOPMENTAL STAGE.
+RX   PubMed=17257168; DOI=10.1111/j.1365-313x.2006.03011.x;
+RA   Bieniawska Z., Paul Barratt D.H., Garlick A.P., Thole V., Kruger N.J.,
+RA   Martin C., Zrenner R., Smith A.M.;
+RT   "Analysis of the sucrose synthase gene family in Arabidopsis.";
+RL   Plant J. 49:810-828(2007).
+RN   [7]
+RP   TISSUE SPECIFICITY.
+RX   PubMed=18635527; DOI=10.1093/jxb/ern180;
+RA   Fallahi H., Scofield G.N., Badger M.R., Chow W.S., Furbank R.T., Ruan Y.L.;
+RT   "Localization of sucrose synthase in developing seed and siliques of
+RT   Arabidopsis thaliana reveals diverse roles for SUS during development.";
+RL   J. Exp. Bot. 59:3283-3295(2008).
+RN   [8]
+RP   TISSUE SPECIFICITY, AND SUBCELLULAR LOCATION.
+RX   PubMed=18701523; DOI=10.1093/pcp/pcn117;
+RA   Angeles-Nunez J.G., Kronenberger J., Wuilleme S., Lepiniec L., Rochat C.;
+RT   "Study of AtSUS2 localization in seeds reveals a strong association with
+RT   plastids.";
+RL   Plant Cell Physiol. 49:1621-1626(2008).
+RN   [9]
+RP   INDUCTION.
+RX   PubMed=19207209; DOI=10.1111/j.1365-313x.2009.03817.x;
+RA   Yamamoto A., Kagaya Y., Toyoshima R., Kagaya M., Takeda S., Hattori T.;
+RT   "Arabidopsis NF-YB subunits LEC1 and LEC1-LIKE activate transcription by
+RT   interacting with seed-specific ABRE-binding factors.";
+RL   Plant J. 58:843-856(2009).
+RN   [10]
+RP   FUNCTION, AND DISRUPTION PHENOTYPE.
+RX   PubMed=20559653; DOI=10.1007/s00425-010-1207-9;
+RA   Angeles-Nunez J.G., Tiessen A.;
+RT   "Arabidopsis sucrose synthase 2 and 3 modulate metabolic homeostasis and
+RT   direct carbon towards starch synthesis in developing seeds.";
+RL   Planta 232:701-718(2010).
+RN   [11]
+RP   FUNCTION, AND INDUCTION BY LEC2.
+RX   PubMed=22228409; DOI=10.1007/s11103-011-9871-0;
+RA   Angeles-Nunez J.G., Tiessen A.;
+RT   "Regulation of AtSUS2 and AtSUS3 by glucose and the transcription factor
+RT   LEC2 in different tissues and at different stages of Arabidopsis seed
+RT   development.";
+RL   Plant Mol. Biol. 78:377-392(2012).
+CC   -!- FUNCTION: Sucrose-cleaving enzyme that provides UDP-glucose and
+CC       fructose for various metabolic pathways. Modulates metabolic
+CC       homeostasis and directs carbon towards starch synthesis in developing
+CC       seeds. {ECO:0000269|PubMed:20559653, ECO:0000269|PubMed:22228409}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=an NDP-alpha-D-glucose + D-fructose = a ribonucleoside 5'-
+CC         diphosphate + sucrose + H(+); Xref=Rhea:RHEA:16241,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:17992, ChEBI:CHEBI:37721,
+CC         ChEBI:CHEBI:57930, ChEBI:CHEBI:76533; EC=2.4.1.13;
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm {ECO:0000269|PubMed:18701523}. Plastid
+CC       membrane {ECO:0000269|PubMed:18701523}; Peripheral membrane protein
+CC       {ECO:0000269|PubMed:18701523}. Note=Associated with plastid membranes
+CC       during the maturation phase of the seed.
+CC   -!- TISSUE SPECIFICITY: Detected in the whole plant but at lower levels.
+CC       Predominantly expressed in developing siliques. Also detected in the
+CC       root tip. Detected in the embryo, endosperm and seed coat (at the
+CC       protein level). {ECO:0000269|PubMed:14739263,
+CC       ECO:0000269|PubMed:17257168, ECO:0000269|PubMed:18635527,
+CC       ECO:0000269|PubMed:18701523}.
+CC   -!- DEVELOPMENTAL STAGE: Specifically and highly expressed during seed
+CC       maturation at 12 days after flowering (at the protein level).
+CC       {ECO:0000269|PubMed:14739263, ECO:0000269|PubMed:17257168}.
+CC   -!- INDUCTION: By anaerobic stress and by glucose. Positively regulated by
+CC       the NF-Y/HAP transcription factor complex at least composed of
+CC       NFYB9/LEC1 or NFYB6/L1L and NFYC2/HAP5B in association with
+CC       DPBF2/BZIP67. Positively regulated by LEC2.
+CC       {ECO:0000269|PubMed:10567234, ECO:0000269|PubMed:19207209,
+CC       ECO:0000269|PubMed:22228409}.
+CC   -!- DISRUPTION PHENOTYPE: No visible phenotype. Diminution of the starch
+CC       content of developing seeds and increased lipid accumulation early
+CC       during seed development. {ECO:0000269|PubMed:14739263,
+CC       ECO:0000269|PubMed:20559653}.
+CC   -!- SIMILARITY: Belongs to the glycosyltransferase 1 family. Plant sucrose
+CC       synthase subfamily. {ECO:0000305}.
+CC   -!- SEQUENCE CAUTION:
+CC       Sequence=BAB10337.1; Type=Erroneous gene model prediction; Evidence={ECO:0000305};
+CC       Sequence=CAA43303.1; Type=Miscellaneous discrepancy; Note=Sequencing errors.; Evidence={ECO:0000305};
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; X60987; CAA43303.1; ALT_SEQ; Genomic_DNA.
+DR   EMBL; AB016872; BAB10337.1; ALT_SEQ; Genomic_DNA.
+DR   EMBL; CP002688; AED95780.1; -; Genomic_DNA.
+DR   PIR; S19125; YUMU.
+DR   RefSeq; NP_199730.1; NM_124296.3.
+DR   AlphaFoldDB; Q00917; -.
+DR   SMR; Q00917; -.
+DR   BioGRID; 20224; 1.
+DR   FunCoup; Q00917; 170.
+DR   IntAct; Q00917; 1.
+DR   STRING; 3702.Q00917; -.
+DR   CAZy; GT4; Glycosyltransferase Family 4.
+DR   iPTMnet; Q00917; -.
+DR   PaxDb; 3702-AT5G49190.1; -.
+DR   ProteomicsDB; 228403; -.
+DR   GeneID; 834978; -.
+DR   Gramene; AT5G49190.1; AT5G49190.1; AT5G49190.
+DR   KEGG; ath:AT5G49190; -.
+DR   Araport; AT5G49190; -.
+DR   TAIR; AT5G49190; SUS2.
+DR   eggNOG; KOG0853; Eukaryota.
+DR   HOGENOM; CLU_019158_1_0_1; -.
+DR   InParanoid; Q00917; -.
+DR   BRENDA; 2.4.1.13; 399.
+DR   PRO; PR:Q00917; -.
+DR   Proteomes; UP000006548; Chromosome 5.
+DR   ExpressionAtlas; Q00917; baseline and differential.
+DR   GO; GO:0005829; C:cytosol; IDA:TAIR.
+DR   GO; GO:0009505; C:plant-type cell wall; HDA:TAIR.
+DR   GO; GO:0042170; C:plastid membrane; IEA:UniProtKB-SubCell.
+DR   GO; GO:0016157; F:sucrose synthase activity; IMP:TAIR.
+DR   GO; GO:0001666; P:response to hypoxia; IEP:TAIR.
+DR   GO; GO:0010431; P:seed maturation; IMP:TAIR.
+DR   GO; GO:0005982; P:starch metabolic process; IMP:TAIR.
+DR   GO; GO:0005985; P:sucrose metabolic process; IMP:TAIR.
+DR   CDD; cd03800; GT4_sucrose_synthase; 1.
+DR   FunFam; 1.20.120.1230:FF:000001; Sucrose synthase; 1.
+DR   FunFam; 3.10.450.330:FF:000001; Sucrose synthase; 1.
+DR   FunFam; 3.40.50.2000:FF:000006; Sucrose synthase; 1.
+DR   Gene3D; 1.20.120.1230; -; 1.
+DR   Gene3D; 3.10.450.330; -; 1.
+DR   Gene3D; 3.40.50.2000; Glycogen Phosphorylase B; 2.
+DR   InterPro; IPR001296; Glyco_trans_1.
+DR   InterPro; IPR000368; Sucrose_synth_GT-B1.
+DR   InterPro; IPR012820; Sucrose_synthase_pln/cyn.
+DR   InterPro; IPR056736; SUS_EPBD.
+DR   InterPro; IPR056735; SUS_N.
+DR   NCBIfam; TIGR02470; sucr_synth; 1.
+DR   PANTHER; PTHR45839; -; 1.
+DR   PANTHER; PTHR45839:SF9; SUCROSE SYNTHASE 2; 1.
+DR   Pfam; PF00534; Glycos_transf_1; 1.
+DR   Pfam; PF00862; GT-B_Sucrose_synth; 1.
+DR   Pfam; PF24862; SUS_EPBD; 1.
+DR   Pfam; PF24861; SUS_N; 1.
+DR   SUPFAM; SSF53756; UDP-Glycosyltransferase/glycogen phosphorylase; 1.
+PE   2: Evidence at transcript level;
+KW   Cytoplasm; Glycosyltransferase; Membrane; Plastid; Reference proteome;
+KW   Stress response; Transferase.
+FT   CHAIN           1..807
+FT                   /note="Sucrose synthase 2"
+FT                   /id="PRO_0000204645"
+FT   REGION          274..752
+FT                   /note="GT-B glycosyltransferase"
+FT                   /evidence="ECO:0000250"
+SQ   SEQUENCE   807 AA;  92064 MW;  48391FF65C4584DB CRC64;
+     MPTGRFETMR EWVYDAISAQ RNELLSLFSR YVAQGKGILQ SHQLIDEFLK TVKVDGTLED
+     LNKSPFMKVL QSAEEAIVLP PFVALAIRPR PGVREYVRVN VYELSVDHLT VSEYLRFKEE
+     LVNGHANGDY LLELDFEPFN ATLPRPTRSS SIGNGVQFLN RHLSSIMFRN KESMEPLLEF
+     LRTHKHDGRP MMLNDRIQNI PILQGALARA EEFLSKLPLA TPYSEFEFEL QGMGFERGWG
+     DTAQKVSEMV HLLLDILQAP DPSVLETFLG RIPMVFNVVI LSPHGYFGQA NVLGLPDTGG
+     QVVYILDQVR ALENEMLLRI QKQGLEVIPK ILIVTRLLPE AKGTTCNQRL ERVSGTEHAH
+     ILRIPFRTEK GILRKWISRF DVWPYLETFA EDASNEISAE LQGVPNLIIG NYSDGNLVAS
+     LLASKLGVIQ CNIAHALEKT KYPESDIYWR NHEDKYHFSS QFTADLIAMN NADFIITSTY
+     QEIAGSKNNV GQYESHTAFT MPGLYRVVHG IDVFDPKFNI VSPGADMTIY FPYSDKERRL
+     TALHESIEEL LFSAEQNDEH VGLLSDQSKP IIFSMARLDR VKNLTGLVEC YAKNSKLREL
+     ANLVIVGGYI DENQSRDREE MAEIQKMHSL IEQYDLHGEF RWIAAQMNRA RNGELYRYIA
+     DTKGVFVQPA FYEAFGLTVV ESMTCALPTF ATCHGGPAEI IENGVSGFHI DPYHPDQVAA
+     TLVSFFETCN TNPNHWVKIS EGGLKRIYER YTWKKYSERL LTLAGVYAFW KHVSKLERRE
+     TRRYLEMFYS LKFRDLANSI PLATDEN
+//
+ID   ENY2_ARATH              Reviewed;         115 AA.
+AC   Q6NQ54;
+DT   16-OCT-2013, integrated into UniProtKB/Swiss-Prot.
+DT   05-JUL-2004, sequence version 1.
+DT   28-JAN-2026, entry version 130.
+DE   RecName: Full=Transcription and mRNA export factor ENY2 {ECO:0000255|HAMAP-Rule:MF_03046};
+DE   AltName: Full=Enhancer of yellow 2 transcription factor homolog {ECO:0000255|HAMAP-Rule:MF_03046};
+GN   Name=ENY2 {ECO:0000303|PubMed:29588169};
+GN   OrderedLocusNames=At3g27100 {ECO:0000312|Araport:AT3G27100};
+OS   Arabidopsis thaliana (Mouse-ear cress).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   rosids; malvids; Brassicales; Brassicaceae; Camelineae; Arabidopsis.
+OX   NCBI_TaxID=3702;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=cv. Columbia;
+RX   PubMed=10819329; DOI=10.1093/dnares/7.2.131;
+RA   Sato S., Nakamura Y., Kaneko T., Katoh T., Asamizu E., Tabata S.;
+RT   "Structural analysis of Arabidopsis thaliana chromosome 3. I. Sequence
+RT   features of the regions of 4,504,864 bp covered by sixty P1 and TAC
+RT   clones.";
+RL   DNA Res. 7:131-135(2000).
+RN   [2]
+RP   GENOME REANNOTATION.
+RC   STRAIN=cv. Columbia;
+RX   PubMed=27862469; DOI=10.1111/tpj.13415;
+RA   Cheng C.Y., Krishnakumar V., Chan A.P., Thibaud-Nissen F., Schobel S.,
+RA   Town C.D.;
+RT   "Araport11: a complete reannotation of the Arabidopsis thaliana reference
+RT   genome.";
+RL   Plant J. 89:789-804(2017).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=cv. Columbia;
+RA   Cheuk R., Chen H., Kim C.J., Shinn P., Carninci P., Hayashizaki Y.,
+RA   Ishida J., Kamiya A., Kawai J., Narusaka M., Sakurai T., Satou M., Seki M.,
+RA   Shinozaki K., Ecker J.R.;
+RT   "Arabidopsis ORF clones.";
+RL   Submitted (OCT-2003) to the EMBL/GenBank/DDBJ databases.
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=cv. Columbia;
+RA   Totoki Y., Seki M., Ishida J., Nakajima M., Enju A., Kamiya A.,
+RA   Narusaka M., Shin-i T., Nakagawa M., Sakamoto N., Oishi K., Kohara Y.,
+RA   Kobayashi M., Toyoda A., Sakaki Y., Sakurai T., Iida K., Akiyama K.,
+RA   Satou M., Toyoda T., Konagaya A., Carninci P., Kawai J., Hayashizaki Y.,
+RA   Shinozaki K.;
+RT   "Large-scale analysis of RIKEN Arabidopsis full-length (RAFL) cDNAs.";
+RL   Submitted (SEP-2004) to the EMBL/GenBank/DDBJ databases.
+RN   [5]
+RP   IDENTIFICATION.
+RX   PubMed=19843313; DOI=10.1111/j.1365-313x.2009.04048.x;
+RA   Lu Q., Tang X., Tian G., Wang F., Liu K., Nguyen V., Kohalmi S.E.,
+RA   Keller W.A., Tsang E.W., Harada J.J., Rothstein S.J., Cui Y.;
+RT   "Arabidopsis homolog of the yeast TREX-2 mRNA export complex: components
+RT   and anchoring nucleoporin.";
+RL   Plant J. 61:259-270(2010).
+RN   [6]
+RP   FUNCTION, IDENTIFICATION BY MASS SPECTROMETRY, SUBUNIT, INTERACTION WITH
+RP   SGF11 AND MOS4, SUBCELLULAR LOCATION, AND TISSUE SPECIFICITY.
+RX   PubMed=29588169; DOI=10.1016/j.jmb.2018.03.018;
+RA   Pfab A., Bruckmann A., Nazet J., Merkl R., Grasser K.D.;
+RT   "The adaptor protein ENY2 is a component of the deubiquitination module of
+RT   the Arabidopsis SAGA transcriptional co-activator complex but not of the
+RT   TREX-2 complex.";
+RL   J. Mol. Biol. 430:1479-1494(2018).
+RN   [7]
+RP   FUNCTION, IDENTIFICATION BY MASS SPECTROMETRY, SUBUNIT, INTERACTION WITH
+RP   SGF11, AND SUBCELLULAR LOCATION.
+RX   PubMed=30192741; DOI=10.7554/elife.37892;
+RA   Nassrallah A., Rougee M., Bourbousse C., Drevensek S., Fonseca S.,
+RA   Iniesto E., Ait-Mohamed O., Deton-Cabanillas A.F., Zabulon G., Ahmed I.,
+RA   Stroebel D., Masson V., Lombard B., Eeckhout D., Gevaert K., Loew D.,
+RA   Genovesio A., Breyton C., de Jaeger G., Bowler C., Rubio V., Barneche F.;
+RT   "DET1-mediated degradation of a SAGA-like deubiquitination module controls
+RT   H2Bub homeostasis.";
+RL   Elife 7:0-0(2018).
+CC   -!- FUNCTION: Component of a deubiquitination module (DUB module) that
+CC       specifically deubiquitinates monoubiquitinated histone H2B (H2Bub)
+CC       (PubMed:29588169, PubMed:30192741). Does not seem to be a component of
+CC       the TREX-2 complex (PubMed:29588169). Seems to act independently of the
+CC       SAGA multiprotein complex (PubMed:30192741). The DUB module is
+CC       responsible for the major H2Bub deubiquitinase activity in Arabidopsis
+CC       (PubMed:30192741). {ECO:0000269|PubMed:29588169,
+CC       ECO:0000269|PubMed:30192741}.
+CC   -!- SUBUNIT: Component of a deubiquitination module (DUB module) formed by
+CC       ENY2, SGF11, and UBP22 in Arabidopsis (PubMed:29588169,
+CC       PubMed:30192741). Interacts directly with SGF11, but not with UBP22
+CC       (PubMed:29588169, PubMed:30192741). Interacts with MOS4
+CC       (PubMed:29588169). {ECO:0000269|PubMed:29588169,
+CC       ECO:0000269|PubMed:30192741}.
+CC   -!- SUBCELLULAR LOCATION: Nucleus, nucleoplasm {ECO:0000255|HAMAP-
+CC       Rule:MF_03046, ECO:0000269|PubMed:29588169,
+CC       ECO:0000269|PubMed:30192741}. Note=Does not localize in nucleolus and
+CC       displays a rather patchy distribution forming a speckled pattern in the
+CC       nucleoplasm (PubMed:29588169, PubMed:30192741). Does not localize in
+CC       the nuclear pore complex at the nuclear periphery (PubMed:29588169,
+CC       PubMed:30192741). {ECO:0000269|PubMed:29588169,
+CC       ECO:0000269|PubMed:30192741}.
+CC   -!- TISSUE SPECIFICITY: Expressed in roots, cotyledons, leaves and upper
+CC       part of sepals. {ECO:0000269|PubMed:29588169}.
+CC   -!- SIMILARITY: Belongs to the ENY2 family. {ECO:0000255|HAMAP-
+CC       Rule:MF_03046}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AB026649; -; NOT_ANNOTATED_CDS; Genomic_DNA.
+DR   EMBL; CP002686; AEE77266.1; -; Genomic_DNA.
+DR   EMBL; BT010609; AAQ89631.1; -; mRNA.
+DR   EMBL; AK175619; BAD43382.1; -; mRNA.
+DR   RefSeq; NP_189346.2; NM_113624.5.
+DR   AlphaFoldDB; Q6NQ54; -.
+DR   SMR; Q6NQ54; -.
+DR   BioGRID; 7659; 1.
+DR   FunCoup; Q6NQ54; 3133.
+DR   IntAct; Q6NQ54; 1.
+DR   STRING; 3702.Q6NQ54; -.
+DR   iPTMnet; Q6NQ54; -.
+DR   PaxDb; 3702-AT3G27100.2; -.
+DR   ProteomicsDB; 221944; -.
+DR   GeneID; 822329; -.
+DR   Gramene; AT3G27100.1; AT3G27100.1; AT3G27100.
+DR   KEGG; ath:AT3G27100; -.
+DR   Araport; AT3G27100; -.
+DR   TAIR; AT3G27100; ENY2.
+DR   eggNOG; KOG4479; Eukaryota.
+DR   HOGENOM; CLU_134052_0_1_1; -.
+DR   InParanoid; Q6NQ54; -.
+DR   OMA; RLMCRNI; -.
+DR   PhylomeDB; Q6NQ54; -.
+DR   PRO; PR:Q6NQ54; -.
+DR   Proteomes; UP000006548; Chromosome 3.
+DR   ExpressionAtlas; Q6NQ54; baseline and differential.
+DR   GO; GO:0009941; C:chloroplast envelope; HDA:TAIR.
+DR   GO; GO:0071819; C:DUBm complex; IPI:TAIR.
+DR   GO; GO:0005643; C:nuclear pore; IEA:UniProtKB-UniRule.
+DR   GO; GO:0005654; C:nucleoplasm; IDA:CACAO.
+DR   GO; GO:0000124; C:SAGA complex; IBA:GO_Central.
+DR   GO; GO:0070461; C:SAGA-type complex; IPI:TAIR.
+DR   GO; GO:0070390; C:transcription export complex 2; IEA:UniProtKB-UniRule.
+DR   GO; GO:0003682; F:chromatin binding; IBA:GO_Central.
+DR   GO; GO:0140936; F:histone H2B deubiquitinase activity; IMP:TAIR.
+DR   GO; GO:0003713; F:transcription coactivator activity; IBA:GO_Central.
+DR   GO; GO:0016973; P:poly(A)+ mRNA export from nucleus; IBA:GO_Central.
+DR   GO; GO:0015031; P:protein transport; IEA:UniProtKB-KW.
+DR   GO; GO:0006357; P:regulation of transcription by RNA polymerase II; IBA:GO_Central.
+DR   GO; GO:0006368; P:transcription elongation by RNA polymerase II; IEA:UniProtKB-UniRule.
+DR   FunFam; 1.10.246.140:FF:000001; Transcription and mRNA export factor ENY2; 1.
+DR   Gene3D; 1.10.246.140; -; 1.
+DR   HAMAP; MF_03046; ENY2_Sus1; 1.
+DR   InterPro; IPR018783; TF_ENY2.
+DR   InterPro; IPR038212; TF_EnY2_sf.
+DR   PANTHER; PTHR12514; ENHANCER OF YELLOW 2 TRANSCRIPTION FACTOR; 1.
+DR   Pfam; PF10163; EnY2; 1.
+PE   1: Evidence at protein level;
+KW   Activator; Chromatin regulator; mRNA transport; Nucleus; Protein transport;
+KW   Reference proteome; Transcription; Transcription regulation; Translocation;
+KW   Transport; Ubl conjugation pathway.
+FT   CHAIN           1..115
+FT                   /note="Transcription and mRNA export factor ENY2"
+FT                   /id="PRO_0000423831"
+SQ   SEQUENCE   115 AA;  13107 MW;  DCA3CE63CFC4E026 CRC64;
+     MKHSVNRPPT PDEDDVADGF EKDKVTLREI INVKLVESGE KENLMELVRD RLVECGWKDE
+     MRIACREHVK KKGRKDVTVD ELIRVITPKG RASVPDSVKA ELLNRIQNFI VSAAL
+//
+ID   SUS1_YEAST              Reviewed;          96 AA.
+AC   Q6WNK7; D6VQB1;
+DT   21-MAR-2006, integrated into UniProtKB/Swiss-Prot.
+DT   05-JUL-2004, sequence version 1.
+DT   28-JAN-2026, entry version 161.
+DE   RecName: Full=SAGA complex subunit SUS1;
+DE   AltName: Full=Transcription and mRNA export factor SUS1 {ECO:0000255|HAMAP-Rule:MF_03046};
+GN   Name=SUS1 {ECO:0000255|HAMAP-Rule:MF_03046};
+GN   OrderedLocusNames=YBR111W-A;
+OS   Saccharomyces cerevisiae (strain ATCC 204508 / S288c) (Baker's yeast).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina; Saccharomycetes;
+OC   Saccharomycetales; Saccharomycetaceae; Saccharomyces.
+OX   NCBI_TaxID=559292;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [MRNA], SUBCELLULAR LOCATION, IDENTIFICATION IN THE
+RP   SAGA AND TREX-2 COMPLEXES, AND INTERACTION WITH SAC3 AND THP1.
+RX   PubMed=14718168; DOI=10.1016/s0092-8674(03)01025-0;
+RA   Rodriguez-Navarro S., Fischer T., Luo M.-J., Antunez O., Brettschneider S.,
+RA   Lechner J., Perez-Ortin J.E., Reed R., Hurt E.C.;
+RT   "Sus1, a functional component of the SAGA histone acetylase complex and the
+RT   nuclear pore-associated mRNA export machinery.";
+RL   Cell 116:75-86(2004).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=ATCC 204508 / S288c;
+RX   PubMed=7813418; DOI=10.1002/j.1460-2075.1994.tb06923.x;
+RA   Feldmann H., Aigle M., Aljinovic G., Andre B., Baclet M.C., Barthe C.,
+RA   Baur A., Becam A.-M., Biteau N., Boles E., Brandt T., Brendel M.,
+RA   Brueckner M., Bussereau F., Christiansen C., Contreras R., Crouzet M.,
+RA   Cziepluch C., Demolis N., Delaveau T., Doignon F., Domdey H.,
+RA   Duesterhus S., Dubois E., Dujon B., El Bakkoury M., Entian K.-D.,
+RA   Feuermann M., Fiers W., Fobo G.M., Fritz C., Gassenhuber J., Glansdorff N.,
+RA   Goffeau A., Grivell L.A., de Haan M., Hein C., Herbert C.J.,
+RA   Hollenberg C.P., Holmstroem K., Jacq C., Jacquet M., Jauniaux J.-C.,
+RA   Jonniaux J.-L., Kallesoee T., Kiesau P., Kirchrath L., Koetter P.,
+RA   Korol S., Liebl S., Logghe M., Lohan A.J.E., Louis E.J., Li Z.Y.,
+RA   Maat M.J., Mallet L., Mannhaupt G., Messenguy F., Miosga T., Molemans F.,
+RA   Mueller S., Nasr F., Obermaier B., Perea J., Pierard A., Piravandi E.,
+RA   Pohl F.M., Pohl T.M., Potier S., Proft M., Purnelle B., Ramezani Rad M.,
+RA   Rieger M., Rose M., Schaaff-Gerstenschlaeger I., Scherens B.,
+RA   Schwarzlose C., Skala J., Slonimski P.P., Smits P.H.M., Souciet J.-L.,
+RA   Steensma H.Y., Stucka R., Urrestarazu L.A., van der Aart Q.J.M.,
+RA   Van Dyck L., Vassarotti A., Vetter I., Vierendeels F., Vissers S.,
+RA   Wagner G., de Wergifosse P., Wolfe K.H., Zagulski M., Zimmermann F.K.,
+RA   Mewes H.-W., Kleine K.;
+RT   "Complete DNA sequence of yeast chromosome II.";
+RL   EMBO J. 13:5795-5809(1994).
+RN   [3]
+RP   GENOME REANNOTATION.
+RC   STRAIN=ATCC 204508 / S288c;
+RX   PubMed=24374639; DOI=10.1534/g3.113.008995;
+RA   Engel S.R., Dietrich F.S., Fisk D.G., Binkley G., Balakrishnan R.,
+RA   Costanzo M.C., Dwight S.S., Hitz B.C., Karra K., Nash R.S., Weng S.,
+RA   Wong E.D., Lloyd P., Skrzypek M.S., Miyasato S.R., Simison M., Cherry J.M.;
+RT   "The reference genome sequence of Saccharomyces cerevisiae: Then and now.";
+RL   G3 (Bethesda) 4:389-398(2014).
+RN   [4]
+RP   3D-STRUCTURE MODELING OF THE SAGA COMPLEX.
+RX   PubMed=15260971; DOI=10.1016/j.molcel.2004.06.005;
+RA   Wu P.Y., Ruhlmann C., Winston F., Schultz P.;
+RT   "Molecular architecture of the S. cerevisiae SAGA complex.";
+RL   Mol. Cell 15:199-208(2004).
+RN   [5]
+RP   FUNCTION, IDENTIFICATION IN THE TREX-2 COMPLEX, IDENTIFICATION BY MASS
+RP   SPECTROMETRY, AND INTERACTION WITH SAC3.
+RX   PubMed=15311284; DOI=10.1038/ncb1163;
+RA   Fischer T., Rodriguez-Navarro S., Pereira G., Racz A., Schiebel E.,
+RA   Hurt E.C.;
+RT   "Yeast centrin Cdc31 is linked to the nuclear mRNA export machinery.";
+RL   Nat. Cell Biol. 6:840-848(2004).
+RN   [6]
+RP   FUNCTION.
+RX   PubMed=16510898; DOI=10.1101/gr.4355406;
+RA   Kastenmayer J.P., Ni L., Chu A., Kitchen L.E., Au W.-C., Yang H.,
+RA   Carter C.D., Wheeler D., Davis R.W., Boeke J.D., Snyder M.A., Basrai M.A.;
+RT   "Functional genomics of genes with small open reading frames (sORFs) in S.
+RT   cerevisiae.";
+RL   Genome Res. 16:365-373(2006).
+RN   [7]
+RP   FUNCTION, INTERACTION WITH SGF11 AND UBP8, IDENTIFICATION IN THE SAGA
+RP   COMPLEX, AND SUBCELLULAR LOCATION.
+RX   PubMed=16855026; DOI=10.1091/mbc.e06-02-0098;
+RA   Koehler A., Pascual-Garcia P., Llopis A., Zapater M., Posas F., Hurt E.C.,
+RA   Rodriguez-Navarro S.;
+RT   "The mRNA export factor Sus1 is involved in Spt/Ada/Gcn5 acetyltransferase-
+RT   mediated H2B deubiquitinylation through its interaction with Ubp8 and
+RT   Sgf11.";
+RL   Mol. Biol. Cell 17:4228-4236(2006).
+RN   [8]
+RP   FUNCTION.
+RX   PubMed=16760982; DOI=10.1038/nature04752;
+RA   Cabal G.G., Genovesio A., Rodriguez-Navarro S., Zimmer C., Gadal O.,
+RA   Lesne A., Buc H., Feuerbach-Fournier F., Olivo-Marin J.-C., Hurt E.C.,
+RA   Nehrbass U.;
+RT   "SAGA interacting factors confine sub-diffusion of transcribed genes to the
+RT   nuclear envelope.";
+RL   Nature 441:770-773(2006).
+RN   [9]
+RP   FUNCTION, AND INTERACTION WITH YRA1; MEX67 AND THE RNA POLYMERASE II
+RP   COMPLEX.
+RX   PubMed=18923079; DOI=10.1101/gad.483308;
+RA   Pascual-Garcia P., Govind C.K., Queralt E., Cuenca-Bono B., Llopis A.,
+RA   Chavez S., Hinnebusch A.G., Rodriguez-Navarro S.;
+RT   "Sus1 is recruited to coding regions and functions during transcription
+RT   elongation in association with SAGA and TREX2.";
+RL   Genes Dev. 22:2811-2822(2008).
+RN   [10]
+RP   FUNCTION OF THE TREX-2 COMPLEX.
+RX   PubMed=18667528; DOI=10.1091/mbc.e08-04-0355;
+RA   Gonzalez-Aguilera C., Tous C., Gomez-Gonzalez B., Huertas P., Luna R.,
+RA   Aguilera A.;
+RT   "The THP1-SAC3-SUS1-CDC31 complex works in transcription elongation-mRNA
+RT   export preventing RNA-mediated genome instability.";
+RL   Mol. Biol. Cell 19:4310-4318(2008).
+RN   [11]
+RP   IDENTIFICATION IN THE SAGA AND TREX-2 COMPLEXES.
+RX   PubMed=18488019; DOI=10.1038/ncb1733;
+RA   Koehler A., Schneider M., Cabal G.G., Nehrbass U., Hurt E.;
+RT   "Yeast Ataxin-7 links histone deubiquitination with gene gating and mRNA
+RT   export.";
+RL   Nat. Cell Biol. 10:707-715(2008).
+RN   [12]
+RP   FUNCTION OF THE TREX-2 COMPLEX.
+RX   PubMed=18003937; DOI=10.1261/rna.764108;
+RA   Chekanova J.A., Abruzzi K.C., Rosbash M., Belostotsky D.A.;
+RT   "Sus1, Sac3, and Thp1 mediate post-transcriptional tethering of active
+RT   genes to the nuclear rim as well as to non-nascent mRNP.";
+RL   RNA 14:66-77(2008).
+RN   [13]
+RP   MUTAGENESIS OF 18-GLU--GLY-20; 37-GLY-TRP-38 AND 73-VAL--ASP-75.
+RX   PubMed=19269973; DOI=10.1074/jbc.m900502200;
+RA   Kloeckner C., Schneider M., Lutz S., Jani D., Kressler D., Stewart M.,
+RA   Hurt E., Koehler A.;
+RT   "Mutational uncoupling of the role of Sus1 in nuclear pore complex
+RT   targeting of an mRNA export complex and histone H2B deubiquitination.";
+RL   J. Biol. Chem. 284:12049-12056(2009).
+RN   [14]
+RP   FUNCTION, AND SUBCELLULAR LOCATION.
+RX   PubMed=20230609; DOI=10.1186/1471-2121-11-19;
+RA   Cuenca-Bono B., Garcia-Molinero V., Pascual-Garcia P., Garcia-Oliver E.,
+RA   Llopis A., Rodriguez-Navarro S.;
+RT   "A novel link between Sus1 and the cytoplasmic mRNA decay machinery
+RT   suggests a broad role in mRNA metabolism.";
+RL   BMC Cell Biol. 11:19-19(2010).
+RN   [15]
+RP   FUNCTION, AND INDUCTION.
+RX   PubMed=21749979; DOI=10.1093/nar/gkr496;
+RA   Cuenca-Bono B., Garcia-Molinero V., Pascual-Garcia P., Dopazo H.,
+RA   Llopis A., Vilardell J., Rodriguez-Navarro S.;
+RT   "SUS1 introns are required for efficient mRNA nuclear export in yeast.";
+RL   Nucleic Acids Res. 39:8599-8611(2011).
+RN   [16]
+RP   FUNCTION, AND INDUCTION.
+RX   PubMed=21749978; DOI=10.1093/nar/gkr497;
+RA   Hossain M.A., Rodriguez C.M., Johnson T.L.;
+RT   "Key features of the two-intron Saccharomyces cerevisiae gene SUS1
+RT   contribute to its alternative splicing.";
+RL   Nucleic Acids Res. 39:8612-8627(2011).
+RN   [17]
+RP   UBIQUITINATION [LARGE SCALE ANALYSIS] AT LYS-68, AND IDENTIFICATION BY MASS
+RP   SPECTROMETRY [LARGE SCALE ANALYSIS].
+RX   PubMed=22106047; DOI=10.1002/pmic.201100166;
+RA   Starita L.M., Lo R.S., Eng J.K., von Haller P.D., Fields S.;
+RT   "Sites of ubiquitin attachment in Saccharomyces cerevisiae.";
+RL   Proteomics 12:236-240(2012).
+RN   [18]
+RP   IDENTIFICATION IN THE TREX-2 COMPLEX, AND INTERACTION WITH SEM1.
+RX   PubMed=23599000; DOI=10.1093/nar/gkt272;
+RA   Garcia-Oliver E., Pascual-Garcia P., Garcia-Molinero V., Lenstra T.L.,
+RA   Holstege F.C., Rodriguez-Navarro S.;
+RT   "A novel role for Sem1 and TREX-2 in transcription involves their impact on
+RT   recruitment and H2B deubiquitylation activity of SAGA.";
+RL   Nucleic Acids Res. 41:5655-5668(2013).
+RN   [19]
+RP   SUBUNIT.
+RX   PubMed=25216679; DOI=10.15252/embj.201488638;
+RA   Han Y., Luo J., Ranish J., Hahn S.;
+RT   "Architecture of the Saccharomyces cerevisiae SAGA transcription
+RT   coactivator complex.";
+RL   EMBO J. 33:2534-2546(2014).
+RN   [20]
+RP   FUNCTION.
+RX   PubMed=28918903; DOI=10.1016/j.molcel.2017.08.016;
+RA   Baptista T., Gruenberg S., Minoungou N., Koster M.J.E., Timmers H.T.M.,
+RA   Hahn S., Devys D., Tora L.;
+RT   "SAGA is a general cofactor for RNA polymerase II transcription.";
+RL   Mol. Cell 68:130-143.e5(2017).
+RN   [21]
+RP   FUNCTION.
+RX   PubMed=29598828; DOI=10.1186/s13072-018-0184-2;
+RA   Garcia-Molinero V., Garcia-Martinez J., Reja R., Furio-Tari P., Antunez O.,
+RA   Vinayachandran V., Conesa A., Pugh B.F., Perez-Ortin J.E.,
+RA   Rodriguez-Navarro S.;
+RT   "The SAGA/TREX-2 subunit Sus1 binds widely to transcribed genes and affects
+RT   mRNA turnover globally.";
+RL   Epigenetics Chromatin 11:13-13(2018).
+RN   [22]
+RP   FUNCTION, AND SUBUNIT.
+RX   PubMed=33864814; DOI=10.1016/j.jbc.2021.100671;
+RA   Adamus K., Reboul C., Voss J., Huang C., Schittenhelm R.B., Le S.N.,
+RA   Ellisdon A.M., Elmlund H., Boudes M., Elmlund D.;
+RT   "SAGA and SAGA-like SLIK transcriptional coactivators are structurally and
+RT   biochemically equivalent.";
+RL   J. Biol. Chem. 296:100671-100671(2021).
+RN   [23] {ECO:0007744|PDB:3FWB, ECO:0007744|PDB:3FWC}
+RP   X-RAY CRYSTALLOGRAPHY (2.50 ANGSTROMS) IN THE TREX-2 COMPLEX.
+RX   PubMed=19328066; DOI=10.1016/j.molcel.2009.01.033;
+RA   Jani D., Lutz S., Marshall N.J., Fischer T., Kohler A., Ellisdon A.M.,
+RA   Hurt E., Stewart M.;
+RT   "Sus1, Cdc31, and the Sac3 CID region form a conserved interaction platform
+RT   that promotes nuclear pore association and mRNA export.";
+RL   Mol. Cell 33:727-737(2009).
+RN   [24] {ECO:0007744|PDB:3M99}
+RP   X-RAY CRYSTALLOGRAPHY (2.70 ANGSTROMS) IN THE SAGA COMPLEX.
+RX   PubMed=20434206; DOI=10.1016/j.cell.2010.04.026;
+RA   Kohler A., Zimmerman E., Schneider M., Hurt E., Zheng N.;
+RT   "Structural basis for assembly and activation of the heterotetrameric SAGA
+RT   histone H2B deubiquitinase module.";
+RL   Cell 141:606-617(2010).
+RN   [25] {ECO:0007744|PDB:3KIK, ECO:0007744|PDB:3KJL}
+RP   X-RAY CRYSTALLOGRAPHY (2.10 ANGSTROMS).
+RX   PubMed=20007317; DOI=10.1074/jbc.m109.070839;
+RA   Ellisdon A.M., Jani D., Kohler A., Hurt E., Stewart M.;
+RT   "Structural basis for the interaction between yeast Spt-Ada-Gcn5
+RT   acetyltransferase (SAGA) complex components Sgf11 and Sus1.";
+RL   J. Biol. Chem. 285:3850-3856(2010).
+RN   [26] {ECO:0007744|PDB:3MHH, ECO:0007744|PDB:3MHS}
+RP   X-RAY CRYSTALLOGRAPHY (1.89 ANGSTROMS).
+RX   PubMed=20395473; DOI=10.1126/science.1190049;
+RA   Samara N.L., Datta A.B., Berndsen C.E., Zhang X., Yao T., Cohen R.E.,
+RA   Wolberger C.;
+RT   "Structural insights into the assembly and function of the SAGA
+RT   deubiquitinating module.";
+RL   Science 328:1025-1029(2010).
+RN   [27] {ECO:0007744|PDB:4FIP, ECO:0007744|PDB:4FJC, ECO:0007744|PDB:4FK5}
+RP   X-RAY CRYSTALLOGRAPHY (2.03 ANGSTROMS).
+RX   PubMed=22771212; DOI=10.1016/j.str.2012.05.015;
+RA   Samara N.L., Ringel A.E., Wolberger C.;
+RT   "A role for intersubunit interactions in maintaining SAGA deubiquitinating
+RT   module structure and activity.";
+RL   Structure 20:1414-1424(2012).
+RN   [28] {ECO:0007744|PDB:4C31, ECO:0007744|PDB:4MBE}
+RP   X-RAY CRYSTALLOGRAPHY (2.61 ANGSTROMS) IN THE TREX-2 COMPLEX.
+RX   PubMed=24705649; DOI=10.1093/nar/gku252;
+RA   Jani D., Valkov E., Stewart M.;
+RT   "Structural basis for binding the TREX2 complex to nuclear pores, GAL1
+RT   localisation and mRNA export.";
+RL   Nucleic Acids Res. 42:6686-6697(2014).
+RN   [29] {ECO:0007744|PDB:4ZUX}
+RP   X-RAY CRYSTALLOGRAPHY (3.82 ANGSTROMS).
+RX   PubMed=26912860; DOI=10.1126/science.aac5681;
+RA   Morgan M.T., Haj-Yahya M., Ringel A.E., Bandi P., Brik A., Wolberger C.;
+RT   "Structural basis for histone H2B deubiquitination by the SAGA DUB
+RT   module.";
+RL   Science 351:725-728(2016).
+RN   [30] {ECO:0007744|PDB:6T9L}
+RP   STRUCTURE BY ELECTRON MICROSCOPY (3.60 ANGSTROMS) IN THE SAGA COMPLEX.
+RX   PubMed=31969703; DOI=10.1038/s41586-020-1933-5;
+RA   Wang H., Dienemann C., Stutzer A., Urlaub H., Cheung A.C.M., Cramer P.;
+RT   "Structure of the transcription coactivator SAGA.";
+RL   Nature 577:717-720(2020).
+CC   -!- FUNCTION: Involved in mRNA export coupled transcription activation by
+CC       association with both the TREX-2 and the SAGA complexes
+CC       (PubMed:14718168, PubMed:15311284, PubMed:18923079). SAGA acts as a
+CC       general cofactor required for essentially all RNA polymerase II
+CC       transcription (PubMed:25216679, PubMed:28918903). At the promoters,
+CC       SAGA is required for transcription pre-initiation complex (PIC)
+CC       recruitment. It influences RNA polymerase II transcriptional activity
+CC       through different activities such as TBP interaction (via core/TAF
+CC       module) and promoter selectivity, interaction with transcription
+CC       activators (via Tra1/SPT module), and chromatin modification through
+CC       histone acetylation (via HAT module) and deubiquitination (via DUB
+CC       module) (PubMed:16855026, PubMed:31969703). SAGA preferentially
+CC       acetylates histones H3 (to form H3K9ac, H3K14ac, H3K18ac and H3K23ac)
+CC       and H2B and deubiquitinates histone H2B (PubMed:20395473). SAGA
+CC       interacts with DNA via upstream activating sequences (UASs)
+CC       (PubMed:28918903, PubMed:29598828). Also identified in a modified
+CC       version of SAGA named SALSA or SLIK. The cleavage of SPT7 and the
+CC       absence of the SPT8 subunit in SLIK neither drive any major
+CC       conformational differences in its structure compared with SAGA, nor
+CC       significantly affect HAT, DUB, or DNA-binding activities
+CC       (PubMed:33864814). Within the SAGA complex, participates in a
+CC       subcomplex with SGF11, SGF73 and UBP8 required for deubiquitination of
+CC       H2B and for the maintenance of steady-state H3 methylation levels
+CC       (PubMed:16855026). The TREX-2 complex functions in docking export-
+CC       competent ribonucleoprotein particles (mRNPs) to the nuclear entrance
+CC       of the nuclear pore complex (nuclear basket), by association with
+CC       components of the nuclear mRNA export machinery (MEX67-MTR2 and SUB2)
+CC       in the nucleoplasm and the nucleoporin NUP1 at the nuclear basket.
+CC       TREX-2 participates in mRNA export and accurate chromatin positioning
+CC       in the nucleus by tethering genes to the nuclear periphery
+CC       (PubMed:16760982, PubMed:18003937, PubMed:19328066). SUS1 also has a
+CC       role in mRNP biogenesis and maintenance of genome integrity through
+CC       preventing RNA-mediated genome instability (PubMed:18667528). Has a
+CC       role in response to DNA damage induced by methyl methane sulfonate
+CC       (MMS) and replication arrest induced by hydroxyurea (PubMed:16510898).
+CC       May also be involved in cytoplasmic mRNA decay by interaction with
+CC       components of P-bodies (PubMed:20230609). {ECO:0000269|PubMed:14718168,
+CC       ECO:0000269|PubMed:15311284, ECO:0000269|PubMed:16510898,
+CC       ECO:0000269|PubMed:16760982, ECO:0000269|PubMed:16855026,
+CC       ECO:0000269|PubMed:18003937, ECO:0000269|PubMed:18667528,
+CC       ECO:0000269|PubMed:18923079, ECO:0000269|PubMed:19328066,
+CC       ECO:0000269|PubMed:20230609, ECO:0000269|PubMed:20395473,
+CC       ECO:0000269|PubMed:25216679, ECO:0000269|PubMed:28918903,
+CC       ECO:0000269|PubMed:29598828, ECO:0000269|PubMed:31969703,
+CC       ECO:0000269|PubMed:33864814}.
+CC   -!- SUBUNIT: Component of the 1.8 MDa SAGA (Spt-Ada-Gcn5 acetyltransferase)
+CC       complex, which is composed of 19 subunits TRA1, SPT7, TAF5, NGG1/ADA3,
+CC       SGF73, SPT20/ADA5, SPT8, TAF12, TAF6, HFI1/ADA1, UBP8, GCN5, ADA2,
+CC       SPT3, SGF29, TAF10, TAF9, SGF11 and SUS1 (PubMed:14718168,
+CC       PubMed:16855026, PubMed:18488019, PubMed:31969703). The SAGA complex is
+CC       composed of 4 modules, namely the HAT (histone acetyltransferase)
+CC       module (GCN5, ADA2, NGG1/ADA3 and SGF29), the DUB (deubiquitinating)
+CC       module (UBP8, SGF11, SGF73 and SUS1), the core or TAF (TBP-associated
+CC       factor) module (TAF5, TAF6, TAF9, TAF10 and TAF12), and the Tra1 or SPT
+CC       (Suppressor of Ty) module (TRA1, HFI1/ADA1, SPT3, SPT7, SPT8 and
+CC       SPT20/ADA5). The Tra1/SPT module binds activators, the core module
+CC       recruits TBP (TATA-binding protein), the HAT module contains the
+CC       histone H3 acetyltransferase GCN5, and the DUB module comprises the
+CC       histone H2B deubiquitinase UBP8 (PubMed:25216679, PubMed:31969703).
+CC       Also identified in an altered form of SAGA, named SALSA (SAGA altered,
+CC       Spt8 absent) or SLIK (SAGA-like) complex, which contains a C-terminal
+CC       truncated form of SPT7 and is missing SPT8 (PubMed:33864814). However,
+CC       it has been shown that the SAGA and SAGA-like SALSA/SLIK
+CC       transcriptional coactivators are structurally and biochemically
+CC       equivalent (PubMed:33864814). Component of the nuclear pore complex
+CC       (NPC)-associated TREX-2 complex (transcription and export complex 2),
+CC       composed of at least SUS1, SAC3, THP1, SEM1, and CDC31. TREX-2 contains
+CC       2 SUS1 chains. The TREX-2 complex interacts with the mRNA export
+CC       factors MEX67, MTR2 and SUB2, and the nucleoporin NUP1
+CC       (PubMed:14718168, PubMed:15311284, PubMed:18488019, PubMed:23599000).
+CC       Interacts directly with THP1, SAC3 (PubMed:14718168, PubMed:15311284).
+CC       Interacts directly with SGF11 and UBP8 (PubMed:16855026). Interacts
+CC       with YRA1, MEX67 and with the RNA polymerase II (PubMed:18923079).
+CC       {ECO:0000269|PubMed:14718168, ECO:0000269|PubMed:15311284,
+CC       ECO:0000269|PubMed:16855026, ECO:0000269|PubMed:18488019,
+CC       ECO:0000269|PubMed:18923079, ECO:0000269|PubMed:23599000,
+CC       ECO:0000269|PubMed:25216679, ECO:0000269|PubMed:31969703,
+CC       ECO:0000269|PubMed:33864814}.
+CC   -!- INTERACTION:
+CC       Q6WNK7; Q02336: ADA2; NbExp=13; IntAct=EBI-1251050, EBI-2186;
+CC       Q6WNK7; P06704: CDC31; NbExp=7; IntAct=EBI-1251050, EBI-4259;
+CC       Q6WNK7; P46674: SAC3; NbExp=13; IntAct=EBI-1251050, EBI-16425;
+CC       Q6WNK7; Q03067: SGF11; NbExp=13; IntAct=EBI-1251050, EBI-34550;
+CC       Q6WNK7; P53040: TAF6; NbExp=9; IntAct=EBI-1251050, EBI-18876;
+CC       Q6WNK7; Q08231: THP1; NbExp=11; IntAct=EBI-1251050, EBI-32097;
+CC       Q6WNK7; P38811: TRA1; NbExp=8; IntAct=EBI-1251050, EBI-24638;
+CC   -!- SUBCELLULAR LOCATION: Nucleus, nucleoplasm
+CC       {ECO:0000269|PubMed:16855026}. Cytoplasm, P-body
+CC       {ECO:0000269|PubMed:20230609}. Note=The nucleoplasm localization
+CC       requires the presence of UBP8 and SGF11 to bind part of SUS1 to the
+CC       SAGA complex. {ECO:0000269|PubMed:16855026}.
+CC   -!- INDUCTION: The gene for SUS1 bears 2 introns, and its expression is
+CC       highly regulated by splicing, translation and decay. The presence of
+CC       the introns thereby play a key role for SUS1 function in yeast.
+CC       {ECO:0000269|PubMed:21749978, ECO:0000269|PubMed:21749979}.
+CC   -!- SIMILARITY: Belongs to the ENY2 family. {ECO:0000255|HAMAP-
+CC       Rule:MF_03046}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AY278445; AAQ19492.1; -; mRNA.
+DR   EMBL; Z35980; -; NOT_ANNOTATED_CDS; Genomic_DNA.
+DR   EMBL; Z35981; -; NOT_ANNOTATED_CDS; Genomic_DNA.
+DR   EMBL; BK006936; DAA07231.1; -; Genomic_DNA.
+DR   RefSeq; NP_878049.2; NM_001184520.1.
+DR   PDB; 3FWB; X-ray; 2.50 A; C=1-96.
+DR   PDB; 3FWC; X-ray; 2.70 A; C/D/G/H/K/L/O/P=1-96.
+DR   PDB; 3KIK; X-ray; 2.10 A; A/B/C/D=1-96.
+DR   PDB; 3KJL; X-ray; 2.70 A; A/B/C/D=1-96.
+DR   PDB; 3M99; X-ray; 2.70 A; C=1-96.
+DR   PDB; 3MHH; X-ray; 2.45 A; B=1-96.
+DR   PDB; 3MHS; X-ray; 1.89 A; B=1-96.
+DR   PDB; 4C31; X-ray; 3.00 A; B/E=1-96.
+DR   PDB; 4FIP; X-ray; 2.69 A; B/F=1-96.
+DR   PDB; 4FJC; X-ray; 2.83 A; B/F=1-96.
+DR   PDB; 4FK5; X-ray; 2.03 A; B=1-96.
+DR   PDB; 4MBE; X-ray; 2.61 A; C/F=1-96.
+DR   PDB; 4WA6; X-ray; 2.36 A; B/F=1-96.
+DR   PDB; 4ZUX; X-ray; 3.82 A; V/a/f/k=1-96.
+DR   PDB; 6AQR; X-ray; 2.10 A; B=1-96.
+DR   PDB; 6T9L; EM; 3.60 A; L=1-96.
+DR   PDBsum; 3FWB; -.
+DR   PDBsum; 3FWC; -.
+DR   PDBsum; 3KIK; -.
+DR   PDBsum; 3KJL; -.
+DR   PDBsum; 3M99; -.
+DR   PDBsum; 3MHH; -.
+DR   PDBsum; 3MHS; -.
+DR   PDBsum; 4C31; -.
+DR   PDBsum; 4FIP; -.
+DR   PDBsum; 4FJC; -.
+DR   PDBsum; 4FK5; -.
+DR   PDBsum; 4MBE; -.
+DR   PDBsum; 4WA6; -.
+DR   PDBsum; 4ZUX; -.
+DR   PDBsum; 6AQR; -.
+DR   PDBsum; 6T9L; -.
+DR   AlphaFoldDB; Q6WNK7; -.
+DR   EMDB; EMD-10415; -.
+DR   SMR; Q6WNK7; -.
+DR   BioGRID; 36987; 425.
+DR   ComplexPortal; CPX-1686; TREX-2 transcription-export complex.
+DR   ComplexPortal; CPX-656; SAGA complex.
+DR   ComplexPortal; CPX-675; SLIK (SAGA-like) complex.
+DR   DIP; DIP-45499N; -.
+DR   FunCoup; Q6WNK7; 424.
+DR   IntAct; Q6WNK7; 98.
+DR   MINT; Q6WNK7; -.
+DR   STRING; 4932.YBR111W-A; -.
+DR   TCDB; 3.A.22.1.1; the transcription-coupled trex/tap nuclear mrna export complex (trex) family.
+DR   iPTMnet; Q6WNK7; -.
+DR   PaxDb; 4932-YBR111W-A; -.
+DR   PeptideAtlas; Q6WNK7; -.
+DR   EnsemblFungi; YBR111W-A_mRNA; YBR111W-A; YBR111W-A.
+DR   GeneID; 1466445; -.
+DR   KEGG; sce:YBR111W-A; -.
+DR   AGR; SGD:S000028510; -.
+DR   SGD; S000028510; SUS1.
+DR   VEuPathDB; FungiDB:YBR111W-A; -.
+DR   eggNOG; ENOG502S9WJ; Eukaryota.
+DR   HOGENOM; CLU_134052_2_1_1; -.
+DR   InParanoid; Q6WNK7; -.
+DR   OMA; YESGWFD; -.
+DR   OrthoDB; 6221744at2759; -.
+DR   BioCyc; YEAST:G3O-29255-MONOMER; -.
+DR   BioGRID-ORCS; 1466445; 0 hits in 10 CRISPR screens.
+DR   CD-CODE; A777E0F8; P-body.
+DR   EvolutionaryTrace; Q6WNK7; -.
+DR   PRO; PR:Q6WNK7; -.
+DR   Proteomes; UP000002311; Chromosome II.
+DR   RNAct; Q6WNK7; protein.
+DR   GO; GO:0071819; C:DUBm complex; IDA:SGD.
+DR   GO; GO:0005643; C:nuclear pore; IDA:SGD.
+DR   GO; GO:0005654; C:nucleoplasm; IDA:SGD.
+DR   GO; GO:0005634; C:nucleus; NAS:ComplexPortal.
+DR   GO; GO:0000932; C:P-body; IEA:UniProtKB-SubCell.
+DR   GO; GO:0000124; C:SAGA complex; IDA:SGD.
+DR   GO; GO:0046695; C:SLIK (SAGA-like) complex; IPI:ComplexPortal.
+DR   GO; GO:0070390; C:transcription export complex 2; IDA:SGD.
+DR   GO; GO:0003682; F:chromatin binding; IDA:SGD.
+DR   GO; GO:0008047; F:enzyme activator activity; IDA:SGD.
+DR   GO; GO:0003713; F:transcription coactivator activity; IBA:GO_Central.
+DR   GO; GO:0006325; P:chromatin organization; IEA:UniProtKB-KW.
+DR   GO; GO:0006406; P:mRNA export from nucleus; NAS:ComplexPortal.
+DR   GO; GO:0071028; P:nuclear mRNA surveillance; IMP:SGD.
+DR   GO; GO:0016973; P:poly(A)+ mRNA export from nucleus; IMP:SGD.
+DR   GO; GO:0045944; P:positive regulation of transcription by RNA polymerase II; IMP:SGD.
+DR   GO; GO:0000973; P:post-transcriptional tethering of RNA polymerase II gene DNA at nuclear periphery; IMP:SGD.
+DR   GO; GO:0015031; P:protein transport; IEA:UniProtKB-KW.
+DR   GO; GO:0032880; P:regulation of protein localization; IMP:SGD.
+DR   GO; GO:0006357; P:regulation of transcription by RNA polymerase II; IDA:ComplexPortal.
+DR   GO; GO:0006368; P:transcription elongation by RNA polymerase II; IMP:SGD.
+DR   FunFam; 1.10.246.140:FF:000004; Transcription and mRNA export factor SUS1; 1.
+DR   Gene3D; 1.10.246.140; -; 1.
+DR   HAMAP; MF_03046; ENY2_Sus1; 1.
+DR   IDEAL; IID50337; -.
+DR   InterPro; IPR018783; TF_ENY2.
+DR   InterPro; IPR038212; TF_EnY2_sf.
+DR   PANTHER; PTHR12514; ENHANCER OF YELLOW 2 TRANSCRIPTION FACTOR; 1.
+DR   Pfam; PF10163; EnY2; 1.
+PE   1: Evidence at protein level;
+KW   3D-structure; Activator; Chromatin regulator; Cytoplasm; Isopeptide bond;
+KW   mRNA transport; Nucleus; Protein transport; Reference proteome;
+KW   Transcription; Transcription regulation; Translocation; Transport;
+KW   Ubl conjugation.
+FT   CHAIN           1..96
+FT                   /note="SAGA complex subunit SUS1"
+FT                   /id="PRO_0000227806"
+FT   CROSSLNK        68
+FT                   /note="Glycyl lysine isopeptide (Lys-Gly) (interchain with
+FT                   G-Cter in ubiquitin)"
+FT                   /evidence="ECO:0007744|PubMed:22106047"
+FT   MUTAGEN         18..20
+FT                   /note="ESG->AAA: In sus1-10; dissociates from TREX-2 while
+FT                   leaving its interaction with SAGA intact."
+FT                   /evidence="ECO:0000269|PubMed:19269973"
+FT   MUTAGEN         37..38
+FT                   /note="GW->AA: In sus1-11; impairs binding to both TREX-2
+FT                   and SAGA."
+FT                   /evidence="ECO:0000269|PubMed:19269973"
+FT   MUTAGEN         73..75
+FT                   /note="VSD->ASA: In sus1-12; dissociates from TREX-2 while
+FT                   leaving its interaction with SAGA intact."
+FT                   /evidence="ECO:0000269|PubMed:19269973"
+FT   HELIX           7..18
+FT                   /evidence="ECO:0007829|PDB:3MHS"
+FT   HELIX           21..35
+FT                   /evidence="ECO:0007829|PDB:3MHS"
+FT   HELIX           38..53
+FT                   /evidence="ECO:0007829|PDB:3MHS"
+FT   HELIX           58..71
+FT                   /evidence="ECO:0007829|PDB:3MHS"
+FT   HELIX           75..92
+FT                   /evidence="ECO:0007829|PDB:3MHS"
+FT   STRAND          93..96
+FT                   /evidence="ECO:0007829|PDB:4FK5"
+SQ   SEQUENCE   96 AA;  11085 MW;  DB0DA0C9DC13FB21 CRC64;
+     MTMDTAQLKS QIQQYLVESG NYELISNELK ARLLQEGWVD KVKDLTKSEM NINESTNFTQ
+     ILSTVEPKAL EMVSDSTRET VLKQIREFLE EIVDTQ
+//
+ID   SUS_NITEU               Reviewed;         794 AA.
+AC   Q820M5;
+DT   22-NOV-2017, integrated into UniProtKB/Swiss-Prot.
+DT   01-JUN-2003, sequence version 1.
+DT   18-JUN-2025, entry version 107.
+DE   RecName: Full=Sucrose synthase;
+DE            Short=SuSyNe {ECO:0000303|PubMed:25846332};
+DE            EC=2.4.1.13 {ECO:0000269|PubMed:25846332};
+GN   Name=ss2; OrderedLocusNames=NE1214;
+OS   Nitrosomonas europaea (strain ATCC 19718 / CIP 103999 / KCTC 2705 / NBRC
+OS   14298).
+OC   Bacteria; Pseudomonadati; Pseudomonadota; Betaproteobacteria;
+OC   Nitrosomonadales; Nitrosomonadaceae; Nitrosomonas.
+OX   NCBI_TaxID=228410;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=ATCC 19718 / CIP 103999 / KCTC 2705 / NBRC 14298;
+RX   PubMed=12700255; DOI=10.1128/jb.185.9.2759-2773.2003;
+RA   Chain P., Lamerdin J.E., Larimer F.W., Regala W., Lao V., Land M.L.,
+RA   Hauser L., Hooper A.B., Klotz M.G., Norton J., Sayavedra-Soto L.A.,
+RA   Arciero D.M., Hommes N.G., Whittaker M.M., Arp D.J.;
+RT   "Complete genome sequence of the ammonia-oxidizing bacterium and obligate
+RT   chemolithoautotroph Nitrosomonas europaea.";
+RL   J. Bacteriol. 185:2759-2773(2003).
+RN   [2]
+RP   FUNCTION, CATALYTIC ACTIVITY, ACTIVITY REGULATION, AND BIOPHYSICOCHEMICAL
+RP   PROPERTIES.
+RC   STRAIN=ATCC 19718 / CIP 103999 / KCTC 2705 / NBRC 14298;
+RX   PubMed=25846332; DOI=10.1007/s00253-015-6548-7;
+RA   Diricks M., De Bruyn F., Van Daele P., Walmagh M., Desmet T.;
+RT   "Identification of sucrose synthase in nonphotosynthetic bacteria and
+RT   characterization of the recombinant enzymes.";
+RL   Appl. Microbiol. Biotechnol. 99:8465-8474(2015).
+RN   [3] {ECO:0007744|PDB:4RBN}
+RP   X-RAY CRYSTALLOGRAPHY (3.05 ANGSTROMS), FUNCTION, CATALYTIC ACTIVITY,
+RP   SUBUNIT, AND MUTAGENESIS OF ARG-567; LYS-572 AND GLU-663.
+RC   STRAIN=ATCC 19718 / CIP 103999 / KCTC 2705 / NBRC 14298;
+RX   PubMed=26013491; DOI=10.1128/jb.00110-15;
+RA   Wu R., Asencion Diez M.D., Figueroa C.M., Machtey M., Iglesias A.A.,
+RA   Ballicora M.A., Liu D.;
+RT   "The crystal structure of Nitrosomonas europaea sucrose synthase reveals
+RT   critical conformational changes and insights into sucrose metabolism in
+RT   prokaryotes.";
+RL   J. Bacteriol. 197:2734-2746(2015).
+CC   -!- FUNCTION: Catalyzes the reversible conversion of sucrose and a
+CC       nucleotide disphosphate (NDP) into fructose and NDP-glucose; although
+CC       the reaction is freely reversible in vitro, the physiological reaction
+CC       seems to be sucrose cleavage. Unlike characterized plant enzymes
+CC       prefers ADP as a cosubstrate, whereas plants prefer UDP
+CC       (PubMed:25846332, PubMed:26013491). The KM for sucrose is 8-fold lower
+CC       in the presence of ADP than UDP (PubMed:25846332). Its preference for
+CC       ADP over UDP suggests it may directly link sucrose and glycogen
+CC       metabolism (Probable). {ECO:0000269|PubMed:25846332,
+CC       ECO:0000269|PubMed:26013491, ECO:0000305}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=an NDP-alpha-D-glucose + D-fructose = a ribonucleoside 5'-
+CC         diphosphate + sucrose + H(+); Xref=Rhea:RHEA:16241,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:17992, ChEBI:CHEBI:37721,
+CC         ChEBI:CHEBI:57930, ChEBI:CHEBI:76533; EC=2.4.1.13;
+CC         Evidence={ECO:0000269|PubMed:25846332, ECO:0000269|PubMed:26013491};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=ADP-alpha-D-glucose + D-fructose = sucrose + ADP + H(+);
+CC         Xref=Rhea:RHEA:55080, ChEBI:CHEBI:15378, ChEBI:CHEBI:17992,
+CC         ChEBI:CHEBI:37721, ChEBI:CHEBI:57498, ChEBI:CHEBI:456216;
+CC         EC=2.4.1.13; Evidence={ECO:0000269|PubMed:25846332,
+CC         ECO:0000269|PubMed:26013491};
+CC   -!- ACTIVITY REGULATION: Inhibited by GDP over 10 mM and by over 2 mM
+CC       MgCl(2). {ECO:0000269|PubMed:25846332}.
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Kinetic parameters:
+CC         KM=40 mM for sucrose with ADP during sucrose degradation
+CC         {ECO:0000269|PubMed:25846332};
+CC         KM=321 mM for sucrose with UDP during sucrose degradation
+CC         {ECO:0000269|PubMed:25846332};
+CC         KM=0.44 mM for ADP in sucrose breakdown
+CC         {ECO:0000269|PubMed:25846332};
+CC         KM=1.28 mM for CDP in sucrose breakdown
+CC         {ECO:0000269|PubMed:25846332};
+CC         KM=1.56 mM for GDP in sucrose breakdown
+CC         {ECO:0000269|PubMed:25846332};
+CC         KM=0.69 mM for UDP in sucrose breakdown
+CC         {ECO:0000269|PubMed:25846332};
+CC         Vmax=20.8 umol/min/mg enzyme in sucrose breakdown with ADP
+CC         {ECO:0000269|PubMed:25846332};
+CC         Vmax=11.5 umol/min/mg enzyme in sucrose breakdown with CDP
+CC         {ECO:0000269|PubMed:25846332};
+CC         Vmax=40.1 umol/min/mg enzyme in sucrose breakdown with GDP
+CC         {ECO:0000269|PubMed:25846332};
+CC         Vmax=67.7 umol/min/mg enzyme in sucrose breakdown with UDP
+CC         {ECO:0000269|PubMed:25846332};
+CC       pH dependence:
+CC         Optimum pH is 5.0. {ECO:0000269|PubMed:25846332};
+CC       Temperature dependence:
+CC         Optimum temperature is 75 degrees Celsius. Retains about 55% activity
+CC         after 15 minutes at 65 degrees Celsius.
+CC         {ECO:0000269|PubMed:25846332};
+CC   -!- SUBUNIT: Homotetramer. {ECO:0000269|PubMed:26013491}.
+CC   -!- SIMILARITY: Belongs to the glycosyltransferase 1 family. {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AL954747; CAD85125.1; -; Genomic_DNA.
+DR   RefSeq; WP_011111802.1; NC_004757.1.
+DR   PDB; 4RBN; X-ray; 3.05 A; A/B/C/D=1-794.
+DR   PDBsum; 4RBN; -.
+DR   AlphaFoldDB; Q820M5; -.
+DR   SMR; Q820M5; -.
+DR   STRING; 228410.NE1214; -.
+DR   CAZy; GT4; Glycosyltransferase Family 4.
+DR   GeneID; 87104394; -.
+DR   KEGG; neu:NE1214; -.
+DR   eggNOG; COG0438; Bacteria.
+DR   HOGENOM; CLU_019158_1_0_4; -.
+DR   OrthoDB; 433681at2; -.
+DR   PhylomeDB; Q820M5; -.
+DR   BRENDA; 2.4.1.13; 3654.
+DR   EvolutionaryTrace; Q820M5; -.
+DR   Proteomes; UP000001416; Chromosome.
+DR   GO; GO:0016157; F:sucrose synthase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0005985; P:sucrose metabolic process; IEA:InterPro.
+DR   Gene3D; 1.20.120.1230; -; 1.
+DR   Gene3D; 3.10.450.330; -; 1.
+DR   Gene3D; 3.40.50.2000; Glycogen Phosphorylase B; 2.
+DR   InterPro; IPR001296; Glyco_trans_1.
+DR   InterPro; IPR000368; Sucrose_synth_GT-B1.
+DR   InterPro; IPR012820; Sucrose_synthase_pln/cyn.
+DR   InterPro; IPR056736; SUS_EPBD.
+DR   InterPro; IPR056735; SUS_N.
+DR   NCBIfam; TIGR02470; sucr_synth; 1.
+DR   PANTHER; PTHR45839; -; 1.
+DR   PANTHER; PTHR45839:SF7; SUCROSE SYNTHASE 1; 1.
+DR   Pfam; PF00534; Glycos_transf_1; 1.
+DR   Pfam; PF00862; GT-B_Sucrose_synth; 1.
+DR   Pfam; PF24862; SUS_EPBD; 1.
+DR   Pfam; PF24861; SUS_N; 1.
+DR   SUPFAM; SSF53756; UDP-Glycosyltransferase/glycogen phosphorylase; 1.
+PE   1: Evidence at protein level;
+KW   3D-structure; Glycosyltransferase; Reference proteome; Transferase.
+FT   CHAIN           1..794
+FT                   /note="Sucrose synthase"
+FT                   /id="PRO_0000442258"
+FT   REGION          263..742
+FT                   /note="GT-B glycosyltransferase"
+FT                   /evidence="ECO:0000250|UniProtKB:P49040"
+FT   MUTAGEN         567
+FT                   /note="R->A: 2500-fold decrease in Vmax for UDP-glucose,
+FT                   2600-fold decrease for ADP-glucose."
+FT                   /evidence="ECO:0000269|PubMed:26013491"
+FT   MUTAGEN         572
+FT                   /note="K->A: 2200-fold decrease in Vmax for UDP-glucose,
+FT                   2300-fold decrease for ADP-glucose."
+FT                   /evidence="ECO:0000269|PubMed:26013491"
+FT   MUTAGEN         663
+FT                   /note="E->A: 430-fold decrease in Vmax for UDP-glucose,
+FT                   185-fold decrease for ADP-glucose."
+FT                   /evidence="ECO:0000269|PubMed:26013491"
+FT   HELIX           6..12
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           15..26
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          31..34
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           35..40
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          43..49
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           54..60
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          62..68
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          71..76
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          84..92
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          96..98
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           100..112
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          121..123
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           125..128
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           137..139
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           143..154
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          159..161
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           164..172
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           189..202
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           203..205
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           212..221
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           232..245
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           251..260
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          266..270
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          277..280
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           290..311
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          319..325
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          331..334
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          338..341
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          346..353
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           373..375
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           376..390
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          391..393
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          396..401
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           402..416
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          420..423
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           428..430
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   TURN            433..438
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           439..446
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           448..461
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          463..468
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           471..474
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          477..479
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           484..486
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          487..491
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   TURN            492..494
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          495..499
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          508..510
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   TURN            517..519
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          526..528
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           531..533
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           534..542
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   TURN            545..549
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          561..563
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   TURN            570..573
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           574..583
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           585..590
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          592..596
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   TURN            604..607
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           609..611
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           612..623
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   TURN            627..629
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          630..633
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           639..649
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   TURN            650..653
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          655..658
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          663..665
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           667..675
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          679..685
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           686..690
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   TURN            693..695
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          698..700
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   TURN            705..707
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           708..716
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   STRAND          718..721
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           725..740
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           743..764
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           766..768
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           769..781
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+FT   HELIX           783..787
+FT                   /evidence="ECO:0007829|PDB:4RBN"
+SQ   SEQUENCE   794 AA;  90865 MW;  3A046387F29DF2CB CRC64;
+     MTTIDTLATC TQQNRDAVYT LLRRYFTANR TLLLQSDLRE GLLQTEQDCG QSDMLRAFVF
+     RLQEGIFSSP WAYLALRPEI AKWEFMRIHQ EHLIPEKLTI SEFLKFKETV VKGEATESVL
+     EVDFGPFNRG FPRLKESRSI GQGVIFLNRK LSSEMFSRIE AGHTSLLHFL GVHAIEGQQL
+     MFSNNSHDIH AVRNQLRQAL EMLETLDGTT PWIELAPKMN QLGFAPGWGH NANRVAETMN
+     MLMDILEAPS PSALEEFLAC IPMISRLLIL SPHGYFGQDN VLGLPDTGGQ VVYILDQVRA
+     LEKEMHDRLQ LQGVQVEPKI LIVTRLIPDA GDTTCNQRLE KVSGCTNTWI LRVPFRKHNG
+     EIIPHWISRF EIWPHLEIFA GDVEREALAE LGGHPDLIIG NYSDGNLVAT LLSRRLGVTQ
+     CNIAHALEKT KYLHSDIYWQ ENEDKYHFSC QYTADLLAMN SADFIVTSTY QEIAGTREAE
+     GQYESYQAFS MPDLYRVIHG IDLFDPKFNI VSPGANADIY FPYSDPNRRL HSLIPEIESL
+     IFDDATNLPA RGYLQDPDKP LIFTMARLDR IKNITGLVEL YAASPRLRSL ANLVIVGGKI
+     DPQHSSDHEE QEQIHRMHQL MDEHELDQQV RWLGMRLDKN LAGELYRYIA DKRGIFVQPA
+     LFEAFGLTII EAMASGLPTF ATRYGGPLEI IQNNRSGFHI DPNQGAATAD LIADFFEKNL
+     ENPQEWERIS QGALDRVASR YTWKLYAERM MTLSRIYGFW KFVSGLEREE TDRYLNMFYH
+     LQFRPLANRL AHEI
+//
+ID   SUS6_ARATH              Reviewed;         942 AA.
+AC   Q9FX32;
+DT   05-SEP-2012, integrated into UniProtKB/Swiss-Prot.
+DT   01-MAR-2001, sequence version 1.
+DT   28-JAN-2026, entry version 136.
+DE   RecName: Full=Sucrose synthase 6;
+DE            Short=AtSUS6;
+DE            EC=2.4.1.13;
+DE   AltName: Full=Sucrose-UDP glucosyltransferase 6;
+GN   Name=SUS6; OrderedLocusNames=At1g73370; ORFNames=T9L24.42;
+OS   Arabidopsis thaliana (Mouse-ear cress).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   rosids; malvids; Brassicales; Brassicaceae; Camelineae; Arabidopsis.
+OX   NCBI_TaxID=3702;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=cv. Columbia;
+RX   PubMed=11130712; DOI=10.1038/35048500;
+RA   Theologis A., Ecker J.R., Palm C.J., Federspiel N.A., Kaul S., White O.,
+RA   Alonso J., Altafi H., Araujo R., Bowman C.L., Brooks S.Y., Buehler E.,
+RA   Chan A., Chao Q., Chen H., Cheuk R.F., Chin C.W., Chung M.K., Conn L.,
+RA   Conway A.B., Conway A.R., Creasy T.H., Dewar K., Dunn P., Etgu P.,
+RA   Feldblyum T.V., Feng J.-D., Fong B., Fujii C.Y., Gill J.E., Goldsmith A.D.,
+RA   Haas B., Hansen N.F., Hughes B., Huizar L., Hunter J.L., Jenkins J.,
+RA   Johnson-Hopson C., Khan S., Khaykin E., Kim C.J., Koo H.L.,
+RA   Kremenetskaia I., Kurtz D.B., Kwan A., Lam B., Langin-Hooper S., Lee A.,
+RA   Lee J.M., Lenz C.A., Li J.H., Li Y.-P., Lin X., Liu S.X., Liu Z.A.,
+RA   Luros J.S., Maiti R., Marziali A., Militscher J., Miranda M., Nguyen M.,
+RA   Nierman W.C., Osborne B.I., Pai G., Peterson J., Pham P.K., Rizzo M.,
+RA   Rooney T., Rowley D., Sakano H., Salzberg S.L., Schwartz J.R., Shinn P.,
+RA   Southwick A.M., Sun H., Tallon L.J., Tambunga G., Toriumi M.J., Town C.D.,
+RA   Utterback T., Van Aken S., Vaysberg M., Vysotskaia V.S., Walker M., Wu D.,
+RA   Yu G., Fraser C.M., Venter J.C., Davis R.W.;
+RT   "Sequence and analysis of chromosome 1 of the plant Arabidopsis thaliana.";
+RL   Nature 408:816-820(2000).
+RN   [2]
+RP   GENOME REANNOTATION.
+RC   STRAIN=cv. Columbia;
+RX   PubMed=27862469; DOI=10.1111/tpj.13415;
+RA   Cheng C.Y., Krishnakumar V., Chan A.P., Thibaud-Nissen F., Schobel S.,
+RA   Town C.D.;
+RT   "Araport11: a complete reannotation of the Arabidopsis thaliana reference
+RT   genome.";
+RL   Plant J. 89:789-804(2017).
+RN   [3]
+RP   GENE FAMILY, AND TISSUE SPECIFICITY.
+RX   PubMed=14739263; DOI=10.1093/jxb/erh047;
+RA   Baud S., Vaultier M.N., Rochat C.;
+RT   "Structure and expression profile of the sucrose synthase multigene family
+RT   in Arabidopsis.";
+RL   J. Exp. Bot. 55:397-409(2004).
+RN   [4]
+RP   BIOPHYSICOCHEMICAL PROPERTIES, TISSUE SPECIFICITY, AND DISRUPTION
+RP   PHENOTYPE.
+RX   PubMed=17257168; DOI=10.1111/j.1365-313x.2006.03011.x;
+RA   Bieniawska Z., Paul Barratt D.H., Garlick A.P., Thole V., Kruger N.J.,
+RA   Martin C., Zrenner R., Smith A.M.;
+RT   "Analysis of the sucrose synthase gene family in Arabidopsis.";
+RL   Plant J. 49:810-828(2007).
+RN   [5]
+RP   TISSUE SPECIFICITY.
+RX   PubMed=18635527; DOI=10.1093/jxb/ern180;
+RA   Fallahi H., Scofield G.N., Badger M.R., Chow W.S., Furbank R.T., Ruan Y.L.;
+RT   "Localization of sucrose synthase in developing seed and siliques of
+RT   Arabidopsis thaliana reveals diverse roles for SUS during development.";
+RL   J. Exp. Bot. 59:3283-3295(2008).
+RN   [6]
+RP   SUBCELLULAR LOCATION, TISSUE SPECIFICITY, AND FUNCTION.
+RX   PubMed=19470642; DOI=10.1073/pnas.0900689106;
+RA   Barratt D.H., Derbyshire P., Findlay K., Pike M., Wellner N., Lunn J.,
+RA   Feil R., Simpson C., Maule A.J., Smith A.M.;
+RT   "Normal growth of Arabidopsis requires cytosolic invertase but not sucrose
+RT   synthase.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 106:13124-13129(2009).
+CC   -!- FUNCTION: Sucrose-cleaving enzyme that provides UDP-glucose and
+CC       fructose for various metabolic pathways. Functions in callose synthesis
+CC       at the site of phloem sieve elements. {ECO:0000269|PubMed:19470642}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=an NDP-alpha-D-glucose + D-fructose = a ribonucleoside 5'-
+CC         diphosphate + sucrose + H(+); Xref=Rhea:RHEA:16241,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:17992, ChEBI:CHEBI:37721,
+CC         ChEBI:CHEBI:57930, ChEBI:CHEBI:76533; EC=2.4.1.13;
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Kinetic parameters:
+CC         KM=12.44 mM for D-fructose (synthetic reaction)
+CC         {ECO:0000269|PubMed:17257168};
+CC         KM=0.06 mM for UDP-glucose (synthetic reaction)
+CC         {ECO:0000269|PubMed:17257168};
+CC         KM=31.06 mM for sucrose (degradative reaction)
+CC         {ECO:0000269|PubMed:17257168};
+CC         KM=0.26 mM for UDP (degradative reaction)
+CC         {ECO:0000269|PubMed:17257168};
+CC         Vmax=3.27 umol/min/mg enzyme for synthetic reaction
+CC         {ECO:0000269|PubMed:17257168};
+CC         Vmax=1.43 umol/min/mg enzyme for degradative reaction
+CC         {ECO:0000269|PubMed:17257168};
+CC       pH dependence:
+CC         Optimum pH is 6.0-7.0 for degradative reaction (PubMed:17257168,
+CC         PubMed:22184213). Optimum pH is 7.0 for synthetic reaction
+CC         (PubMed:22184213). Optimum pH is 9.0-9.5 for synthetic reaction
+CC         (PubMed:17257168). {ECO:0000269|PubMed:17257168};
+CC   -!- SUBCELLULAR LOCATION: Secreted, cell wall
+CC       {ECO:0000269|PubMed:19470642}.
+CC   -!- ALTERNATIVE PRODUCTS:
+CC       Event=Alternative splicing; Named isoforms=1;
+CC         Comment=A number of isoforms are produced. According to EST
+CC         sequences.;
+CC       Name=1;
+CC         IsoId=Q9FX32-1; Sequence=Displayed;
+CC   -!- TISSUE SPECIFICITY: Detected in the whole plant but more precisely
+CC       confined to the vasculature in cotyledons, leaves, petals, anthers and
+CC       roots. {ECO:0000269|PubMed:14739263, ECO:0000269|PubMed:17257168,
+CC       ECO:0000269|PubMed:18635527, ECO:0000269|PubMed:19470642}.
+CC   -!- DISRUPTION PHENOTYPE: No visible phenotype.
+CC       {ECO:0000269|PubMed:17257168}.
+CC   -!- SIMILARITY: Belongs to the glycosyltransferase 1 family. Plant sucrose
+CC       synthase subfamily. {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AC012396; AAG30975.1; -; Genomic_DNA.
+DR   EMBL; CP002684; AEE35450.1; -; Genomic_DNA.
+DR   EMBL; CP002684; ANM59229.1; -; Genomic_DNA.
+DR   PIR; C96760; C96760.
+DR   RefSeq; NP_001319374.1; NM_001334591.1. [Q9FX32-1]
+DR   RefSeq; NP_177480.1; NM_105997.2. [Q9FX32-1]
+DR   AlphaFoldDB; Q9FX32; -.
+DR   SMR; Q9FX32; -.
+DR   FunCoup; Q9FX32; 330.
+DR   STRING; 3702.Q9FX32; -.
+DR   CAZy; GT4; Glycosyltransferase Family 4.
+DR   iPTMnet; Q9FX32; -.
+DR   PaxDb; 3702-AT1G73370.1; -.
+DR   ProteomicsDB; 228435; -. [Q9FX32-1]
+DR   GeneID; 843672; -.
+DR   Gramene; AT1G73370.1; AT1G73370.1; AT1G73370.
+DR   Gramene; AT1G73370.3; AT1G73370.3; AT1G73370.
+DR   KEGG; ath:AT1G73370; -.
+DR   Araport; AT1G73370; -.
+DR   TAIR; AT1G73370; SUS6.
+DR   eggNOG; KOG0853; Eukaryota.
+DR   InParanoid; Q9FX32; -.
+DR   PhylomeDB; Q9FX32; -.
+DR   BioCyc; MetaCyc:AT1G73370-MONOMER; -.
+DR   BRENDA; 2.4.1.13; 399.
+DR   PRO; PR:Q9FX32; -.
+DR   Proteomes; UP000006548; Chromosome 1.
+DR   ExpressionAtlas; Q9FX32; baseline and differential.
+DR   GO; GO:0009505; C:plant-type cell wall; IDA:TAIR.
+DR   GO; GO:0016157; F:sucrose synthase activity; IDA:TAIR.
+DR   GO; GO:0080165; P:callose deposition in phloem sieve plate; IMP:TAIR.
+DR   GO; GO:0005985; P:sucrose metabolic process; IEA:InterPro.
+DR   FunFam; 1.20.120.1230:FF:000001; Sucrose synthase; 1.
+DR   FunFam; 3.10.450.330:FF:000001; Sucrose synthase; 1.
+DR   FunFam; 3.40.50.2000:FF:000006; Sucrose synthase; 1.
+DR   Gene3D; 1.20.120.1230; -; 1.
+DR   Gene3D; 3.10.450.330; -; 1.
+DR   Gene3D; 3.40.50.2000; Glycogen Phosphorylase B; 2.
+DR   InterPro; IPR001296; Glyco_trans_1.
+DR   InterPro; IPR000368; Sucrose_synth_GT-B1.
+DR   InterPro; IPR012820; Sucrose_synthase_pln/cyn.
+DR   InterPro; IPR056736; SUS_EPBD.
+DR   InterPro; IPR056735; SUS_N.
+DR   NCBIfam; TIGR02470; sucr_synth; 1.
+DR   PANTHER; PTHR45839; -; 1.
+DR   PANTHER; PTHR45839:SF24; SUCROSE SYNTHASE 6; 1.
+DR   Pfam; PF00534; Glycos_transf_1; 1.
+DR   Pfam; PF00862; GT-B_Sucrose_synth; 1.
+DR   Pfam; PF24862; SUS_EPBD; 1.
+DR   Pfam; PF24861; SUS_N; 1.
+DR   SUPFAM; SSF53756; UDP-Glycosyltransferase/glycogen phosphorylase; 1.
+PE   1: Evidence at protein level;
+KW   Alternative splicing; Cell wall; Glycosyltransferase; Reference proteome;
+KW   Secreted; Transferase.
+FT   CHAIN           1..942
+FT                   /note="Sucrose synthase 6"
+FT                   /id="PRO_0000418805"
+FT   REGION          281..759
+FT                   /note="GT-B glycosyltransferase"
+FT                   /evidence="ECO:0000250"
+FT   REGION          830..862
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        838..862
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   942 AA;  106876 MW;  0AA4A92EC48815EA CRC64;
+     MSSSSQAMLQ KSDSIAEKMP DALKQSRYHM KRCFASFVGG GKKLMKREHL MNEIEKCIED
+     SRERSKILEG LFGYILTCTQ EAAVVPPFVA LAARPNPGFW EYVKVNSGDL TVDEITATDY
+     LKLKESVFDE SWSKDENALE IDFGAIDFTS PRLSLSSSIG KGADYISKFI SSKLGGKSDK
+     LEPLLNYLLR LNHHGENLMI NDDLNTVAKL QKSLMLAVIV VSTYSKHTPY ETFAQRLKEM
+     GFEKGWGDTA ERVKETMIIL SEVLEAPDNG KLDLLFSRLP TVFNVVIFSV HGYFGQQDVL
+     GLPDTGGQVV YILDQVRALE EELLIRINQQ GLGFKPQILV VTRLIPEARG TKCDQELEAI
+     EGTKHSHILR VPFVTNKGVL RQWVSRFDIY PYLERFTQDA TSKILQRLDC KPDLIIGNYT
+     DGNLVASLMA TKLGVTQGTI AHALEKTKYE DSDAKWKELD PKYHFSCQFT ADLIAMNVTD
+     FIITSTYQEI AGSKDRPGQY ESHTAFTMPG LCRVVSGIDV FDPKFNIAAP GADQSVYFPY
+     TEKDKRFTKF HPSIQELLYN EKDNAEHMGY LADREKPIIF SMARLDTVKN ITGLVEWYGK
+     DKRLREMANL VVVAGFFDMS KSNDREEKAE IKKMHDLIEK YKLKGKFRWI AAQTDRYRNS
+     ELYRCIADTK GVFVQPALYE AFGLTVIEAM NCGLPTFATN QGGPAEIIVD GVSGFHIDPN
+     NGDESVTKIG DFFSKCRSDG LYWDNISKGG LKRIYECYTW KIYAEKLLKM GSLYGFWRQV
+     NEDQKKAKKR YIEMLYNLQF KQLTKKVTIP EDKPLPLRLA SLRNLLPKKT TNLGAGSKQK
+     EVTETEKTKQ KSKDGQEQHD VKVGEREVRE GLLAADASER VKKVLESSEE KQKLEKMKIA
+     YGQQHSQGAS PVRNLFWSVV VCLYICYILK QRFFGANSAQ EY
+//
+ID   SUS3_ARATH              Reviewed;         809 AA.
+AC   Q9M111; Q9SBD5;
+DT   05-SEP-2012, integrated into UniProtKB/Swiss-Prot.
+DT   01-OCT-2000, sequence version 1.
+DT   28-JAN-2026, entry version 135.
+DE   RecName: Full=Sucrose synthase 3;
+DE            Short=AtSUS3;
+DE            EC=2.4.1.13;
+DE   AltName: Full=Sucrose-UDP glucosyltransferase 3;
+GN   Name=SUS3; OrderedLocusNames=At4g02280; ORFNames=T2H3.8;
+OS   Arabidopsis thaliana (Mouse-ear cress).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; eudicotyledons; Gunneridae; Pentapetalae;
+OC   rosids; malvids; Brassicales; Brassicaceae; Camelineae; Arabidopsis.
+OX   NCBI_TaxID=3702;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=cv. Columbia;
+RX   PubMed=10617198; DOI=10.1038/47134;
+RA   Mayer K.F.X., Schueller C., Wambutt R., Murphy G., Volckaert G., Pohl T.,
+RA   Duesterhoeft A., Stiekema W., Entian K.-D., Terryn N., Harris B.,
+RA   Ansorge W., Brandt P., Grivell L.A., Rieger M., Weichselgartner M.,
+RA   de Simone V., Obermaier B., Mache R., Mueller M., Kreis M., Delseny M.,
+RA   Puigdomenech P., Watson M., Schmidtheini T., Reichert B., Portetelle D.,
+RA   Perez-Alonso M., Boutry M., Bancroft I., Vos P., Hoheisel J.,
+RA   Zimmermann W., Wedler H., Ridley P., Langham S.-A., McCullagh B.,
+RA   Bilham L., Robben J., van der Schueren J., Grymonprez B., Chuang Y.-J.,
+RA   Vandenbussche F., Braeken M., Weltjens I., Voet M., Bastiaens I., Aert R.,
+RA   Defoor E., Weitzenegger T., Bothe G., Ramsperger U., Hilbert H., Braun M.,
+RA   Holzer E., Brandt A., Peters S., van Staveren M., Dirkse W., Mooijman P.,
+RA   Klein Lankhorst R., Rose M., Hauf J., Koetter P., Berneiser S., Hempel S.,
+RA   Feldpausch M., Lamberth S., Van den Daele H., De Keyser A., Buysshaert C.,
+RA   Gielen J., Villarroel R., De Clercq R., van Montagu M., Rogers J.,
+RA   Cronin A., Quail M.A., Bray-Allen S., Clark L., Doggett J., Hall S.,
+RA   Kay M., Lennard N., McLay K., Mayes R., Pettett A., Rajandream M.A.,
+RA   Lyne M., Benes V., Rechmann S., Borkova D., Bloecker H., Scharfe M.,
+RA   Grimm M., Loehnert T.-H., Dose S., de Haan M., Maarse A.C., Schaefer M.,
+RA   Mueller-Auer S., Gabel C., Fuchs M., Fartmann B., Granderath K., Dauner D.,
+RA   Herzl A., Neumann S., Argiriou A., Vitale D., Liguori R., Piravandi E.,
+RA   Massenet O., Quigley F., Clabauld G., Muendlein A., Felber R., Schnabl S.,
+RA   Hiller R., Schmidt W., Lecharny A., Aubourg S., Chefdor F., Cooke R.,
+RA   Berger C., Monfort A., Casacuberta E., Gibbons T., Weber N., Vandenbol M.,
+RA   Bargues M., Terol J., Torres A., Perez-Perez A., Purnelle B., Bent E.,
+RA   Johnson S., Tacon D., Jesse T., Heijnen L., Schwarz S., Scholler P.,
+RA   Heber S., Francs P., Bielke C., Frishman D., Haase D., Lemcke K.,
+RA   Mewes H.-W., Stocker S., Zaccaria P., Bevan M., Wilson R.K.,
+RA   de la Bastide M., Habermann K., Parnell L., Dedhia N., Gnoj L., Schutz K.,
+RA   Huang E., Spiegel L., Sekhon M., Murray J., Sheet P., Cordes M.,
+RA   Abu-Threideh J., Stoneking T., Kalicki J., Graves T., Harmon G.,
+RA   Edwards J., Latreille P., Courtney L., Cloud J., Abbott A., Scott K.,
+RA   Johnson D., Minx P., Bentley D., Fulton B., Miller N., Greco T., Kemp K.,
+RA   Kramer J., Fulton L., Mardis E., Dante M., Pepin K., Hillier L.W.,
+RA   Nelson J., Spieth J., Ryan E., Andrews S., Geisel C., Layman D., Du H.,
+RA   Ali J., Berghoff A., Jones K., Drone K., Cotton M., Joshu C., Antonoiu B.,
+RA   Zidanic M., Strong C., Sun H., Lamar B., Yordan C., Ma P., Zhong J.,
+RA   Preston R., Vil D., Shekher M., Matero A., Shah R., Swaby I.K.,
+RA   O'Shaughnessy A., Rodriguez M., Hoffman J., Till S., Granat S., Shohdy N.,
+RA   Hasegawa A., Hameed A., Lodhi M., Johnson A., Chen E., Marra M.A.,
+RA   Martienssen R., McCombie W.R.;
+RT   "Sequence and analysis of chromosome 4 of the plant Arabidopsis thaliana.";
+RL   Nature 402:769-777(1999).
+RN   [2]
+RP   GENOME REANNOTATION.
+RC   STRAIN=cv. Columbia;
+RX   PubMed=27862469; DOI=10.1111/tpj.13415;
+RA   Cheng C.Y., Krishnakumar V., Chan A.P., Thibaud-Nissen F., Schobel S.,
+RA   Town C.D.;
+RT   "Araport11: a complete reannotation of the Arabidopsis thaliana reference
+RT   genome.";
+RL   Plant J. 89:789-804(2017).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=cv. Columbia;
+RX   PubMed=14593172; DOI=10.1126/science.1088305;
+RA   Yamada K., Lim J., Dale J.M., Chen H., Shinn P., Palm C.J., Southwick A.M.,
+RA   Wu H.C., Kim C.J., Nguyen M., Pham P.K., Cheuk R.F., Karlin-Newmann G.,
+RA   Liu S.X., Lam B., Sakano H., Wu T., Yu G., Miranda M., Quach H.L.,
+RA   Tripp M., Chang C.H., Lee J.M., Toriumi M.J., Chan M.M., Tang C.C.,
+RA   Onodera C.S., Deng J.M., Akiyama K., Ansari Y., Arakawa T., Banh J.,
+RA   Banno F., Bowser L., Brooks S.Y., Carninci P., Chao Q., Choy N., Enju A.,
+RA   Goldsmith A.D., Gurjal M., Hansen N.F., Hayashizaki Y., Johnson-Hopson C.,
+RA   Hsuan V.W., Iida K., Karnes M., Khan S., Koesema E., Ishida J., Jiang P.X.,
+RA   Jones T., Kawai J., Kamiya A., Meyers C., Nakajima M., Narusaka M.,
+RA   Seki M., Sakurai T., Satou M., Tamse R., Vaysberg M., Wallender E.K.,
+RA   Wong C., Yamamura Y., Yuan S., Shinozaki K., Davis R.W., Theologis A.,
+RA   Ecker J.R.;
+RT   "Empirical analysis of transcriptional activity in the Arabidopsis
+RT   genome.";
+RL   Science 302:842-846(2003).
+RN   [4]
+RP   GENE FAMILY, TISSUE SPECIFICITY, DEVELOPMENTAL STAGE, AND INDUCTION.
+RX   PubMed=14739263; DOI=10.1093/jxb/erh047;
+RA   Baud S., Vaultier M.N., Rochat C.;
+RT   "Structure and expression profile of the sucrose synthase multigene family
+RT   in Arabidopsis.";
+RL   J. Exp. Bot. 55:397-409(2004).
+RN   [5]
+RP   BIOPHYSICOCHEMICAL PROPERTIES, TISSUE SPECIFICITY, DEVELOPMENTAL STAGE, AND
+RP   DISRUPTION PHENOTYPE.
+RX   PubMed=17257168; DOI=10.1111/j.1365-313x.2006.03011.x;
+RA   Bieniawska Z., Paul Barratt D.H., Garlick A.P., Thole V., Kruger N.J.,
+RA   Martin C., Zrenner R., Smith A.M.;
+RT   "Analysis of the sucrose synthase gene family in Arabidopsis.";
+RL   Plant J. 49:810-828(2007).
+RN   [6]
+RP   TISSUE SPECIFICITY.
+RX   PubMed=18635527; DOI=10.1093/jxb/ern180;
+RA   Fallahi H., Scofield G.N., Badger M.R., Chow W.S., Furbank R.T., Ruan Y.L.;
+RT   "Localization of sucrose synthase in developing seed and siliques of
+RT   Arabidopsis thaliana reveals diverse roles for SUS during development.";
+RL   J. Exp. Bot. 59:3283-3295(2008).
+RN   [7]
+RP   FUNCTION, AND DISRUPTION PHENOTYPE.
+RX   PubMed=20559653; DOI=10.1007/s00425-010-1207-9;
+RA   Angeles-Nunez J.G., Tiessen A.;
+RT   "Arabidopsis sucrose synthase 2 and 3 modulate metabolic homeostasis and
+RT   direct carbon towards starch synthesis in developing seeds.";
+RL   Planta 232:701-718(2010).
+RN   [8]
+RP   INDUCTION BY LEC2.
+RX   PubMed=22228409; DOI=10.1007/s11103-011-9871-0;
+RA   Angeles-Nunez J.G., Tiessen A.;
+RT   "Regulation of AtSUS2 and AtSUS3 by glucose and the transcription factor
+RT   LEC2 in different tissues and at different stages of Arabidopsis seed
+RT   development.";
+RL   Plant Mol. Biol. 78:377-392(2012).
+RN   [9]
+RP   BIOPHYSICOCHEMICAL PROPERTIES.
+RX   PubMed=22184213; DOI=10.1073/pnas.1117099109;
+RA   Baroja-Fernandez E., Munoz F.J., Li J., Bahaji A., Almagro G., Montero M.,
+RA   Etxeberria E., Hidalgo M., Sesma M.T., Pozueta-Romero J.;
+RT   "Sucrose synthase activity in the sus1/sus2/sus3/sus4 Arabidopsis mutant is
+RT   sufficient to support normal cellulose and starch production.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 109:321-326(2012).
+CC   -!- FUNCTION: Sucrose-cleaving enzyme that provides UDP-glucose and
+CC       fructose for various metabolic pathways. Modulates metabolic
+CC       homeostasis and direct carbon towards starch synthesis in developing
+CC       seeds. {ECO:0000269|PubMed:20559653}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=an NDP-alpha-D-glucose + D-fructose = a ribonucleoside 5'-
+CC         diphosphate + sucrose + H(+); Xref=Rhea:RHEA:16241,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:17992, ChEBI:CHEBI:37721,
+CC         ChEBI:CHEBI:57930, ChEBI:CHEBI:76533; EC=2.4.1.13;
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Kinetic parameters:
+CC         KM=41.96 mM for D-fructose (synthetic reaction) at pH 9.4
+CC         {ECO:0000269|PubMed:17257168};
+CC         KM=0.2 mM for UDP-glucose (synthetic reaction) at pH 9.4
+CC         {ECO:0000269|PubMed:17257168};
+CC         KM=108.2 mM for sucrose (degradative reaction) at pH 6
+CC         {ECO:0000269|PubMed:17257168};
+CC         KM=48 mM for sucrose (degradative reaction) at pH 7
+CC         {ECO:0000269|PubMed:22184213};
+CC         KM=0.09 mM for UDP (degradative reaction) at pH 6
+CC         {ECO:0000269|PubMed:17257168};
+CC         KM=0.25 mM for UDP (degradative reaction) at pH 7
+CC         {ECO:0000269|PubMed:22184213};
+CC         KM=0.15 mM for ADP (degradative reaction) at pH 7
+CC         {ECO:0000269|PubMed:22184213};
+CC         Vmax=7.32 umol/min/mg enzyme for synthetic reaction at pH 9.4
+CC         {ECO:0000269|PubMed:17257168};
+CC         Vmax=3.03 umol/min/mg enzyme for degradative reaction at pH 6
+CC         {ECO:0000269|PubMed:17257168};
+CC         Vmax=950 umol/min/mg enzyme for degradative reaction at pH 7
+CC         {ECO:0000269|PubMed:22184213};
+CC       pH dependence:
+CC         Optimum pH is 6.0-7.0 for degradative reaction (PubMed:17257168,
+CC         PubMed:22184213). Optimum pH is 7.0 for synthetic reaction
+CC         (PubMed:22184213). Optimum pH is 9.0-9.5 for synthetic reaction
+CC         (PubMed:17257168). {ECO:0000269|PubMed:17257168,
+CC         ECO:0000269|PubMed:22184213};
+CC   -!- TISSUE SPECIFICITY: Detected in the whole plant with highest expression
+CC       in developing siliques, vasculature of cotyledons and stomatal guard
+CC       cells. Also detected throughout the mature parts of the root but not in
+CC       the expanding zone. {ECO:0000269|PubMed:14739263,
+CC       ECO:0000269|PubMed:17257168, ECO:0000269|PubMed:18635527}.
+CC   -!- DEVELOPMENTAL STAGE: Highly expressed in late-maturing seeds and in
+CC       geminating seeds (at the protein level). {ECO:0000269|PubMed:14739263,
+CC       ECO:0000269|PubMed:17257168}.
+CC   -!- INDUCTION: By drought stress. By mannitol, an osmotic agent. Positively
+CC       regulated by LEC2. {ECO:0000269|PubMed:14739263,
+CC       ECO:0000269|PubMed:22228409}.
+CC   -!- DISRUPTION PHENOTYPE: No visible phenotype. Diminution of the starch
+CC       content of developing seeds and increased lipid accumulation early
+CC       during seed development. {ECO:0000269|PubMed:17257168,
+CC       ECO:0000269|PubMed:20559653}.
+CC   -!- SIMILARITY: Belongs to the glycosyltransferase 1 family. Plant sucrose
+CC       synthase subfamily. {ECO:0000305}.
+CC   -!- SEQUENCE CAUTION:
+CC       Sequence=AAC28175.1; Type=Erroneous gene model prediction; Evidence={ECO:0000305};
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AF075597; AAC28175.1; ALT_SEQ; Genomic_DNA.
+DR   EMBL; AL161494; CAB80721.1; -; Genomic_DNA.
+DR   EMBL; CP002687; AEE82150.1; -; Genomic_DNA.
+DR   EMBL; AY051001; AAK93678.1; -; mRNA.
+DR   EMBL; AY056784; AAL09730.1; -; mRNA.
+DR   EMBL; AY142511; AAN13112.1; -; mRNA.
+DR   PIR; B85029; B85029.
+DR   PIR; T01420; T01420.
+DR   RefSeq; NP_192137.1; NM_116461.4.
+DR   AlphaFoldDB; Q9M111; -.
+DR   SMR; Q9M111; -.
+DR   BioGRID; 13372; 1.
+DR   FunCoup; Q9M111; 175.
+DR   STRING; 3702.Q9M111; -.
+DR   CAZy; GT4; Glycosyltransferase Family 4.
+DR   iPTMnet; Q9M111; -.
+DR   PaxDb; 3702-AT4G02280.1; -.
+DR   ProteomicsDB; 228311; -.
+DR   GeneID; 828081; -.
+DR   Gramene; AT4G02280.1; AT4G02280.1; AT4G02280.
+DR   KEGG; ath:AT4G02280; -.
+DR   Araport; AT4G02280; -.
+DR   TAIR; AT4G02280; SUS3.
+DR   eggNOG; KOG0853; Eukaryota.
+DR   HOGENOM; CLU_019158_1_0_1; -.
+DR   InParanoid; Q9M111; -.
+DR   OMA; HGWFGQE; -.
+DR   OrthoDB; 937291at2759; -.
+DR   PhylomeDB; Q9M111; -.
+DR   BioCyc; MetaCyc:AT4G02280-MONOMER; -.
+DR   BRENDA; 2.4.1.13; 399.
+DR   PRO; PR:Q9M111; -.
+DR   Proteomes; UP000006548; Chromosome 4.
+DR   ExpressionAtlas; Q9M111; baseline and differential.
+DR   GO; GO:0016157; F:sucrose synthase activity; IDA:UniProtKB.
+DR   GO; GO:0010555; P:response to mannitol; IEP:UniProtKB.
+DR   GO; GO:0009414; P:response to water deprivation; IEP:UniProtKB.
+DR   GO; GO:0010431; P:seed maturation; IMP:TAIR.
+DR   GO; GO:0005982; P:starch metabolic process; IMP:TAIR.
+DR   GO; GO:0005985; P:sucrose metabolic process; IMP:TAIR.
+DR   FunFam; 1.20.120.1230:FF:000001; Sucrose synthase; 1.
+DR   FunFam; 3.10.450.330:FF:000001; Sucrose synthase; 1.
+DR   FunFam; 3.40.50.2000:FF:000004; Sucrose synthase; 1.
+DR   Gene3D; 1.20.120.1230; -; 1.
+DR   Gene3D; 3.10.450.330; -; 1.
+DR   Gene3D; 3.40.50.2000; Glycogen Phosphorylase B; 2.
+DR   InterPro; IPR001296; Glyco_trans_1.
+DR   InterPro; IPR000368; Sucrose_synth_GT-B1.
+DR   InterPro; IPR012820; Sucrose_synthase_pln/cyn.
+DR   InterPro; IPR056736; SUS_EPBD.
+DR   InterPro; IPR056735; SUS_N.
+DR   NCBIfam; TIGR02470; sucr_synth; 1.
+DR   PANTHER; PTHR45839; -; 1.
+DR   PANTHER; PTHR45839:SF13; SUCROSE SYNTHASE 3; 1.
+DR   Pfam; PF00534; Glycos_transf_1; 1.
+DR   Pfam; PF00862; GT-B_Sucrose_synth; 1.
+DR   Pfam; PF24862; SUS_EPBD; 1.
+DR   Pfam; PF24861; SUS_N; 1.
+DR   SUPFAM; SSF53756; UDP-Glycosyltransferase/glycogen phosphorylase; 1.
+PE   1: Evidence at protein level;
+KW   Glycosyltransferase; Reference proteome; Stress response; Transferase.
+FT   CHAIN           1..809
+FT                   /note="Sucrose synthase 3"
+FT                   /id="PRO_0000418802"
+FT   REGION          277..755
+FT                   /note="GT-B glycosyltransferase"
+FT                   /evidence="ECO:0000250"
+SQ   SEQUENCE   809 AA;  92002 MW;  BC5151F2FBF265D5 CRC64;
+     MANPKLTRVL STRDRVQDTL SAHRNELVAL LSRYVDQGKG ILQPHNLIDE LESVIGDDET
+     KKSLSDGPFG EILKSAMEAI VVPPFVALAV RPRPGVWEYV RVNVFELSVE QLTVSEYLRF
+     KEELVDGPNS DPFCLELDFE PFNANVPRPS RSSSIGNGVQ FLNRHLSSVM FRNKDCLEPL
+     LDFLRVHKYK GHPLMLNDRI QSISRLQIQL SKAEDHISKL SQETPFSEFE YALQGMGFEK
+     GWGDTAGRVL EMMHLLSDIL QAPDPSSLEK FLGMVPMVFN VVILSPHGYF GQANVLGLPD
+     TGGQVVYILD QVRALETEML LRIKRQGLDI SPSILIVTRL IPDAKGTTCN QRLERVSGTE
+     HTHILRVPFR SEKGILRKWI SRFDVWPYLE NYAQDAASEI VGELQGVPDF IIGNYSDGNL
+     VASLMAHRMG VTQCTIAHAL EKTKYPDSDI YWKDFDNKYH FSCQFTADLI AMNNADFIIT
+     STYQEIAGTK NTVGQYESHG AFTLPGLYRV VHGIDVFDPK FNIVSPGADM TIYFPYSEET
+     RRLTALHGSI EEMLYSPDQT DEHVGTLSDR SKPILFSMAR LDKVKNISGL VEMYSKNTKL
+     RELVNLVVIA GNIDVNKSKD REEIVEIEKM HNLMKNYKLD GQFRWITAQT NRARNGELYR
+     YIADTRGAFA QPAFYEAFGL TVVEAMTCGL PTFATCHGGP AEIIEHGLSG FHIDPYHPEQ
+     AGNIMADFFE RCKEDPNHWK KVSDAGLQRI YERYTWKIYS ERLMTLAGVY GFWKYVSKLE
+     RRETRRYLEM FYILKFRDLV KTVPSTADD
+//
+ID   SUS1_ORYSJ              Reviewed;         816 AA.
+AC   P31924; A0A0P0VZ94; F4MFT0; Q10K07; Q10K08; Q7G7N0;
+DT   01-JUL-1993, integrated into UniProtKB/Swiss-Prot.
+DT   01-JUL-1993, sequence version 1.
+DT   28-JAN-2026, entry version 139.
+DE   RecName: Full=Sucrose synthase 1;
+DE            Short=OsSUS1;
+DE            EC=2.4.1.13;
+DE   AltName: Full=Sucrose synthase 2;
+DE            Short=RSs2;
+DE   AltName: Full=Sucrose-UDP glucosyltransferase 1;
+GN   Name=SUS1; Synonyms=RSS2, RSUS1;
+GN   OrderedLocusNames=Os03g0401300, LOC_Os03g28330; ORFNames=OsJ_11182;
+OS   Oryza sativa subsp. japonica (Rice).
+OC   Eukaryota; Viridiplantae; Streptophyta; Embryophyta; Tracheophyta;
+OC   Spermatophyta; Magnoliopsida; Liliopsida; Poales; Poaceae; BOP clade;
+OC   Oryzoideae; Oryzeae; Oryzinae; Oryza; Oryza sativa.
+OX   NCBI_TaxID=39947;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   STRAIN=cv. Tainung 67; TISSUE=Seed;
+RX   PubMed=1531032; DOI=10.1007/bf00018467;
+RA   Yu W.P., Wang A.Y., Juang R.H., Sung H.Y., Su J.C.;
+RT   "Isolation and sequences of rice sucrose synthase cDNA and genomic DNA.";
+RL   Plant Mol. Biol. 18:139-142(1992).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   STRAIN=cv. Tainung 67; TISSUE=Seed;
+RX   PubMed=9063969; DOI=10.1271/bbb.60.233;
+RA   Huang J.W., Chen J.T., Yu W.P., Shyur L.F., Wang A.Y., Sung H.Y., Lee P.D.,
+RA   Su J.C.;
+RT   "Complete structures of three rice sucrose synthase isogenes and
+RT   differential regulation of their expressions.";
+RL   Biosci. Biotechnol. Biochem. 60:233-239(1996).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [MRNA], GENE FAMILY, AND DEVELOPMENTAL STAGE.
+RC   STRAIN=cv. Nipponbare;
+RX   PubMed=21533550; DOI=10.1007/s10059-011-1038-y;
+RA   Cho J.I., Kim H.B., Kim C.Y., Hahn T.R., Jeon J.S.;
+RT   "Identification and characterization of the duplicate rice sucrose synthase
+RT   genes OsSUS5 and OsSUS7 which are associated with the plasma membrane.";
+RL   Mol. Cells 31:553-561(2011).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=cv. Nipponbare;
+RX   PubMed=16109971; DOI=10.1101/gr.3869505;
+RG   The rice chromosome 3 sequencing consortium;
+RA   Buell C.R., Yuan Q., Ouyang S., Liu J., Zhu W., Wang A., Maiti R., Haas B.,
+RA   Wortman J., Pertea M., Jones K.M., Kim M., Overton L., Tsitrin T.,
+RA   Fadrosh D., Bera J., Weaver B., Jin S., Johri S., Reardon M., Webb K.,
+RA   Hill J., Moffat K., Tallon L., Van Aken S., Lewis M., Utterback T.,
+RA   Feldblyum T., Zismann V., Iobst S., Hsiao J., de Vazeille A.R.,
+RA   Salzberg S.L., White O., Fraser C.M., Yu Y., Kim H., Rambo T., Currie J.,
+RA   Collura K., Kernodle-Thompson S., Wei F., Kudrna K., Ammiraju J.S.S.,
+RA   Luo M., Goicoechea J.L., Wing R.A., Henry D., Oates R., Palmer M.,
+RA   Pries G., Saski C., Simmons J., Soderlund C., Nelson W., de la Bastide M.,
+RA   Spiegel L., Nascimento L., Huang E., Preston R., Zutavern T., Palmer L.,
+RA   O'Shaughnessy A., Dike S., McCombie W.R., Minx P., Cordum H., Wilson R.,
+RA   Jin W., Lee H.R., Jiang J., Jackson S.;
+RT   "Sequence, annotation, and analysis of synteny between rice chromosome 3
+RT   and diverged grass species.";
+RL   Genome Res. 15:1284-1291(2005).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=cv. Nipponbare;
+RX   PubMed=16100779; DOI=10.1038/nature03895;
+RG   International rice genome sequencing project (IRGSP);
+RT   "The map-based sequence of the rice genome.";
+RL   Nature 436:793-800(2005).
+RN   [6]
+RP   GENOME REANNOTATION.
+RC   STRAIN=cv. Nipponbare;
+RX   PubMed=18089549; DOI=10.1093/nar/gkm978;
+RG   The rice annotation project (RAP);
+RT   "The rice annotation project database (RAP-DB): 2008 update.";
+RL   Nucleic Acids Res. 36:D1028-D1033(2008).
+RN   [7]
+RP   GENOME REANNOTATION.
+RC   STRAIN=cv. Nipponbare;
+RX   PubMed=24280374; DOI=10.1186/1939-8433-6-4;
+RA   Kawahara Y., de la Bastide M., Hamilton J.P., Kanamori H., McCombie W.R.,
+RA   Ouyang S., Schwartz D.C., Tanaka T., Wu J., Zhou S., Childs K.L.,
+RA   Davidson R.M., Lin H., Quesada-Ocampo L., Vaillancourt B., Sakai H.,
+RA   Lee S.S., Kim J., Numa H., Itoh T., Buell C.R., Matsumoto T.;
+RT   "Improvement of the Oryza sativa Nipponbare reference genome using next
+RT   generation sequence and optical map data.";
+RL   Rice 6:4-4(2013).
+RN   [8]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=cv. Nipponbare;
+RX   PubMed=15685292; DOI=10.1371/journal.pbio.0030038;
+RA   Yu J., Wang J., Lin W., Li S., Li H., Zhou J., Ni P., Dong W., Hu S.,
+RA   Zeng C., Zhang J., Zhang Y., Li R., Xu Z., Li S., Li X., Zheng H., Cong L.,
+RA   Lin L., Yin J., Geng J., Li G., Shi J., Liu J., Lv H., Li J., Wang J.,
+RA   Deng Y., Ran L., Shi X., Wang X., Wu Q., Li C., Ren X., Wang J., Wang X.,
+RA   Li D., Liu D., Zhang X., Ji Z., Zhao W., Sun Y., Zhang Z., Bao J., Han Y.,
+RA   Dong L., Ji J., Chen P., Wu S., Liu J., Xiao Y., Bu D., Tan J., Yang L.,
+RA   Ye C., Zhang J., Xu J., Zhou Y., Yu Y., Zhang B., Zhuang S., Wei H.,
+RA   Liu B., Lei M., Yu H., Li Y., Xu H., Wei S., He X., Fang L., Zhang Z.,
+RA   Zhang Y., Huang X., Su Z., Tong W., Li J., Tong Z., Li S., Ye J., Wang L.,
+RA   Fang L., Lei T., Chen C.-S., Chen H.-C., Xu Z., Li H., Huang H., Zhang F.,
+RA   Xu H., Li N., Zhao C., Li S., Dong L., Huang Y., Li L., Xi Y., Qi Q.,
+RA   Li W., Zhang B., Hu W., Zhang Y., Tian X., Jiao Y., Liang X., Jin J.,
+RA   Gao L., Zheng W., Hao B., Liu S.-M., Wang W., Yuan L., Cao M.,
+RA   McDermott J., Samudrala R., Wang J., Wong G.K.-S., Yang H.;
+RT   "The genomes of Oryza sativa: a history of duplications.";
+RL   PLoS Biol. 3:266-281(2005).
+RN   [9]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   STRAIN=cv. Nipponbare;
+RX   PubMed=12869764; DOI=10.1126/science.1081288;
+RG   The rice full-length cDNA consortium;
+RT   "Collection, mapping, and annotation of over 28,000 cDNA clones from
+RT   japonica rice.";
+RL   Science 301:376-379(2003).
+RN   [10]
+RP   SUBUNIT.
+RX   PubMed=9784845; DOI=10.1080/15216549800203612;
+RA   Huang D.Y., Wang A.-Y.;
+RT   "Purification and characterization of sucrose synthase isozymes from
+RT   etiolated rice seedlings.";
+RL   Biochem. Mol. Biol. Int. 46:107-113(1998).
+RN   [11]
+RP   TISSUE SPECIFICITY, AND DEVELOPMENTAL STAGE.
+RX   PubMed=10555303; DOI=10.1093/oxfordjournals.pcp.a029608;
+RA   Wang A.-Y., Kao M.-H., Yang W.-H., Sayion Y., Liu L.-F., Lee P.-D.,
+RA   Su J.-C.;
+RT   "Differentially and developmentally regulated expression of three rice
+RT   sucrose synthase genes.";
+RL   Plant Cell Physiol. 40:800-807(1999).
+RN   [12]
+RP   INDUCTION BY SUGARS.
+RA   Liao Y.-C., Wang A.-Y.;
+RT   "Sugar-modulated gene expression of sucrose synthase in suspension-cultured
+RT   cells of rice.";
+RL   Physiol. Plantarum 118:319-327(2003).
+RN   [13]
+RP   DEVELOPMENTAL STAGE.
+RX   PubMed=15701658; DOI=10.1093/pcp/pci066;
+RA   Ishimaru T., Hirose T., Matsuda T., Goto A., Takahashi K., Sasaki H.,
+RA   Terao T., Ishii R., Ohsugi R., Yamagishi T.;
+RT   "Expression patterns of genes encoding carbohydrate-metabolizing enzymes
+RT   and their relationship to grain filling in rice (Oryza sativa L.):
+RT   comparison of caryopses located at different positions in a panicle.";
+RL   Plant Cell Physiol. 46:620-628(2005).
+RN   [14]
+RP   INDUCTION BY CO2.
+RX   PubMed=18713413; DOI=10.1111/j.1744-7909.2008.00666.x;
+RA   Li J.-Y., Liu X.-H., Cai Q.-S., Gu H., Zhang S.-S., Wu Y.-Y., Wang C.-J.;
+RT   "Effects of elevated CO2 on growth, carbon assimilation, photosynthate
+RT   accumulation and related enzymes in rice leaves during sink-source
+RT   transition.";
+RL   J. Integr. Plant Biol. 50:723-732(2008).
+RN   [15]
+RP   GENE FAMILY, AND TISSUE SPECIFICITY.
+RX   DOI=10.1016/j.plantsci.2008.02.009;
+RA   Hirose T., Scofield G.N., Terao T.;
+RT   "An expression analysis profile for the entire sucrose synthase gene family
+RT   in rice.";
+RL   Plant Sci. 174:534-543(2008).
+CC   -!- FUNCTION: Sucrose-cleaving enzyme that provides UDP-glucose and
+CC       fructose for various metabolic pathways. {ECO:0000250}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=an NDP-alpha-D-glucose + D-fructose = a ribonucleoside 5'-
+CC         diphosphate + sucrose + H(+); Xref=Rhea:RHEA:16241,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:17992, ChEBI:CHEBI:37721,
+CC         ChEBI:CHEBI:57930, ChEBI:CHEBI:76533; EC=2.4.1.13;
+CC   -!- SUBUNIT: Homotetramer or heterotetramer with SUS2.
+CC       {ECO:0000269|PubMed:9784845}.
+CC   -!- TISSUE SPECIFICITY: Expressed in root phloem and leaf mesophyll.
+CC       Expressed in phloem tissues and aleurone layers of seeds and at lower
+CC       levels in the pericarp and endosperm cells (at protein level).
+CC       Predominantly expressed in elongating tissues including roots,
+CC       developing leaves and internodes. {ECO:0000269|PubMed:10555303,
+CC       ECO:0000269|Ref.15}.
+CC   -!- DEVELOPMENTAL STAGE: Expressed early in seed development and then
+CC       declines gradually and disappears (at protein level). In the caryopse,
+CC       strongly expressed during the pre-storage phase, and the expression
+CC       decreased thereafter. {ECO:0000269|PubMed:10555303,
+CC       ECO:0000269|PubMed:15701658, ECO:0000269|PubMed:21533550}.
+CC   -!- INDUCTION: Up-regulated by sucrose, fructose and glucose. Up-regulated
+CC       under elevated CO2 condition. {ECO:0000269|PubMed:18713413,
+CC       ECO:0000269|Ref.12}.
+CC   -!- SIMILARITY: Belongs to the glycosyltransferase 1 family. Plant sucrose
+CC       synthase subfamily. {ECO:0000305}.
+CC   -!- SEQUENCE CAUTION:
+CC       Sequence=ABF96469.1; Type=Erroneous gene model prediction; Evidence={ECO:0000305};
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; X59046; CAA41774.1; -; Genomic_DNA.
+DR   EMBL; HQ895719; AEX32874.1; -; mRNA.
+DR   EMBL; AC084380; AAK52129.1; -; Genomic_DNA.
+DR   EMBL; DP000009; ABF96467.1; -; Genomic_DNA.
+DR   EMBL; DP000009; ABF96468.1; -; Genomic_DNA.
+DR   EMBL; DP000009; ABF96469.1; ALT_SEQ; Genomic_DNA.
+DR   EMBL; AP008209; BAF12233.1; -; Genomic_DNA.
+DR   EMBL; AP014959; BAS84604.1; -; Genomic_DNA.
+DR   EMBL; CM000140; EAZ27243.1; -; Genomic_DNA.
+DR   EMBL; AK100334; BAG94557.1; -; mRNA.
+DR   PIR; S19139; S19139.
+DR   AlphaFoldDB; P31924; -.
+DR   SMR; P31924; -.
+DR   FunCoup; P31924; 168.
+DR   STRING; 39947.P31924; -.
+DR   CAZy; GT4; Glycosyltransferase Family 4.
+DR   PaxDb; 39947-P31924; -.
+DR   EnsemblPlants; Os03t0401300-01; Os03t0401300-01; Os03g0401300.
+DR   Gramene; Os03t0401300-01; Os03t0401300-01; Os03g0401300.
+DR   KEGG; dosa:Os03g0401300; -.
+DR   eggNOG; KOG0853; Eukaryota.
+DR   HOGENOM; CLU_019158_1_0_1; -.
+DR   InParanoid; P31924; -.
+DR   OMA; NNEHKFM; -.
+DR   OrthoDB; 937291at2759; -.
+DR   BRENDA; 2.4.1.13; 4460.
+DR   PlantReactome; R-OSA-1119452; Galactose degradation II.
+DR   PlantReactome; R-OSA-1119465; Sucrose biosynthesis.
+DR   SABIO-RK; P31924; -.
+DR   Proteomes; UP000000763; Chromosome 3.
+DR   Proteomes; UP000007752; Chromosome 3.
+DR   Proteomes; UP000059680; Chromosome 3.
+DR   ExpressionAtlas; P31924; baseline and differential.
+DR   GO; GO:0016157; F:sucrose synthase activity; IBA:GO_Central.
+DR   GO; GO:0010037; P:response to carbon dioxide; IEP:UniProtKB.
+DR   GO; GO:0005985; P:sucrose metabolic process; IEA:InterPro.
+DR   FunFam; 1.20.120.1230:FF:000001; Sucrose synthase; 1.
+DR   FunFam; 3.10.450.330:FF:000001; Sucrose synthase; 1.
+DR   FunFam; 3.40.50.2000:FF:000004; Sucrose synthase; 1.
+DR   Gene3D; 1.20.120.1230; -; 1.
+DR   Gene3D; 3.10.450.330; -; 1.
+DR   Gene3D; 3.40.50.2000; Glycogen Phosphorylase B; 2.
+DR   InterPro; IPR001296; Glyco_trans_1.
+DR   InterPro; IPR000368; Sucrose_synth_GT-B1.
+DR   InterPro; IPR012820; Sucrose_synthase_pln/cyn.
+DR   InterPro; IPR056736; SUS_EPBD.
+DR   InterPro; IPR056735; SUS_N.
+DR   NCBIfam; TIGR02470; sucr_synth; 1.
+DR   PANTHER; PTHR45839; -; 1.
+DR   PANTHER; PTHR45839:SF29; SUCROSE SYNTHASE 1; 1.
+DR   Pfam; PF00534; Glycos_transf_1; 1.
+DR   Pfam; PF00862; GT-B_Sucrose_synth; 1.
+DR   Pfam; PF24862; SUS_EPBD; 1.
+DR   Pfam; PF24861; SUS_N; 1.
+DR   SUPFAM; SSF53756; UDP-Glycosyltransferase/glycogen phosphorylase; 1.
+PE   1: Evidence at protein level;
+KW   Glycosyltransferase; Reference proteome; Transferase.
+FT   CHAIN           1..816
+FT                   /note="Sucrose synthase 1"
+FT                   /id="PRO_0000204656"
+FT   REGION          280..757
+FT                   /note="GT-B glycosyltransferase"
+FT                   /evidence="ECO:0000250|UniProtKB:P49040"
+SQ   SEQUENCE   816 AA;  92908 MW;  56704F0B8BEBA947 CRC64;
+     MGEAAGDRVL SRLHSVRERI GDSLSAHPNE LVAVFTRLVN LGKGMLQAHQ IIAEYNNAIS
+     EADREKLKDG AFEDVLRSAQ EGIVISPWVA LAIRPRPGVW EYVRVNVSEL AVELLTVPEY
+     LQFKEQLVEE GTNNNFVLEL DFEPFNASFP RPSLSKSIGN GVQFLNRHLS SKLFHDKESM
+     YPLLNFLRAH NYKGMTMMLN DRIRSLSALQ GALRKAEEHL SGLSADTPYS EFHHRFQELG
+     LEKGWGDCAK RSQETIHLLL DLLEAPDPST LEKFLGTIPM VFNVVIMSPH GYFAQANVLG
+     YPDTGGQVVY ILDQVRAMEN EMLLRIKQQG LNITPRILIV TRLLPDATGT TCGQRLEKVL
+     GTEHTHILRV PFRTENGIVR KWISRFEVWP YLETFTDDVA HEIAGELQAN PDLIIGNYSD
+     GNLVACLLAH KMGVTHCTIA HALEKTKYPN SDLYWKKFED HYHFSCQFTT DLIAMNHADF
+     IITSTFQEIA GNKDTVGQYE SHMAFTMPGL YRVVHGIDVF DPKFNIVSPG ADMSIYFPYS
+     ESRKRLTSLH PEIEELLYSE VDNNEHKFML KDRNKPIIFS MARLDRVKNL TGLVELYGRN
+     PRLQELVNLV VVCGDHGNPS KDKEEQAEFK KMFDLIEQYN LNGHIRWISA QMNRVRNGEL
+     YRYICDTKGA FVQPAFYEAF GLTVVESMTC GLPTFATAYG GPAEIIVNGV SGFHIDPYQG
+     DKASALLVEF FEKCQEDPSH WTKISQGGLQ RIEEKYTWKL YSERLMTLTG VYGFWKYVSN
+     LERRETRRYL EMLYALKYRT MASTVPLAVE GEPSNK
+//
+ID   SUS1_SCHPO              Reviewed;         108 AA.
+AC   Q7LL15;
+DT   23-SEP-2008, integrated into UniProtKB/Swiss-Prot.
+DT   05-JUL-2004, sequence version 1.
+DT   28-JAN-2026, entry version 111.
+DE   RecName: Full=SAGA complex subunit Sus1;
+DE   AltName: Full=Transcription and mRNA export factor sus1 {ECO:0000255|HAMAP-Rule:MF_03046};
+GN   Name=sus1; ORFNames=SPBC6B1.12c;
+OS   Schizosaccharomyces pombe (strain 972 / ATCC 24843) (Fission yeast).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Taphrinomycotina;
+OC   Schizosaccharomycetes; Schizosaccharomycetales; Schizosaccharomycetaceae;
+OC   Schizosaccharomyces.
+OX   NCBI_TaxID=284812;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=972 / ATCC 24843;
+RX   PubMed=11859360; DOI=10.1038/nature724;
+RA   Wood V., Gwilliam R., Rajandream M.A., Lyne M.H., Lyne R., Stewart A.,
+RA   Sgouros J.G., Peat N., Hayles J., Baker S.G., Basham D., Bowman S.,
+RA   Brooks K., Brown D., Brown S., Chillingworth T., Churcher C.M., Collins M.,
+RA   Connor R., Cronin A., Davis P., Feltwell T., Fraser A., Gentles S.,
+RA   Goble A., Hamlin N., Harris D.E., Hidalgo J., Hodgson G., Holroyd S.,
+RA   Hornsby T., Howarth S., Huckle E.J., Hunt S., Jagels K., James K.D.,
+RA   Jones L., Jones M., Leather S., McDonald S., McLean J., Mooney P.,
+RA   Moule S., Mungall K.L., Murphy L.D., Niblett D., Odell C., Oliver K.,
+RA   O'Neil S., Pearson D., Quail M.A., Rabbinowitsch E., Rutherford K.M.,
+RA   Rutter S., Saunders D., Seeger K., Sharp S., Skelton J., Simmonds M.N.,
+RA   Squares R., Squares S., Stevens K., Taylor K., Taylor R.G., Tivey A.,
+RA   Walsh S.V., Warren T., Whitehead S., Woodward J.R., Volckaert G., Aert R.,
+RA   Robben J., Grymonprez B., Weltjens I., Vanstreels E., Rieger M.,
+RA   Schaefer M., Mueller-Auer S., Gabel C., Fuchs M., Duesterhoeft A.,
+RA   Fritzc C., Holzer E., Moestl D., Hilbert H., Borzym K., Langer I., Beck A.,
+RA   Lehrach H., Reinhardt R., Pohl T.M., Eger P., Zimmermann W., Wedler H.,
+RA   Wambutt R., Purnelle B., Goffeau A., Cadieu E., Dreano S., Gloux S.,
+RA   Lelaure V., Mottier S., Galibert F., Aves S.J., Xiang Z., Hunt C.,
+RA   Moore K., Hurst S.M., Lucas M., Rochet M., Gaillardin C., Tallada V.A.,
+RA   Garzon A., Thode G., Daga R.R., Cruzado L., Jimenez J., Sanchez M.,
+RA   del Rey F., Benito J., Dominguez A., Revuelta J.L., Moreno S.,
+RA   Armstrong J., Forsburg S.L., Cerutti L., Lowe T., McCombie W.R.,
+RA   Paulsen I., Potashkin J., Shpakovski G.V., Ussery D., Barrell B.G.,
+RA   Nurse P.;
+RT   "The genome sequence of Schizosaccharomyces pombe.";
+RL   Nature 415:871-880(2002).
+RN   [2]
+RP   IDENTIFICATION IN THE SAGA COMPLEX, AND IDENTIFICATION BY MASS
+RP   SPECTROMETRY.
+RX   PubMed=19056896; DOI=10.1101/gad.1719908;
+RA   Helmlinger D., Marguerat S., Villen J., Gygi S.P., Bahler J., Winston F.;
+RT   "The S. pombe SAGA complex controls the switch from proliferation to sexual
+RT   differentiation through the opposing roles of its subunits Gcn5 and Spt8.";
+RL   Genes Dev. 22:3184-3195(2008).
+CC   -!- FUNCTION: Involved in mRNA export coupled transcription activation by
+CC       association with both the TREX-2 and the SAGA complexes. SAGA acts as a
+CC       general cofactor required for essentially all RNA polymerase II
+CC       transcription. At the promoters, SAGA is required for transcription
+CC       pre-initiation complex (PIC) recruitment. It influences RNA polymerase
+CC       II transcriptional activity through different activities such as TBP
+CC       interaction (via core/TAF module) and promoter selectivity, interaction
+CC       with transcription activators (via Tra1/SPT module), and chromatin
+CC       modification through histone acetylation (via HAT module) and
+CC       deubiquitination (via DUB module). SAGA preferentially acetylates
+CC       histones H3 (to form H3K9ac, H3K14ac, H3K18ac and H3K23ac) and H2B and
+CC       deubiquitinates histone H2B. SAGA interacts with DNA via upstream
+CC       activating sequences (UASs). Within the SAGA complex, participates in a
+CC       subcomplex with SGF11, SGF73 and UBP8 required for deubiquitination of
+CC       H2B and for the maintenance of steady-state H3 methylation levels. The
+CC       TREX-2 complex functions in docking export-competent ribonucleoprotein
+CC       particles (mRNPs) to the nuclear entrance of the nuclear pore complex
+CC       (nuclear basket), by association with components of the nuclear mRNA
+CC       export machinery (MEX67-MTR2 and SUB2) in the nucleoplasm and the
+CC       nucleoporin NUP1 at the nuclear basket. TREX-2 participates in mRNA
+CC       export and accurate chromatin positioning in the nucleus by tethering
+CC       genes to the nuclear periphery. {ECO:0000250|UniProtKB:Q6WNK7}.
+CC   -!- SUBUNIT: Component of the 1.8 MDa SAGA (Spt-Ada-Gcn5 acetyltransferase)
+CC       complex, which is composed of 19 subunits tra1, spt7, taf5, ngg1/ada3,
+CC       sgf73, spt20, spt8, taf12, taf6, hfi1/ada1, ubp8, gcn5, ada2, spt3,
+CC       sgf29, taf10, taf9, sgf11 and sus1 (PubMed:19056896). The SAGA complex
+CC       is composed of 4 modules, namely the HAT (histone acetyltransferase)
+CC       module (gcn5, ada2, ngg1/ada3 and sgf29), the DUB (deubiquitinating)
+CC       module (ubp8, sgf11, sgf73 and sus1), the core or TAF (TBP-associated
+CC       factor) module (taf5, taf6, taf9, taf10 and taf12), and the Tra1 or SPT
+CC       (Suppressor of Ty) module (tra1, hfi1/ada1, spt3, spt7, spt8 and
+CC       spt20). The Tra1/SPT module binds activators, the core module recruits
+CC       TBP (TATA-binding protein), the HAT module contains the histone H3
+CC       acetyltransferase gcn5, and the DUB module comprises the histone H2B
+CC       deubiquitinase ubp8 (By similarity). Component of the nuclear pore
+CC       complex (NPC)-associated TREX-2 complex (transcription and export
+CC       complex 2), composed of at least sus1, sac3, thp1, sem1, and cdc31.
+CC       TREX-2 contains 2 sus1 chains. The TREX-2 complex interacts with the
+CC       mRNA export factors mex67, mtr2 and sub2, and the nucleoporin nup1 (By
+CC       similarity). {ECO:0000250|UniProtKB:Q6WNK7,
+CC       ECO:0000269|PubMed:19056896}.
+CC   -!- SUBCELLULAR LOCATION: Nucleus, nucleoplasm {ECO:0000255|HAMAP-
+CC       Rule:MF_03046}. Cytoplasm, P-body {ECO:0000255|HAMAP-Rule:MF_03046}.
+CC   -!- SIMILARITY: Belongs to the ENY2 family. {ECO:0000255|HAMAP-
+CC       Rule:MF_03046}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; CU329671; CAF28466.1; -; Genomic_DNA.
+DR   RefSeq; NP_001018822.1; NM_001022002.2.
+DR   AlphaFoldDB; Q7LL15; -.
+DR   SMR; Q7LL15; -.
+DR   BioGRID; 280381; 8.
+DR   ComplexPortal; CPX-2718; SAGA complex.
+DR   FunCoup; Q7LL15; 33.
+DR   IntAct; Q7LL15; 2.
+DR   MINT; Q7LL15; -.
+DR   STRING; 284812.Q7LL15; -.
+DR   iPTMnet; Q7LL15; -.
+DR   PaxDb; 4896-SPBC6B1.12c.1; -.
+DR   GeneID; 3361305; -.
+DR   KEGG; spo:3361305; -.
+DR   PomBase; SPBC6B1.12c; sus1.
+DR   VEuPathDB; FungiDB:SPBC6B1.12c; -.
+DR   HOGENOM; CLU_134052_2_0_1; -.
+DR   InParanoid; Q7LL15; -.
+DR   OMA; ANELEYK; -.
+DR   PhylomeDB; Q7LL15; -.
+DR   PRO; PR:Q7LL15; -.
+DR   Proteomes; UP000002485; Chromosome II.
+DR   GO; GO:0071819; C:DUBm complex; IBA:GO_Central.
+DR   GO; GO:0005643; C:nuclear pore; IEA:UniProtKB-UniRule.
+DR   GO; GO:0005654; C:nucleoplasm; IEA:UniProtKB-SubCell.
+DR   GO; GO:0000932; C:P-body; IEA:UniProtKB-SubCell.
+DR   GO; GO:0000124; C:SAGA complex; IDA:PomBase.
+DR   GO; GO:0070390; C:transcription export complex 2; ISO:PomBase.
+DR   GO; GO:0003682; F:chromatin binding; IBA:GO_Central.
+DR   GO; GO:0003713; F:transcription coactivator activity; IBA:GO_Central.
+DR   GO; GO:0016973; P:poly(A)+ mRNA export from nucleus; IBA:GO_Central.
+DR   GO; GO:0045944; P:positive regulation of transcription by RNA polymerase II; ISO:PomBase.
+DR   GO; GO:0015031; P:protein transport; IEA:UniProtKB-KW.
+DR   GO; GO:0006357; P:regulation of transcription by RNA polymerase II; EXP:PomBase.
+DR   GO; GO:0006368; P:transcription elongation by RNA polymerase II; IEA:UniProtKB-UniRule.
+DR   GO; GO:0045815; P:transcription initiation-coupled chromatin remodeling; IC:PomBase.
+DR   Gene3D; 1.10.246.140; -; 1.
+DR   HAMAP; MF_03046; ENY2_Sus1; 1.
+DR   InterPro; IPR018783; TF_ENY2.
+DR   InterPro; IPR038212; TF_EnY2_sf.
+DR   PANTHER; PTHR12514; ENHANCER OF YELLOW 2 TRANSCRIPTION FACTOR; 1.
+DR   Pfam; PF10163; EnY2; 1.
+PE   1: Evidence at protein level;
+KW   Activator; Chromatin regulator; Cytoplasm; mRNA transport; Nucleus;
+KW   Protein transport; Reference proteome; Transcription;
+KW   Transcription regulation; Translocation; Transport.
+FT   CHAIN           1..108
+FT                   /note="SAGA complex subunit Sus1"
+FT                   /id="PRO_0000350748"
+SQ   SEQUENCE   108 AA;  12313 MW;  91F54D90F0469567 CRC64;
+     MYDLIFSTKM TTEKIVEQLY ETGDYERLAN ELEYKLESCG WTTQLRDYTR GIVNSDSKID
+     FQKLYESALQ SATESIPDSV KMDLLKDIKT CVLKLANPPE SANGGNKM
+//
+ID   SUS_THEVB               Reviewed;         808 AA.
+AC   Q8DK23;
+DT   22-NOV-2017, integrated into UniProtKB/Swiss-Prot.
+DT   01-MAR-2003, sequence version 1.
+DT   28-JAN-2026, entry version 111.
+DE   RecName: Full=Sucrose synthase;
+DE            Short=SuSyTe;
+DE            EC=2.4.1.13 {ECO:0000269|PubMed:23196182};
+GN   Name=susA {ECO:0000303|PubMed:23196182}; OrderedLocusNames=tlr1047;
+OS   Thermosynechococcus vestitus (strain NIES-2133 / IAM M-273 / BP-1).
+OC   Bacteria; Bacillati; Cyanobacteriota; Cyanophyceae; Acaryochloridales;
+OC   Thermosynechococcaceae; Thermosynechococcus.
+OX   NCBI_TaxID=197221;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   STRAIN=NIES-2133 / IAM M-273 / BP-1;
+RA   Torres L.L., Salerno G.L.;
+RT   "Expression, purification and characterization of a sucrose synthase gene
+RT   from Thermosynechococcus elongatus BP-1.";
+RL   Submitted (NOV-2008) to the EMBL/GenBank/DDBJ databases.
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=NIES-2133 / IAM M-273 / BP-1;
+RX   PubMed=12240834; DOI=10.1093/dnares/9.4.123;
+RA   Nakamura Y., Kaneko T., Sato S., Ikeuchi M., Katoh H., Sasamoto S.,
+RA   Watanabe A., Iriguchi M., Kawashima K., Kimura T., Kishida Y., Kiyokawa C.,
+RA   Kohara M., Matsumoto M., Matsuno A., Nakazaki N., Shimpo S., Sugimoto M.,
+RA   Takeuchi C., Yamada M., Tabata S.;
+RT   "Complete genome structure of the thermophilic cyanobacterium
+RT   Thermosynechococcus elongatus BP-1.";
+RL   DNA Res. 9:123-130(2002).
+RN   [3]
+RP   FUNCTION, CATALYTIC ACTIVITY, BIOPHYSICOCHEMICAL PROPERTIES, AND SUBUNIT.
+RC   STRAIN=NIES-2133 / IAM M-273 / BP-1;
+RX   PubMed=23196182; DOI=10.1016/j.febslet.2012.11.011;
+RA   Figueroa C.M., Asencion Diez M.D., Kuhn M.L., McEwen S., Salerno G.L.,
+RA   Iglesias A.A., Ballicora M.A.;
+RT   "The unique nucleotide specificity of the sucrose synthase from
+RT   Thermosynechococcus elongatus.";
+RL   FEBS Lett. 587:165-169(2013).
+CC   -!- FUNCTION: Catalyzes the reversible conversion of sucrose and a
+CC       nucleotide disphosphate (NDP) into fructose and NDP-glucose; although
+CC       the reaction is freely reversible in vitro, the physiological reaction
+CC       seems to be sucrose cleavage. Unlike characterized plant enzymes
+CC       prefers ADP as a cosubstrate, whereas plants prefer UDP
+CC       (PubMed:23196182). Its preference for ADP over UDP suggests it may
+CC       directly link sucrose and glycogen metabolism (Probable).
+CC       {ECO:0000269|PubMed:23196182, ECO:0000305|PubMed:23196182}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=an NDP-alpha-D-glucose + D-fructose = a ribonucleoside 5'-
+CC         diphosphate + sucrose + H(+); Xref=Rhea:RHEA:16241,
+CC         ChEBI:CHEBI:15378, ChEBI:CHEBI:17992, ChEBI:CHEBI:37721,
+CC         ChEBI:CHEBI:57930, ChEBI:CHEBI:76533; EC=2.4.1.13;
+CC         Evidence={ECO:0000269|PubMed:23196182};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=ADP-alpha-D-glucose + D-fructose = sucrose + ADP + H(+);
+CC         Xref=Rhea:RHEA:55080, ChEBI:CHEBI:15378, ChEBI:CHEBI:17992,
+CC         ChEBI:CHEBI:37721, ChEBI:CHEBI:57498, ChEBI:CHEBI:456216;
+CC         EC=2.4.1.13; Evidence={ECO:0000269|PubMed:23196182};
+CC   -!- BIOPHYSICOCHEMICAL PROPERTIES:
+CC       Kinetic parameters:
+CC         KM=0.033 mM for ADP-glucose for sucrose synthesis, pH 7.0
+CC         {ECO:0000269|PubMed:23196182};
+CC         KM=1.7 mM for UDP-glucose for sucrose synthesis, pH 7.0
+CC         {ECO:0000269|PubMed:23196182};
+CC         Vmax=1.1 umol/min/mg enzyme for sucrose synthesis with ADP-glucose,
+CC         pH 7.0 {ECO:0000269|PubMed:23196182};
+CC         Vmax=2.9 umol/min/mg enzyme for sucrose synthesis with UDP-glucose,
+CC         pH 7.0 {ECO:0000269|PubMed:23196182};
+CC         Vmax=1.28 umol/min/mg enzyme for sucrose cleavage with ADP, pH 7.0
+CC         {ECO:0000269|PubMed:23196182};
+CC         Vmax=3.8 umol/min/mg enzyme for sucrose cleavage with CDP, pH 7.0
+CC         {ECO:0000269|PubMed:23196182};
+CC         Vmax=3.9 umol/min/mg enzyme for sucrose cleavage with GDP, pH 7.0
+CC         {ECO:0000269|PubMed:23196182};
+CC         Vmax=1.41 umol/min/mg enzyme for sucrose cleavage with TDP, pH 7.0
+CC         {ECO:0000269|PubMed:23196182};
+CC         Vmax=2.2 umol/min/mg enzyme for sucrose cleavage with UDP, pH 7.0
+CC         {ECO:0000269|PubMed:23196182};
+CC         Note=kcat/KM for sucrose synthesis is 70094 for ADP-gluce and 2673
+CC         for UDP-glucose.;
+CC       pH dependence:
+CC         Optimum pH is 7-9 for sucrose cleavage with ADP as substrate.
+CC         {ECO:0000269|PubMed:23196182};
+CC       Temperature dependence:
+CC         Optimum temperature is 60 degrees Celsius for sucrose degradation
+CC         with UDP and 70 degrees Celsius with ADP. The enzyme remains stable
+CC         for 10 minutes at 50 degrees Celsius, while addition of ADP, UDP or
+CC         sucrose enhances thermal stability by 5 degrees Celsius.
+CC         {ECO:0000269|PubMed:23196182};
+CC   -!- SUBUNIT: Probably a homotetramer (PubMed:23196182).
+CC       {ECO:0000305|PubMed:23196182}.
+CC   -!- SIMILARITY: Belongs to the glycosyltransferase 1 family. {ECO:0000305}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; FJ457909; ACS32312.1; -; Genomic_DNA.
+DR   EMBL; BA000039; BAC08600.1; -; Genomic_DNA.
+DR   RefSeq; WP_011056890.1; NC_004113.1.
+DR   AlphaFoldDB; Q8DK23; -.
+DR   SMR; Q8DK23; -.
+DR   STRING; 197221.gene:10747640; -.
+DR   CAZy; GT4; Glycosyltransferase Family 4.
+DR   EnsemblBacteria; BAC08600; BAC08600; BAC08600.
+DR   KEGG; tel:tlr1047; -.
+DR   PATRIC; fig|197221.4.peg.1100; -.
+DR   eggNOG; COG0438; Bacteria.
+DR   Proteomes; UP000000440; Chromosome.
+DR   GO; GO:0016157; F:sucrose synthase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0005985; P:sucrose metabolic process; IEA:InterPro.
+DR   Gene3D; 1.20.120.1230; -; 1.
+DR   Gene3D; 3.10.450.330; -; 1.
+DR   Gene3D; 3.40.50.2000; Glycogen Phosphorylase B; 2.
+DR   InterPro; IPR001296; Glyco_trans_1.
+DR   InterPro; IPR000368; Sucrose_synth_GT-B1.
+DR   InterPro; IPR012820; Sucrose_synthase_pln/cyn.
+DR   InterPro; IPR056736; SUS_EPBD.
+DR   InterPro; IPR056735; SUS_N.
+DR   NCBIfam; TIGR02470; sucr_synth; 1.
+DR   PANTHER; PTHR45839; -; 1.
+DR   PANTHER; PTHR45839:SF7; SUCROSE SYNTHASE 1; 1.
+DR   Pfam; PF00534; Glycos_transf_1; 1.
+DR   Pfam; PF00862; GT-B_Sucrose_synth; 1.
+DR   Pfam; PF24862; SUS_EPBD; 1.
+DR   Pfam; PF24861; SUS_N; 1.
+DR   SUPFAM; SSF53756; UDP-Glycosyltransferase/glycogen phosphorylase; 1.
+PE   1: Evidence at protein level;
+KW   Glycosyltransferase; Reference proteome; Transferase.
+FT   CHAIN           1..808
+FT                   /note="Sucrose synthase"
+FT                   /id="PRO_0000442259"
+FT   REGION          271..753
+FT                   /note="GT-B glycosyltransferase"
+FT                   /evidence="ECO:0000250|UniProtKB:P49040"
+SQ   SEQUENCE   808 AA;  93964 MW;  F730297F8001316D CRC64;
+     MTCVLLKAVV ESDERADLRQ FSRILQLGEK RYLLRNDILD AFADYCRDQE RPVPPPSESR
+     LSKLVFYTQE IIVDNESLCW IVRPRIAQQE VCRLLVEDLT IVPMTIPELL DLRDRLVNHY
+     HPNEGDVFEI DVQPFYDYSP IIRDAKNIGK GVEFLNRYLS SKLFQDPRQW QQNLFNFLRI
+     HRYNGYQLLI NERIRSPQHL SEQVKQALVV LSDRPPTEAY SEFRFELQNL GFEPGWGNTV
+     ARVRDTLEIL DQLLDSPDHQ VLEAFVSRIP MLFRIALISP HGWFGQEGVL GRPDTGGQVV
+     YILDQVKSLE KQMREDLELA GLGVLEAQPK IIVLTRLIPN AEGTLCNQRL EKIYGTNDAW
+     ILRVPFREFN PKVTQNWISR FEIWPYLETF AIDAERELRA EFGHVPDLII GNYSDGNLVA
+     FLLARRLKVT QCNIAHALEK SKYLFSNLYW QDLEDKYHFS LQFTADLIAM NAANFIISST
+     YQEIVGTPDS IGQYESYQSF TMPDLYHVVN GIELFSPKFN VVPPGVNEQV YFPYYHYTER
+     LEGDRQRLEE LLFTLEDPQQ IYGYLEAPEK RPLFSMARLD RIKNLTGLAE AFGRSKALQE
+     RCNLILVAGK LRTADSSDRE EIAEIEKLYQ IIHQYNLHGK IRWLGIRLPK ADSGEIYRII
+     ADRQGIFVQP ALFEAFGLTI LEAMISGLPT FGTRFGGPLE IIQDGVNGFY INPTHLEEMA
+     ETIVRFLEAC DRDPQEWQRI SKAGIERVYS TYTWKIHCTR LLSLAKIYGF WNFSSQENRE
+     DMMRYMEALF HLLYKPRAQA LLAEHLQR
+//

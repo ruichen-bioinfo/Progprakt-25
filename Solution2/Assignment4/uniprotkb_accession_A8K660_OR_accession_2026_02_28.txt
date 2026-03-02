@@ -1,0 +1,1139 @@
+ID   A8K660_HUMAN            Unreviewed;       244 AA.
+AC   A8K660;
+DT   04-DEC-2007, integrated into UniProtKB/TrEMBL.
+DT   04-DEC-2007, sequence version 1.
+DT   28-JAN-2026, entry version 154.
+DE   SubName: Full=Adiponectin {ECO:0000313|EMBL:ABZ10942.1, ECO:0000313|EMBL:EAW78165.1};
+DE   SubName: Full=cDNA FLJ78108, highly similar to Homo sapiens adiponectin, C1Q and collagen domain containing (ADIPOQ), mRNA {ECO:0000313|EMBL:BAF84214.1};
+GN   Name=ADIPOQ {ECO:0000313|EMBL:EAW78165.1};
+GN   ORFNames=hCG_1784052 {ECO:0000313|EMBL:EAW78165.1};
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae;
+OC   Homo.
+OX   NCBI_TaxID=9606 {ECO:0000313|EMBL:BAF84214.1};
+RN   [1] {ECO:0000313|EMBL:EAW78165.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=11181995; DOI=10.1126/science.1058040;
+RA   Venter J.C., Adams M.D., Myers E.W., Li P.W., Mural R.J., Sutton G.G.,
+RA   Smith H.O., Yandell M., Evans C.A., Holt R.A., Gocayne J.D., Amanatides P.,
+RA   Ballew R.M., Huson D.H., Wortman J.R., Zhang Q., Kodira C.D., Zheng X.H.,
+RA   Chen L., Skupski M., Subramanian G., Thomas P.D., Zhang J.,
+RA   Gabor Miklos G.L., Nelson C., Broder S., Clark A.G., Nadeau J.,
+RA   McKusick V.A., Zinder N., Levine A.J., Roberts R.J., Simon M., Slayman C.,
+RA   Hunkapiller M., Bolanos R., Delcher A., Dew I., Fasulo D., Flanigan M.,
+RA   Florea L., Halpern A., Hannenhalli S., Kravitz S., Levy S., Mobarry C.,
+RA   Reinert K., Remington K., Abu-Threideh J., Beasley E., Biddick K.,
+RA   Bonazzi V., Brandon R., Cargill M., Chandramouliswaran I., Charlab R.,
+RA   Chaturvedi K., Deng Z., Di Francesco V., Dunn P., Eilbeck K.,
+RA   Evangelista C., Gabrielian A.E., Gan W., Ge W., Gong F., Gu Z., Guan P.,
+RA   Heiman T.J., Higgins M.E., Ji R.R., Ke Z., Ketchum K.A., Lai Z., Lei Y.,
+RA   Li Z., Li J., Liang Y., Lin X., Lu F., Merkulov G.V., Milshina N.,
+RA   Moore H.M., Naik A.K., Narayan V.A., Neelam B., Nusskern D., Rusch D.B.,
+RA   Salzberg S., Shao W., Shue B., Sun J., Wang Z., Wang A., Wang X., Wang J.,
+RA   Wei M., Wides R., Xiao C., Yan C., Yao A., Ye J., Zhan M., Zhang W.,
+RA   Zhang H., Zhao Q., Zheng L., Zhong F., Zhong W., Zhu S., Zhao S.,
+RA   Gilbert D., Baumhueter S., Spier G., Carter C., Cravchik A., Woodage T.,
+RA   Ali F., An H., Awe A., Baldwin D., Baden H., Barnstead M., Barrow I.,
+RA   Beeson K., Busam D., Carver A., Center A., Cheng M.L., Curry L.,
+RA   Danaher S., Davenport L., Desilets R., Dietz S., Dodson K., Doup L.,
+RA   Ferriera S., Garg N., Gluecksmann A., Hart B., Haynes J., Haynes C.,
+RA   Heiner C., Hladun S., Hostin D., Houck J., Howland T., Ibegwam C.,
+RA   Johnson J., Kalush F., Kline L., Koduru S., Love A., Mann F., May D.,
+RA   McCawley S., McIntosh T., McMullen I., Moy M., Moy L., Murphy B.,
+RA   Nelson K., Pfannkoch C., Pratts E., Puri V., Qureshi H., Reardon M.,
+RA   Rodriguez R., Rogers Y.H., Romblad D., Ruhfel B., Scott R., Sitter C.,
+RA   Smallwood M., Stewart E., Strong R., Suh E., Thomas R., Tint N.N., Tse S.,
+RA   Vech C., Wang G., Wetter J., Williams S., Williams M., Windsor S.,
+RA   Winn-Deen E., Wolfe K., Zaveri J., Zaveri K., Abril J.F., Guigo R.,
+RA   Campbell M.J., Sjolander K.V., Karlak B., Kejariwal A., Mi H., Lazareva B.,
+RA   Hatton T., Narechania A., Diemer K., Muruganujan A., Guo N., Sato S.,
+RA   Bafna V., Istrail S., Lippert R., Schwartz R., Walenz B., Yooseph S.,
+RA   Allen D., Basu A., Baxendale J., Blick L., Caminha M., Carnes-Stine J.,
+RA   Caulk P., Chiang Y.H., Coyne M., Dahlke C., Mays A., Dombroski M.,
+RA   Donnelly M., Ely D., Esparham S., Fosler C., Gire H., Glanowski S.,
+RA   Glasser K., Glodek A., Gorokhov M., Graham K., Gropman B., Harris M.,
+RA   Heil J., Henderson S., Hoover J., Jennings D., Jordan C., Jordan J.,
+RA   Kasha J., Kagan L., Kraft C., Levitsky A., Lewis M., Liu X., Lopez J.,
+RA   Ma D., Majoros W., McDaniel J., Murphy S., Newman M., Nguyen T., Nguyen N.,
+RA   Nodell M., Pan S., Peck J., Peterson M., Rowe W., Sanders R., Scott J.,
+RA   Simpson M., Smith T., Sprague A., Stockwell T., Turner R., Venter E.,
+RA   Wang M., Wen M., Wu D., Wu M., Xia A., Zandieh A., Zhu X.;
+RT   "The sequence of the human genome.";
+RL   Science 291:1304-1351(2001).
+RN   [2] {ECO:0000313|EMBL:EAW78165.1}
+RP   NUCLEOTIDE SEQUENCE.
+RA   Mural R.J., Istrail S., Sutton G., Florea L., Halpern A.L., Mobarry C.M.,
+RA   Lippert R., Walenz B., Shatkay H., Dew I., Miller J.R., Flanigan M.J.,
+RA   Edwards N.J., Bolanos R., Fasulo D., Halldorsson B.V., Hannenhalli S.,
+RA   Turner R., Yooseph S., Lu F., Nusskern D.R., Shue B.C., Zheng X.H.,
+RA   Zhong F., Delcher A.L., Huson D.H., Kravitz S.A., Mouchard L., Reinert K.,
+RA   Remington K.A., Clark A.G., Waterman M.S., Eichler E.E., Adams M.D.,
+RA   Hunkapiller M.W., Myers E.W., Venter J.C.;
+RL   Submitted (SEP-2005) to the EMBL/GenBank/DDBJ databases.
+RN   [3] {ECO:0000313|EMBL:BAF84214.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   TISSUE=Pericardium {ECO:0000313|EMBL:BAF84214.1};
+RA   Wakamatsu A., Yamamoto J., Kimura K., Ishii S., Watanabe K., Sugiyama A.,
+RA   Murakawa K., Kaida T., Tsuchiya K., Fukuzumi Y., Kumagai A., Oishi Y.,
+RA   Yamamoto S., Ono Y., Komori Y., Yamazaki M., Kisu Y., Nishikawa T.,
+RA   Sugano S., Nomura N., Isogai T.;
+RT   "NEDO human cDNA sequencing project.";
+RL   Submitted (OCT-2007) to the EMBL/GenBank/DDBJ databases.
+RN   [4] {ECO:0000313|EMBL:ABZ10942.1}
+RP   NUCLEOTIDE SEQUENCE.
+RA   Liu F., Zheng J.G.;
+RT   "Cloning and Expression of Adiponectin from Homo sapiens.";
+RL   Submitted (JAN-2008) to the EMBL/GenBank/DDBJ databases.
+CC   -!- SUBCELLULAR LOCATION: Secreted {ECO:0000256|ARBA:ARBA00004613}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; EU420013; ABZ10942.1; -; mRNA.
+DR   EMBL; AK291525; BAF84214.1; -; mRNA.
+DR   EMBL; CH471052; EAW78165.1; -; Genomic_DNA.
+DR   RefSeq; NP_001171271.1; NM_001177800.2.
+DR   RefSeq; NP_004788.1; NM_004797.4.
+DR   AlphaFoldDB; A8K660; -.
+DR   SMR; A8K660; -.
+DR   IntAct; A8K660; 3.
+DR   Antibodypedia; 19310; 1901 antibodies from 49 providers.
+DR   DNASU; 9370; -.
+DR   GeneID; 9370; -.
+DR   KEGG; hsa:9370; -.
+DR   ClinPGx; PA134933118; -.
+DR   CTD; 9370; -.
+DR   DisGeNET; 9370; -.
+DR   VEuPathDB; HostDB:ENSG00000181092; -.
+DR   HOGENOM; CLU_001074_0_2_1; -.
+DR   OMA; GTYYFAY; -.
+DR   OrthoDB; 8044756at2759; -.
+DR   BioGRID-ORCS; 9370; 7 hits in 1146 CRISPR screens.
+DR   ExpressionAtlas; A8K660; baseline and differential.
+DR   GO; GO:0005581; C:collagen trimer; IEA:UniProtKB-KW.
+DR   GO; GO:0005783; C:endoplasmic reticulum; IEA:Ensembl.
+DR   GO; GO:0005615; C:extracellular space; IEA:Ensembl.
+DR   GO; GO:0005179; F:hormone activity; IEA:Ensembl.
+DR   GO; GO:0042802; F:identical protein binding; IEA:Ensembl.
+DR   GO; GO:0043539; F:protein serine/threonine kinase activator activity; IEA:Ensembl.
+DR   GO; GO:0050873; P:brown fat cell differentiation; IEA:Ensembl.
+DR   GO; GO:0071320; P:cellular response to cAMP; IEA:Ensembl.
+DR   GO; GO:0071872; P:cellular response to epinephrine stimulus; IEA:Ensembl.
+DR   GO; GO:0032869; P:cellular response to insulin stimulus; IEA:Ensembl.
+DR   GO; GO:0071466; P:cellular response to xenobiotic stimulus; IEA:Ensembl.
+DR   GO; GO:0007623; P:circadian rhythm; IEA:Ensembl.
+DR   GO; GO:0070994; P:detection of oxidative stress; IEA:Ensembl.
+DR   GO; GO:0006635; P:fatty acid beta-oxidation; IEA:Ensembl.
+DR   GO; GO:0010467; P:gene expression; IEA:Ensembl.
+DR   GO; GO:0042593; P:glucose homeostasis; IEA:Ensembl.
+DR   GO; GO:0006006; P:glucose metabolic process; IEA:Ensembl.
+DR   GO; GO:0120163; P:negative regulation of cold-induced thermogenesis; IEA:Ensembl.
+DR   GO; GO:0045892; P:negative regulation of DNA-templated transcription; IEA:Ensembl.
+DR   GO; GO:0045599; P:negative regulation of fat cell differentiation; IEA:Ensembl.
+DR   GO; GO:0045721; P:negative regulation of gluconeogenesis; IEA:Ensembl.
+DR   GO; GO:0046888; P:negative regulation of hormone secretion; IEA:Ensembl.
+DR   GO; GO:0050728; P:negative regulation of inflammatory response; IEA:Ensembl.
+DR   GO; GO:2000590; P:negative regulation of metanephric mesenchymal cell migration; IEA:Ensembl.
+DR   GO; GO:2000584; P:negative regulation of platelet-derived growth factor receptor-alpha signaling pathway; IEA:Ensembl.
+DR   GO; GO:0043123; P:positive regulation of canonical NF-kappaB signal transduction; IEA:Ensembl.
+DR   GO; GO:0120162; P:positive regulation of cold-induced thermogenesis; IEA:Ensembl.
+DR   GO; GO:0046326; P:positive regulation of D-glucose import; IEA:Ensembl.
+DR   GO; GO:0045923; P:positive regulation of fatty acid metabolic process; IEA:Ensembl.
+DR   GO; GO:2000478; P:positive regulation of metanephric podocyte development; IEA:Ensembl.
+DR   GO; GO:2000534; P:positive regulation of renal albumin absorption; IEA:Ensembl.
+DR   GO; GO:0014823; P:response to activity; IEA:Ensembl.
+DR   GO; GO:0009617; P:response to bacterium; IEA:Ensembl.
+DR   GO; GO:0045471; P:response to ethanol; IEA:Ensembl.
+DR   GO; GO:0051384; P:response to glucocorticoid; IEA:Ensembl.
+DR   GO; GO:0009749; P:response to glucose; IEA:Ensembl.
+DR   GO; GO:0001666; P:response to hypoxia; IEA:Ensembl.
+DR   GO; GO:0070543; P:response to linoleic acid; IEA:Ensembl.
+DR   GO; GO:0007584; P:response to nutrient; IEA:Ensembl.
+DR   GO; GO:0009744; P:response to sucrose; IEA:Ensembl.
+DR   FunFam; 2.60.120.40:FF:000001; Complement C1q B chain; 1.
+DR   Gene3D; 2.60.120.40; -; 1.
+DR   InterPro; IPR001073; C1q_dom.
+DR   InterPro; IPR008160; Collagen.
+DR   InterPro; IPR050392; Collagen/C1q_domain.
+DR   InterPro; IPR008983; Tumour_necrosis_fac-like_dom.
+DR   PANTHER; PTHR15427:SF20; ADIPONECTIN; 1.
+DR   PANTHER; PTHR15427; EMILIN ELASTIN MICROFIBRIL INTERFACE-LOCATED PROTEIN ELASTIN MICROFIBRIL INTERFACER; 1.
+DR   Pfam; PF00386; C1q; 1.
+DR   Pfam; PF01391; Collagen; 1.
+DR   PRINTS; PR00007; COMPLEMNTC1Q.
+DR   SMART; SM00110; C1Q; 1.
+DR   SUPFAM; SSF49842; TNF-like; 1.
+DR   PROSITE; PS50871; C1Q; 1.
+PE   2: Evidence at transcript level;
+KW   Collagen {ECO:0000256|ARBA:ARBA00023119, ECO:0000313|EMBL:BAF84214.1};
+KW   Secreted {ECO:0000256|ARBA:ARBA00022525};
+KW   Signal {ECO:0000256|ARBA:ARBA00022729, ECO:0000256|SAM:SignalP}.
+FT   SIGNAL          1..17
+FT                   /evidence="ECO:0000256|SAM:SignalP"
+FT   CHAIN           18..244
+FT                   /evidence="ECO:0000256|SAM:SignalP"
+FT                   /id="PRO_5014297568"
+FT   DOMAIN          108..244
+FT                   /note="C1q"
+FT                   /evidence="ECO:0000259|PROSITE:PS50871"
+FT   REGION          40..101
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        55..70
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+SQ   SEQUENCE   244 AA;  26414 MW;  64D8C6C1204B1018 CRC64;
+     MLLLGAVLLL LALPGHDQET TTQGPGVLLP LPKGACTGWM AGIPGHPGHN GAPGRDGRDG
+     TPGEKGEKGD PGLIGPKGDI GETGVPGAEG PRGFPGIQGR KGEPGEGAYV YRSAFSVGLE
+     TYVTIPNMPI RFTKIFYNQQ NHYDGSTGKF HCNIPGLYYF AYHITVYMKD VKVSLFKKDK
+     AMLFTYDQYQ ENNVDQASGS VLLHLEVGDQ VWLQVYGEGE RNGLYADNDN DSTFTGFLLY
+     HDTN
+//
+ID   B0YJ88_HUMAN            Unreviewed;       583 AA.
+AC   B0YJ88;
+DT   08-APR-2008, integrated into UniProtKB/TrEMBL.
+DT   08-APR-2008, sequence version 1.
+DT   28-JAN-2026, entry version 134.
+DE   SubName: Full=Radixin {ECO:0000313|EMBL:ACA06066.1, ECO:0000313|EMBL:EAW67130.1};
+DE   SubName: Full=cDNA, FLJ93349, Homo sapiens radixin (RDX), mRNA {ECO:0000313|EMBL:BAG35749.1};
+GN   Name=RDX {ECO:0000313|EMBL:ACA06066.1};
+GN   ORFNames=hCG_39182 {ECO:0000313|EMBL:EAW67130.1};
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae;
+OC   Homo.
+OX   NCBI_TaxID=9606 {ECO:0000313|EMBL:ACA06066.1};
+RN   [1] {ECO:0000313|EMBL:EAW67130.1}
+RP   NUCLEOTIDE SEQUENCE.
+RX   PubMed=11181995; DOI=10.1126/science.1058040;
+RA   Venter J.C., Adams M.D., Myers E.W., Li P.W., Mural R.J., Sutton G.G.,
+RA   Smith H.O., Yandell M., Evans C.A., Holt R.A., Gocayne J.D., Amanatides P.,
+RA   Ballew R.M., Huson D.H., Wortman J.R., Zhang Q., Kodira C.D., Zheng X.H.,
+RA   Chen L., Skupski M., Subramanian G., Thomas P.D., Zhang J.,
+RA   Gabor Miklos G.L., Nelson C., Broder S., Clark A.G., Nadeau J.,
+RA   McKusick V.A., Zinder N., Levine A.J., Roberts R.J., Simon M., Slayman C.,
+RA   Hunkapiller M., Bolanos R., Delcher A., Dew I., Fasulo D., Flanigan M.,
+RA   Florea L., Halpern A., Hannenhalli S., Kravitz S., Levy S., Mobarry C.,
+RA   Reinert K., Remington K., Abu-Threideh J., Beasley E., Biddick K.,
+RA   Bonazzi V., Brandon R., Cargill M., Chandramouliswaran I., Charlab R.,
+RA   Chaturvedi K., Deng Z., Di Francesco V., Dunn P., Eilbeck K.,
+RA   Evangelista C., Gabrielian A.E., Gan W., Ge W., Gong F., Gu Z., Guan P.,
+RA   Heiman T.J., Higgins M.E., Ji R.R., Ke Z., Ketchum K.A., Lai Z., Lei Y.,
+RA   Li Z., Li J., Liang Y., Lin X., Lu F., Merkulov G.V., Milshina N.,
+RA   Moore H.M., Naik A.K., Narayan V.A., Neelam B., Nusskern D., Rusch D.B.,
+RA   Salzberg S., Shao W., Shue B., Sun J., Wang Z., Wang A., Wang X., Wang J.,
+RA   Wei M., Wides R., Xiao C., Yan C., Yao A., Ye J., Zhan M., Zhang W.,
+RA   Zhang H., Zhao Q., Zheng L., Zhong F., Zhong W., Zhu S., Zhao S.,
+RA   Gilbert D., Baumhueter S., Spier G., Carter C., Cravchik A., Woodage T.,
+RA   Ali F., An H., Awe A., Baldwin D., Baden H., Barnstead M., Barrow I.,
+RA   Beeson K., Busam D., Carver A., Center A., Cheng M.L., Curry L.,
+RA   Danaher S., Davenport L., Desilets R., Dietz S., Dodson K., Doup L.,
+RA   Ferriera S., Garg N., Gluecksmann A., Hart B., Haynes J., Haynes C.,
+RA   Heiner C., Hladun S., Hostin D., Houck J., Howland T., Ibegwam C.,
+RA   Johnson J., Kalush F., Kline L., Koduru S., Love A., Mann F., May D.,
+RA   McCawley S., McIntosh T., McMullen I., Moy M., Moy L., Murphy B.,
+RA   Nelson K., Pfannkoch C., Pratts E., Puri V., Qureshi H., Reardon M.,
+RA   Rodriguez R., Rogers Y.H., Romblad D., Ruhfel B., Scott R., Sitter C.,
+RA   Smallwood M., Stewart E., Strong R., Suh E., Thomas R., Tint N.N., Tse S.,
+RA   Vech C., Wang G., Wetter J., Williams S., Williams M., Windsor S.,
+RA   Winn-Deen E., Wolfe K., Zaveri J., Zaveri K., Abril J.F., Guigo R.,
+RA   Campbell M.J., Sjolander K.V., Karlak B., Kejariwal A., Mi H., Lazareva B.,
+RA   Hatton T., Narechania A., Diemer K., Muruganujan A., Guo N., Sato S.,
+RA   Bafna V., Istrail S., Lippert R., Schwartz R., Walenz B., Yooseph S.,
+RA   Allen D., Basu A., Baxendale J., Blick L., Caminha M., Carnes-Stine J.,
+RA   Caulk P., Chiang Y.H., Coyne M., Dahlke C., Mays A., Dombroski M.,
+RA   Donnelly M., Ely D., Esparham S., Fosler C., Gire H., Glanowski S.,
+RA   Glasser K., Glodek A., Gorokhov M., Graham K., Gropman B., Harris M.,
+RA   Heil J., Henderson S., Hoover J., Jennings D., Jordan C., Jordan J.,
+RA   Kasha J., Kagan L., Kraft C., Levitsky A., Lewis M., Liu X., Lopez J.,
+RA   Ma D., Majoros W., McDaniel J., Murphy S., Newman M., Nguyen T., Nguyen N.,
+RA   Nodell M., Pan S., Peck J., Peterson M., Rowe W., Sanders R., Scott J.,
+RA   Simpson M., Smith T., Sprague A., Stockwell T., Turner R., Venter E.,
+RA   Wang M., Wen M., Wu D., Wu M., Xia A., Zandieh A., Zhu X.;
+RT   "The sequence of the human genome.";
+RL   Science 291:1304-1351(2001).
+RN   [2] {ECO:0000313|EMBL:EAW67130.1}
+RP   NUCLEOTIDE SEQUENCE.
+RA   Mural R.J., Istrail S., Sutton G., Florea L., Halpern A.L., Mobarry C.M.,
+RA   Lippert R., Walenz B., Shatkay H., Dew I., Miller J.R., Flanigan M.J.,
+RA   Edwards N.J., Bolanos R., Fasulo D., Halldorsson B.V., Hannenhalli S.,
+RA   Turner R., Yooseph S., Lu F., Nusskern D.R., Shue B.C., Zheng X.H.,
+RA   Zhong F., Delcher A.L., Huson D.H., Kravitz S.A., Mouchard L., Reinert K.,
+RA   Remington K.A., Clark A.G., Waterman M.S., Eichler E.E., Adams M.D.,
+RA   Hunkapiller M.W., Myers E.W., Venter J.C.;
+RL   Submitted (JUL-2005) to the EMBL/GenBank/DDBJ databases.
+RN   [3] {ECO:0000313|EMBL:ACA06066.1}
+RP   NUCLEOTIDE SEQUENCE.
+RA   Stockwell T.B., Busam D.A., Ferriera S.M., Brownley A.N., Strausberg R.L.,
+RA   Kirkness E.F., Rogers Y.-H., Levy S.;
+RL   Submitted (FEB-2007) to the EMBL/GenBank/DDBJ databases.
+RN   [4] {ECO:0000313|EMBL:BAG35749.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   TISSUE=Hippocampus {ECO:0000313|EMBL:BAG35749.1};
+RA   Wakamatsu A., Yamamoto J., Kimura K., Kaida T., Tsuchiya K., Iida Y.,
+RA   Takayama Y., Murakawa K., Kanehori K., Andoh T., Kagawa N., Sato R.,
+RA   Kawamura Y., Tanaka S., Kisu Y., Sugano S., Goshima N., Nomura N.,
+RA   Isogai T.;
+RT   "NEDO functional analysis of protein and research application project.";
+RL   Submitted (JAN-2008) to the EMBL/GenBank/DDBJ databases.
+CC   -!- SUBCELLULAR LOCATION: Cell membrane {ECO:0000256|ARBA:ARBA00004413};
+CC       Peripheral membrane protein {ECO:0000256|ARBA:ARBA00004413};
+CC       Cytoplasmic side {ECO:0000256|ARBA:ARBA00004413}. Cell projection,
+CC       microvillus {ECO:0000256|ARBA:ARBA00004105}. Cytoplasm, cytoskeleton
+CC       {ECO:0000256|ARBA:ARBA00004245}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; EF445024; ACA06066.1; -; Genomic_DNA.
+DR   EMBL; AK312903; BAG35749.1; -; mRNA.
+DR   EMBL; CH471065; EAW67130.1; -; Genomic_DNA.
+DR   RefSeq; NP_001427436.1; NM_001440507.1.
+DR   RefSeq; NP_001427437.1; NM_001440508.1.
+DR   RefSeq; NP_002897.1; NM_002906.4.
+DR   AlphaFoldDB; B0YJ88; -.
+DR   SMR; B0YJ88; -.
+DR   IntAct; B0YJ88; 2.
+DR   SwissPalm; B0YJ88; -.
+DR   Antibodypedia; 633; 455 antibodies from 39 providers.
+DR   DNASU; 5962; -.
+DR   GeneID; 5962; -.
+DR   KEGG; hsa:5962; -.
+DR   ClinPGx; PA34311; -.
+DR   CTD; 5962; -.
+DR   DisGeNET; 5962; -.
+DR   VEuPathDB; HostDB:ENSG00000137710; -.
+DR   HOGENOM; CLU_003623_6_2_1; -.
+DR   OMA; HEMERSH; -.
+DR   OrthoDB; 6018897at2759; -.
+DR   BioGRID-ORCS; 5962; 10 hits in 1155 CRISPR screens.
+DR   ChiTaRS; RDX; human.
+DR   ExpressionAtlas; B0YJ88; baseline and differential.
+DR   GO; GO:0005912; C:adherens junction; IEA:Ensembl.
+DR   GO; GO:0016324; C:apical plasma membrane; IEA:UniProtKB-ARBA.
+DR   GO; GO:0051286; C:cell tip; IEA:Ensembl.
+DR   GO; GO:0032154; C:cleavage furrow; IEA:Ensembl.
+DR   GO; GO:0030864; C:cortical actin cytoskeleton; IEA:Ensembl.
+DR   GO; GO:0030175; C:filopodium; IEA:Ensembl.
+DR   GO; GO:0030027; C:lamellipodium; IEA:Ensembl.
+DR   GO; GO:0005902; C:microvillus; IEA:UniProtKB-SubCell.
+DR   GO; GO:0030496; C:midbody; IEA:Ensembl.
+DR   GO; GO:0005886; C:plasma membrane; IDA:HPA.
+DR   GO; GO:0001726; C:ruffle; IEA:Ensembl.
+DR   GO; GO:0120044; C:stereocilium base; IEA:Ensembl.
+DR   GO; GO:0030315; C:T-tubule; IEA:Ensembl.
+DR   GO; GO:0003779; F:actin binding; IEA:Ensembl.
+DR   GO; GO:0019904; F:protein domain specific binding; IEA:Ensembl.
+DR   GO; GO:0051018; F:protein kinase A binding; IEA:Ensembl.
+DR   GO; GO:0045176; P:apical protein localization; IEA:Ensembl.
+DR   GO; GO:0051016; P:barbed-end actin filament capping; IEA:Ensembl.
+DR   GO; GO:0036120; P:cellular response to platelet-derived growth factor stimulus; IEA:Ensembl.
+DR   GO; GO:0097067; P:cellular response to thyroid hormone stimulus; IEA:Ensembl.
+DR   GO; GO:0061028; P:establishment of endothelial barrier; IEA:UniProtKB-ARBA.
+DR   GO; GO:0061951; P:establishment of protein localization to plasma membrane; IEA:Ensembl.
+DR   GO; GO:0030033; P:microvillus assembly; IEA:Ensembl.
+DR   GO; GO:2000643; P:positive regulation of early endosome to late endosome transport; IEA:UniProtKB-ARBA.
+DR   GO; GO:1900087; P:positive regulation of G1/S transition of mitotic cell cycle; IEA:Ensembl.
+DR   GO; GO:0010628; P:positive regulation of gene expression; IEA:UniProtKB-ARBA.
+DR   GO; GO:0045732; P:positive regulation of protein catabolic process; IEA:UniProtKB-ARBA.
+DR   GO; GO:1902966; P:positive regulation of protein localization to early endosome; IEA:UniProtKB-ARBA.
+DR   GO; GO:0010737; P:protein kinase A signaling; IEA:Ensembl.
+DR   GO; GO:0008360; P:regulation of cell shape; IEA:UniProtKB-ARBA.
+DR   GO; GO:1902115; P:regulation of organelle assembly; IEA:UniProtKB-ARBA.
+DR   GO; GO:0150054; P:regulation of postsynaptic neurotransmitter receptor diffusion trapping; IEA:Ensembl.
+DR   GO; GO:0032487; P:regulation of Rap protein signal transduction; IEA:Ensembl.
+DR   CDD; cd14473; FERM_B-lobe; 1.
+DR   CDD; cd13194; FERM_C_ERM; 1.
+DR   CDD; cd17187; FERM_F1_ERM; 1.
+DR   FunFam; 2.30.29.30:FF:000003; Radixin isoform 1; 1.
+DR   FunFam; 1.20.80.10:FF:000002; radixin isoform X1; 1.
+DR   FunFam; 3.10.20.90:FF:000013; radixin isoform X1; 1.
+DR   FunFam; 1.20.5.450:FF:000001; radixin isoform X2; 1.
+DR   Gene3D; 1.20.5.450; -; 1.
+DR   Gene3D; 1.20.80.10; -; 1.
+DR   Gene3D; 6.10.360.10; -; 1.
+DR   Gene3D; 3.10.20.90; Phosphatidylinositol 3-kinase Catalytic Subunit, Chain A, domain 1; 1.
+DR   Gene3D; 2.30.29.30; Pleckstrin-homology domain (PH domain)/Phosphotyrosine-binding domain (PTB); 1.
+DR   InterPro; IPR019749; Band_41_domain.
+DR   InterPro; IPR011174; ERM.
+DR   InterPro; IPR011259; ERM_C_dom.
+DR   InterPro; IPR041789; ERM_FERM_C.
+DR   InterPro; IPR046810; ERM_helical.
+DR   InterPro; IPR000798; Ez/rad/moesin-like.
+DR   InterPro; IPR014352; FERM/acyl-CoA-bd_prot_sf.
+DR   InterPro; IPR035963; FERM_2.
+DR   InterPro; IPR019748; FERM_central.
+DR   InterPro; IPR019747; FERM_CS.
+DR   InterPro; IPR000299; FERM_domain.
+DR   InterPro; IPR018979; FERM_N.
+DR   InterPro; IPR018980; FERM_PH-like_C.
+DR   InterPro; IPR008954; Moesin_tail_sf.
+DR   InterPro; IPR011993; PH-like_dom_sf.
+DR   InterPro; IPR029071; Ubiquitin-like_domsf.
+DR   PANTHER; PTHR23281; MERLIN/MOESIN/EZRIN/RADIXIN; 1.
+DR   Pfam; PF00769; ERM_C; 1.
+DR   Pfam; PF20492; ERM_helical; 1.
+DR   Pfam; PF09380; FERM_C; 1.
+DR   Pfam; PF00373; FERM_M; 1.
+DR   Pfam; PF09379; FERM_N; 1.
+DR   PIRSF; PIRSF002305; ERM; 1.
+DR   PRINTS; PR00935; BAND41.
+DR   PRINTS; PR00661; ERMFAMILY.
+DR   SMART; SM00295; B41; 1.
+DR   SMART; SM01196; FERM_C; 1.
+DR   SUPFAM; SSF48678; Moesin tail domain; 1.
+DR   SUPFAM; SSF50729; PH domain-like; 1.
+DR   SUPFAM; SSF47031; Second domain of FERM; 1.
+DR   SUPFAM; SSF54236; Ubiquitin-like; 1.
+DR   PROSITE; PS00660; FERM_1; 1.
+DR   PROSITE; PS00661; FERM_2; 1.
+DR   PROSITE; PS50057; FERM_3; 1.
+PE   2: Evidence at transcript level;
+KW   Cell membrane {ECO:0000256|ARBA:ARBA00022475};
+KW   Cell projection {ECO:0000256|ARBA:ARBA00023273};
+KW   Coiled coil {ECO:0000256|SAM:Coils};
+KW   Cytoplasm {ECO:0000256|ARBA:ARBA00023212};
+KW   Cytoskeleton {ECO:0000256|ARBA:ARBA00023212};
+KW   Membrane {ECO:0000256|ARBA:ARBA00023136}.
+FT   DOMAIN          5..295
+FT                   /note="FERM"
+FT                   /evidence="ECO:0000259|PROSITE:PS50057"
+FT   REGION          310..330
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          376..407
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          462..526
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COILED          158..185
+FT                   /evidence="ECO:0000256|SAM:Coils"
+FT   COMPBIAS        376..400
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        469..480
+FT                   /note="Pro residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        483..492
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        506..525
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   BINDING         60..63
+FT                   /ligand="a 1,2-diacyl-sn-glycero-3-phospho-(1D-myo-
+FT                   inositol)"
+FT                   /ligand_id="ChEBI:CHEBI:57880"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR002305-1"
+FT   BINDING         278
+FT                   /ligand="a 1,2-diacyl-sn-glycero-3-phospho-(1D-myo-
+FT                   inositol)"
+FT                   /ligand_id="ChEBI:CHEBI:57880"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR002305-1"
+SQ   SEQUENCE   583 AA;  68564 MW;  889687E1D675FFE7 CRC64;
+     MPKPINVRVT TMDAELEFAI QPNTTGKQLF DQVVKTVGLR EVWFFGLQYV DSKGYSTWLK
+     LNKKVTQQDV KKENPLQFKF RAKFFPEDVS EELIQEITQR LFFLQVKEAI LNDEIYCPPE
+     TAVLLASYAV QAKYGDYNKE IHKPGYLAND RLLPQRVLEQ HKLTKEQWEE RIQNWHEEHR
+     GMLREDSMME YLKIAQDLEM YGVNYFEIKN KKGTELWLGV DALGLNIYEH DDKLTPKIGF
+     PWSEIRNISF NDKKFVIKPI DKKAPDFVFY APRLRINKRI LALCMGNHEL YMRRRKPDTI
+     EVQQMKAQAR EEKHQKQLER AQLENEKKKR EIAEKEKERI EREKEELMER LKQIEEQTIK
+     AQKELEEQTR KALELDQERK RAKEEAERLE KERRAAEEAK SAIAKQAADQ MKNQEQLAAE
+     LAEFTAKIAL LEEAKKKKEE EATEWQHKAF AAQEDLEKTK EELKTVMSAP PPPPPPPVIP
+     PTENEHDEHD ENNAEASAEL SNEGVMNHRS EEERVTETQK NERVKKQLQA LSSELAQARD
+     ETKKTQNDVL HAENVKAGRD KYKTLRQIRQ GNTKQRIDEF EAM
+//
+ID   B2R6F7_HUMAN            Unreviewed;       662 AA.
+AC   B2R6F7;
+DT   01-JUL-2008, integrated into UniProtKB/TrEMBL.
+DT   01-JUL-2008, sequence version 1.
+DT   28-JAN-2026, entry version 86.
+DE   SubName: Full=cDNA, FLJ92930, highly similar to Homo sapiens arachidonate 15-lipoxygenase (ALOX15), mRNA {ECO:0000313|EMBL:BAG35454.1};
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae;
+OC   Homo.
+OX   NCBI_TaxID=9606 {ECO:0000313|EMBL:BAG35454.1};
+RN   [1] {ECO:0000313|EMBL:BAG35454.1}
+RP   NUCLEOTIDE SEQUENCE.
+RC   TISSUE=Tongue {ECO:0000313|EMBL:BAG35454.1};
+RA   Wakamatsu A., Yamamoto J., Kimura K., Kaida T., Tsuchiya K., Iida Y.,
+RA   Takayama Y., Murakawa K., Kanehori K., Andoh T., Kagawa N., Sato R.,
+RA   Kawamura Y., Tanaka S., Kisu Y., Sugano S., Goshima N., Nomura N.,
+RA   Isogai T.;
+RT   "NEDO functional analysis of protein and research application project.";
+RL   Submitted (JAN-2008) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=(14R,15S)-epoxy-(5Z,8Z,11Z)-eicosatrienoate + O2 = (12S)-
+CC         hydroperoxy-(14R,15S)-epoxy-(5Z,8Z,10E)-eicosatrienoate;
+CC         Xref=Rhea:RHEA:50276, ChEBI:CHEBI:15379, ChEBI:CHEBI:131965,
+CC         ChEBI:CHEBI:132063; Evidence={ECO:0000256|ARBA:ARBA00036582};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:50277;
+CC         Evidence={ECO:0000256|ARBA:ARBA00036582};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=(14S,15R)-epoxy-(5Z,8Z,11Z)-eicosatrienoate + O2 = (12S)-
+CC         hydroperoxy-(14S,15R)-epoxy-(5Z,8Z,10E)-eicosatrienoate;
+CC         Xref=Rhea:RHEA:50284, ChEBI:CHEBI:15379, ChEBI:CHEBI:131964,
+CC         ChEBI:CHEBI:132065; Evidence={ECO:0000256|ARBA:ARBA00036149};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:50285;
+CC         Evidence={ECO:0000256|ARBA:ARBA00036149};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=(4Z,7Z,10Z,13Z,16Z,19Z)-docosahexaenoate + O2 = (14S)-
+CC         hydroperoxy-(4Z,7Z,10Z,12E,16Z,19Z)-docosahexaenoate;
+CC         Xref=Rhea:RHEA:41332, ChEBI:CHEBI:15379, ChEBI:CHEBI:77016,
+CC         ChEBI:CHEBI:78048; Evidence={ECO:0000256|ARBA:ARBA00036495};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:41333;
+CC         Evidence={ECO:0000256|ARBA:ARBA00036495};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=(5Z,8Z,11Z,14Z)-eicosatetraenoate + O2 = (12S)-hydroperoxy-
+CC         (5Z,8Z,10E,14Z)-eicosatetraenoate; Xref=Rhea:RHEA:10428,
+CC         ChEBI:CHEBI:15379, ChEBI:CHEBI:32395, ChEBI:CHEBI:57444;
+CC         EC=1.13.11.31; Evidence={ECO:0000256|ARBA:ARBA00036760};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:10429;
+CC         Evidence={ECO:0000256|ARBA:ARBA00036760};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=(5Z,8Z,11Z,14Z)-eicosatetraenoate + O2 = (15S)-hydroperoxy-
+CC         (5Z,8Z,11Z,13E)-eicosatetraenoate; Xref=Rhea:RHEA:16869,
+CC         ChEBI:CHEBI:15379, ChEBI:CHEBI:32395, ChEBI:CHEBI:57446;
+CC         EC=1.13.11.33; Evidence={ECO:0000256|ARBA:ARBA00050217};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:16870;
+CC         Evidence={ECO:0000256|ARBA:ARBA00050217};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=(7S)-hydroperoxy-(4Z,8E,10Z,13Z,16Z,19Z)-docosahexaenoate + O2
+CC         = (7S,14S)-dihydroperoxy-(4Z,8E,10Z,12E,16Z,19Z)-docosahexaenoate;
+CC         Xref=Rhea:RHEA:64724, ChEBI:CHEBI:15379, ChEBI:CHEBI:156049,
+CC         ChEBI:CHEBI:156082; Evidence={ECO:0000256|ARBA:ARBA00035888};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:64725;
+CC         Evidence={ECO:0000256|ARBA:ARBA00035888};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=(7S)-hydroperoxy-(4Z,8E,10Z,13Z,16Z,19Z)-docosahexaenoate + O2
+CC         = (7S,17S)-dihydroperoxy-(4Z,8E,10Z,13Z,15E,19Z)-docosahexaenoate;
+CC         Xref=Rhea:RHEA:64728, ChEBI:CHEBI:15379, ChEBI:CHEBI:140349,
+CC         ChEBI:CHEBI:156049; Evidence={ECO:0000256|ARBA:ARBA00036949};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:64729;
+CC         Evidence={ECO:0000256|ARBA:ARBA00036949};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=N-(5Z,8Z,11Z,14Z)-eicosatetraenoyl-L-alanine + O2 = N-(12S)-
+CC         hydroperoxy-(5Z,8Z,10E,14Z)-eicosatetraenoyl-alanine;
+CC         Xref=Rhea:RHEA:50172, ChEBI:CHEBI:15379, ChEBI:CHEBI:132071,
+CC         ChEBI:CHEBI:132074; Evidence={ECO:0000256|ARBA:ARBA00052695};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:50173;
+CC         Evidence={ECO:0000256|ARBA:ARBA00052695};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=N-(5Z,8Z,11Z,14Z)-eicosatetraenoyl-L-alanine + O2 = N-(15S)-
+CC         hydroperoxy-(5Z,8Z,11Z,13E)-eicosatetraenoyl-alanine;
+CC         Xref=Rhea:RHEA:50184, ChEBI:CHEBI:15379, ChEBI:CHEBI:132071,
+CC         ChEBI:CHEBI:132077; Evidence={ECO:0000256|ARBA:ARBA00051069};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:50185;
+CC         Evidence={ECO:0000256|ARBA:ARBA00051069};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=N-(5Z,8Z,11Z,14Z)-eicosatetraenoyl-gamma-aminobutanoate + O2 =
+CC         N-(12S)-hydroperoxy-(5Z,8Z,10E,14Z)-eicosatetraenoyl-gamma-
+CC         aminobutanoate; Xref=Rhea:RHEA:50176, ChEBI:CHEBI:15379,
+CC         ChEBI:CHEBI:132072, ChEBI:CHEBI:132075;
+CC         Evidence={ECO:0000256|ARBA:ARBA00036852};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:50177;
+CC         Evidence={ECO:0000256|ARBA:ARBA00036852};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=N-(5Z,8Z,11Z,14Z)-eicosatetraenoyl-gamma-aminobutanoate + O2 =
+CC         N-(15S)-hydroperoxy-(5Z,8Z,11Z,13E)-eicosatetraenoyl-gamma-
+CC         aminobutanoate; Xref=Rhea:RHEA:50180, ChEBI:CHEBI:15379,
+CC         ChEBI:CHEBI:132072, ChEBI:CHEBI:132078;
+CC         Evidence={ECO:0000256|ARBA:ARBA00035867};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:50181;
+CC         Evidence={ECO:0000256|ARBA:ARBA00035867};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=N-(5Z,8Z,11Z,14Z)-eicosatetraenoyl-glycine + O2 = N-(12S)-
+CC         hydroperoxy-(5Z,8Z,10E,14Z)-eicosatetraenoyl-glycine;
+CC         Xref=Rhea:RHEA:50168, ChEBI:CHEBI:15379, ChEBI:CHEBI:59002,
+CC         ChEBI:CHEBI:132073; Evidence={ECO:0000256|ARBA:ARBA00036768};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:50169;
+CC         Evidence={ECO:0000256|ARBA:ARBA00036768};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=N-(5Z,8Z,11Z,14Z)-eicosatetraenoyl-glycine + O2 = N-(15S)-
+CC         hydroperoxy-(5Z,8Z,11Z,13E)-eicosatetraenoyl-glycine;
+CC         Xref=Rhea:RHEA:50188, ChEBI:CHEBI:15379, ChEBI:CHEBI:59002,
+CC         ChEBI:CHEBI:132076; Evidence={ECO:0000256|ARBA:ARBA00036165};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:50189;
+CC         Evidence={ECO:0000256|ARBA:ARBA00036165};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=N-(5Z,8Z,11Z,14Z)-eicosatetraenoyl-taurine + O2 = N-(12S)-
+CC         hydroperoxy-(5Z,8Z,10E,14Z)-eicosatetraenoyl-taurine;
+CC         Xref=Rhea:RHEA:50160, ChEBI:CHEBI:15379, ChEBI:CHEBI:132060,
+CC         ChEBI:CHEBI:132061; Evidence={ECO:0000256|ARBA:ARBA00036438};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:50161;
+CC         Evidence={ECO:0000256|ARBA:ARBA00036438};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=N-(5Z,8Z,11Z,14Z)-eicosatetraenoyl-taurine + O2 = N-(15S)-
+CC         hydroperoxy-(5Z,8Z,11Z,13E)-eicosatetraenoyl-taurine;
+CC         Xref=Rhea:RHEA:50156, ChEBI:CHEBI:15379, ChEBI:CHEBI:132060,
+CC         ChEBI:CHEBI:132062; Evidence={ECO:0000256|ARBA:ARBA00036945};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:50157;
+CC         Evidence={ECO:0000256|ARBA:ARBA00036945};
+CC   -!- COFACTOR:
+CC       Name=Fe cation; Xref=ChEBI:CHEBI:24875;
+CC         Evidence={ECO:0000256|PIRSR:PIRSR601885-1};
+CC       Note=Binds 1 Fe cation per subunit. {ECO:0000256|PIRSR:PIRSR601885-1};
+CC   -!- PATHWAY: Lipid metabolism; hydroperoxy eicosatetraenoic acid
+CC       biosynthesis. {ECO:0000256|ARBA:ARBA00037897}.
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm, cytosol
+CC       {ECO:0000256|ARBA:ARBA00004514}. Membrane
+CC       {ECO:0000256|ARBA:ARBA00004370}.
+CC   -!- SIMILARITY: Belongs to the lipoxygenase family.
+CC       {ECO:0000256|ARBA:ARBA00009419, ECO:0000256|RuleBase:RU003974}.
+CC   -!- CAUTION: Lacks conserved residue(s) required for the propagation of
+CC       feature annotation. {ECO:0000256|PROSITE-ProRule:PRU00152}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AK312557; BAG35454.1; -; mRNA.
+DR   AlphaFoldDB; B2R6F7; -.
+DR   PeptideAtlas; B2R6F7; -.
+DR   GO; GO:0005829; C:cytosol; IEA:UniProtKB-SubCell.
+DR   GO; GO:0016020; C:membrane; IEA:UniProtKB-SubCell.
+DR   GO; GO:0004052; F:arachidonate 12(S)-lipoxygenase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0050473; F:arachidonate 15-lipoxygenase activity; IEA:UniProtKB-EC.
+DR   GO; GO:0005506; F:iron ion binding; IEA:InterPro.
+DR   GO; GO:0016165; F:linoleate 13S-lipoxygenase activity; IEA:UniProtKB-ARBA.
+DR   GO; GO:0019369; P:arachidonate metabolic process; IEA:UniProtKB-ARBA.
+DR   GO; GO:0043651; P:linoleic acid metabolic process; IEA:UniProtKB-ARBA.
+DR   GO; GO:0034440; P:lipid oxidation; IEA:InterPro.
+DR   GO; GO:0019372; P:lipoxygenase pathway; IEA:UniProtKB-ARBA.
+DR   GO; GO:0042759; P:long-chain fatty acid biosynthetic process; IEA:UniProtKB-ARBA.
+DR   CDD; cd01753; PLAT_LOX; 1.
+DR   FunFam; 3.10.450.60:FF:000004; Arachidonate 12-lipoxygenase, 12S-type; 1.
+DR   FunFam; 1.20.245.10:FF:000001; Arachidonate 5-lipoxygenase a; 1.
+DR   FunFam; 2.60.60.20:FF:000002; Arachidonate 5-lipoxygenase a; 1.
+DR   Gene3D; 3.10.450.60; -; 1.
+DR   Gene3D; 1.20.245.10; Lipoxygenase-1, Domain 5; 1.
+DR   Gene3D; 2.60.60.20; PLAT/LH2 domain; 1.
+DR   InterPro; IPR000907; LipOase.
+DR   InterPro; IPR013819; LipOase_C.
+DR   InterPro; IPR036226; LipOase_C_sf.
+DR   InterPro; IPR020834; LipOase_CS.
+DR   InterPro; IPR020833; LipOase_Fe_BS.
+DR   InterPro; IPR001885; LipOase_mml.
+DR   InterPro; IPR001024; PLAT/LH2_dom.
+DR   InterPro; IPR036392; PLAT/LH2_dom_sf.
+DR   InterPro; IPR042062; PLAT_LOX_verte.
+DR   PANTHER; PTHR11771; LIPOXYGENASE; 1.
+DR   Pfam; PF00305; Lipoxygenase; 1.
+DR   Pfam; PF01477; PLAT; 1.
+DR   PRINTS; PR00087; LIPOXYGENASE.
+DR   PRINTS; PR00467; MAMLPOXGNASE.
+DR   SMART; SM00308; LH2; 1.
+DR   SUPFAM; SSF49723; Lipase/lipooxygenase domain (PLAT/LH2 domain); 1.
+DR   SUPFAM; SSF48484; Lipoxigenase; 1.
+DR   PROSITE; PS00711; LIPOXYGENASE_1; 1.
+DR   PROSITE; PS00081; LIPOXYGENASE_2; 1.
+DR   PROSITE; PS51393; LIPOXYGENASE_3; 1.
+DR   PROSITE; PS50095; PLAT; 1.
+PE   2: Evidence at transcript level;
+KW   Calcium {ECO:0000256|PIRSR:PIRSR601885-2};
+KW   Cytoplasm {ECO:0000256|ARBA:ARBA00022490};
+KW   Dioxygenase {ECO:0000256|ARBA:ARBA00022964, ECO:0000256|RuleBase:RU003974};
+KW   Fatty acid metabolism {ECO:0000256|ARBA:ARBA00022832};
+KW   Iron {ECO:0000256|ARBA:ARBA00023004, ECO:0000256|PIRSR:PIRSR601885-1};
+KW   Lipid metabolism {ECO:0000256|ARBA:ARBA00023098};
+KW   Membrane {ECO:0000256|ARBA:ARBA00023136};
+KW   Metal-binding {ECO:0000256|ARBA:ARBA00022723,
+KW   ECO:0000256|PIRSR:PIRSR601885-1};
+KW   Oxidoreductase {ECO:0000256|ARBA:ARBA00023002,
+KW   ECO:0000256|RuleBase:RU003974}.
+FT   DOMAIN          2..114
+FT                   /note="PLAT"
+FT                   /evidence="ECO:0000259|PROSITE:PS50095"
+FT   DOMAIN          114..662
+FT                   /note="Lipoxygenase"
+FT                   /evidence="ECO:0000259|PROSITE:PS51393"
+FT   BINDING         17
+FT                   /ligand="Ca(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29108"
+FT                   /ligand_label="1"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR601885-2"
+FT   BINDING         74
+FT                   /ligand="Ca(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29108"
+FT                   /ligand_label="1"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR601885-2"
+FT   BINDING         75
+FT                   /ligand="Ca(2+)"
+FT                   /ligand_id="ChEBI:CHEBI:29108"
+FT                   /ligand_label="1"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR601885-2"
+FT   BINDING         360
+FT                   /ligand="Fe cation"
+FT                   /ligand_id="ChEBI:CHEBI:24875"
+FT                   /ligand_note="catalytic"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR601885-1"
+FT   BINDING         365
+FT                   /ligand="Fe cation"
+FT                   /ligand_id="ChEBI:CHEBI:24875"
+FT                   /ligand_note="catalytic"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR601885-1"
+FT   BINDING         540
+FT                   /ligand="Fe cation"
+FT                   /ligand_id="ChEBI:CHEBI:24875"
+FT                   /ligand_note="catalytic"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR601885-1"
+FT   BINDING         662
+FT                   /ligand="Fe cation"
+FT                   /ligand_id="ChEBI:CHEBI:24875"
+FT                   /ligand_note="catalytic"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR601885-1"
+FT   SITE            99
+FT                   /note="Essential for stabilizing binding to COTL1"
+FT                   /evidence="ECO:0000256|PIRSR:PIRSR601885-3"
+SQ   SEQUENCE   662 AA;  74732 MW;  2D2DD63939127880 CRC64;
+     MGLYRIRVST GASLYAGSNN QVQLWLVGQH GEAALGKRLW PARGKETELK VEVPEYLGPL
+     LFVKLRKRHL LKDDAWFCNW ISVQGPGAGD EVRFPCYRWV EGNGVLSLPE GTGRTVGEDP
+     QGLFQKHREE ELEERRKLYR WGNWKDGLIL NMAGAKLYDL PVDERFLEDK RVDFEVSLAK
+     GLADLAIKDS LNVLTCWKDL DDFNRIFWCG QSKLAERVRD SWKEDALFGY QFLNGANPVV
+     LRRSAHLPAR LVFPPGMGEL QAQLEKELEG GTLFEADFSL LDGIKANVIL CSQQHLAAPL
+     VMLKLQPDGK LLPMVIQLQL PRTGSPPPPL FLPTDPPMAW LLAKCWVRSS DFQLHELQSH
+     LLRGHLMAEV IVVATMRCLP SIHPIFKLII PHLRYTLEIN VRARTGLVSD MGIFDQIMST
+     GGGGHVQLLK QAGAFLTYSS FCPPDDLADR GLLGVKSSFY AQDALRLWEI IYRYVEGIVS
+     LHYKTDVAVK DDPELQTWCR EITEIGLQGA QDRGFPVSLQ ARDQVCHFVT MCIFTCTGQH
+     ASVHLGQLDW YSWVPNAPCT MRLPPPTTKD ATLETVMATL PNFHQASLQM SITWQLGRRQ
+     PVMVAVGQHE EEYFSGPEPK AVLKKFREEL AALDKEIEIR NAKLDMPYEY LRPSVVENSV
+     AI
+//
+ID   THAP4_HUMAN             Reviewed;         577 AA.
+AC   Q8WY91; Q53NU7; Q6GRN0; Q6IPJ3; Q9NW26; Q9Y325;
+DT   11-APR-2003, integrated into UniProtKB/Swiss-Prot.
+DT   11-APR-2003, sequence version 2.
+DT   28-JAN-2026, entry version 180.
+DE   RecName: Full=Peroxynitrite isomerase THAP4 {ECO:0000305|PubMed:30524950};
+DE            EC=5.99.-.- {ECO:0000269|PubMed:30524950};
+DE   AltName: Full=Ferric Homo sapiens nitrobindin {ECO:0000303|PubMed:32295384};
+DE            Short=Hs-Nb(III) {ECO:0000303|PubMed:32295384};
+DE   AltName: Full=THAP domain-containing protein 4 {ECO:0000312|HGNC:HGNC:23187};
+GN   Name=THAP4 {ECO:0000312|HGNC:HGNC:23187}; ORFNames=CGI-36, PP238;
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi; Mammalia;
+OC   Eutheria; Euarchontoglires; Primates; Haplorrhini; Catarrhini; Hominidae;
+OC   Homo.
+OX   NCBI_TaxID=9606;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 2).
+RX   PubMed=10810093; DOI=10.1101/gr.10.5.703;
+RA   Lai C.-H., Chou C.-Y., Ch'ang L.-Y., Liu C.-S., Lin W.-C.;
+RT   "Identification of novel human genes evolutionarily conserved in
+RT   Caenorhabditis elegans by comparative proteomics.";
+RL   Genome Res. 10:703-713(2000).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 1), AND VARIANT GLY-121.
+RX   PubMed=15498874; DOI=10.1073/pnas.0404089101;
+RA   Wan D., Gong Y., Qin W., Zhang P., Li J., Wei L., Zhou X., Li H., Qiu X.,
+RA   Zhong F., He L., Yu J., Yao G., Jiang H., Qian L., Yu Y., Shu H., Chen X.,
+RA   Xu H., Guo M., Pan Z., Chen Y., Ge C., Yang S., Gu J.;
+RT   "Large-scale cDNA transfection screening for genes related to cancer
+RT   development and progression.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 101:15724-15729(2004).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RX   PubMed=15815621; DOI=10.1038/nature03466;
+RA   Hillier L.W., Graves T.A., Fulton R.S., Fulton L.A., Pepin K.H., Minx P.,
+RA   Wagner-McPherson C., Layman D., Wylie K., Sekhon M., Becker M.C.,
+RA   Fewell G.A., Delehaunty K.D., Miner T.L., Nash W.E., Kremitzki C., Oddy L.,
+RA   Du H., Sun H., Bradshaw-Cordum H., Ali J., Carter J., Cordes M., Harris A.,
+RA   Isak A., van Brunt A., Nguyen C., Du F., Courtney L., Kalicki J.,
+RA   Ozersky P., Abbott S., Armstrong J., Belter E.A., Caruso L., Cedroni M.,
+RA   Cotton M., Davidson T., Desai A., Elliott G., Erb T., Fronick C., Gaige T.,
+RA   Haakenson W., Haglund K., Holmes A., Harkins R., Kim K., Kruchowski S.S.,
+RA   Strong C.M., Grewal N., Goyea E., Hou S., Levy A., Martinka S., Mead K.,
+RA   McLellan M.D., Meyer R., Randall-Maher J., Tomlinson C.,
+RA   Dauphin-Kohlberg S., Kozlowicz-Reilly A., Shah N., Swearengen-Shahid S.,
+RA   Snider J., Strong J.T., Thompson J., Yoakum M., Leonard S., Pearman C.,
+RA   Trani L., Radionenko M., Waligorski J.E., Wang C., Rock S.M.,
+RA   Tin-Wollam A.-M., Maupin R., Latreille P., Wendl M.C., Yang S.-P., Pohl C.,
+RA   Wallis J.W., Spieth J., Bieri T.A., Berkowicz N., Nelson J.O., Osborne J.,
+RA   Ding L., Meyer R., Sabo A., Shotland Y., Sinha P., Wohldmann P.E.,
+RA   Cook L.L., Hickenbotham M.T., Eldred J., Williams D., Jones T.A., She X.,
+RA   Ciccarelli F.D., Izaurralde E., Taylor J., Schmutz J., Myers R.M.,
+RA   Cox D.R., Huang X., McPherson J.D., Mardis E.R., Clifton S.W., Warren W.C.,
+RA   Chinwalla A.T., Eddy S.R., Marra M.A., Ovcharenko I., Furey T.S.,
+RA   Miller W., Eichler E.E., Bork P., Suyama M., Torrents D., Waterston R.H.,
+RA   Wilson R.K.;
+RT   "Generation and annotation of the DNA sequences of human chromosomes 2 and
+RT   4.";
+RL   Nature 434:724-731(2005).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 1), AND VARIANT GLY-121.
+RC   TISSUE=Brain, Eye, Melanoma, and Ovarian carcinoma;
+RX   PubMed=15489334; DOI=10.1101/gr.2596504;
+RG   The MGC Project Team;
+RT   "The status, quality, and expansion of the NIH full-length cDNA project:
+RT   the Mammalian Gene Collection (MGC).";
+RL   Genome Res. 14:2121-2127(2004).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] OF 221-577 (ISOFORM 1).
+RX   PubMed=14702039; DOI=10.1038/ng1285;
+RA   Ota T., Suzuki Y., Nishikawa T., Otsuki T., Sugiyama T., Irie R.,
+RA   Wakamatsu A., Hayashi K., Sato H., Nagai K., Kimura K., Makita H.,
+RA   Sekine M., Obayashi M., Nishi T., Shibahara T., Tanaka T., Ishii S.,
+RA   Yamamoto J., Saito K., Kawai Y., Isono Y., Nakamura Y., Nagahari K.,
+RA   Murakami K., Yasuda T., Iwayanagi T., Wagatsuma M., Shiratori A., Sudo H.,
+RA   Hosoiri T., Kaku Y., Kodaira H., Kondo H., Sugawara M., Takahashi M.,
+RA   Kanda K., Yokoi T., Furuya T., Kikkawa E., Omura Y., Abe K., Kamihara K.,
+RA   Katsuta N., Sato K., Tanikawa M., Yamazaki M., Ninomiya K., Ishibashi T.,
+RA   Yamashita H., Murakawa K., Fujimori K., Tanai H., Kimata M., Watanabe M.,
+RA   Hiraoka S., Chiba Y., Ishida S., Ono Y., Takiguchi S., Watanabe S.,
+RA   Yosida M., Hotuta T., Kusano J., Kanehori K., Takahashi-Fujii A., Hara H.,
+RA   Tanase T.-O., Nomura Y., Togiya S., Komai F., Hara R., Takeuchi K.,
+RA   Arita M., Imose N., Musashino K., Yuuki H., Oshima A., Sasaki N.,
+RA   Aotsuka S., Yoshikawa Y., Matsunawa H., Ichihara T., Shiohata N., Sano S.,
+RA   Moriya S., Momiyama H., Satoh N., Takami S., Terashima Y., Suzuki O.,
+RA   Nakagawa S., Senoh A., Mizoguchi H., Goto Y., Shimizu F., Wakebe H.,
+RA   Hishigaki H., Watanabe T., Sugiyama A., Takemoto M., Kawakami B.,
+RA   Yamazaki M., Watanabe K., Kumagai A., Itakura S., Fukuzumi Y., Fujimori Y.,
+RA   Komiyama M., Tashiro H., Tanigami A., Fujiwara T., Ono T., Yamada K.,
+RA   Fujii Y., Ozaki K., Hirao M., Ohmori Y., Kawabata A., Hikiji T.,
+RA   Kobatake N., Inagaki H., Ikema Y., Okamoto S., Okitani R., Kawakami T.,
+RA   Noguchi S., Itoh T., Shigeta K., Senba T., Matsumura K., Nakajima Y.,
+RA   Mizuno T., Morinaga M., Sasaki M., Togashi T., Oyama M., Hata H.,
+RA   Watanabe M., Komatsu T., Mizushima-Sugano J., Satoh T., Shirai Y.,
+RA   Takahashi Y., Nakagawa K., Okumura K., Nagase T., Nomura N., Kikuchi H.,
+RA   Masuho Y., Yamashita R., Nakai K., Yada T., Nakamura Y., Ohara O.,
+RA   Isogai T., Sugano S.;
+RT   "Complete sequencing and characterization of 21,243 full-length human
+RT   cDNAs.";
+RL   Nat. Genet. 36:40-45(2004).
+RN   [6]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT SER-163, AND IDENTIFICATION BY
+RP   MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RC   TISSUE=Embryonic kidney;
+RX   PubMed=17525332; DOI=10.1126/science.1140321;
+RA   Matsuoka S., Ballif B.A., Smogorzewska A., McDonald E.R. III, Hurov K.E.,
+RA   Luo J., Bakalarski C.E., Zhao Z., Solimini N., Lerenthal Y., Shiloh Y.,
+RA   Gygi S.P., Elledge S.J.;
+RT   "ATM and ATR substrate analysis reveals extensive protein networks
+RT   responsive to DNA damage.";
+RL   Science 316:1160-1166(2007).
+RN   [7]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT SER-239, AND IDENTIFICATION BY
+RP   MASS SPECTROMETRY [LARGE SCALE ANALYSIS].
+RC   TISSUE=Erythroleukemia;
+RX   PubMed=23186163; DOI=10.1021/pr300630k;
+RA   Zhou H., Di Palma S., Preisinger C., Peng M., Polat A.N., Heck A.J.,
+RA   Mohammed S.;
+RT   "Toward a comprehensive characterization of a human cancer cell
+RT   phosphoproteome.";
+RL   J. Proteome Res. 12:260-271(2013).
+RN   [8]
+RP   FUNCTION, CATALYTIC ACTIVITY, PATHWAY, AND DOMAIN.
+RX   PubMed=30524950; DOI=10.1002/2211-5463.12534;
+RA   De Simone G., di Masi A., Polticelli F., Ascenzi P.;
+RT   "Human nitrobindin: the first example of an all-beta-barrel ferric heme-
+RT   protein that catalyzes peroxynitrite detoxification.";
+RL   FEBS Open Bio 8:2002-2010(2018).
+RN   [9]
+RP   FUNCTION, COFACTOR, AND NO-BINDING.
+RX   PubMed=32295384; DOI=10.1089/ars.2019.7874;
+RA   De Simone G., di Masi A., Vita G.M., Polticelli F., Pesce A., Nardini M.,
+RA   Bolognesi M., Ciaccio C., Coletta M., Turilli E.S., Fasano M.,
+RA   Tognaccini L., Smulevich G., Abbruzzetti S., Viappiani C., Bruno S.,
+RA   Ascenzi P.;
+RT   "Mycobacterial and Human Nitrobindins: Structure and Function.";
+RL   Antioxid. Redox Signal. 33:229-246(2020).
+RN   [10]
+RP   X-RAY CRYSTALLOGRAPHY (1.79 ANGSTROMS) OF 415-577 IN COMPLEX WITH HEME,
+RP   COFACTOR, SUBUNIT, AND DOMAIN.
+RX   PubMed=21387410; DOI=10.1002/prot.22944;
+RA   Bianchetti C.M., Bingman C.A., Phillips G.N. Jr.;
+RT   "Structure of the C-terminal heme-binding domain of THAP domain containing
+RT   protein 4 from Homo sapiens.";
+RL   Proteins 79:1337-1341(2011).
+CC   -!- FUNCTION: Heme-binding protein able to scavenge peroxynitrite and to
+CC       protect free L-tyrosine against peroxynitrite-mediated nitration, by
+CC       acting as a peroxynitrite isomerase that converts peroxynitrite to
+CC       nitrate. Therefore, this protein likely plays a role in peroxynitrite
+CC       sensing and in the detoxification of reactive nitrogen and oxygen
+CC       species (RNS and ROS, respectively). Is able to bind nitric oxide (NO)
+CC       in vitro, but may act as a sensor of peroxynitrite levels in vivo,
+CC       possibly modulating the transcriptional activity residing in the N-
+CC       terminal region. {ECO:0000269|PubMed:30524950,
+CC       ECO:0000269|PubMed:32295384}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=peroxynitrite = nitrate; Xref=Rhea:RHEA:63116,
+CC         ChEBI:CHEBI:17632, ChEBI:CHEBI:25941;
+CC         Evidence={ECO:0000269|PubMed:30524950};
+CC       PhysiologicalDirection=left-to-right; Xref=Rhea:RHEA:63117;
+CC         Evidence={ECO:0000305|PubMed:30524950};
+CC   -!- COFACTOR:
+CC       Name=heme b; Xref=ChEBI:CHEBI:60344;
+CC         Evidence={ECO:0000269|PubMed:21387410, ECO:0000269|PubMed:32295384};
+CC       Note=Binds 1 heme b group per subunit, that coordinates a highly
+CC       solvent-exposed Fe(III) atom. {ECO:0000269|PubMed:32295384};
+CC   -!- PATHWAY: Nitrogen metabolism. {ECO:0000305|PubMed:30524950}.
+CC   -!- SUBUNIT: Homodimer. {ECO:0000305|PubMed:21387410}.
+CC   -!- INTERACTION:
+CC       Q8WY91; Q6RW13-2: AGTRAP; NbExp=3; IntAct=EBI-726691, EBI-11522760;
+CC       Q8WY91; Q9NVV5-2: AIG1; NbExp=3; IntAct=EBI-726691, EBI-11957045;
+CC       Q8WY91; P17707: AMD1; NbExp=3; IntAct=EBI-726691, EBI-6872827;
+CC       Q8WY91; Q86W74-2: ANKRD46; NbExp=3; IntAct=EBI-726691, EBI-12109402;
+CC       Q8WY91; Q8WZ55: BSND; NbExp=3; IntAct=EBI-726691, EBI-7996695;
+CC       Q8WY91; Q06432: CACNG1; NbExp=3; IntAct=EBI-726691, EBI-9686780;
+CC       Q8WY91; P60033: CD81; NbExp=3; IntAct=EBI-726691, EBI-712921;
+CC       Q8WY91; Q96DZ9-2: CMTM5; NbExp=3; IntAct=EBI-726691, EBI-11522780;
+CC       Q8WY91; Q96FZ5: CMTM7; NbExp=3; IntAct=EBI-726691, EBI-2807956;
+CC       Q8WY91; P29400-2: COL4A5; NbExp=3; IntAct=EBI-726691, EBI-12211159;
+CC       Q8WY91; Q96FN4: CPNE2; NbExp=6; IntAct=EBI-726691, EBI-7097057;
+CC       Q8WY91; P78329: CYP4F2; NbExp=3; IntAct=EBI-726691, EBI-1752413;
+CC       Q8WY91; Q6ZPD8: DGAT2L6; NbExp=3; IntAct=EBI-726691, EBI-12831978;
+CC       Q8WY91; Q9Y680: FKBP7; NbExp=3; IntAct=EBI-726691, EBI-3918971;
+CC       Q8WY91; Q8WWP7: GIMAP1; NbExp=3; IntAct=EBI-726691, EBI-11991950;
+CC       Q8WY91; O60883: GPR37L1; NbExp=3; IntAct=EBI-726691, EBI-2927498;
+CC       Q8WY91; P24593: IGFBP5; NbExp=3; IntAct=EBI-726691, EBI-720480;
+CC       Q8WY91; O43561-2: LAT; NbExp=3; IntAct=EBI-726691, EBI-8070286;
+CC       Q8WY91; Q9UBY5: LPAR3; NbExp=3; IntAct=EBI-726691, EBI-12033434;
+CC       Q8WY91; Q969L2: MAL2; NbExp=5; IntAct=EBI-726691, EBI-944295;
+CC       Q8WY91; P11836: MS4A1; NbExp=3; IntAct=EBI-726691, EBI-2808234;
+CC       Q8WY91; Q9ULP0-2: NDRG4; NbExp=3; IntAct=EBI-726691, EBI-11978907;
+CC       Q8WY91; Q04941: PLP2; NbExp=3; IntAct=EBI-726691, EBI-608347;
+CC       Q8WY91; Q59EV6: PPGB; NbExp=3; IntAct=EBI-726691, EBI-14210385;
+CC       Q8WY91; Q96LZ7: RMDN2; NbExp=3; IntAct=EBI-726691, EBI-2806908;
+CC       Q8WY91; Q5QGT7: RTP2; NbExp=3; IntAct=EBI-726691, EBI-10244780;
+CC       Q8WY91; O15126: SCAMP1; NbExp=3; IntAct=EBI-726691, EBI-954338;
+CC       Q8WY91; Q8IWU4: SLC30A8; NbExp=3; IntAct=EBI-726691, EBI-10262251;
+CC       Q8WY91; P08247: SYP; NbExp=3; IntAct=EBI-726691, EBI-9071725;
+CC       Q8WY91; Q8WY91: THAP4; NbExp=3; IntAct=EBI-726691, EBI-726691;
+CC       Q8WY91; Q6UX40: TMEM107; NbExp=3; IntAct=EBI-726691, EBI-12845616;
+CC       Q8WY91; Q9H2L4: TMEM60; NbExp=3; IntAct=EBI-726691, EBI-2852148;
+CC       Q8WY91; Q8N2M4: TMEM86A; NbExp=3; IntAct=EBI-726691, EBI-12015604;
+CC       Q8WY91; Q8N661: TMEM86B; NbExp=3; IntAct=EBI-726691, EBI-2548832;
+CC       Q8WY91; Q9UBN6: TNFRSF10D; NbExp=3; IntAct=EBI-726691, EBI-1044859;
+CC       Q8WY91; P55327-2: TPD52; NbExp=3; IntAct=EBI-726691, EBI-12124194;
+CC       Q8WY91; P49638: TTPA; NbExp=3; IntAct=EBI-726691, EBI-10210710;
+CC       Q8WY91; Q96EC8: YIPF6; NbExp=3; IntAct=EBI-726691, EBI-751210;
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm. Nucleus. Note=Localizes mainly in the
+CC       cytoplasm and partially in the nucleus. {ECO:0000269|PubMed:32295384}.
+CC   -!- ALTERNATIVE PRODUCTS:
+CC       Event=Alternative splicing; Named isoforms=2;
+CC       Name=1;
+CC         IsoId=Q8WY91-1; Sequence=Displayed;
+CC       Name=2;
+CC         IsoId=Q8WY91-2; Sequence=VSP_020078, VSP_020079;
+CC   -!- DOMAIN: The C-terminal nitrobindin region coordinates a heme and bears
+CC       the isomerase activity. The N-terminal zinc finger domain likely binds
+CC       DNA and may be involved in transcriptional regulation.
+CC       {ECO:0000269|PubMed:21387410, ECO:0000269|PubMed:30524950}.
+CC   -!- SIMILARITY: In the C-terminal section; belongs to the nitrobindin
+CC       family. {ECO:0000305}.
+CC   -!- SEQUENCE CAUTION:
+CC       Sequence=AAH00247.1; Type=Erroneous initiation; Note=Truncated N-terminus.; Evidence={ECO:0000305};
+CC       Sequence=AAH09439.1; Type=Erroneous initiation; Note=Truncated N-terminus.; Evidence={ECO:0000305};
+CC       Sequence=BAA91560.1; Type=Erroneous initiation; Note=Truncated N-terminus.; Evidence={ECO:0000305};
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; AF132970; AAD27745.1; -; mRNA.
+DR   EMBL; AF258556; AAG23759.1; -; mRNA.
+DR   EMBL; AC133528; AAY14918.1; -; Genomic_DNA.
+DR   EMBL; BC000247; AAH00247.1; ALT_INIT; mRNA.
+DR   EMBL; BC009439; AAH09439.1; ALT_INIT; mRNA.
+DR   EMBL; BC069235; AAH69235.1; -; mRNA.
+DR   EMBL; BC071896; AAH71896.1; -; mRNA.
+DR   EMBL; BC094822; AAH94822.1; -; mRNA.
+DR   EMBL; AK001216; BAA91560.1; ALT_INIT; mRNA.
+DR   CCDS; CCDS2551.1; -. [Q8WY91-1]
+DR   CCDS; CCDS54440.1; -. [Q8WY91-2]
+DR   RefSeq; NP_001157828.1; NM_001164356.2. [Q8WY91-2]
+DR   RefSeq; NP_057047.4; NM_015963.5. [Q8WY91-1]
+DR   PDB; 3IA8; X-ray; 1.79 A; A/B=415-577.
+DR   PDBsum; 3IA8; -.
+DR   AlphaFoldDB; Q8WY91; -.
+DR   SMR; Q8WY91; -.
+DR   BioGRID; 119269; 81.
+DR   FunCoup; Q8WY91; 298.
+DR   IntAct; Q8WY91; 69.
+DR   MINT; Q8WY91; -.
+DR   STRING; 9606.ENSP00000385006; -.
+DR   iPTMnet; Q8WY91; -.
+DR   PhosphoSitePlus; Q8WY91; -.
+DR   BioMuta; THAP4; -.
+DR   DMDM; 29839589; -.
+DR   jPOST; Q8WY91; -.
+DR   MassIVE; Q8WY91; -.
+DR   PaxDb; 9606-ENSP00000385006; -.
+DR   PeptideAtlas; Q8WY91; -.
+DR   ProteomicsDB; 75134; -. [Q8WY91-1]
+DR   ProteomicsDB; 75135; -. [Q8WY91-2]
+DR   Pumba; Q8WY91; -.
+DR   Antibodypedia; 34568; 77 antibodies from 23 providers.
+DR   DNASU; 51078; -.
+DR   Ensembl; ENST00000402136.5; ENSP00000385931.1; ENSG00000176946.14. [Q8WY91-2]
+DR   Ensembl; ENST00000407315.6; ENSP00000385006.1; ENSG00000176946.14. [Q8WY91-1]
+DR   GeneID; 51078; -.
+DR   KEGG; hsa:51078; -.
+DR   MANE-Select; ENST00000407315.6; ENSP00000385006.1; NM_015963.6; NP_057047.4.
+DR   UCSC; uc002wbs.3; human. [Q8WY91-1]
+DR   AGR; HGNC:23187; -.
+DR   ClinPGx; PA134864723; -.
+DR   CTD; 51078; -.
+DR   DisGeNET; 51078; -.
+DR   GeneCards; THAP4; -.
+DR   HGNC; HGNC:23187; THAP4.
+DR   HPA; ENSG00000176946; Low tissue specificity.
+DR   MIM; 612533; gene.
+DR   OpenTargets; ENSG00000176946; -.
+DR   VEuPathDB; HostDB:ENSG00000176946; -.
+DR   eggNOG; KOG3371; Eukaryota.
+DR   GeneTree; ENSGT00940000158447; -.
+DR   HOGENOM; CLU_085483_1_1_1; -.
+DR   InParanoid; Q8WY91; -.
+DR   OrthoDB; 58529at2759; -.
+DR   PAN-GO; Q8WY91; 0 GO annotations based on evolutionary models.
+DR   PhylomeDB; Q8WY91; -.
+DR   PathwayCommons; Q8WY91; -.
+DR   SignaLink; Q8WY91; -.
+DR   Agora; ENSG00000176946; -.
+DR   BioGRID-ORCS; 51078; 24 hits in 1176 CRISPR screens.
+DR   ChiTaRS; THAP4; human.
+DR   EvolutionaryTrace; Q8WY91; -.
+DR   GeneWiki; THAP4; -.
+DR   GenomeRNAi; 51078; -.
+DR   Pharos; Q8WY91; Tbio.
+DR   PRO; PR:Q8WY91; -.
+DR   Proteomes; UP000005640; Chromosome 2.
+DR   RNAct; Q8WY91; protein.
+DR   Bgee; ENSG00000176946; Expressed in apex of heart and 203 other cell types or tissues.
+DR   ExpressionAtlas; Q8WY91; baseline and differential.
+DR   GO; GO:0005829; C:cytosol; IDA:HPA.
+DR   GO; GO:0005654; C:nucleoplasm; IDA:HPA.
+DR   GO; GO:0003677; F:DNA binding; IEA:UniProtKB-KW.
+DR   GO; GO:0020037; F:heme binding; IMP:UniProtKB.
+DR   GO; GO:0042802; F:identical protein binding; IPI:UniProtKB.
+DR   GO; GO:0070026; F:nitric oxide binding; IDA:UniProtKB.
+DR   GO; GO:0062213; F:peroxynitrite isomerase activity; IDA:UniProtKB.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0042126; P:nitrate metabolic process; IDA:UniProtKB.
+DR   GO; GO:0006570; P:tyrosine metabolic process; IDA:UniProtKB.
+DR   CDD; cd07828; lipocalin_heme-bd-THAP4-like; 1.
+DR   FunFam; 2.40.128.20:FF:000014; THAP domain-containing protein 4 isoform X1; 1.
+DR   Gene3D; 2.40.128.20; -; 1.
+DR   Gene3D; 6.20.210.20; THAP domain; 1.
+DR   InterPro; IPR012674; Calycin.
+DR   InterPro; IPR045165; Nitrobindin.
+DR   InterPro; IPR014878; THAP4-like_heme-bd.
+DR   InterPro; IPR006612; THAP_Znf.
+DR   InterPro; IPR038441; THAP_Znf_sf.
+DR   PANTHER; PTHR15854:SF4; PEROXYNITRITE ISOMERASE THAP4; 1.
+DR   PANTHER; PTHR15854; THAP4 PROTEIN; 1.
+DR   Pfam; PF05485; THAP; 1.
+DR   Pfam; PF08768; THAP4_heme-bd; 1.
+DR   SMART; SM00692; DM3; 1.
+DR   SMART; SM00980; THAP; 1.
+DR   SUPFAM; SSF57716; Glucocorticoid receptor-like (DNA-binding domain); 1.
+DR   SUPFAM; SSF50814; Lipocalins; 1.
+DR   PROSITE; PS50950; ZF_THAP; 1.
+PE   1: Evidence at protein level;
+KW   3D-structure; Alternative splicing; Cytoplasm; DNA-binding; Heme; Iron;
+KW   Isomerase; Metal-binding; Nucleus; Phosphoprotein;
+KW   Proteomics identification; Reference proteome; Zinc; Zinc-finger.
+FT   CHAIN           1..577
+FT                   /note="Peroxynitrite isomerase THAP4"
+FT                   /id="PRO_0000068646"
+FT   ZN_FING         1..85
+FT                   /note="THAP-type"
+FT                   /evidence="ECO:0000255|PROSITE-ProRule:PRU00309"
+FT   REGION          84..221
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          240..324
+FT                   /note="Disordered"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   REGION          415..577
+FT                   /note="Nitrobindin"
+FT                   /evidence="ECO:0000269|PubMed:21387410,
+FT                   ECO:0000269|PubMed:30524950"
+FT   MOTIF           235..238
+FT                   /note="HCFC1-binding motif (HBM)"
+FT                   /evidence="ECO:0000250|UniProtKB:Q8WTV1"
+FT   COMPBIAS        157..170
+FT                   /note="Low complexity"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        247..266
+FT                   /note="Basic and acidic residues"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   COMPBIAS        290..300
+FT                   /note="Low complexity"
+FT                   /evidence="ECO:0000256|SAM:MobiDB-lite"
+FT   BINDING         444
+FT                   /ligand="heme b"
+FT                   /ligand_id="ChEBI:CHEBI:60344"
+FT                   /evidence="ECO:0000269|PubMed:21387410,
+FT                   ECO:0007744|PDB:3IA8"
+FT   BINDING         567
+FT                   /ligand="heme b"
+FT                   /ligand_id="ChEBI:CHEBI:60344"
+FT                   /ligand_part="Fe"
+FT                   /ligand_part_id="ChEBI:CHEBI:18248"
+FT                   /note="axial binding residue"
+FT                   /evidence="ECO:0000269|PubMed:21387410,
+FT                   ECO:0007744|PDB:3IA8"
+FT   MOD_RES         163
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0007744|PubMed:17525332"
+FT   MOD_RES         239
+FT                   /note="Phosphoserine"
+FT                   /evidence="ECO:0007744|PubMed:23186163"
+FT   VAR_SEQ         1..412
+FT                   /note="Missing (in isoform 2)"
+FT                   /evidence="ECO:0000303|PubMed:10810093"
+FT                   /id="VSP_020078"
+FT   VAR_SEQ         413
+FT                   /note="R -> M (in isoform 2)"
+FT                   /evidence="ECO:0000303|PubMed:10810093"
+FT                   /id="VSP_020079"
+FT   VARIANT         121
+FT                   /note="S -> G (in dbSNP:rs7424328)"
+FT                   /evidence="ECO:0000269|PubMed:15489334,
+FT                   ECO:0000269|PubMed:15498874"
+FT                   /id="VAR_027161"
+FT   CONFLICT        261
+FT                   /note="L -> P (in Ref. 5; BAA91560)"
+FT                   /evidence="ECO:0000305"
+FT   HELIX           420..428
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+FT   STRAND          430..436
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+FT   STRAND          438..442
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+FT   STRAND          445..457
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+FT   STRAND          459..471
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+FT   TURN            473..475
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+FT   STRAND          478..488
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+FT   STRAND          494..501
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+FT   TURN            502..504
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+FT   STRAND          505..514
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+FT   STRAND          517..527
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+FT   STRAND          536..545
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+FT   STRAND          551..559
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+FT   STRAND          562..576
+FT                   /evidence="ECO:0007829|PDB:3IA8"
+SQ   SEQUENCE   577 AA;  62890 MW;  40660A5ACDD0A7C3 CRC64;
+     MVICCAAVNC SNRQGKGEKR AVSFHRFPLK DSKRLIQWLK AVQRDNWTPT KYSFLCSEHF
+     TKDSFSKRLE DQHRLLKPTA VPSIFHLTEK KRGAGGHGRT RRKDASKATG GVRGHSSAAT
+     SRGAAGWSPS SSGNPMAKPE SRRLKQAALQ GEATPRAAQE AASQEQAQQA LERTPGDGLA
+     TMVAGSQGKA EASATDAGDE SATSSIEGGV TDKSGISMDD FTPPGSGACK FIGSLHSYSF
+     SSKHTRERPS VPREPIDRKR LKKDVEPSCS GSSLGPDKGL AQSPPSSSLT ATPQKPSQSP
+     SAPPADVTPK PATEAVQSEH SDASPMSINE VILSASGACK LIDSLHSYCF SSRQNKSQVC
+     CLREQVEKKN GELKSLRQRV SRSDSQVRKL QEKLDELRRV SVPYPSSLLS PSREPPKMNP
+     VVEPLSWMLG TWLSDPPGAG TYPTLQPFQY LEEVHISHVG QPMLNFSFNS FHPDTRKPMH
+     RECGFIRLKP DTNKVAFVSA QNTGVVEVEE GEVNGQELCI ASHSIARISF AKEPHVEQIT
+     RKFRLNSEGK LEQTVSMATT TQPMTQHLHV TYKKVTP
+//

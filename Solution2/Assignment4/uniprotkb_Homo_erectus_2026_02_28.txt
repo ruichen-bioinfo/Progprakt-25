@@ -1,0 +1,525 @@
+ID   A0ABX3D594_9VIBR        Unreviewed;       400 AA.
+AC   A0ABX3D594;
+DT   08-OCT-2025, integrated into UniProtKB/TrEMBL.
+DT   08-OCT-2025, sequence version 1.
+DT   28-JAN-2026, entry version 2.
+DE   RecName: Full=Coenzyme A biosynthesis bifunctional protein CoaBC {ECO:0000256|HAMAP-Rule:MF_02225};
+DE   AltName: Full=DNA/pantothenate metabolism flavoprotein {ECO:0000256|HAMAP-Rule:MF_02225};
+DE   AltName: Full=Phosphopantothenoylcysteine synthetase/decarboxylase {ECO:0000256|HAMAP-Rule:MF_02225};
+DE            Short=PPCS-PPCDC {ECO:0000256|HAMAP-Rule:MF_02225};
+DE   Includes:
+DE     RecName: Full=Phosphopantothenoylcysteine decarboxylase {ECO:0000256|HAMAP-Rule:MF_02225};
+DE              Short=PPC decarboxylase {ECO:0000256|HAMAP-Rule:MF_02225};
+DE              Short=PPC-DC {ECO:0000256|HAMAP-Rule:MF_02225};
+DE              EC=4.1.1.36 {ECO:0000256|HAMAP-Rule:MF_02225};
+DE     AltName: Full=CoaC {ECO:0000256|HAMAP-Rule:MF_02225};
+DE   Includes:
+DE     RecName: Full=Phosphopantothenate--cysteine ligase {ECO:0000256|HAMAP-Rule:MF_02225};
+DE              EC=6.3.2.5 {ECO:0000256|HAMAP-Rule:MF_02225};
+DE     AltName: Full=CoaB {ECO:0000256|HAMAP-Rule:MF_02225};
+DE     AltName: Full=Phosphopantothenoylcysteine synthetase {ECO:0000256|HAMAP-Rule:MF_02225};
+DE              Short=PPC synthetase {ECO:0000256|HAMAP-Rule:MF_02225};
+DE              Short=PPC-S {ECO:0000256|HAMAP-Rule:MF_02225};
+GN   Name=coaBC {ECO:0000256|HAMAP-Rule:MF_02225};
+GN   ORFNames=BI375_06960 {ECO:0000313|EMBL:OHY89983.1};
+OS   Vibrio rotiferianus.
+OC   Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Vibrionales;
+OC   Vibrionaceae; Vibrio.
+OX   NCBI_TaxID=190895 {ECO:0000313|EMBL:OHY89983.1, ECO:0000313|Proteomes:UP000180133};
+RN   [1] {ECO:0000313|EMBL:OHY89983.1, ECO:0000313|Proteomes:UP000180133}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=HM-10 {ECO:0000313|EMBL:OHY89983.1,
+RC   ECO:0000313|Proteomes:UP000180133};
+RA   Yang Q.;
+RT   "Isolation, identification and antibiotic sensitivity analysis of bacterial
+RT   pathogen from juvenile Hippocampus erectus with tail-rotted disease.";
+RL   Submitted (SEP-2016) to the EMBL/GenBank/DDBJ databases.
+CC   -!- FUNCTION: Catalyzes two sequential steps in the biosynthesis of
+CC       coenzyme A. In the first step cysteine is conjugated to 4'-
+CC       phosphopantothenate to form 4-phosphopantothenoylcysteine. In the
+CC       second step the latter compound is decarboxylated to form 4'-
+CC       phosphopantotheine. {ECO:0000256|HAMAP-Rule:MF_02225}.
+CC   -!- FUNCTION: Catalyzes two steps in the biosynthesis of coenzyme A. In the
+CC       first step cysteine is conjugated to 4'-phosphopantothenate to form 4-
+CC       phosphopantothenoylcysteine, in the latter compound is decarboxylated
+CC       to form 4'-phosphopantotheine. {ECO:0000256|RuleBase:RU364078}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=(R)-4'-phosphopantothenate + L-cysteine + CTP = N-[(R)-4-
+CC         phosphopantothenoyl]-L-cysteine + CMP + diphosphate + H(+);
+CC         Xref=Rhea:RHEA:19397, ChEBI:CHEBI:10986, ChEBI:CHEBI:15378,
+CC         ChEBI:CHEBI:33019, ChEBI:CHEBI:35235, ChEBI:CHEBI:37563,
+CC         ChEBI:CHEBI:59458, ChEBI:CHEBI:60377; EC=6.3.2.5;
+CC         Evidence={ECO:0000256|HAMAP-Rule:MF_02225,
+CC         ECO:0000256|RuleBase:RU364078};
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=N-[(R)-4-phosphopantothenoyl]-L-cysteine + H(+) = (R)-4'-
+CC         phosphopantetheine + CO2; Xref=Rhea:RHEA:16793, ChEBI:CHEBI:15378,
+CC         ChEBI:CHEBI:16526, ChEBI:CHEBI:59458, ChEBI:CHEBI:61723; EC=4.1.1.36;
+CC         Evidence={ECO:0000256|HAMAP-Rule:MF_02225,
+CC         ECO:0000256|RuleBase:RU364078};
+CC   -!- COFACTOR:
+CC       Name=FMN; Xref=ChEBI:CHEBI:58210; Evidence={ECO:0000256|HAMAP-
+CC         Rule:MF_02225};
+CC       Note=Binds 1 FMN per subunit. {ECO:0000256|HAMAP-Rule:MF_02225};
+CC   -!- COFACTOR:
+CC       Name=Mg(2+); Xref=ChEBI:CHEBI:18420; Evidence={ECO:0000256|HAMAP-
+CC         Rule:MF_02225};
+CC   -!- PATHWAY: Cofactor biosynthesis; coenzyme A biosynthesis; CoA from (R)-
+CC       pantothenate: step 2/5. {ECO:0000256|HAMAP-Rule:MF_02225,
+CC       ECO:0000256|RuleBase:RU364078}.
+CC   -!- PATHWAY: Cofactor biosynthesis; coenzyme A biosynthesis; CoA from (R)-
+CC       pantothenate: step 3/5. {ECO:0000256|HAMAP-Rule:MF_02225,
+CC       ECO:0000256|RuleBase:RU364078}.
+CC   -!- SIMILARITY: In the C-terminal section; belongs to the PPC synthetase
+CC       family. {ECO:0000256|HAMAP-Rule:MF_02225,
+CC       ECO:0000256|RuleBase:RU364078}.
+CC   -!- SIMILARITY: In the N-terminal section; belongs to the HFCD (homo-
+CC       oligomeric flavin containing Cys decarboxylase) superfamily.
+CC       {ECO:0000256|HAMAP-Rule:MF_02225, ECO:0000256|RuleBase:RU364078}.
+CC   -!- CAUTION: Lacks conserved residue(s) required for the propagation of
+CC       feature annotation. {ECO:0000256|HAMAP-Rule:MF_02225}.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:OHY89983.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; MKFT01000034; OHY89983.1; -; Genomic_DNA.
+DR   RefSeq; WP_071234850.1; NZ_CANMXO010000003.1.
+DR   Proteomes; UP000180133; Unassembled WGS sequence.
+DR   Gene3D; 3.40.50.10300; CoaB-like; 1.
+DR   Gene3D; 3.40.50.1950; Flavin prenyltransferase-like; 1.
+DR   HAMAP; MF_02225; CoaBC; 1.
+DR   InterPro; IPR035929; CoaB-like_sf.
+DR   InterPro; IPR005252; CoaBC.
+DR   InterPro; IPR007085; DNA/pantothenate-metab_flavo_C.
+DR   InterPro; IPR036551; Flavin_trans-like.
+DR   InterPro; IPR003382; Flavoprotein.
+DR   NCBIfam; TIGR00521; coaBC_dfp; 1.
+DR   PANTHER; PTHR14359; HOMO-OLIGOMERIC FLAVIN CONTAINING CYS DECARBOXYLASE FAMILY; 1.
+DR   PANTHER; PTHR14359:SF6; PHOSPHOPANTOTHENOYLCYSTEINE DECARBOXYLASE; 1.
+DR   Pfam; PF04127; DFP; 1.
+DR   Pfam; PF02441; Flavoprotein; 1.
+DR   SUPFAM; SSF102645; CoaB-like; 1.
+DR   SUPFAM; SSF52507; Homo-oligomeric flavin-containing Cys decarboxylases, HFCD; 1.
+PE   3: Inferred from homology;
+KW   Decarboxylase {ECO:0000256|ARBA:ARBA00022793, ECO:0000256|HAMAP-
+KW   Rule:MF_02225};
+KW   Flavoprotein {ECO:0000256|HAMAP-Rule:MF_02225,
+KW   ECO:0000256|RuleBase:RU364078};
+KW   FMN {ECO:0000256|ARBA:ARBA00022643, ECO:0000256|HAMAP-Rule:MF_02225};
+KW   Ligase {ECO:0000256|ARBA:ARBA00022598, ECO:0000256|HAMAP-Rule:MF_02225};
+KW   Lyase {ECO:0000256|ARBA:ARBA00023239, ECO:0000256|HAMAP-Rule:MF_02225};
+KW   Magnesium {ECO:0000256|HAMAP-Rule:MF_02225};
+KW   Metal-binding {ECO:0000256|HAMAP-Rule:MF_02225};
+KW   Multifunctional enzyme {ECO:0000256|ARBA:ARBA00023268, ECO:0000256|HAMAP-
+KW   Rule:MF_02225}; Reference proteome {ECO:0000313|Proteomes:UP000180133}.
+FT   DOMAIN          7..179
+FT                   /note="Flavoprotein"
+FT                   /evidence="ECO:0000259|Pfam:PF02441"
+FT   DOMAIN          186..397
+FT                   /note="DNA/pantothenate metabolism flavoprotein C-terminal"
+FT                   /evidence="ECO:0000259|Pfam:PF04127"
+FT   REGION          1..190
+FT                   /note="Phosphopantothenoylcysteine decarboxylase"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_02225"
+FT   REGION          191..400
+FT                   /note="Phosphopantothenate--cysteine ligase"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_02225"
+FT   ACT_SITE        159
+FT                   /note="Proton donor"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_02225"
+FT   BINDING         279
+FT                   /ligand="CTP"
+FT                   /ligand_id="ChEBI:CHEBI:37563"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_02225"
+FT   BINDING         289
+FT                   /ligand="CTP"
+FT                   /ligand_id="ChEBI:CHEBI:37563"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_02225"
+FT   BINDING         307..310
+FT                   /ligand="CTP"
+FT                   /ligand_id="ChEBI:CHEBI:37563"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_02225"
+FT   BINDING         326
+FT                   /ligand="CTP"
+FT                   /ligand_id="ChEBI:CHEBI:37563"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_02225"
+FT   BINDING         340
+FT                   /ligand="CTP"
+FT                   /ligand_id="ChEBI:CHEBI:37563"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_02225"
+FT   BINDING         344
+FT                   /ligand="CTP"
+FT                   /ligand_id="ChEBI:CHEBI:37563"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_02225"
+SQ   SEQUENCE   400 AA;  42848 MW;  ED21391B8FFFC715 CRC64;
+     MQTLAGKKIL LGISGGIAAY KCAELTRRLI ERGAQVQVVM TKAAKEFITP LTMQAVSGRP
+     VSDSLLDPAA EASMGHIELA KWADLVLLAP ATADLIARMS AGMGNDLLTT LVLATDSPIA
+     VSPAMNQQMY RNIATQENIA TLARRGMHIW GPAAGEQACG DVGPGRMLEP MQLVHLCEQF
+     FQPKLLADKS ILITAGPTRE AIDPVRYISN HSSGKMGFAL ANAAAQLGAN VTLVSGPVSL
+     STPVGVERIN VASAQEMHDT VMAHAAKHDA FISCAAVADY RPEDVASQKL KKTENNDQMT
+     IKMVKNPDIV AAVAAMTEQR PFTVGFAAET NDVETYARGK LVKKNLDMIC ANDVSVEGQG
+     FNSNDNAITL FWPQGEQALA LESKEALSFR ILEKMFELMP
+//
+ID   A0ABX3D6C2_9VIBR        Unreviewed;       212 AA.
+AC   A0ABX3D6C2;
+DT   08-OCT-2025, integrated into UniProtKB/TrEMBL.
+DT   08-OCT-2025, sequence version 1.
+DT   28-JAN-2026, entry version 2.
+DE   RecName: Full=Flavin prenyltransferase UbiX {ECO:0000256|HAMAP-Rule:MF_01984};
+DE            EC=2.5.1.129 {ECO:0000256|HAMAP-Rule:MF_01984};
+GN   Name=ubiX {ECO:0000256|HAMAP-Rule:MF_01984};
+GN   ORFNames=BI375_07695 {ECO:0000313|EMBL:OHY90122.1};
+OS   Vibrio rotiferianus.
+OC   Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Vibrionales;
+OC   Vibrionaceae; Vibrio.
+OX   NCBI_TaxID=190895 {ECO:0000313|EMBL:OHY90122.1, ECO:0000313|Proteomes:UP000180133};
+RN   [1] {ECO:0000313|EMBL:OHY90122.1, ECO:0000313|Proteomes:UP000180133}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=HM-10 {ECO:0000313|EMBL:OHY90122.1,
+RC   ECO:0000313|Proteomes:UP000180133};
+RA   Yang Q.;
+RT   "Isolation, identification and antibiotic sensitivity analysis of bacterial
+RT   pathogen from juvenile Hippocampus erectus with tail-rotted disease.";
+RL   Submitted (SEP-2016) to the EMBL/GenBank/DDBJ databases.
+CC   -!- FUNCTION: Flavin prenyltransferase that catalyzes the synthesis of the
+CC       prenylated FMN cofactor (prenyl-FMN) for 4-hydroxy-3-polyprenylbenzoic
+CC       acid decarboxylase UbiD. The prenyltransferase is metal-independent and
+CC       links a dimethylallyl moiety from dimethylallyl monophosphate (DMAP) to
+CC       the flavin N5 and C6 atoms of FMN. {ECO:0000256|HAMAP-Rule:MF_01984}.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=dimethylallyl phosphate + FMNH2 = prenylated FMNH2 +
+CC         phosphate; Xref=Rhea:RHEA:37743, ChEBI:CHEBI:43474,
+CC         ChEBI:CHEBI:57618, ChEBI:CHEBI:87467, ChEBI:CHEBI:88052;
+CC         EC=2.5.1.129; Evidence={ECO:0000256|HAMAP-Rule:MF_01984};
+CC   -!- SIMILARITY: Belongs to the UbiX/PAD1 family. {ECO:0000256|HAMAP-
+CC       Rule:MF_01984}.
+CC   -!- CAUTION: Lacks conserved residue(s) required for the propagation of
+CC       feature annotation. {ECO:0000256|HAMAP-Rule:MF_01984}.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:OHY90122.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; MKFT01000034; OHY90122.1; -; Genomic_DNA.
+DR   RefSeq; WP_038885341.1; NZ_BBLC01000048.1.
+DR   GeneID; 47657906; -.
+DR   Proteomes; UP000180133; Unassembled WGS sequence.
+DR   Gene3D; 3.40.50.1950; Flavin prenyltransferase-like; 1.
+DR   HAMAP; MF_01984; ubiX_pad; 1.
+DR   InterPro; IPR036551; Flavin_trans-like.
+DR   InterPro; IPR003382; Flavoprotein.
+DR   InterPro; IPR004507; UbiX-like.
+DR   NCBIfam; NF004685; PRK06029.1; 1.
+DR   NCBIfam; TIGR00421; ubiX_pad; 1.
+DR   PANTHER; PTHR43374; FLAVIN PRENYLTRANSFERASE; 1.
+DR   PANTHER; PTHR43374:SF1; FLAVIN PRENYLTRANSFERASE PAD1, MITOCHONDRIAL; 1.
+DR   Pfam; PF02441; Flavoprotein; 1.
+DR   SUPFAM; SSF52507; Homo-oligomeric flavin-containing Cys decarboxylases, HFCD; 1.
+PE   3: Inferred from homology;
+KW   Flavoprotein {ECO:0000256|ARBA:ARBA00022630, ECO:0000256|HAMAP-
+KW   Rule:MF_01984};
+KW   FMN {ECO:0000256|ARBA:ARBA00022643, ECO:0000256|HAMAP-Rule:MF_01984};
+KW   Prenyltransferase {ECO:0000256|ARBA:ARBA00022602, ECO:0000256|HAMAP-
+KW   Rule:MF_01984}; Reference proteome {ECO:0000313|Proteomes:UP000180133};
+KW   Transferase {ECO:0000256|ARBA:ARBA00022679, ECO:0000256|HAMAP-
+KW   Rule:MF_01984}.
+FT   DOMAIN          12..197
+FT                   /note="Flavoprotein"
+FT                   /evidence="ECO:0000259|Pfam:PF02441"
+FT   BINDING         20..22
+FT                   /ligand="FMN"
+FT                   /ligand_id="ChEBI:CHEBI:58210"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_01984"
+FT   BINDING         46
+FT                   /ligand="FMN"
+FT                   /ligand_id="ChEBI:CHEBI:58210"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_01984"
+FT   BINDING         111..114
+FT                   /ligand="FMN"
+FT                   /ligand_id="ChEBI:CHEBI:58210"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_01984"
+FT   BINDING         146
+FT                   /ligand="FMN"
+FT                   /ligand_id="ChEBI:CHEBI:58210"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_01984"
+FT   BINDING         176
+FT                   /ligand="dimethylallyl phosphate"
+FT                   /ligand_id="ChEBI:CHEBI:88052"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_01984"
+FT   BINDING         192
+FT                   /ligand="dimethylallyl phosphate"
+FT                   /ligand_id="ChEBI:CHEBI:88052"
+FT                   /evidence="ECO:0000256|HAMAP-Rule:MF_01984"
+SQ   SEQUENCE   212 AA;  22993 MW;  653FD609CAC05453 CRC64;
+     MTFMQQKVTP KKAITLALTG ASGAPYGLRL LECLVAADYH VYVLISSAAR VVMATEHDLK
+     LPSGPEAAQK ALVEHLNCNP DNITVCGKDD WFSPVASGSA APKQMVVCPC SAGSVAAIAH
+     GMSDNLIERA ADVVMKERGQ LLLVVRETPF STLHLENMHK LSQMGVTIMP AAPGFYHQPK
+     TIEDLVDFMV ARILDHLGIE QGLVPRWGYD QR
+//
+ID   A0ABX3DAP3_9VIBR        Unreviewed;       592 AA.
+AC   A0ABX3DAP3;
+DT   08-OCT-2025, integrated into UniProtKB/TrEMBL.
+DT   08-OCT-2025, sequence version 1.
+DT   28-JAN-2026, entry version 2.
+DE   SubName: Full=Peptidase S8 {ECO:0000313|EMBL:OHY94290.1};
+GN   ORFNames=BI375_16850 {ECO:0000313|EMBL:OHY94290.1};
+OS   Vibrio rotiferianus.
+OC   Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Vibrionales;
+OC   Vibrionaceae; Vibrio.
+OX   NCBI_TaxID=190895 {ECO:0000313|EMBL:OHY94290.1, ECO:0000313|Proteomes:UP000180133};
+RN   [1] {ECO:0000313|EMBL:OHY94290.1, ECO:0000313|Proteomes:UP000180133}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=HM-10 {ECO:0000313|EMBL:OHY94290.1,
+RC   ECO:0000313|Proteomes:UP000180133};
+RA   Yang Q.;
+RT   "Isolation, identification and antibiotic sensitivity analysis of bacterial
+RT   pathogen from juvenile Hippocampus erectus with tail-rotted disease.";
+RL   Submitted (SEP-2016) to the EMBL/GenBank/DDBJ databases.
+CC   -!- SIMILARITY: Belongs to the peptidase S8 family. Furin subfamily.
+CC       {ECO:0000256|ARBA:ARBA00005325}.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:OHY94290.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; MKFT01000006; OHY94290.1; -; Genomic_DNA.
+DR   RefSeq; WP_071235914.1; NZ_KV861324.1.
+DR   Proteomes; UP000180133; Unassembled WGS sequence.
+DR   CDD; cd04059; Peptidases_S8_Protein_convertases_Kexins_Furin-like; 1.
+DR   Gene3D; 2.60.120.260; Galactose-binding domain-like; 1.
+DR   Gene3D; 3.40.50.200; Peptidase S8/S53 domain; 1.
+DR   InterPro; IPR008979; Galactose-bd-like_sf.
+DR   InterPro; IPR034182; Kexin/furin.
+DR   InterPro; IPR002884; P_dom.
+DR   InterPro; IPR000209; Peptidase_S8/S53_dom.
+DR   InterPro; IPR036852; Peptidase_S8/S53_dom_sf.
+DR   InterPro; IPR023827; Peptidase_S8_Asp-AS.
+DR   InterPro; IPR022398; Peptidase_S8_His-AS.
+DR   InterPro; IPR023828; Peptidase_S8_Ser-AS.
+DR   InterPro; IPR015500; Peptidase_S8_subtilisin-rel.
+DR   PANTHER; PTHR42884:SF14; NEUROENDOCRINE CONVERTASE 1; 1.
+DR   PANTHER; PTHR42884; PROPROTEIN CONVERTASE SUBTILISIN/KEXIN-RELATED; 1.
+DR   Pfam; PF01483; P_proprotein; 1.
+DR   Pfam; PF00082; Peptidase_S8; 1.
+DR   PRINTS; PR00723; SUBTILISIN.
+DR   SUPFAM; SSF49785; Galactose-binding domain-like; 1.
+DR   SUPFAM; SSF52743; Subtilisin-like; 1.
+DR   PROSITE; PS51829; P_HOMO_B; 1.
+DR   PROSITE; PS51892; SUBTILASE; 1.
+DR   PROSITE; PS00136; SUBTILASE_ASP; 1.
+DR   PROSITE; PS00137; SUBTILASE_HIS; 1.
+DR   PROSITE; PS00138; SUBTILASE_SER; 1.
+PE   3: Inferred from homology;
+KW   Calcium {ECO:0000256|ARBA:ARBA00022837};
+KW   Hydrolase {ECO:0000256|ARBA:ARBA00022801, ECO:0000256|PROSITE-
+KW   ProRule:PRU01240};
+KW   Protease {ECO:0000256|ARBA:ARBA00022670, ECO:0000256|PROSITE-
+KW   ProRule:PRU01240}; Reference proteome {ECO:0000313|Proteomes:UP000180133};
+KW   Serine protease {ECO:0000256|ARBA:ARBA00022825, ECO:0000256|PROSITE-
+KW   ProRule:PRU01240};
+KW   Signal {ECO:0000256|ARBA:ARBA00022729, ECO:0000256|SAM:SignalP}.
+FT   SIGNAL          1..23
+FT                   /evidence="ECO:0000256|SAM:SignalP"
+FT   CHAIN           24..592
+FT                   /evidence="ECO:0000256|SAM:SignalP"
+FT                   /id="PRO_5045264680"
+FT   DOMAIN          437..592
+FT                   /note="P/Homo B"
+FT                   /evidence="ECO:0000259|PROSITE:PS51829"
+FT   ACT_SITE        74
+FT                   /note="Charge relay system"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU01240"
+FT   ACT_SITE        112
+FT                   /note="Charge relay system"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU01240"
+FT   ACT_SITE        341
+FT                   /note="Charge relay system"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU01240"
+SQ   SEQUENCE   592 AA;  62833 MW;  FDEF66CDC7FB4F44 CRC64;
+     METRINRLFA AMLAVGLSPA VSAYDPLYSE QWHLDNTGQT AFAANPAVAG NDLNTKLTQA
+     MGIAGVGVKV AVIDSGVQID HPDLAGNAVT GSRNFVEDSS FPADYPVDTN GHGTAVAGLI
+     SAVGNNGEGV RGVASRSSLM GFNWLANQTL EGWLISHGVD AATSDVRVFN QSYGFSPIYP
+     IPFDENDPQF KLEMDVMKDV SEGNAWGRGA VFVKSAGNGY RYFNTGRFFV LPSDFFAGGG
+     NKGLPMHNSA QSYDNASYYN LVTSALRADG TRASYSSVGA NVWVAAPAGE YGQDFPAMVT
+     TDLVGCEEGQ NTSADLGING LHGGTEQDPN CNYTSTMNGT SSAAPNTSGA IAAIMSTNHA
+     LTARDVRALL AETASVTDRD HPGVQLEFVN SQGDLVSYEA ISPWQKNAAG VDFHTFYGFG
+     AVNLDEAMKR ARMTNNVLPA QVITPWASNA TEVIVPDANL AGGSSAIAVT DDITVESVQV
+     KLTLEHSRLP DLAIELISPS GTRSVLQTPR NGLVGQSLDS TVAGYENQLM LSNQFYGENA
+     KGEWTLRAID TNGDEVFSFI AYFNSSAIYD VPMANNAKPG VIKNWSMRIF GH
+//
+ID   A0ABX3DD52_9VIBR        Unreviewed;       791 AA.
+AC   A0ABX3DD52;
+DT   08-OCT-2025, integrated into UniProtKB/TrEMBL.
+DT   08-OCT-2025, sequence version 1.
+DT   28-JAN-2026, entry version 2.
+DE   SubName: Full=Peptidase S8 {ECO:0000313|EMBL:OHY96050.1};
+GN   ORFNames=BI375_00630 {ECO:0000313|EMBL:OHY96050.1};
+OS   Vibrio rotiferianus.
+OC   Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Vibrionales;
+OC   Vibrionaceae; Vibrio.
+OX   NCBI_TaxID=190895 {ECO:0000313|EMBL:OHY96050.1, ECO:0000313|Proteomes:UP000180133};
+RN   [1] {ECO:0000313|EMBL:OHY96050.1, ECO:0000313|Proteomes:UP000180133}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=HM-10 {ECO:0000313|EMBL:OHY96050.1,
+RC   ECO:0000313|Proteomes:UP000180133};
+RA   Yang Q.;
+RT   "Isolation, identification and antibiotic sensitivity analysis of bacterial
+RT   pathogen from juvenile Hippocampus erectus with tail-rotted disease.";
+RL   Submitted (SEP-2016) to the EMBL/GenBank/DDBJ databases.
+CC   -!- SIMILARITY: Belongs to the peptidase S8 family.
+CC       {ECO:0000256|ARBA:ARBA00011073, ECO:0000256|PROSITE-ProRule:PRU01240}.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:OHY96050.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; MKFT01000001; OHY96050.1; -; Genomic_DNA.
+DR   RefSeq; WP_071234113.1; NZ_CP174457.1.
+DR   Proteomes; UP000180133; Unassembled WGS sequence.
+DR   CDD; cd04817; PA_VapT_like; 1.
+DR   CDD; cd07477; Peptidases_S8_Subtilisin_subset; 1.
+DR   Gene3D; 2.60.120.380; -; 1.
+DR   Gene3D; 3.50.30.30; -; 1.
+DR   Gene3D; 2.60.120.260; Galactose-binding domain-like; 1.
+DR   Gene3D; 3.30.70.80; Peptidase S8 propeptide/proteinase inhibitor I9; 1.
+DR   Gene3D; 3.40.50.200; Peptidase S8/S53 domain; 1.
+DR   InterPro; IPR008979; Galactose-bd-like_sf.
+DR   InterPro; IPR002884; P_dom.
+DR   InterPro; IPR003137; PA_domain.
+DR   InterPro; IPR007280; Peptidase_C_arc/bac.
+DR   InterPro; IPR000209; Peptidase_S8/S53_dom.
+DR   InterPro; IPR036852; Peptidase_S8/S53_dom_sf.
+DR   InterPro; IPR022398; Peptidase_S8_His-AS.
+DR   InterPro; IPR023828; Peptidase_S8_Ser-AS.
+DR   InterPro; IPR050131; Peptidase_S8_subtilisin-like.
+DR   InterPro; IPR015500; Peptidase_S8_subtilisin-rel.
+DR   InterPro; IPR037045; S8pro/Inhibitor_I9_sf.
+DR   InterPro; IPR034202; Subtilisin_Carlsberg-like.
+DR   PANTHER; PTHR43806:SF11; CEREVISIN-RELATED; 1.
+DR   PANTHER; PTHR43806; PEPTIDASE S8; 1.
+DR   Pfam; PF01483; P_proprotein; 1.
+DR   Pfam; PF02225; PA; 1.
+DR   Pfam; PF00082; Peptidase_S8; 2.
+DR   Pfam; PF04151; PPC; 1.
+DR   PRINTS; PR00723; SUBTILISIN.
+DR   SUPFAM; SSF49785; Galactose-binding domain-like; 1.
+DR   SUPFAM; SSF52743; Subtilisin-like; 1.
+DR   PROSITE; PS51829; P_HOMO_B; 1.
+DR   PROSITE; PS51892; SUBTILASE; 1.
+DR   PROSITE; PS00137; SUBTILASE_HIS; 1.
+DR   PROSITE; PS00138; SUBTILASE_SER; 1.
+PE   3: Inferred from homology;
+KW   Cell wall {ECO:0000256|ARBA:ARBA00022512};
+KW   Hydrolase {ECO:0000256|ARBA:ARBA00022801, ECO:0000256|PROSITE-
+KW   ProRule:PRU01240}; Metal-binding {ECO:0000256|ARBA:ARBA00022723};
+KW   Protease {ECO:0000256|ARBA:ARBA00022670, ECO:0000256|PROSITE-
+KW   ProRule:PRU01240}; Reference proteome {ECO:0000313|Proteomes:UP000180133};
+KW   Secreted {ECO:0000256|ARBA:ARBA00022512};
+KW   Serine protease {ECO:0000256|ARBA:ARBA00022825, ECO:0000256|PROSITE-
+KW   ProRule:PRU01240}; Signal {ECO:0000256|SAM:SignalP}.
+FT   SIGNAL          1..29
+FT                   /evidence="ECO:0000256|SAM:SignalP"
+FT   CHAIN           30..791
+FT                   /evidence="ECO:0000256|SAM:SignalP"
+FT                   /id="PRO_5046797193"
+FT   DOMAIN          668..791
+FT                   /note="P/Homo B"
+FT                   /evidence="ECO:0000259|PROSITE:PS51829"
+FT   ACT_SITE        151
+FT                   /note="Charge relay system"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU01240"
+FT   ACT_SITE        186
+FT                   /note="Charge relay system"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU01240"
+FT   ACT_SITE        490
+FT                   /note="Charge relay system"
+FT                   /evidence="ECO:0000256|PROSITE-ProRule:PRU01240"
+SQ   SEQUENCE   791 AA;  82285 MW;  FD507EB3FEF5A49E CRC64;
+     MHYTTTKLNG LFSLSAVAVA LTFSMSAHAA PLTGFDESNL PTKYIVKFKE DTSSPSALGG
+     NSFWGPRIAQ ESVLDQLKAR KVEKLGNRAI YSVEIEDSEL GQLRNRSDVE YVEIDPPRYL
+     LSETIPWGYE AVNAQLLDDS SAGNRTVCII DSGYDLAHND LSGNRVSGTN DSGTGSWSVP
+     GNNNAHGTHV AGTIAAIANT EGIKGVMPNQ NVNLHIVKVF NEAGWGYSSS LVKAVQTCAD
+     NGANVVNMSL GGSQSSVTEK NALQTIYDQG VLLIAAAGND GNTAHSYPAS YDSVMSVAAV
+     DDKSDHAAFS QATDQVEIAG PGVAILSTVT VGEGKLSDIR LNGVSQFDRG IVPHNRLIQS
+     GGSYGPDPVA GSITATLASC DVSGSSFSCG DMSGKICLTE RVGNQSSGNY PEIDAVQACY
+     NAGASAAIVY SNSELPGLQN PFLVDQNNAA RIVSVTVDRA FGQELLGYVG QDITVSTTKG
+     EDYEYYNGTS MATPHVTGVA GLVWSYHPTC TAAQVRNALI KTATDIDVTG RDNRTGHGLV
+     NADAAKQYLD AGCNGPDGGG SGNDNVLENG VAKTQLSGGS KSSTVFVFDV PADATQATFN
+     MSGGSGDADL YVRFNGTPST STYDCRSWAS GNGESCSLNV SGAGQYEVLV YGYSAYSGVS
+     LVATHNGSGD STGGGSTPSS YTNSDAVAIP DNKASGVVSS LDVARSGDAG SVTIDLDITH
+     TYIGDLYVTL TSPDGGQVVL HDNAGGSAND IKTSFQADFS GFESQGTWEL KAVDNARRDT
+     GTINSWTLTF Q
+//
+ID   A0ABX3DE67_9VIBR        Unreviewed;       750 AA.
+AC   A0ABX3DE67;
+DT   08-OCT-2025, integrated into UniProtKB/TrEMBL.
+DT   08-OCT-2025, sequence version 1.
+DT   28-JAN-2026, entry version 2.
+DE   SubName: Full=Propeptide, peptidase {ECO:0000313|EMBL:OHY96177.1};
+GN   ORFNames=BI375_01315 {ECO:0000313|EMBL:OHY96177.1};
+OS   Vibrio rotiferianus.
+OC   Bacteria; Pseudomonadati; Pseudomonadota; Gammaproteobacteria; Vibrionales;
+OC   Vibrionaceae; Vibrio.
+OX   NCBI_TaxID=190895 {ECO:0000313|EMBL:OHY96177.1, ECO:0000313|Proteomes:UP000180133};
+RN   [1] {ECO:0000313|EMBL:OHY96177.1, ECO:0000313|Proteomes:UP000180133}
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=HM-10 {ECO:0000313|EMBL:OHY96177.1,
+RC   ECO:0000313|Proteomes:UP000180133};
+RA   Yang Q.;
+RT   "Isolation, identification and antibiotic sensitivity analysis of bacterial
+RT   pathogen from juvenile Hippocampus erectus with tail-rotted disease.";
+RL   Submitted (SEP-2016) to the EMBL/GenBank/DDBJ databases.
+CC   -!- CAUTION: The sequence shown here is derived from an EMBL/GenBank/DDBJ
+CC       whole genome shotgun (WGS) entry which is preliminary data.
+CC       {ECO:0000313|EMBL:OHY96177.1}.
+CC   ---------------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see https://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution (CC BY 4.0) License
+CC   ---------------------------------------------------------------------------
+DR   EMBL; MKFT01000001; OHY96177.1; -; Genomic_DNA.
+DR   RefSeq; WP_071234187.1; NZ_KV861315.1.
+DR   Proteomes; UP000180133; Unassembled WGS sequence.
+DR   Gene3D; 2.60.120.260; Galactose-binding domain-like; 1.
+DR   InterPro; IPR008979; Galactose-bd-like_sf.
+DR   InterPro; IPR002884; P_dom.
+DR   Pfam; PF01483; P_proprotein; 1.
+DR   SUPFAM; SSF49785; Galactose-binding domain-like; 1.
+DR   SUPFAM; SSF55486; Metalloproteases ('zincins'), catalytic domain; 1.
+DR   PROSITE; PS51829; P_HOMO_B; 1.
+PE   4: Predicted;
+KW   Hydrolase {ECO:0000256|ARBA:ARBA00022801};
+KW   Protease {ECO:0000256|ARBA:ARBA00022670};
+KW   Reference proteome {ECO:0000313|Proteomes:UP000180133};
+KW   Signal {ECO:0000256|SAM:SignalP}.
+FT   SIGNAL          1..20
+FT                   /evidence="ECO:0000256|SAM:SignalP"
+FT   CHAIN           21..750
+FT                   /evidence="ECO:0000256|SAM:SignalP"
+FT                   /id="PRO_5046836748"
+FT   DOMAIN          581..716
+FT                   /note="P/Homo B"
+FT                   /evidence="ECO:0000259|PROSITE:PS51829"
+SQ   SEQUENCE   750 AA;  82951 MW;  853836CC5AE2A5FD CRC64;
+     MKLKPLALSL LFACAPVVQA AEWDYPSVDS VVSNEAQAKI YLDNHYAQAG EFKFRYKTQS
+     QLGEHYNFDV WISGEYQPQR TAVVTTDKNH HVVRVFKSFE DTVIRNGVPT VAMELESPRQ
+     LQAQEPPGLS SGSLVDVEVS LFTPDLRTMQ QQAGPESTWT ALSDYPQPIE YVTKSIEVLK
+     SGGKFYLSNP RLKQVDATGL FSAPAPGEAP VLDTLGFLRT EGVQAFDSVD EMQSTKFGDN
+     AFPQLMAFYH LDSSLQYLTS LTYDLFDEPL RFDARGLSKD NSTYYYGPKA LMLGVGGVSP
+     DAIDADVVIH ELGHGIHYQI VPDWAYGHTG AIAEGFADYW AGSASYRIQY SDASRRGQEF
+     ELDTVFNWDG VFGTRKTTRS LWNQRARYFE SAEYPAHISV GGENGDELWS TPLFQALKAS
+     VERYGDGTDN VFREFDSIVL EGMYGIGRGV KMHDLAESTV FAASTLFPEK DYAQFLMNSF
+     NKHNLLKAPL RVRYDARYIA QGQDVGVSLS QTGREASIKG QWQLNNASVF DFDETLSDSS
+     SMKVALPSGL TCGTQFDSSI SLDYQFSEGL KARQWEENVK LVNGTPKLDI QPQSVNTALP
+     EQGDRLFAQT LSDKSHTIDD SFAVYLNIEH DSLQDLQVAL ISPQGKSVVL LNHQSSNTNG
+     FKGYFTAQYD EELQALVGQP SWGTWRLEVS DRVSGNSGVL KEWGVSHFAQ YQCSADTTKG
+     SSSGGSGGSG SPLALLGLLL LSMVRVIRSR
+//

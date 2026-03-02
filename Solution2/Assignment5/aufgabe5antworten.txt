@@ -1,0 +1,8 @@
+Zuerst wurden die ORFs auf Chromosom 1 der Hefe bestimmt. Anschließend wurde gezählt, wie viele ORFs Proteine mit einer Laenge zwischen 76 und 100 Aminosaeuren kodieren (Bin-Groeße 5 AA).
+Für das echte Chromosom 1 (230218 nt, GC ≈ 0.3927) wurden 80 ORFs in diesem Bereich gefunden.
+Zum Vergleich wurden zwei Zufallssequenzen gleicher Laenge erzeugt:
+ - Random mit GC = 0.5 -> 87 ORFs
+ - Random mit GC = 0.3927 -> 42 ORFs
+Der Vergleich zeigt, dass der GC-Gehalt die ORF-Verteilung deutlich beeinflusst. Bei hoeherem GC-Gehalt treten Stopcodons seltener auf, wodurch mehr laengere ORFs entstehen. Die reale Sequenz liegt zwischen beiden Zufallsmodellen und ist daher nicht rein zufaellig organisiert.
+Bonus Aufgabe: In der GFF-Datei wurden Gene auf Ueberlappungen im gleichen Strang geprueft. Ergebnis: Plus-Strang → 2 Ueberlappungen Minus-Strang → 1 Ueberlappung
+Es gibt also auch im Hefe-Genom einige gleichstraengige Ueberlappungen, wenn auch nur wenige.
