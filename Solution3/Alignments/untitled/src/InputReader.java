@@ -19,14 +19,15 @@ public class InputReader {
                 if (line.isEmpty()) continue;
 
                 int colon = line.indexOf(':');
-                if (colon < 0) continue; // kaputte Zeile, ignorieren
+                if (colon < 0) continue;
 
                 String id = line.substring(0, colon).trim();
                 String seq = line.substring(colon + 1).trim();
+                if (id.isEmpty() || seq.isEmpty()) continue;
 
-                if (!id.isEmpty() && !seq.isEmpty()) {
-                    seqs.put(id, new Sequence(id, seq));
-                }
+                Sequence s = new Sequence(seq, id);
+                s.setLength(seq.length());
+                seqs.put(id, s);
             }
         }
 
