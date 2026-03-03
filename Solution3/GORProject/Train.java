@@ -103,7 +103,7 @@ public class Train {
         for (int i = 0; i < len; i++) {
             char centerAA = seq.charAt(i);
             int cAAidx = AA_ORDER.indexOf(centerAA);
-            if (cAAidx == -1) continue; 
+            if (cAAidx == -1) continue;
 
             char centerSS = ss.charAt(i);
             int cSSidx = -1;
@@ -118,7 +118,7 @@ public class Train {
 
                 cSSidx = 2; // Coil
             }
-            
+
             // Now cSSidx is always  0, 1, or 2，wont be skipped by continue
 
 
@@ -181,16 +181,18 @@ public class Train {
     // save model in appropriate format
     private void saveModel(String path, long totalValid, String method) throws IOException {
         try (PrintWriter pw = new PrintWriter(path)) {
+            // Write standard header info first (for Predict.java)
             pw.println("METHOD=" + method);
             pw.println("TOTAL=" + totalValid);
             pw.println("PRIORS=" + stateCounts[0] + "," + stateCounts[1] + "," + stateCounts[2]);
             pw.println();
 
-            if (method.equals("gor1") || method.equals("gor3")) {
-                // GOR I & III Format (Flat Matrix)
-                // We have to sum for CenterAA，generate [State][NeighborAA][WindowPos]
+            if (method.equals("gor1")) {
+                // GOR I Format: Matrix3D (Flat)
+                pw.println("// Matrix3D");
+                pw.println();
 
-                // 1. Cluster count
+                // 1. Marginalize (Sum over CenterAA)
                 long[][][] flatCounts = new long[3][20][WINDOW];
                 for (int cAA = 0; cAA < 20; cAA++) {
                     for (int s = 0; s < 3; s++) {
@@ -202,35 +204,34 @@ public class Train {
                     }
                 }
 
-                // 2. Output in standard form
-                    for (int s = 0; s < 3; s++) {
-                        pw.println("# " + SS_ORDER.charAt(s));
-                        for (int nAA = 0; nAA < 20; nAA++) {
-                            pw.print(AA_ORDER.charAt(nAA));
-                            for (int w = 0; w < WINDOW; w++) {
-                                // GOR I outputs only 1 pattern
-
-                                pw.print("\t" + flatCounts[s][nAA][w]);
-                            }
-                            pw.println();
+                // 2. Output
+                for (int s = 0; s < 3; s++) {
+                    pw.println("=" + SS_ORDER.charAt(s) + "=");
+                    pw.println();
+                    for (int nAA = 0; nAA < 20; nAA++) {
+                        pw.print(AA_ORDER.charAt(nAA));
+                        for (int w = 0; w < WINDOW; w++) {
+                            pw.print("\t" + flatCounts[s][nAA][w]);
                         }
                         pw.println();
                     }
+                    pw.println();
+                }
 
-                } else {
-                // GOR IV (Matrix4D - Pairwise)
-
+            } else {
+                // GOR III & IV Format: Matrix4D (Pairwise)
+                // According to  'head' output, gor3 reference uses Matrix4D
                 pw.println("// Matrix4D");
                 pw.println();
 
                 for (int cAA = 0; cAA < 20; cAA++) {
-                    for (int cSS = 0; cSS < 3; cSS++) {
-                        pw.println("=" + AA_ORDER.charAt(cAA) + "," + SS_ORDER.charAt(cSS) + "=");
-                        pw.println("\t"); // switch
+                    for (int s = 0; s < 3; s++) {
+                        pw.println("=" + AA_ORDER.charAt(cAA) + "," + SS_ORDER.charAt(s) + "=");
+                        pw.println();
                         for (int nAA = 0; nAA < 20; nAA++) {
                             pw.print(AA_ORDER.charAt(nAA));
                             for (int w = 0; w < WINDOW; w++) {
-                                pw.print("\t" + counts[cAA][cSS][nAA][w]);
+                                pw.print("\t" + counts[cAA][s][nAA][w]);
                             }
                             pw.println();
                         }
