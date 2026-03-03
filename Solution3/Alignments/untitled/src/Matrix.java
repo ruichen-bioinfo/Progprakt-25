@@ -1,4 +1,10 @@
 import java.util.Map;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class Matrix {
     private int[][] Matrix;
@@ -15,6 +21,10 @@ public class Matrix {
         int score = Matrix[i][j];
         return score;
 
+    }
+
+    public void readMatrix() {
+        BufferedReader reader = new BufferedReader(FileReader())
     }
 
 
