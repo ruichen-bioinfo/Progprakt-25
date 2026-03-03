@@ -7,16 +7,17 @@ public class Main {
     public static void main(String[] args) {
         Map<String, String> options = parseArgs(args);
         //teilweise noch nicht ganz korrekt für manche flags glaube ich
-        String pairfile = options.get("pair");
+        String pairfile = options.get("pairs");
         String seqlibfile = options.get("seqlib");
         String matrixfile = options.get("m");
-        int gapOpenPenalty = Integer.parseInt(options.get("go"));
-        int gapExtentPenalty = Integer.parseInt(options.get("ge"));
+        int gapOpenPenalty = options.containsKey("go") ? Integer.parseInt(options.get("go")) : -12;
+        int gapExtendPenalty = options.containsKey("ge") ? Integer.parseInt(options.get("ge")) : -1;
+        GapPenalty gapPenalty = new GapPenalty(gapOpenPenalty, gapExtendPenalty);
         String mode = options.get("mode");
-        boolean nw = Boolean.parseBoolean(options.get("nw"));
+        boolean nw = options.containsKey("nw");
         String format = options.get("format");
         String dpmatricesDir = options.get("dpmatrices");
-        boolean check = Boolean.parseBoolean(options.get("check"));
+        boolean check = options.containsKey("check");
 
 
         InputReader inputreader = new InputReader();
@@ -34,14 +35,14 @@ public class Main {
                 //hier das richtige Objekt
                 if (nw) {
                     //--mode <local|global|freeshift>
-                    if (mode == "global"){
-                        AA = new NeedlemanWunschGlobal(s1, s2, scoringMatrix);
+                    if ("global".equals(mode)){
+                        AA = new NeedlemanWunschGlobal(s1, s2, scoringMatrix, gapPenalty);
                     }
-                    else if (mode == "local"){
-                        AA = new NeedlemanWunschLocal(s1, s2, scoringMatrix);
+                    else if ("local".equals(mode)){
+                        AA = new NeedlemanWunschLocal(s1, s2, scoringMatrix, gapPenalty);
                     }
-                    else if (mode == "freeshift"){
-                        AA = new NeedlemanWunschFreeshift(s1, s2, scoringMatrix);
+                    else if ("freeshift".equals(mode)){
+                        AA = new NeedlemanWunschFreeshift(s1, s2, scoringMatrix, gapPenalty);
                     }
                     else {
                         System.err.println("Unknown mode " + mode);
@@ -49,14 +50,14 @@ public class Main {
                     }
                 }
                 else {
-                    if (mode == "global"){
-                        AA = new GotohGlobal(s1, s2, scoringMatrix);
+                    if ("global".equals(mode)){
+                        AA = new GotohGlobal(s1, s2, scoringMatrix, gapPenalty);
                     }
-                    else if (mode == "local"){
-                        AA = new GotohLocal(s1, s2, scoringMatrix);
+                    else if ("local".equals(mode)){
+                        AA = new GotohLocal(s1, s2, scoringMatrix, gapPenalty);
                     }
-                    else if (mode == "freeshift"){
-                        AA = new GotohFreeshift(s1, s2, scoringMatrix);
+                    else if ("freeshift".equals(mode)){
+                        AA = new GotohFreeshift(s1, s2, scoringMatrix, gapPenalty);
                     }
                     else{
                         System.out.println("Unknown mode " + mode);

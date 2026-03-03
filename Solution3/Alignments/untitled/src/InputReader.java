@@ -9,9 +9,11 @@ import java.util.Map;
 
 public class InputReader {
 
+    // liest Seqlib-Datei und baut eine Map
     public Map<String, Sequence> readSeqLib(Path seqlibFile) throws IOException {
         Map<String, Sequence> seqs = new HashMap<>();
 
+        // Datei zeilenweise oeffnen
         try (BufferedReader br = Files.newBufferedReader(seqlibFile)) {
             String line;
             while ((line = br.readLine()) != null) {
@@ -43,12 +45,14 @@ public class InputReader {
                 line = line.trim();
                 if (line.isEmpty()) continue;
 
+                // aufteilen nach beliebig vielen Whitespaces
                 String[] parts = line.split("\\s+");
                 if (parts.length < 2) continue;
 
                 String id1 = parts[0];
                 String id2 = parts[1];
 
+                // alles nach ersten 2 Tokens als Annotation speichern
                 String annotation = "";
                 if (parts.length > 2) {
                     StringBuilder sb = new StringBuilder();
