@@ -1,6 +1,6 @@
 public class GotohLocal extends Gotoh {
-    public GotohLocal(Sequence seq1, Sequence seq2) {
-        super(seq1, seq2);
+    public GotohLocal(Sequence seq1, Sequence seq2, Matrix scoringMatrix) {
+        super(seq1, seq2, scoringMatrix);
     }
 
     @Override

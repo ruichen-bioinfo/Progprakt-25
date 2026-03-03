@@ -4,9 +4,10 @@ public abstract class AlignmentAlgorithm {
     protected Sequence seq2;
     protected Matrix scoringMatrix;
 
-    public AlignmentAlgorithm(Sequence seq1, Sequence seq2) {
+    public AlignmentAlgorithm(Sequence seq1, Sequence seq2, Matrix scoringMatrix) {
         this.seq1 = seq1;
         this.seq2 = seq2;
+        this.scoringMatrix = scoringMatrix;
     }
 
     protected int score(int i, int j) {
