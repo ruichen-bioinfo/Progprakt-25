@@ -23,6 +23,7 @@ public class Main {
         try {
             Map<String, Sequence> seqs = inputreader.readSeqLib(Path.of(seqlibfile));
             List<Pair> pairs = inputreader.readPairs(Path.of(pairfile));
+            Matrix scoringMatrix = Matrix.readMatrix(Path.of(matrixfile));
 
             for(Pair pair : pairs) {
                 Sequence s1 = seqs.get(pair.getId1());
@@ -34,13 +35,13 @@ public class Main {
                 if (nw) {
                     //--mode <local|global|freeshift>
                     if (mode == "global"){
-                        AA = new NeedlemanWunschGlobal(s1, s2);
+                        AA = new NeedlemanWunschGlobal(s1, s2, scoringMatrix);
                     }
                     else if (mode == "local"){
-                        AA = new NeedlemanWunschLocal(s1, s2);
+                        AA = new NeedlemanWunschLocal(s1, s2, scoringMatrix);
                     }
                     else if (mode == "freeshift"){
-                        AA = new NeedlemanWunschFreeshift(s1, s2);
+                        AA = new NeedlemanWunschFreeshift(s1, s2, scoringMatrix);
                     }
                     else {
                         System.err.println("Unknown mode " + mode);
@@ -49,13 +50,13 @@ public class Main {
                 }
                 else {
                     if (mode == "global"){
-                        AA = new GotohGlobal(s1, s2);
+                        AA = new GotohGlobal(s1, s2, scoringMatrix);
                     }
                     else if (mode == "local"){
-                        AA = new GotohLocal(s1, s2);
+                        AA = new GotohLocal(s1, s2, scoringMatrix);
                     }
                     else if (mode == "freeshift"){
-                        AA = new GotohFreeshift(s1, s2);
+                        AA = new GotohFreeshift(s1, s2, scoringMatrix);
                     }
                     else{
                         System.out.println("Unknown mode " + mode);
