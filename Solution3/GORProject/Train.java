@@ -165,27 +165,64 @@ public class Train {
         }
     }
 
-    // save model in Matrix4D format
+    // save model in appropriate format
     private void saveModel(String path, long totalValid, String method) throws IOException {
         try (PrintWriter pw = new PrintWriter(path)) {
             pw.println("METHOD=" + method);
             pw.println("TOTAL=" + totalValid);
             pw.println("PRIORS=" + stateCounts[0] + "," + stateCounts[1] + "," + stateCounts[2]);
-            pw.println("// Matrix4D");
             pw.println();
 
-            for (int cAA = 0; cAA < 20; cAA++) {
-                for (int cSS = 0; cSS < 3; cSS++) {
-                    pw.println("=" + AA_ORDER.charAt(cAA) + "," + SS_ORDER.charAt(cSS) + "=");
-                    pw.println("\t");
+            if (method.equals("gor1") || method.equals("gor3")) {
+                // GOR I & III Format (Flat Matrix)
+                // We have to sum for CenterAA，generate [State][NeighborAA][WindowPos]
+
+                // 1. Cluster count
+                long[][][] flatCounts = new long[3][20][WINDOW];
+                for (int cAA = 0; cAA < 20; cAA++) {
+                    for (int s = 0; s < 3; s++) {
+                        for (int nAA = 0; nAA < 20; nAA++) {
+                            for (int w = 0; w < WINDOW; w++) {
+                                flatCounts[s][nAA][w] += counts[cAA][s][nAA][w];
+                            }
+                        }
+                    }
+                }
+
+                // 2. Output in standard form
+                for (int s = 0; s < 3; s++) {
+                    pw.println("# " + SS_ORDER.charAt(s));
                     for (int nAA = 0; nAA < 20; nAA++) {
                         pw.print(AA_ORDER.charAt(nAA));
                         for (int w = 0; w < WINDOW; w++) {
-                            pw.print("\t" + counts[cAA][cSS][nAA][w]);
+                            // GOR I outputs only 1 pattern
+
+                            pw.print("\t" + flatCounts[s][nAA][w]);
                         }
                         pw.println();
                     }
                     pw.println();
+                }
+
+            } else {
+                // GOR IV (Matrix4D - Pairwise)
+
+                pw.println("// Matrix4D");
+                pw.println();
+
+                for (int cAA = 0; cAA < 20; cAA++) {
+                    for (int cSS = 0; cSS < 3; cSS++) {
+                        pw.println("=" + AA_ORDER.charAt(cAA) + "," + SS_ORDER.charAt(cSS) + "=");
+                        pw.println("\t"); // switch
+                        for (int nAA = 0; nAA < 20; nAA++) {
+                            pw.print(AA_ORDER.charAt(nAA));
+                            for (int w = 0; w < WINDOW; w++) {
+                                pw.print("\t" + counts[cAA][cSS][nAA][w]);
+                            }
+                            pw.println();
+                        }
+                        pw.println();
+                    }
                 }
             }
         }
