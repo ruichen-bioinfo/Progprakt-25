@@ -4,11 +4,13 @@ public abstract class AlignmentAlgorithm {
     protected Sequence seq2;
     protected Matrix scoringMatrix;
     protected Alignment result;
+    protected GapPenalty gapPenalty;
 
-    public AlignmentAlgorithm(Sequence seq1, Sequence seq2, Matrix scoringMatrix) {
+    public AlignmentAlgorithm(Sequence seq1, Sequence seq2, Matrix scoringMatrix, GapPenalty gapPenalty) {
         this.seq1 = seq1;
         this.seq2 = seq2;
         this.scoringMatrix = scoringMatrix;
+        this.gapPenalty = gapPenalty;
     }
 
     public Alignment getResult() {
@@ -23,7 +25,7 @@ public abstract class AlignmentAlgorithm {
         fillMatrix();
         traceback();
     }
-    public abstract void initMatrix();
-    public abstract void fillMatrix();
-    public abstract void traceback();
+    protected abstract void initMatrix();
+    protected abstract void fillMatrix();
+    protected abstract void traceback();
 }
