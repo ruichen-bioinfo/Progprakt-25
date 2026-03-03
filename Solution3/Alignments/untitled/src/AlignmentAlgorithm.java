@@ -3,6 +3,7 @@ public abstract class AlignmentAlgorithm {
     protected Sequence seq1;
     protected Sequence seq2;
     protected Matrix scoringMatrix;
+    protected Alignment result;
 
     public AlignmentAlgorithm(Sequence seq1, Sequence seq2, Matrix scoringMatrix) {
         this.seq1 = seq1;
@@ -10,6 +11,9 @@ public abstract class AlignmentAlgorithm {
         this.scoringMatrix = scoringMatrix;
     }
 
+    public Alignment getResult() {
+        return result;
+    }
     protected int score(int i, int j) {
         return scoringMatrix.score(seq1.charAt(i), seq2.charAt(j));
     }
