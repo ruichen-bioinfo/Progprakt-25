@@ -66,7 +66,7 @@ public class Main {
 
                 }
                 AA.align();
-
+                Alignment alignment = AA.getResult();
 
 
             }
