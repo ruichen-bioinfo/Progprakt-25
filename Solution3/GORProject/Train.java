@@ -117,8 +117,24 @@ public class Train {
 
     private void saveModel(String path, String method) throws IOException {
         try (PrintWriter pw = new PrintWriter(path)) {
-            if (method.equals("gor4")) {
-                // Matrix4D: conditioned on center AA
+            if (method.equals("gor1")) {
+                // GOR I: Matrix3D — marginalized over center AA, keyed by (state, neighborAA, windowPos)
+                pw.println("// Matrix3D");
+                pw.println();
+                for (int s = 0; s < 3; s++) {
+                    pw.println("=" + SS_ORDER.charAt(s) + "=");
+                    pw.println("\t");
+                    for (int nAA = 0; nAA < 20; nAA++) {
+                        pw.print(AA_ORDER.charAt(nAA));
+                        for (int w = 0; w < WINDOW; w++) {
+                            pw.print("\t" + flatCounts[s][nAA][w]);
+                        }
+                        pw.println("\t");
+                    }
+                    pw.println();
+                }
+            } else {
+                // GOR III / GOR IV: Matrix4D — keyed by (centerAA, state, neighborAA, windowPos)
                 pw.println("// Matrix4D");
                 pw.println();
                 for (int cAA = 0; cAA < 20; cAA++) {
@@ -134,22 +150,6 @@ public class Train {
                         }
                         pw.println();
                     }
-                }
-            } else {
-                // GOR I / GOR III: Matrix3D, marginalized over center AA
-                pw.println("// Matrix3D");
-                pw.println();
-                for (int s = 0; s < 3; s++) {
-                    pw.println("=" + SS_ORDER.charAt(s) + "=");
-                    pw.println("\t");
-                    for (int nAA = 0; nAA < 20; nAA++) {
-                        pw.print(AA_ORDER.charAt(nAA));
-                        for (int w = 0; w < WINDOW; w++) {
-                            pw.print("\t" + flatCounts[s][nAA][w]);
-                        }
-                        pw.println("\t");
-                    }
-                    pw.println();
                 }
             }
         }
