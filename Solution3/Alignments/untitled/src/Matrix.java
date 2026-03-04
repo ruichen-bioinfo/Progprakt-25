@@ -83,12 +83,10 @@ public class Matrix {
 
         }
         int[][] matrix = new int[rowCount][colCount];
-        for (int i = 0; i < matrixRows.size(); i++) {
+        for (int i = 0; i < matrixRows.size() && i < rowCount; i++) {
             int[] row = matrixRows.get(i);
-            for (int j = 0; j <= i; j++) {
-                //wegen symmetrie
+            for (int j = 0; j < row.length && j < colCount; j++) {
                 matrix[i][j] = row[j];
-                matrix[j][i] = row[j];
             }
         }
         Map<Character, Integer> map = new HashMap<>();
