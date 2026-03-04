@@ -1,15 +1,26 @@
 public abstract class Gotoh extends AlignmentAlgorithm {
+    protected int[][] M;
+    protected int[][] I;
+    protected int[][] D;
+    protected int gapopen;
+    protected int gapextend;
+    protected int seqLen;
+    protected int seqLen2;
     public Gotoh(Sequence seq1, Sequence seq2, Matrix matrix, GapPenalty gapPenalty) {
         super(seq1, seq2, matrix, gapPenalty);
+        M = new int[seqLen+1][seqLen2+1];
+        I = new int[seqLen+1][seqLen2+1];
+        D = new int[seqLen+1][seqLen2+1];
+
+        gapopen = gapPenalty.getOpen();
+        gapextend = gapPenalty.getExtend();
+
+        this.seqLen = seq1.getLength();
+        this.seqLen2 = seq2.getLength();
     }
 
-    protected int seqLen = seq1.getLength();
-    protected int seqLen2 = seq2.getLength();
-    protected int[][] M = new int[seqLen+1][seqLen2+1];
-    protected int[][] I = new int[seqLen+1][seqLen2+1];
-    protected int[][] D = new int[seqLen+1][seqLen2+1];
-    int gapextend = gapPenalty.getExtend();
-    int gapopen = gapPenalty.getOpen();
+
+
 
     @Override
     protected void fillMatrix(){

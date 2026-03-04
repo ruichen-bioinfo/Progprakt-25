@@ -157,9 +157,14 @@ public class GotohLocal extends Gotoh {
         String prefix2 = seq2string.substring(0,endJ);
         String suffix1 = seq1string.substring(startI,seqLen);
         String suffix2 = seq2string.substring(startJ,seqLen2);
+        int alignstart1 = endI;
+        int alignstart2 = endJ;
+        int alignend1 = startI;
+        int alignend2 = startJ;
 
 
-        this.result = new Alignment(seq1.getID(), seq2.getID(), aligned1.toString(), aligned2.toString(), Aliscore, startI, endI, startJ, endJ);
+
+        this.result = new Alignment(seq1.getID(), seq2.getID(), aligned1.toString(), aligned2.toString(), Aliscore, alignstart1, alignend1, alignstart2, alignend2);
         this.prefix1 = prefix1;
         this.prefix2 = prefix2;
         this.suffix1 = suffix1;

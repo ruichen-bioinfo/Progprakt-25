@@ -21,6 +21,7 @@ public class Matrix {
     public int score(char c, char d) {
         int i = map.get(c);
         int j = map.get(d);
+
         int score = Matrix[i][j];
         return score;
 
@@ -45,9 +46,7 @@ public class Matrix {
                 }
 
                 String[] words = line.split("\\s+");
-                for (int i = 0; i < words.length; i++) {
-                    words[i] = words[i].replaceAll("\\.", "");
-                }
+
 
                 if (line.startsWith("SCORE")){
                     if (Objects.equals(words[1], "similarity")){
@@ -74,7 +73,8 @@ public class Matrix {
                 if (line.startsWith("MATRIX")){
                     int[] row = new int[words.length - 1];
                     for (int i = 1; i < words.length; i++) {
-                        row[i - 1] = Integer.parseInt(words[i]);
+                        String value = words[i].replace(".", "");
+                        row[i - 1] = Integer.parseInt(value);
                     }
                     matrixRows.add(row);
                 }
@@ -85,7 +85,7 @@ public class Matrix {
         int[][] matrix = new int[rowCount][colCount];
         for (int i = 0; i < matrixRows.size(); i++) {
             int[] row = matrixRows.get(i);
-            for (int j = 0; j < row.length; j++) {
+            for (int j = 0; j <= i; j++) {
                 //wegen symmetrie
                 matrix[i][j] = row[j];
                 matrix[j][i] = row[j];
