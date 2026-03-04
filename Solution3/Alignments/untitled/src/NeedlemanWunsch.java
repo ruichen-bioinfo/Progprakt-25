@@ -5,7 +5,7 @@ public abstract class NeedlemanWunsch extends AlignmentAlgorithm {
 
     public NeedlemanWunsch(Sequence seq1, Sequence seq2, Matrix scoringMatrix, GapPenalty gapPenalty) {
         super(seq1, seq2, scoringMatrix, gapPenalty);
-        this.gap = gapPenalty.getOpen(); // NW nutzt nur einen konstanten gap
+        this.gap = gapPenalty.getExtend(); // NW nutzt nur einen konstanten gap
     }
 
     @Override
