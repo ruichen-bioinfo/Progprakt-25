@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="alignment:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/alignment_jar</output-path>
+    <root id="archive" name="alignment_jar.jar">
+      <element id="module-output" name="untitled" />
+      <element id="dir-copy" path="$PROJECT_DIR$/Solution3/Alignments/untitled/src" />
+    </root>
+  </artifact>
+</component>

@@ -84,9 +84,9 @@ public class Main {
         Map<String, String> map = new HashMap<>();
         for (int i = 0; i < args.length; i++) {
             //checken ob arg eine Flag ist
-            if (args[i].startsWith("--")) {
+            if (args[i].startsWith("--") || args[i].startsWith("-")) {
 
-                String key = args[i].substring(2);
+                String key = args[i].replaceFirst("^-+", "");
 
                 //check das nächste Ding keine weitere Flag
                 if (i + 1 < args.length && !args[i + 1].startsWith("--")){
