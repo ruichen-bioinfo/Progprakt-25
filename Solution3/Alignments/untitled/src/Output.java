@@ -26,30 +26,41 @@ public class Output {
         int startJ = ali.getStartJ();
         int endJ   = ali.getEndJ();
 
-        String prefix1 = seq1.substring(0, startI);
-        String prefix2 = seq2.substring(0, startJ);
+        String pre1 = seq1.substring(0, startI);
+        String pre2 = seq2.substring(0, startJ);
+        String suf1 = seq1.substring(endI);
+        String suf2 = seq2.substring(endJ);
 
-        int diff = prefix1.length() - prefix2.length();
+        StringBuilder full1 = new StringBuilder();
+        StringBuilder full2 = new StringBuilder();
 
-        if (diff > 0) {
-            prefix2 = "-".repeat(diff) + prefix2;
-        } else if (diff < 0) {
-            prefix1 = "-".repeat(-diff) + prefix1;
+        // Prefix: nur eine Seite auffüllen
+        if (pre1.length() > pre2.length()) {
+            full1.append(pre1);
+            full2.append("-".repeat(pre1.length() - pre2.length())).append(pre2);
+        } else if (pre2.length() > pre1.length()) {
+            full1.append("-".repeat(pre2.length() - pre1.length())).append(pre1);
+            full2.append(pre2);
+        } else {
+            full1.append(pre1);
+            full2.append(pre2);
         }
 
-        String suffix1 = seq1.substring(endI);
-        String suffix2 = seq2.substring(endJ);
+        // Kern
+        full1.append(a1);
+        full2.append(a2);
 
-        diff = suffix1.length() - suffix2.length();
-
-        if (diff > 0) {
-            suffix2 = suffix2 + "-".repeat(diff);
-        } else if (diff < 0) {
-            suffix1 = suffix1 + "-".repeat(-diff);
+        // Suffix: nur eine Seite auffüllen
+        if (suf1.length() > suf2.length()) {
+            full1.append(suf1);
+            full2.append(suf2).append("-".repeat(suf1.length() - suf2.length()));
+        } else if (suf2.length() > suf1.length()) {
+            full1.append(suf1).append("-".repeat(suf2.length() - suf1.length()));
+            full2.append(suf2);
+        } else {
+            full1.append(suf1);
+            full2.append(suf2);
         }
-
-        String full1 = prefix1 + a1 + suffix1;
-        String full2 = prefix2 + a2 + suffix2;
 
         System.out.println(">" + ali.getId1() + " " + ali.getId2() + " " + ali.getScore());
         System.out.println(ali.getId1() + ": " + full1);
