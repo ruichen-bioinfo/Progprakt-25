@@ -67,6 +67,39 @@ public class NeedlemanWunschLocal extends NeedlemanWunsch {
         int endI = bestI;
         int endJ = bestJ;
 
+        String s1 = seq1.getSequence();
+        String s2 = seq2.getSequence();
+
+        String pre1 = s1.substring(0, startI);
+        String pre2 = s2.substring(0, startJ);
+        String suf1 = s1.substring(endI);
+        String suf2 = s2.substring(endJ);
+
+        StringBuilder full1 = new StringBuilder();
+        StringBuilder full2 = new StringBuilder();
+
+// Prefixe (beide ausgeben)
+        full1.append(pre1);
+        full2.append("-".repeat(pre1.length()));
+
+        full1.append("-".repeat(pre2.length()));
+        full2.append(pre2);
+
+// lokaler Teil
+        full1.append(aligned1);
+        full2.append(aligned2);
+
+// Suffixe (beide ausgeben)
+        full1.append(suf1);
+        full2.append("-".repeat(suf1.length()));
+
+        full1.append("-".repeat(suf2.length()));
+        full2.append(suf2);
+
+        aligned1 = full1.toString();
+        aligned2 = full2.toString();
+
+
         result = new Alignment(seq1.getID(), seq2.getID(), aligned1, aligned2, finalScore, startI, endI, startJ, endJ);
     }
 }
