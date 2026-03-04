@@ -5,13 +5,22 @@ public class Alignment {
     private final String aligned1;
     private final String aligned2;
     private final int score;
+    private final int startI;
+    private final int endI;
+    private final int startJ;
+    private final int endJ;
 
-    public Alignment(String id1, String id2, String aligned1, String aligned2, int score){
+    public Alignment(String id1, String id2, String aligned1, String aligned2, int score, int startI, int endI, int startJ, int endJ) {
         this.id1 = id1;
         this.id2 = id2;
         this.aligned1 = aligned1;
         this.aligned2 = aligned2;
         this.score = score;
+        this.startI = startI;
+        this.endI = endI;
+        this.startJ = startJ;
+        this.endJ = endJ;
+
     }
 
     public String getId1() {
@@ -32,5 +41,17 @@ public class Alignment {
 
     public int getScore() {
         return score;
+    }
+    public int getStartI() {
+        return startI;
+    }
+    public int getEndI() {
+        return endI;
+    }
+    public int getStartJ() {
+        return startJ;
+    }
+    public int getEndJ() {
+        return endJ;
     }
 }

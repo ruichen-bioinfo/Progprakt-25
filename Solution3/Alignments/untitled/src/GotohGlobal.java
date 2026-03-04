@@ -109,7 +109,7 @@ public class GotohGlobal extends Gotoh {
         aligned1.reverse();
         aligned2.reverse();
         int score = Math.max(Math.max(M[seqLen][seqLen2], I[seqLen][seqLen2]), D[seqLen][seqLen2]);
-        this.result = new Alignment(seq1.getID(), seq2.getID(), aligned1.toString(), aligned2.toString(), score);
+        this.result = new Alignment(seq1.getID(), seq2.getID(), aligned1.toString(), aligned2.toString(), score, 0, seqLen, 0, seqLen2);
     }
 
 }
