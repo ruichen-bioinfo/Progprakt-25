@@ -73,8 +73,8 @@ public class Matrix {
                 if (line.startsWith("MATRIX")){
                     int[] row = new int[words.length - 1];
                     for (int i = 1; i < words.length; i++) {
-                        String value = words[i].replace(".", "");
-                        row[i - 1] = Integer.parseInt(value);
+                        double value = Double.parseDouble(words[i]);
+                        row[i - 1] = (int)Math.round(value);
                     }
                     matrixRows.add(row);
                 }
