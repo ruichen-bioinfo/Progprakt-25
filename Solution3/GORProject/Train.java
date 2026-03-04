@@ -172,7 +172,7 @@ public class Train {
                         pw.println();
                     }
                 }
-            } else {
+            } else if (method.equals("gor4")){
                 // GOR IV: Matrix6D — pairwise counts, upper triangular (w1 < w2)
                 // Section =SS,cAA,nAA1,offset= ; rows=nAA2, cols=w2 (0..16)
                 pw.println("// Matrix6D");
