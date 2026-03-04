@@ -87,6 +87,9 @@ public class Train {
 
         int len = seq.length();
         for (int i = 0; i < len; i++) {
+            // Only count positions where the FULL window fits (no partial windows at boundaries)
+            if (i < CENTER || i + CENTER >= len) continue;
+
             char cAA = seq.charAt(i);
             int cAAidx = AA_ORDER.indexOf(cAA);
             if (cAAidx == -1) continue;
@@ -103,13 +106,11 @@ public class Train {
 
             for (int w = 0; w < WINDOW; w++) {
                 int p = i + (w - CENTER);
-                if (p >= 0 && p < len) {
-                    char nAA = seq.charAt(p);
-                    int nAAidx = AA_ORDER.indexOf(nAA);
-                    if (nAAidx != -1) {
-                        flatCounts[cSSidx][nAAidx][w]++;
-                        counts[cAAidx][cSSidx][nAAidx][w]++;
-                    }
+                char nAA = seq.charAt(p); // always in bounds thanks to boundary check above
+                int nAAidx = AA_ORDER.indexOf(nAA);
+                if (nAAidx != -1) {
+                    flatCounts[cSSidx][nAAidx][w]++;
+                    counts[cAAidx][cSSidx][nAAidx][w]++;
                 }
             }
         }
