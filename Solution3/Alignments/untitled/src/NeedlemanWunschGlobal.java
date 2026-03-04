@@ -53,6 +53,12 @@ public class NeedlemanWunschGlobal extends NeedlemanWunsch {
         String aligned2 = a2.reverse().toString();
         int finalScore = dp[seq1.getSequence().length()][seq2.getSequence().length()];
 
-        result = new Alignment(seq1.getID(), seq2.getID(), aligned1, aligned2, finalScore);
+        int n = seq1.getSequence().length();
+        int m = seq2.getSequence().length();
+
+        int startI = 0, endI = n;
+        int startJ = 0, endJ = m;
+
+        result = new Alignment(seq1.getID(), seq2.getID(), aligned1, aligned2, finalScore,startI, endI, startJ, endJ);
     }
 }

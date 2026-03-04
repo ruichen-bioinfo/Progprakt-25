@@ -62,6 +62,11 @@ public class NeedlemanWunschLocal extends NeedlemanWunsch {
         String aligned2 = a2.reverse().toString();
         int finalScore = dp[bestI][bestJ];
 
-        result = new Alignment(seq1.getID(), seq2.getID(), aligned1, aligned2, finalScore);
+        int startI = i;
+        int startJ = j;
+        int endI = bestI;
+        int endJ = bestJ;
+
+        result = new Alignment(seq1.getID(), seq2.getID(), aligned1, aligned2, finalScore, startI, endI, startJ, endJ);
     }
 }
