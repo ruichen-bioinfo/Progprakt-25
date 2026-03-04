@@ -7,13 +7,15 @@ public class Train {
     private static final int WINDOW = 17;
     private static final int CENTER = 8;
 
-    // flatCounts[state][neighborAA][windowPos] 
+    // flatCounts[state][neighborAA][windowPos] — for GOR I/III flat output
     private long[][][] flatCounts = new long[3][20][WINDOW];
-    private long[] stateCounts = new long[3]; 
+    // counts[centerAA][state][neighborAA][windowPos] — for GOR IV per-center output
+    private long[][][][] counts = new long[20][3][20][WINDOW];
+    private long[] stateCounts = new long[3]; // C, E, H totals
 
     public static void main(String[] args) {
         String dbPath = null;
-        String method = "gor3";
+        String method = "gor1";
         String modelPath = null;
 
         for (int i = 0; i < args.length; i++) {
@@ -50,7 +52,7 @@ public class Train {
                 line = line.trim();
                 if (line.startsWith(">")) {
                     if (seqBuilder.length() > 0 && ssBuilder.length() > 0) {
-                        processProtein(seqBuilder.toString(), ssBuilder.toString(), method);
+                        processProtein(seqBuilder.toString(), ssBuilder.toString());
                     }
                     seqBuilder.setLength(0);
                     ssBuilder.setLength(0);
@@ -67,11 +69,10 @@ public class Train {
                 }
             }
             if (seqBuilder.length() > 0 && ssBuilder.length() > 0) {
-                processProtein(seqBuilder.toString(), ssBuilder.toString(), method);
+                processProtein(seqBuilder.toString(), ssBuilder.toString());
             }
 
-            long totalValid = stateCounts[0] + stateCounts[1] + stateCounts[2];
-            saveModel(modelPath, totalValid, method);
+            saveModel(modelPath, method);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -79,27 +80,26 @@ public class Train {
         }
     }
 
-    private void processProtein(String seq, String ss, String method) {
+    private void processProtein(String seq, String ss) {
         seq = seq.replaceAll("\\s+", "");
-        ss = ss.replaceAll("\\s+", "");
+        ss  = ss.replaceAll("\\s+", "");
         if (seq.length() != ss.length()) return;
 
         int len = seq.length();
         for (int i = 0; i < len; i++) {
             char cAA = seq.charAt(i);
             int cAAidx = AA_ORDER.indexOf(cAA);
-            if (cAAidx == -1) continue; // Skip aa
+            if (cAAidx == -1) continue;
 
             char cSS = ss.charAt(i);
-            int cSSidx = -1;
-            // 严格只接受 H, E, C
-            if (cSS == 'H') cSSidx = 2;      // Helix -> index 2
-            else if (cSS == 'E') cSSidx = 1; // Sheet -> index 1
-            else if (cSS == 'C') cSSidx = 0; // Coil  -> index 0
-            else continue; // IGNORE OTHERS
+            int cSSidx;
+            // Strict: only accept H, E, C — skip G, I, B, T, S, -, etc.
+            if      (cSS == 'H') cSSidx = 2; // Helix
+            else if (cSS == 'E') cSSidx = 1; // Sheet
+            else if (cSS == 'C') cSSidx = 0; // Coil
+            else continue;
 
             stateCounts[cSSidx]++;
-
 
             for (int w = 0; w < WINDOW; w++) {
                 int p = i + (w - CENTER);
@@ -108,31 +108,49 @@ public class Train {
                     int nAAidx = AA_ORDER.indexOf(nAA);
                     if (nAAidx != -1) {
                         flatCounts[cSSidx][nAAidx][w]++;
+                        counts[cAAidx][cSSidx][nAAidx][w]++;
                     }
                 }
             }
         }
     }
 
-    private void saveModel(String path, long totalValid, String method) throws IOException {
+    private void saveModel(String path, String method) throws IOException {
         try (PrintWriter pw = new PrintWriter(path)) {
-            // Head
-            pw.println("METHOD=" + method);
-            pw.println("TOTAL=" + totalValid);
-            pw.println("PRIORS=" + stateCounts[0] + "," + stateCounts[1] + "," + stateCounts[2]);
-            pw.println();
-
-            // CEH
-            for (int s = 0; s < 3; s++) {
-                pw.println("# " + SS_ORDER.charAt(s));
-                for (int nAA = 0; nAA < 20; nAA++) {
-                    pw.print(AA_ORDER.charAt(nAA));
-                    for (int w = 0; w < WINDOW; w++) {
-                        pw.print("\t" + flatCounts[s][nAA][w]);
+            if (method.equals("gor4")) {
+                // Matrix4D: conditioned on center AA
+                pw.println("// Matrix4D");
+                pw.println();
+                for (int cAA = 0; cAA < 20; cAA++) {
+                    for (int s = 0; s < 3; s++) {
+                        pw.println("=" + AA_ORDER.charAt(cAA) + "," + SS_ORDER.charAt(s) + "=");
+                        pw.println("\t");
+                        for (int nAA = 0; nAA < 20; nAA++) {
+                            pw.print(AA_ORDER.charAt(nAA));
+                            for (int w = 0; w < WINDOW; w++) {
+                                pw.print("\t" + counts[cAA][s][nAA][w]);
+                            }
+                            pw.println("\t");
+                        }
+                        pw.println();
+                    }
+                }
+            } else {
+                // GOR I / GOR III: Matrix3D, marginalized over center AA
+                pw.println("// Matrix3D");
+                pw.println();
+                for (int s = 0; s < 3; s++) {
+                    pw.println("=" + SS_ORDER.charAt(s) + "=");
+                    pw.println("\t");
+                    for (int nAA = 0; nAA < 20; nAA++) {
+                        pw.print(AA_ORDER.charAt(nAA));
+                        for (int w = 0; w < WINDOW; w++) {
+                            pw.print("\t" + flatCounts[s][nAA][w]);
+                        }
+                        pw.println("\t");
                     }
                     pw.println();
                 }
-                pw.println();
             }
         }
     }
