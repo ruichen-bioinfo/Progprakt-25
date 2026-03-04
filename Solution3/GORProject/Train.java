@@ -9,8 +9,10 @@ public class Train {
 
     // flatCounts[state][neighborAA][windowPos] — for GOR I/III flat output
     private long[][][] flatCounts = new long[3][20][WINDOW];
-    // counts[centerAA][state][neighborAA][windowPos] — for GOR IV per-center output
+    // counts[centerAA][state][neighborAA][windowPos] — for GOR III per-center output
     private long[][][][] counts = new long[20][3][20][WINDOW];
+    // counts6D[state][centerAA][nAA1][w1][nAA2][w2] — for GOR IV pairwise (upper triangular w1<w2)
+    private long[][][][][][] counts6D = new long[3][20][20][WINDOW][20][WINDOW];
     private long[] stateCounts = new long[3]; // C, E, H totals
 
     public static void main(String[] args) {
@@ -117,6 +119,20 @@ public class Train {
                     }
                 }
             }
+            // GOR IV: pairwise counts6D — upper triangular (w1 < w2 only)
+            if (cAAidx != -1) {
+                for (int w1 = 0; w1 < WINDOW; w1++) {
+                    char aa1 = seq.charAt(i + (w1 - CENTER));
+                    int idx1 = AA_ORDER.indexOf(aa1);
+                    if (idx1 == -1) continue;
+                    for (int w2 = w1 + 1; w2 < WINDOW; w2++) {
+                        char aa2 = seq.charAt(i + (w2 - CENTER));
+                        int idx2 = AA_ORDER.indexOf(aa2);
+                        if (idx2 == -1) continue;
+                        counts6D[cSSidx][cAAidx][idx1][w1][idx2][w2]++;
+                    }
+                }
+            }
         }
     }
 
@@ -138,8 +154,8 @@ public class Train {
                     }
                     pw.println();
                 }
-            } else {
-                // GOR III / GOR IV: Matrix4D — keyed by (centerAA, state, neighborAA, windowPos)
+            } else if (method.equals("gor3")) {
+                // GOR III: Matrix4D — keyed by (centerAA, state, neighborAA, windowPos)
                 pw.println("// Matrix4D");
                 pw.println();
                 for (int cAA = 0; cAA < 20; cAA++) {
@@ -154,6 +170,31 @@ public class Train {
                             pw.println("\t");
                         }
                         pw.println();
+                    }
+                }
+            } else {
+                // GOR IV: Matrix6D — pairwise counts, upper triangular (w1 < w2)
+                // Section =SS,cAA,nAA1,offset= ; rows=nAA2, cols=w2 (0..16)
+                pw.println("// Matrix6D");
+                pw.println();
+                for (int s = 0; s < 3; s++) {
+                    for (int cAA = 0; cAA < 20; cAA++) {
+                        for (int nAA1 = 0; nAA1 < 20; nAA1++) {
+                            for (int w1 = 0; w1 < WINDOW; w1++) {
+                                int offset = w1 - CENTER;
+                                pw.println("=" + SS_ORDER.charAt(s) + "," + AA_ORDER.charAt(cAA) + "," + AA_ORDER.charAt(nAA1) + "," + offset + "=");
+                                pw.println("\t");
+                                for (int nAA2 = 0; nAA2 < 20; nAA2++) {
+                                    pw.print(AA_ORDER.charAt(nAA2));
+                                    for (int w2 = 0; w2 < WINDOW; w2++) {
+                                        long val = (w2 > w1) ? counts6D[s][cAA][nAA1][w1][nAA2][w2] : 0L;
+                                        pw.print("\t" + val);
+                                    }
+                                    pw.println("\t");
+                                }
+                                pw.println();
+                            }
+                        }
                     }
                 }
             }
