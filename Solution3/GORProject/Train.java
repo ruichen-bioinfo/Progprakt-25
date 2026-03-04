@@ -3,13 +3,15 @@ import java.util.*;
 
 public class Train {
     private static final String AA_ORDER = "ACDEFGHIKLMNPQRSTVWY";
-    private static final String SS_ORDER = "CEH"; // order: Coil, Extended, Helix
+    //  CEH (Coil, Extended, Helix)
+    private static final String SS_ORDER = "CEH";
+
     private static final int WINDOW = 17;
     private static final int CENTER = 8;
 
     // counts[centerAA][state][neighborAA][windowPos]
     private long[][][][] counts = new long[20][3][20][WINDOW];
-    private long[] stateCounts = new long[3]; // CEH total count
+    private long[] stateCounts = new long[3]; // Total counts for each State
 
     public static void main(String[] args) {
         String dbPath = null;
@@ -42,7 +44,7 @@ public class Train {
                 line = line.trim();
                 if (line.startsWith(">")) {
                     if (seqBuilder.length() > 0 && ssBuilder.length() > 0) {
-                        processPair(seqBuilder.toString(), ssBuilder.toString(), method);
+                        trainPair(seqBuilder.toString(), ssBuilder.toString(), method);
                     }
                     seqBuilder.setLength(0);
                     ssBuilder.setLength(0);
@@ -59,7 +61,7 @@ public class Train {
                 }
             }
             if (seqBuilder.length() > 0 && ssBuilder.length() > 0) {
-                processPair(seqBuilder.toString(), ssBuilder.toString(), method);
+                trainPair(seqBuilder.toString(), ssBuilder.toString(), method);
             }
 
             long totalValid = stateCounts[0] + stateCounts[1] + stateCounts[2];
@@ -71,30 +73,42 @@ public class Train {
         }
     }
 
-    private void processPair(String seq, String ss, String method) {
-    seq = seq.replaceAll("\\s+", "");
-    ss = ss.replaceAll("\\s+", "");
-    if (seq.length() != ss.length()) return;
+    private void trainPair(String seq, String ss, String method) {
+        seq = seq.replaceAll("\\s+", "");
+        ss = ss.replaceAll("\\s+", "");
+        if (seq.length() != ss.length()) return;
 
-    int len = seq.length();
-    for (int i = 0; i < len; i++) {
-        char cAA = seq.charAt(i);
-        int cAAidx = AA_ORDER.indexOf(cAA);
-        if (cAAidx == -1) continue; // Skip un standardized
+        int len = seq.length();
 
-        char cSS = ss.charAt(i);
-        int cSSidx = -1;
-        // Only accept H,E,C
-        if (cSS == 'H') cSSidx = 2;      // Helix -> index 2
-        else if (cSS == 'E') cSSidx = 1; // Sheet -> index 1
-        else if (cSS == 'C') cSSidx = 0; // Coil  -> index 0
-        else continue; // IGNORE! (G, I, B, T, S,)
+        // Skip Boundaries
 
-        stateCounts[cSSidx]++;
+        int startI = CENTER;
+        int endI = len - CENTER;
 
-        for (int w = 0; w < WINDOW; w++) {
-            int p = i + (w - CENTER);
-            if (p >= 0 && p < len) {
+        for (int i = startI; i < endI; i++) {
+            char cAA = seq.charAt(i);
+            int cAAidx = AA_ORDER.indexOf(cAA);
+            if (cAAidx == -1) continue;
+
+            char cSS = ss.charAt(i);
+            int cSSidx = -1;
+
+            // Map SS to 0,1,2 based on SS_ORDER="CEH"
+            // C -> 0
+            // E -> 1
+            // H -> 2
+
+            if (cSS == 'H' || cSS == 'G' || cSS == 'I') cSSidx = 2; // H
+            else if (cSS == 'E' || cSS == 'B') cSSidx = 1;          // E
+            else cSSidx = 0;                                        // C (Coil)
+
+            stateCounts[cSSidx]++;
+
+            // Fill counts
+            for (int w = 0; w < WINDOW; w++) {
+                int p = i + (w - CENTER);
+                // p from 0 to len-1
+
                 char nAA = seq.charAt(p);
                 int nAAidx = AA_ORDER.indexOf(nAA);
                 if (nAAidx != -1) {
@@ -103,17 +117,19 @@ public class Train {
             }
         }
     }
-}
 
     private void saveModel(String path, long totalValid, String method) throws IOException {
         try (PrintWriter pw = new PrintWriter(path)) {
-            // No METHOD, TOTAL, PRIORS lines
+            pw.println("METHOD=" + method);
+            pw.println("TOTAL=" + totalValid);
+            pw.println("PRIORS=" + stateCounts[0] + "," + stateCounts[1] + "," + stateCounts[2]);
+            pw.println();
 
             if (method.equals("gor1")) {
+                //GOR I: Matrix3D
                 pw.println("// Matrix3D");
                 pw.println();
 
-                // Marginalize over centerAA
                 long[][][] flatCounts = new long[3][20][WINDOW];
                 for (int cAA = 0; cAA < 20; cAA++) {
                     for (int s = 0; s < 3; s++) {
@@ -127,25 +143,28 @@ public class Train {
 
                 for (int s = 0; s < 3; s++) {
                     pw.println("=" + SS_ORDER.charAt(s) + "=");
-                    pw.println("\t"); // tab line as in reference
+                    pw.println(); // Empty line after header
                     for (int nAA = 0; nAA < 20; nAA++) {
                         pw.print(AA_ORDER.charAt(nAA));
                         for (int w = 0; w < WINDOW; w++) {
-                            pw.print("\t" + flatCounts[s][nAA][w]);
+                            long val = flatCounts[s][nAA][w];
+                            if (w != CENTER) val = 0; // GOR I only center
+                            pw.print("\t" + val);
                         }
                         pw.println();
                     }
                     pw.println();
                 }
+
             } else {
-                // gor3, gor4: Matrix4D format
+                // GOR III / IV: Matrix4D
                 pw.println("// Matrix4D");
                 pw.println();
 
                 for (int cAA = 0; cAA < 20; cAA++) {
                     for (int s = 0; s < 3; s++) {
                         pw.println("=" + AA_ORDER.charAt(cAA) + "," + SS_ORDER.charAt(s) + "=");
-                        pw.println("\t");
+                        pw.println(); // Empty line
                         for (int nAA = 0; nAA < 20; nAA++) {
                             pw.print(AA_ORDER.charAt(nAA));
                             for (int w = 0; w < WINDOW; w++) {
