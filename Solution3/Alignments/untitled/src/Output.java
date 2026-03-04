@@ -11,13 +11,49 @@ public class Output {
     }
 
     public static void printScores(Alignment ali) {
-        System.out.println(ali.getId1() + "" + ali.getId2() + "" + ali.getScore());
+        System.out.println(ali.getId1() + " " + ali.getId2() + " " + ali.getScore());
     }
 
     public static void printAli(Alignment ali) {
-        System.out.println(">" + ali.getId1() + "" + ali.getId2() + "" + ali.getScore());
-        System.out.println(ali.getId1() + ": " + ali.getAligned1());
-        System.out.println(ali.getId2() + ": " + ali.getAligned2());
+        String seq1 = ali.getSeq1();
+        String seq2 = ali.getSeq2();
+
+        String a1 = ali.getAligned1();
+        String a2 = ali.getAligned2();
+
+        int startI = ali.getStartI();
+        int endI   = ali.getEndI();
+        int startJ = ali.getStartJ();
+        int endJ   = ali.getEndJ();
+
+        String prefix1 = seq1.substring(0, startI);
+        String prefix2 = seq2.substring(0, startJ);
+
+        int diff = prefix1.length() - prefix2.length();
+
+        if (diff > 0) {
+            prefix2 = "-".repeat(diff) + prefix2;
+        } else if (diff < 0) {
+            prefix1 = "-".repeat(-diff) + prefix1;
+        }
+
+        String suffix1 = seq1.substring(endI);
+        String suffix2 = seq2.substring(endJ);
+
+        diff = suffix1.length() - suffix2.length();
+
+        if (diff > 0) {
+            suffix2 = suffix2 + "-".repeat(diff);
+        } else if (diff < 0) {
+            suffix1 = suffix1 + "-".repeat(-diff);
+        }
+
+        String full1 = prefix1 + a1 + suffix1;
+        String full2 = prefix2 + a2 + suffix2;
+
+        System.out.println(">" + ali.getId1() + " " + ali.getId2() + " " + ali.getScore());
+        System.out.println(ali.getId1() + ": " + full1);
+        System.out.println(ali.getId2() + ": " + full2);
     }
 
     public static void printHtml(Alignment ali) {

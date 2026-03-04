@@ -100,6 +100,6 @@ public class NeedlemanWunschLocal extends NeedlemanWunsch {
         aligned2 = full2.toString();
 
 
-        result = new Alignment(seq1.getID(), seq2.getID(), aligned1, aligned2, finalScore, startI, endI, startJ, endJ);
+        result = new Alignment(seq1.getID(), seq2.getID(), aligned1, aligned2, finalScore, startI, endI, startJ, endJ, seq1, seq2);
     }
 }
