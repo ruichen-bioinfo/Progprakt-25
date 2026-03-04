@@ -1,5 +1,3 @@
-import static jdk.internal.org.jline.keymap.KeyMap.esc;
-
 public class Output {
 
     public static void print(Alignment ali,String format) {
