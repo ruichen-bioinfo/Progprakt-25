@@ -90,10 +90,6 @@ public class Train {
             // Only count positions where the FULL window fits (no partial windows at boundaries)
             if (i < CENTER || i + CENTER >= len) continue;
 
-            char cAA = seq.charAt(i);
-            int cAAidx = AA_ORDER.indexOf(cAA);
-            if (cAAidx == -1) continue;
-
             char cSS = ss.charAt(i);
             int cSSidx;
             // Strict: only accept H, E, C — skip G, I, B, T, S, -, etc.
@@ -102,6 +98,10 @@ public class Train {
             else if (cSS == 'C') cSSidx = 0; // Coil
             else continue;
 
+            // Center AA: needed for gor3/gor4 (counts[]), NOT required for gor1 (flatCounts)
+            char cAA = seq.charAt(i);
+            int cAAidx = AA_ORDER.indexOf(cAA); // may be -1 for unknown AAs (X, B, Z, ...)
+
             stateCounts[cSSidx]++;
 
             for (int w = 0; w < WINDOW; w++) {
@@ -109,8 +109,12 @@ public class Train {
                 char nAA = seq.charAt(p); // always in bounds thanks to boundary check above
                 int nAAidx = AA_ORDER.indexOf(nAA);
                 if (nAAidx != -1) {
+                    // gor1: flatCounts marginalizes over center AA - count even if center unknown
                     flatCounts[cSSidx][nAAidx][w]++;
-                    counts[cAAidx][cSSidx][nAAidx][w]++;
+                    // gor3/gor4: counts[] indexed by center AA - skip if center AA is unknown
+                    if (cAAidx != -1) {
+                        counts[cAAidx][cSSidx][nAAidx][w]++;
+                    }
                 }
             }
         }
