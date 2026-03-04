@@ -75,31 +75,40 @@ public class NeedlemanWunschLocal extends NeedlemanWunsch {
         String suf1 = s1.substring(endI);
         String suf2 = s2.substring(endJ);
 
+        int preLen = Math.max(pre1.length(), pre2.length());
+        int sufLen = Math.max(suf1.length(), suf2.length());
+
         StringBuilder full1 = new StringBuilder();
         StringBuilder full2 = new StringBuilder();
 
-// Prefixe (beide ausgeben)
+// Prefix auf gleiche Länge
         full1.append(pre1);
-        full2.append("-".repeat(pre1.length()));
+        full1.append(repeat('-', preLen - pre1.length()));
 
-        full1.append("-".repeat(pre2.length()));
         full2.append(pre2);
+        full2.append(repeat('-', preLen - pre2.length()));
 
 // lokaler Teil
         full1.append(aligned1);
         full2.append(aligned2);
 
-// Suffixe (beide ausgeben)
+// Suffix auf gleiche Länge
         full1.append(suf1);
-        full2.append("-".repeat(suf1.length()));
+        full1.append(repeat('-', sufLen - suf1.length()));
 
-        full1.append("-".repeat(suf2.length()));
         full2.append(suf2);
+        full2.append(repeat('-', sufLen - suf2.length()));
 
         aligned1 = full1.toString();
         aligned2 = full2.toString();
 
 
         result = new Alignment(seq1.getID(), seq2.getID(), aligned1, aligned2, finalScore, startI, endI, startJ, endJ, seq1, seq2);
+    }
+    private static String repeat(char c, int n) {
+        if (n <= 0) return "";
+        char[] arr = new char[n];
+        java.util.Arrays.fill(arr, c);
+        return new String(arr);
     }
 }
