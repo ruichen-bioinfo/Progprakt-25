@@ -137,67 +137,42 @@ public class Train {
     }
 
     private void saveModel(String path, String method) throws IOException {
-        try (PrintWriter pw = new PrintWriter(path)) {
-            if (method.equals("gor1")) {
-                // GOR I: Matrix3D — marginalized over center AA, keyed by (state, neighborAA, windowPos)
-                pw.println("// Matrix3D");
+    try (PrintWriter pw = new PrintWriter(path)) {
+        if (method.equals("gor1")) {
+            // GOR I: Matrix3D format
+            pw.println("// Matrix3D");
+            pw.println();
+            for (int s = 0; s < 3; s++) {
+                pw.println("=" + SS_ORDER.charAt(s) + "=");
+                pw.println("\t");
+                for (int nAA = 0; nAA < 20; nAA++) {
+                    pw.print(AA_ORDER.charAt(nAA));
+                    for (int w = 0; w < WINDOW; w++) {
+                        pw.print("\t" + flatCounts[s][nAA][w]);
+                    }
+                    pw.println("\t");
+                }
                 pw.println();
+            }
+        } else {
+            // GOR III and GOR IV both use Matrix4D format
+            pw.println("// Matrix4D");
+            pw.println();
+            for (int cAA = 0; cAA < 20; cAA++) {
                 for (int s = 0; s < 3; s++) {
-                    pw.println("=" + SS_ORDER.charAt(s) + "=");
+                    pw.println("=" + AA_ORDER.charAt(cAA) + "," + SS_ORDER.charAt(s) + "=");
                     pw.println("\t");
                     for (int nAA = 0; nAA < 20; nAA++) {
                         pw.print(AA_ORDER.charAt(nAA));
                         for (int w = 0; w < WINDOW; w++) {
-                            pw.print("\t" + flatCounts[s][nAA][w]);
+                            pw.print("\t" + counts[cAA][s][nAA][w]);
                         }
                         pw.println("\t");
                     }
                     pw.println();
                 }
-            } else if (method.equals("gor3")) {
-                // GOR III: Matrix4D — keyed by (centerAA, state, neighborAA, windowPos)
-                pw.println("// Matrix4D");
-                pw.println();
-                for (int cAA = 0; cAA < 20; cAA++) {
-                    for (int s = 0; s < 3; s++) {
-                        pw.println("=" + AA_ORDER.charAt(cAA) + "," + SS_ORDER.charAt(s) + "=");
-                        pw.println("\t");
-                        for (int nAA = 0; nAA < 20; nAA++) {
-                            pw.print(AA_ORDER.charAt(nAA));
-                            for (int w = 0; w < WINDOW; w++) {
-                                pw.print("\t" + counts[cAA][s][nAA][w]);
-                            }
-                            pw.println("\t");
-                        }
-                        pw.println();
-                    }
-                }
-            } else {
-                // GOR IV: Matrix6D — pairwise counts, upper triangular (w1 < w2)
-                // Section =SS,cAA,nAA1,offset= ; rows=nAA2, cols=w2 (0..16)
-                pw.println("// Matrix6D");
-                pw.println();
-                for (int s = 0; s < 3; s++) {
-                    for (int cAA = 0; cAA < 20; cAA++) {
-                        for (int nAA1 = 0; nAA1 < 20; nAA1++) {
-                            for (int w1 = 0; w1 < WINDOW; w1++) {
-                                int offset = w1 - CENTER;
-                                pw.println("=" + SS_ORDER.charAt(s) + "," + AA_ORDER.charAt(cAA) + "," + AA_ORDER.charAt(nAA1) + "," + offset + "=");
-                                pw.println("\t");
-                                for (int nAA2 = 0; nAA2 < 20; nAA2++) {
-                                    pw.print(AA_ORDER.charAt(nAA2));
-                                    for (int w2 = 0; w2 < WINDOW; w2++) {
-                                        long val = (w2 > w1) ? counts6D[s][cAA][nAA1][w1][nAA2][w2] : 0L;
-                                        pw.print("\t" + val);
-                                    }
-                                    pw.println("\t");
-                                }
-                                pw.println();
-                            }
-                        }
-                    }
-                }
             }
         }
     }
+}
 }
