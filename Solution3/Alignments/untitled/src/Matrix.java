@@ -7,22 +7,22 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class Matrix {
-    private int[][] Matrix;
+    private double[][] Matrix;
     private Map<Character, Integer> map;
     //similarity = true soll heißen similarity score = false soll heißen distance score
     boolean similarity;
 
-    public Matrix(int[][] matrix, Map<Character, Integer> map, boolean similarity) {
+    public Matrix(double[][] matrix, Map<Character, Integer> map, boolean similarity) {
         this.Matrix = matrix;
         this.map = map;
         this.similarity = similarity;
     }
 
-    public int score(char c, char d) {
+    public double score(char c, char d) {
         int i = map.get(c);
         int j = map.get(d);
 
-        int score = Matrix[i][j];
+        double score = Matrix[i][j];
         return score;
 
     }
@@ -33,7 +33,7 @@ public class Matrix {
         int colCount = 0;
         String rowIndex = null;
         String colIndex = null;
-        List<int[]> matrixRows = new ArrayList<>();
+        List<double[]> matrixRows = new ArrayList<>();
 
 
         try (BufferedReader reader = Files.newBufferedReader(path)) {
@@ -71,10 +71,10 @@ public class Matrix {
 
 
                 if (line.startsWith("MATRIX")){
-                    int[] row = new int[words.length - 1];
+                    double[] row = new double[words.length - 1];
                     for (int i = 1; i < words.length; i++) {
-                        double value = Double.parseDouble(words[i]);
-                        row[i - 1] = (int)Math.round(value);
+                        row[i - 1] = Double.parseDouble(words[i]);
+
                     }
                     matrixRows.add(row);
                 }
@@ -82,9 +82,10 @@ public class Matrix {
             }
 
         }
-        int[][] matrix = new int[rowCount][colCount];
+        double[][] matrix = new double[rowCount][colCount];
+
         for (int i = 0; i < matrixRows.size() && i < rowCount; i++) {
-            int[] row = matrixRows.get(i);
+            double[] row = matrixRows.get(i);
             for (int j = 0; j < row.length && j < colCount; j++) {
                 matrix[i][j] = row[j];
                 matrix[j][i] = row[j];
