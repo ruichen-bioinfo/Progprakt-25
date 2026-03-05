@@ -158,7 +158,7 @@ public class GotohLocal extends Gotoh {
 
 
 
-        this.result = new Alignment(seq1.getID(), seq2.getID(), aligned1.toString(), aligned2.toString(), Aliscore, alignstart1, alignend1, alignstart2, alignend2, seq1, seq2);
+        this.result = new Alignment(seq1.getID(), seq2.getID(), aligned1.toString(), aligned2.toString(), Aliscore, alignstart1, alignend1, alignstart2, alignend2, seq1, seq2, "L");
         this.prefix1 = prefix1;
         this.prefix2 = prefix2;
         this.suffix1 = suffix1;

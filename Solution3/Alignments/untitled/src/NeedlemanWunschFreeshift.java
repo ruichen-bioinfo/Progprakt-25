@@ -95,6 +95,6 @@ public class NeedlemanWunschFreeshift extends NeedlemanWunsch {
                 aligned1, aligned2,
                 finalScore,
                 startI, endI, startJ, endJ,
-                seq1, seq2);
+                seq1, seq2, "F");
     }
 }

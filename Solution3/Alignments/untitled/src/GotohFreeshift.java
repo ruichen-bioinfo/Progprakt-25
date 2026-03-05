@@ -129,7 +129,8 @@ public class GotohFreeshift extends Gotoh{
                 j,
                 startJ,
                 seq1,
-                seq2
+                seq2,
+                "F"
         );
     }
 

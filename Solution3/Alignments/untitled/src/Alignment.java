@@ -11,8 +11,9 @@ public class Alignment {
     private final int endJ;
     private final Sequence seq1;
     private final Sequence seq2;
+    private final String mode; //Global = "G" , Local = "L", Freeshift = "F"
 
-    public Alignment(String id1, String id2, String aligned1, String aligned2, double score, int startI, int endI, int startJ, int endJ, Sequence seq1, Sequence seq2) {
+    public Alignment(String id1, String id2, String aligned1, String aligned2, double score, int startI, int endI, int startJ, int endJ, Sequence seq1, Sequence seq2, String mode) {
         this.id1 = id1;
         this.id2 = id2;
         this.aligned1 = aligned1;
@@ -25,6 +26,7 @@ public class Alignment {
         this.seq1 = seq1;
         this.seq2 = seq2;
 
+        this.mode = mode;
     }
 
     public String getId1() {
@@ -63,5 +65,8 @@ public class Alignment {
     }
     public String getSeq2() {
         return seq2.getSequence();
+    }
+    public String getMode() {
+        return mode;
     }
 }

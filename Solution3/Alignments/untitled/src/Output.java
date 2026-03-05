@@ -14,26 +14,49 @@ public class Output {
         System.out.println(ali.getId1() + " " + ali.getId2() + " " + ali.getScore());
     }
 //test
-    public static void printAli(Alignment ali) {
+public static void printAli(Alignment ali) {
 
-        String seq1 = ali.getSeq1();
-        String seq2 = ali.getSeq2();
+    String seq1 = ali.getSeq1();
+    String seq2 = ali.getSeq2();
 
-        String a1 = ali.getAligned1();
-        String a2 = ali.getAligned2();
+    String mode = ali.getMode();
 
-        int startI = ali.getStartI();
-        int endI   = ali.getEndI();
-        int startJ = ali.getStartJ();
-        int endJ   = ali.getEndJ();
+    String a1 = ali.getAligned1();
+    String a2 = ali.getAligned2();
 
-        String pre1 = seq1.substring(0, startI);
-        String pre2 = seq2.substring(0, startJ);
-        String suf1 = seq1.substring(endI);
-        String suf2 = seq2.substring(endJ);
+    int startI = ali.getStartI();
+    int endI   = ali.getEndI();
+    int startJ = ali.getStartJ();
+    int endJ   = ali.getEndJ();
 
-        StringBuilder full1 = new StringBuilder();
-        StringBuilder full2 = new StringBuilder();
+    String pre1 = seq1.substring(0, startI);
+    String pre2 = seq2.substring(0, startJ);
+
+    String suf1 = seq1.substring(endI);
+    String suf2 = seq2.substring(endJ);
+
+    StringBuilder full1 = new StringBuilder();
+    StringBuilder full2 = new StringBuilder();
+
+    if("L".equals(mode)) {
+
+        full1.append(pre1);
+        full2.append("-".repeat(pre1.length()));
+
+        full1.append("-".repeat(pre2.length()));
+        full2.append(pre2);
+
+        full1.append(a1);
+        full2.append(a2);
+
+        full1.append(suf1);
+        full2.append("-".repeat(suf1.length()));
+
+        full1.append("-".repeat(suf2.length()));
+        full2.append(suf2);
+    }
+    else {
+
 
         // Prefix ausgleichen
         int maxPre = Math.max(pre1.length(), pre2.length());
@@ -49,10 +72,12 @@ public class Output {
         full1.append(suf1).append("-".repeat(maxSuf - suf1.length()));
         full2.append(suf2).append("-".repeat(maxSuf - suf2.length()));
 
-        System.out.println(">" + ali.getId1() + " " + ali.getId2() + " " + ali.getScore());
-        System.out.println(ali.getId1() + ": " + full1);
-        System.out.println(ali.getId2() + ": " + full2);
     }
+
+    System.out.println(">" + ali.getId1() + " " + ali.getId2() + " " + ali.getScore());
+    System.out.println(ali.getId1() + ": " + full1);
+    System.out.println(ali.getId2() + ": " + full2);
+}
 
     public static void printHtml(Alignment ali) {
         String a1 = ali.getAligned1();

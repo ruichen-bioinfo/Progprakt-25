@@ -59,6 +59,6 @@ public class NeedlemanWunschGlobal extends NeedlemanWunsch {
         int startI = 0, endI = n;
         int startJ = 0, endJ = m;
 
-        result = new Alignment(seq1.getID(), seq2.getID(), aligned1, aligned2, finalScore,startI, endI, startJ, endJ, seq1, seq2);
+        result = new Alignment(seq1.getID(), seq2.getID(), aligned1, aligned2, finalScore,startI, endI, startJ, endJ, seq1, seq2,"G");
     }
 }

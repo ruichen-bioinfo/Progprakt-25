@@ -127,7 +127,8 @@ public class GotohGlobal extends Gotoh {
                 0,
                 seqLen2,
                 seq1,
-                seq2
+                seq2,
+                "G"
         );
     }
 
