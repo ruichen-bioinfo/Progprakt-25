@@ -34,4 +34,7 @@ public abstract class NeedlemanWunsch extends AlignmentAlgorithm {
     protected double left(int i, int j) {
         return dp[i][j - 1] + gap;
     }
+    protected static boolean eq(double a, double b) {
+        return Math.abs(a - b) < 1e-6;
+    }
 }

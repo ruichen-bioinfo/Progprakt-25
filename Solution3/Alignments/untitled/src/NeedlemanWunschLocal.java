@@ -23,7 +23,7 @@ public class NeedlemanWunschLocal extends NeedlemanWunsch {
         double up = up(i, j);
         double left = left(i, j);
 
-        double val = Math.max(0, Math.max(diag, Math.max(up, left)));
+        double val = Math.max(0.0, Math.max(diag, Math.max(up, left)));
 
         if (val > dp[bestI][bestJ]) {
             bestI = i;
@@ -41,13 +41,14 @@ public class NeedlemanWunschLocal extends NeedlemanWunsch {
         StringBuilder a1 = new StringBuilder();
         StringBuilder a2 = new StringBuilder();
 
-        while (i > 0 && j > 0 && dp[i][j] > 0) {
-            if (dp[i][j] == dp[i - 1][j - 1] + score(i - 1, j - 1)) {
+        while (i > 0 && j > 0 && dp[i][j] > 1e-12) {
+            double cur = dp[i][j];
+            if (eq(cur, dp[i - 1][j - 1] + score(i - 1, j - 1))) {
                 a1.append(seq1.charAt(i - 1));
                 a2.append(seq2.charAt(j - 1));
                 i--;
                 j--;
-            } else if (dp[i][j] == dp[i - 1][j] + gap) {
+            } else if (eq(cur, dp[i - 1][j] + gap)) {
                 a1.append(seq1.charAt(i - 1));
                 a2.append('-');
                 i--;
