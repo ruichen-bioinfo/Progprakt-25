@@ -6,7 +6,7 @@ public class GotohGlobal extends Gotoh {
     @Override
     public void initMatrix() {
 
-        int negInf = Integer.MIN_VALUE / 4;
+        double negInf = Double.NEGATIVE_INFINITY;
 
         M[0][0] = 0;
         I[0][0] = negInf;
@@ -25,6 +25,7 @@ public class GotohGlobal extends Gotoh {
         }
     }
 
+    static final double EPS = 1e-6;
 
     @Override
     public void traceback() {
@@ -41,8 +42,8 @@ public class GotohGlobal extends Gotoh {
 
 
 
-        if (max == M[i][j]) state = 0;
-        else if (max == I[i][j]) state = 1;
+        if (Math.abs(max - M[i][j]) < EPS) state = 0;
+        else if (Math.abs(max - I[i][j]) < EPS) state = 1;
         else state = 2;
 
         while (i > 0 || j > 0) {
@@ -64,16 +65,16 @@ public class GotohGlobal extends Gotoh {
 
             if (state == 0) {
 
-                int score = scoringMatrix.score(seq1.charAt(i-1), seq2.charAt(j-1));
+                double score = scoringMatrix.score(seq1.charAt(i-1), seq2.charAt(j-1));
 
-                if (i > 0 && j > 0 && M[i][j] == M[i-1][j-1] + score) {
+                if (i > 0 && j > 0 && Math.abs(M[i][j] - (M[i-1][j-1] + score))<EPS) {
                     aligned1.append(seq1.charAt(i-1));
                     aligned2.append(seq2.charAt(j-1));
                     i--;
                     j--;
                     state = 0;
                 }
-                else if (M[i][j] == I[i][j]) {
+                else if (Math.abs(M[i][j] - I[i][j]) < EPS) {
                     state = 1;
                 }
                 else {
@@ -86,7 +87,7 @@ public class GotohGlobal extends Gotoh {
                 aligned1.append(seq1.charAt(i-1));
                 aligned2.append('-');
 
-                if (I[i][j] == M[i-1][j] + gapopen + gapextend) {
+                if (Math.abs(I[i][j] - (M[i-1][j] + gapopen + gapextend))< EPS) {
                     state = 0;
                 } else {
                     state = 1;
@@ -100,7 +101,7 @@ public class GotohGlobal extends Gotoh {
                 aligned1.append('-');
                 aligned2.append(seq2.charAt(j-1));
 
-                if (D[i][j] == M[i][j-1] + gapopen + gapextend) {
+                if (Math.abs(D[i][j] - (M[i][j-1] + gapopen + gapextend))<EPS) {
                     state = 0;
                 } else {
                     state = 2;
@@ -113,7 +114,7 @@ public class GotohGlobal extends Gotoh {
         aligned1.reverse();
         aligned2.reverse();
 
-        int score = Math.max(Math.max(M[seqLen][seqLen2], I[seqLen][seqLen2]), D[seqLen][seqLen2]);
+        double score = Math.max(Math.max(M[seqLen][seqLen2], I[seqLen][seqLen2]), D[seqLen][seqLen2]);
 
         this.result = new Alignment(
                 seq1.getID(),

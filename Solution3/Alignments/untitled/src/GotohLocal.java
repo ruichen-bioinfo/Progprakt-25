@@ -9,8 +9,8 @@ public class GotohLocal extends Gotoh {
 
     @Override
     public void initMatrix() {
-        int zero = 0;
-        int neginf = Integer.MIN_VALUE / 2;
+        double zero = 0;
+        double neginf = Double.NEGATIVE_INFINITY;
 
         M[0][0] = 0;
         I[0][0] = neginf;
@@ -36,14 +36,14 @@ public class GotohLocal extends Gotoh {
     }
 
 
-
+    static final double EPS = 1e-6;
 
     @Override
     public void traceback() {
         StringBuilder aligned1 = new StringBuilder();
         StringBuilder aligned2 = new StringBuilder();
         int current = 0;
-        int maxscore = Integer.MIN_VALUE;
+        double maxscore = Double.NEGATIVE_INFINITY;
         int currentscoreM = 0;
         int currentscoreD = 0;
         int currentscoreI = 0;
@@ -72,12 +72,13 @@ public class GotohLocal extends Gotoh {
                 }
             }
         }
-        int Aliscore = maxscore;
+        double Aliscore = maxscore;
 
         int i = startI;
         int j = startJ;
         int endI = 0;
         int endJ = 0;
+
         while (true) {
             if (current == 1 && M[i][j] == 0) break;
             if (current == 2 && I[i][j] == 0) break;
@@ -97,15 +98,15 @@ public class GotohLocal extends Gotoh {
             }
 
             if (current == 1){
-                int score = scoringMatrix.score(seq1.charAt(i-1), seq2.charAt(j-1));
-                if (M[i][j] == M[i-1][j-1] + score) {
+                double score = scoringMatrix.score(seq1.charAt(i-1), seq2.charAt(j-1));
+                if (Math.abs(M[i][j] - (M[i-1][j-1] + score)) < EPS) {
                     current = 1;
                     aligned1.append(seq1.charAt(i-1));
                     aligned2.append(seq2.charAt(j-1));
                     i--;
                     j--;
                 }
-                else if (M[i][j] == D[i][j]) {
+                else if (Math.abs(M[i][j] - D[i][j]) < EPS) {
                     current = 3;
                 }
                 else {
@@ -113,29 +114,32 @@ public class GotohLocal extends Gotoh {
                 }
 
             }
-            else if (current == 2){
-                if (I[i][j] == I[i-1][j] + gapextend){
+            else if (current == 2) {
+
+                if (Math.abs(I[i][j] - (I[i-1][j] + gapextend)) < EPS) {
                     current = 2;
                 }
-                else if (I[i][j] == M[i-1][j] + gapopen + gapextend){
+                else if (Math.abs(I[i][j] - (M[i-1][j] + gapopen + gapextend)) < EPS) {
                     current = 1;
                 }
+
                 aligned1.append(seq1.charAt(i-1));
                 aligned2.append('-');
                 i--;
             }
-            else if (current == 3){
-                if (D[i][j] == D[i][j-1] + gapextend){
+            else if (current == 3) {
+
+                if (Math.abs(D[i][j] - (D[i][j-1] + gapextend)) < EPS) {
                     current = 3;
                 }
-                else if (D[i][j] == M[i][j-1] + gapopen + gapextend){
+                else if (Math.abs(D[i][j] - (M[i][j-1] + gapopen + gapextend)) < EPS) {
                     current = 1;
                 }
+
                 aligned1.append('-');
                 aligned2.append(seq2.charAt(j-1));
                 j--;
             }
-
 
 
         }

@@ -4,6 +4,8 @@ import java.util.*;
 
 public class Main {
 
+    static final double EPS = 1e-6;
+
     private static final String HELP =
             "Syntax:\n" +
                     "java -jar alignment.jar [--go <gapopen>] [--ge <gapextend>] " +
@@ -103,10 +105,10 @@ public class Main {
                 Alignment ali = alg.getResult();
 
                 if(check){
-                    int recalculated =
+                    double recalculated =
                             CheckScore.score(ali,matrix,gapPenalty);
 
-                    if(recalculated != ali.getScore()){
+                    if(Math.abs(recalculated - ali.getScore()) > EPS){
                         Output.print(ali,format);
                     }
                 } else {
