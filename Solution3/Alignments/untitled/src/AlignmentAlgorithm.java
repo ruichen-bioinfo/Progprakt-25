@@ -16,7 +16,7 @@ public abstract class AlignmentAlgorithm {
     public Alignment getResult() {
         return result;
     }
-    protected int score(int i, int j) {
+    protected double score(int i, int j) {
         return scoringMatrix.score(seq1.charAt(i), seq2.charAt(j));
     }
 

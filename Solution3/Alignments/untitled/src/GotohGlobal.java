@@ -37,7 +37,9 @@ public class GotohGlobal extends Gotoh {
 
         int state; // 0 = M, 1 = I, 2 = D
 
-        int max = Math.max(Math.max(M[i][j], I[i][j]), D[i][j]);
+        double max = Math.max(Math.max(M[i][j], I[i][j]), D[i][j]);
+
+
 
         if (max == M[i][j]) state = 0;
         else if (max == I[i][j]) state = 1;

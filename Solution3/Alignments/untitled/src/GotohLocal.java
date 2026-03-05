@@ -31,7 +31,7 @@ public class GotohLocal extends Gotoh {
     }
 
     @Override
-    protected int adjust(int value){
+    protected double adjust(double value){
         return Math.max(0, value);
     }
 
