@@ -1,11 +1,11 @@
 public class CheckScore {
 
     // berechnet den Score für ein fertiges Alignment (mit '-' als Gap)
-    public static int score(Alignment ali, Matrix matrix, GapPenalty gapPenalty) {
+    public static double score(Alignment ali, Matrix matrix, GapPenalty gapPenalty) {
         String a1 = ali.getAligned1();
         String a2 = ali.getAligned2();
 
-        int total = 0;
+        double total = 0.0;
         int i = 0;
 
         while (i < a1.length()) {

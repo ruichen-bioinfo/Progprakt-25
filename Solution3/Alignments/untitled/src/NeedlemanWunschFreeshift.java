@@ -12,7 +12,7 @@ public class NeedlemanWunschFreeshift extends NeedlemanWunsch {
         int n = seq1.getSequence().length();
         int m = seq2.getSequence().length();
 
-        dp = new int[n + 1][m + 1];
+        dp = new double[n + 1][m + 1];
 
         // keine Strafe für führende Gaps
         for (int i = 0; i <= n; i++) dp[i][0] = 0;
@@ -23,10 +23,10 @@ public class NeedlemanWunschFreeshift extends NeedlemanWunsch {
     }
 
     @Override
-    protected int computeCellValue(int i, int j) {
-        int diag = diag(i, j);
-        int up = up(i, j);
-        int left = left(i, j);
+    protected double computeCellValue(int i, int j) {
+        double diag = diag(i, j);
+        double up = up(i, j);
+        double left = left(i, j);
         return Math.max(diag, Math.max(up, left));
     }
 
@@ -38,7 +38,7 @@ public class NeedlemanWunschFreeshift extends NeedlemanWunsch {
         int m = seq2.getSequence().length();
 
         // bestes Ende liegt in letzter Zeile oder letzter Spalte
-        int bestScore = Integer.MIN_VALUE;
+        double bestScore = Integer.MIN_VALUE;
 
         for (int j = 0; j <= m; j++) {
             if (dp[n][j] > bestScore) {
@@ -84,7 +84,7 @@ public class NeedlemanWunschFreeshift extends NeedlemanWunsch {
 
         String aligned1 = a1.reverse().toString();
         String aligned2 = a2.reverse().toString();
-        int finalScore = dp[bestI][bestJ];
+        double finalScore = dp[bestI][bestJ];
 
         int startI = i;
         int startJ = j;

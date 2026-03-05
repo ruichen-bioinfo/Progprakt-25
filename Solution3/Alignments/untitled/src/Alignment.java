@@ -4,7 +4,7 @@ public class Alignment {
     private final String id2;
     private final String aligned1;
     private final String aligned2;
-    private final int score;
+    private final double score;
     private final int startI;
     private final int endI;
     private final int startJ;
@@ -12,7 +12,7 @@ public class Alignment {
     private final Sequence seq1;
     private final Sequence seq2;
 
-    public Alignment(String id1, String id2, String aligned1, String aligned2, int score, int startI, int endI, int startJ, int endJ, Sequence seq1, Sequence seq2) {
+    public Alignment(String id1, String id2, String aligned1, String aligned2, double score, int startI, int endI, int startJ, int endJ, Sequence seq1, Sequence seq2) {
         this.id1 = id1;
         this.id2 = id2;
         this.aligned1 = aligned1;
@@ -43,7 +43,7 @@ public class Alignment {
         return aligned2;
     }
 
-    public int getScore() {
+    public double getScore() {
         return score;
     }
     public int getStartI() {

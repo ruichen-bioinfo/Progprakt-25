@@ -12,18 +12,18 @@ public class NeedlemanWunschLocal extends NeedlemanWunsch {
         int n = seq1.getSequence().length();
         int m = seq2.getSequence().length();
 
-        dp = new int[n + 1][m + 1];
+        dp = new double[n + 1][m + 1];
         bestI = 0;
         bestJ = 0;
     }
 
     @Override
-    protected int computeCellValue(int i, int j) {
-        int diag = diag(i, j);
-        int up = up(i, j);
-        int left = left(i, j);
+    protected double computeCellValue(int i, int j) {
+        double diag = diag(i, j);
+        double up = up(i, j);
+        double left = left(i, j);
 
-        int val = Math.max(0, Math.max(diag, Math.max(up, left)));
+        double val = Math.max(0, Math.max(diag, Math.max(up, left)));
 
         if (val > dp[bestI][bestJ]) {
             bestI = i;
@@ -60,7 +60,7 @@ public class NeedlemanWunschLocal extends NeedlemanWunsch {
 
         String aligned1 = a1.reverse().toString();
         String aligned2 = a2.reverse().toString();
-        int finalScore = dp[bestI][bestJ];
+        double finalScore = dp[bestI][bestJ];
 
         int startI = i;
         int startJ = j;
