@@ -16,7 +16,7 @@ public class GapPenalty {
     // affine open + (len-1) * extend
     public int cost(int len) {
         if (len <= 0) return 0;
-        return open + (len-1) * extend;
+        return open + len * extend;
     }
     // für NW linear
     public int linearCost() {

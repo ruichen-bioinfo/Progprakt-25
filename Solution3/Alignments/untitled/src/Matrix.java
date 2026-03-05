@@ -87,6 +87,7 @@ public class Matrix {
             int[] row = matrixRows.get(i);
             for (int j = 0; j < row.length && j < colCount; j++) {
                 matrix[i][j] = row[j];
+                matrix[j][i] = row[j];
             }
         }
         Map<Character, Integer> map = new HashMap<>();

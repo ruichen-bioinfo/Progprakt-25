@@ -10,21 +10,22 @@ public class GotohLocal extends Gotoh {
     @Override
     public void initMatrix() {
         int zero = 0;
+        int neginf = Integer.MIN_VALUE / 2;
 
         M[0][0] = 0;
-        I[0][0] = zero;
-        D[0][0] = zero;
+        I[0][0] = neginf;
+        D[0][0] = neginf;
 
         for (int i = 1; i <= seqLen; i++){
             M[i][0] = zero;
-            D[i][0] = zero;
-            I[i][0] = zero;
+            D[i][0] = neginf;
+            I[i][0] = neginf;
         }
 
         for (int j = 1; j <= seqLen2; j++){
             M[0][j] = zero;
-            D[0][j] = zero;
-            I[0][j] = zero;
+            D[0][j] = neginf;
+            I[0][j] = neginf;
         }
 
     }
@@ -48,26 +49,24 @@ public class GotohLocal extends Gotoh {
         int currentscoreI = 0;
         int startI = 0;
         int startJ = 0;
+
         for (int i = 0; i <= seqLen; i++) {
             for (int j = 0; j <= seqLen2; j++) {
-                currentscoreM = M[i][j];
-                currentscoreD = D[i][j];
-                currentscoreI = I[i][j];
-                if (currentscoreM > maxscore) {
-                    maxscore = currentscoreM;
+                if (M[i][j] > maxscore) {
+                    maxscore = M[i][j];
                     current = 1;
                     startI = i;
                     startJ = j;
                 }
-                if (currentscoreD > maxscore) {
-                    maxscore = currentscoreD;
-                    current = 3;
+                if (I[i][j] > maxscore){
+                    maxscore = I[i][j];
+                    current = 2;
                     startI = i;
                     startJ = j;
                 }
-                if (currentscoreI > maxscore) {
-                    maxscore = currentscoreI;
-                    current = 2;
+                if (D[i][j] > maxscore){
+                    maxscore = D[i][j];
+                    current = 3;
                     startI = i;
                     startJ = j;
                 }
@@ -99,32 +98,27 @@ public class GotohLocal extends Gotoh {
 
             if (current == 1){
                 int score = scoringMatrix.score(seq1.charAt(i-1), seq2.charAt(j-1));
-                if (M[i][j] == I[i-1][j-1] + score){
-                    current = 2;
-
+                if (M[i][j] == M[i-1][j-1] + score) {
+                    current = 1;
+                    aligned1.append(seq1.charAt(i-1));
+                    aligned2.append(seq2.charAt(j-1));
+                    i--;
+                    j--;
                 }
-                else if (M[i][j] == D[i-1][j-1] + score){
+                else if (M[i][j] == D[i][j]) {
                     current = 3;
-
                 }
                 else {
-                    current = 1;
-
-
+                    current = 2;
                 }
-                aligned1.append(seq1.charAt(i-1));
-                aligned2.append(seq2.charAt(j-1));
-                i--;
-                j--;
+
             }
             else if (current == 2){
                 if (I[i][j] == I[i-1][j] + gapextend){
                     current = 2;
-
                 }
-                else {
+                else if (I[i][j] == M[i-1][j] + gapopen + gapextend){
                     current = 1;
-
                 }
                 aligned1.append(seq1.charAt(i-1));
                 aligned2.append('-');
@@ -133,15 +127,13 @@ public class GotohLocal extends Gotoh {
             else if (current == 3){
                 if (D[i][j] == D[i][j-1] + gapextend){
                     current = 3;
-
                 }
-                else{
+                else if (D[i][j] == M[i][j-1] + gapopen + gapextend){
                     current = 1;
                 }
                 aligned1.append('-');
                 aligned2.append(seq2.charAt(j-1));
                 j--;
-
             }
 
 

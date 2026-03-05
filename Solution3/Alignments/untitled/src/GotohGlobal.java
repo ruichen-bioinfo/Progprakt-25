@@ -5,24 +5,24 @@ public class GotohGlobal extends Gotoh {
 
     @Override
     public void initMatrix() {
-        int negInf = Integer.MIN_VALUE / 2;
+
+        int negInf = Integer.MIN_VALUE / 4;
 
         M[0][0] = 0;
         I[0][0] = negInf;
         D[0][0] = negInf;
 
-        for (int i = 1; i <= seqLen; i++){
-            M[i][0] = negInf;
+        for (int i = 1; i <= seqLen; i++) {
+            M[i][0] = gapopen + gapextend * i;
+            //I[i][0] = negInf;
             D[i][0] = negInf;
-            I[i][0] = gapopen + i * gapextend;
         }
 
-        for (int j = 1; j <= seqLen2; j++){
-            M[0][j] = negInf;
-            D[0][j] = gapopen + j * gapextend;
+        for (int j = 1; j <= seqLen2; j++) {
+            M[0][j] = gapopen + gapextend * j;
             I[0][j] = negInf;
+            //D[0][j] = negInf;
         }
-
     }
 
 
@@ -35,11 +35,11 @@ public class GotohGlobal extends Gotoh {
         if (M[seqLen][seqLen2] == maxend) {
             current = 1;
         }
-        else if (D[seqLen][seqLen2] == maxend) {
-            current = 3;
+        else if (I[seqLen][seqLen2] == maxend) {
+            current = 2;
         }
         else {
-            current = 2;
+            current = 3;
         }
         int i = seqLen;
         int j = seqLen2;
@@ -48,6 +48,7 @@ public class GotohGlobal extends Gotoh {
                 aligned1.append('-');
                 aligned2.append(seq2.charAt(j-1));
                 j--;
+                current = 3;
                 continue;
             }
 
@@ -55,54 +56,48 @@ public class GotohGlobal extends Gotoh {
                 aligned1.append(seq1.charAt(i-1));
                 aligned2.append('-');
                 i--;
+                current = 2;
                 continue;
             }
 
-            if (current == 1){
+            if (current == 1) {
                 int score = scoringMatrix.score(seq1.charAt(i-1), seq2.charAt(j-1));
-                if (M[i][j] == I[i-1][j-1] + score){
-                    current = 2;
 
+                if (M[i][j] == M[i-1][j-1] + score) {
+                    aligned1.append(seq1.charAt(i-1));
+                    aligned2.append(seq2.charAt(j-1));
+                    i--;
+                    j--;
+                    current = 1;
                 }
-                else if (M[i][j] == D[i-1][j-1] + score){
-                    current = 3;
-
+                else if (M[i][j] == I[i][j]) {
+                    current = 2;
                 }
                 else {
-                    current = 1;
-
-
+                    current = 3;
                 }
-                aligned1.append(seq1.charAt(i-1));
-                aligned2.append(seq2.charAt(j-1));
-                i--;
-                j--;
             }
             else if (current == 2){
-                if (I[i][j] == I[i-1][j] + gapextend){
-                    current = 2;
-
+                if (I[i][j] == M[i-1][j] + gapopen + gapextend){
+                    current = 1;
                 }
                 else {
-                    current = 1;
-
+                    current = 2;
                 }
                 aligned1.append(seq1.charAt(i-1));
                 aligned2.append('-');
                 i--;
             }
             else if (current == 3){
-                if (D[i][j] == D[i][j-1] + gapextend){
-                    current = 3;
-
-                }
-                else{
+                if (D[i][j] == M[i][j-1] + gapopen + gapextend){
                     current = 1;
+                }
+                else {
+                    current = 3;
                 }
                 aligned1.append('-');
                 aligned2.append(seq2.charAt(j-1));
                 j--;
-
             }
 
         }

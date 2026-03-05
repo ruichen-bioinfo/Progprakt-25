@@ -1,106 +1,143 @@
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
 
 public class Main {
+
+    private static final String HELP =
+            "Syntax:\n" +
+                    "java -jar alignment.jar [--go <gapopen>] [--ge <gapextend>] " +
+                    "[--dpmatrices <dir>] [--check] --pairs <pairfile> --seqlib <seqlibfile> " +
+                    "-m <matrixname> --mode <local|global|freeshift> [--nw] --format <scores|ali|html>";
+
     public static void main(String[] args) {
-        Map<String, String> options = parseArgs(args);
-        //teilweise noch nicht ganz korrekt für manche flags glaube ich
+
+        Map<String,String> options = parseArgs(args);
+
+        if(!options.containsKey("pairs") ||
+                !options.containsKey("seqlib") ||
+                !options.containsKey("m") ||
+                !options.containsKey("mode") ||
+                !options.containsKey("format")) {
+
+            System.out.println(HELP);
+            return;
+        }
+
         String pairfile = options.get("pairs");
         String seqlibfile = options.get("seqlib");
         String matrixfile = options.get("m");
-        int gapOpenPenalty = options.containsKey("go") ? Integer.parseInt(options.get("go")) : -12;
-        int gapExtendPenalty = options.containsKey("ge") ? Integer.parseInt(options.get("ge")) : -1;
-        GapPenalty gapPenalty = new GapPenalty(gapOpenPenalty, gapExtendPenalty);
         String mode = options.get("mode");
-        boolean nw = options.containsKey("nw");
         String format = options.get("format");
-        String dpmatricesDir = options.get("dpmatrices");
+
+        int gapOpen = Integer.parseInt(options.getOrDefault("go","-12"));
+        int gapExtend = Integer.parseInt(options.getOrDefault("ge","-1"));
+
+        boolean nw = options.containsKey("nw");
         boolean check = options.containsKey("check");
 
+        GapPenalty gapPenalty = new GapPenalty(gapOpen,gapExtend);
 
-        InputReader inputreader = new InputReader();
         try {
-            Map<String, Sequence> seqs = inputreader.readSeqLib(Path.of(seqlibfile));
-            List<Pair> pairs = inputreader.readPairs(Path.of(pairfile));
-            Matrix scoringMatrix = Matrix.readMatrix(Path.of(matrixfile));
 
-            for(Pair pair : pairs) {
+            InputReader reader = new InputReader();
+
+            Map<String,Sequence> seqs =
+                    reader.readSeqLib(Path.of(seqlibfile));
+
+            List<Pair> pairs =
+                    reader.readPairs(Path.of(pairfile));
+
+            Matrix matrix =
+                    Matrix.readMatrix(Path.of(matrixfile));
+
+            for(Pair pair : pairs){
+
                 Sequence s1 = seqs.get(pair.getId1());
                 Sequence s2 = seqs.get(pair.getId2());
 
-                AlignmentAlgorithm AA;
+                AlignmentAlgorithm alg;
 
-                //hier das richtige Objekt
-                if (nw) {
-                    //--mode <local|global|freeshift>
-                    if ("global".equals(mode)){
-                        AA = new NeedlemanWunschGlobal(s1, s2, scoringMatrix, gapPenalty);
+                if(nw){
+
+                    switch(mode){
+                        case "global":
+                            alg = new NeedlemanWunschGlobal(s1,s2,matrix,gapPenalty);
+                            break;
+
+                        case "local":
+                            alg = new NeedlemanWunschLocal(s1,s2,matrix,gapPenalty);
+                            break;
+
+                        case "freeshift":
+                            alg = new NeedlemanWunschFreeshift(s1,s2,matrix,gapPenalty);
+                            break;
+
+                        default:
+                            System.out.println(HELP);
+                            return;
                     }
-                    else if ("local".equals(mode)){
-                        AA = new NeedlemanWunschLocal(s1, s2, scoringMatrix, gapPenalty);
-                    }
-                    else if ("freeshift".equals(mode)){
-                        AA = new NeedlemanWunschFreeshift(s1, s2, scoringMatrix, gapPenalty);
-                    }
-                    else {
-                        System.err.println("Unknown mode " + mode);
-                        throw new IllegalArgumentException("Unknown mode " + mode);
+
+                } else {
+
+                    switch(mode){
+                        case "global":
+                            alg = new GotohGlobal(s1,s2,matrix,gapPenalty);
+                            break;
+
+                        case "local":
+                            alg = new GotohLocal(s1,s2,matrix,gapPenalty);
+                            break;
+
+                        case "freeshift":
+                            alg = new GotohFreeshift(s1,s2,matrix,gapPenalty);
+                            break;
+
+                        default:
+                            System.out.println(HELP);
+                            return;
                     }
                 }
-                else {
-                    if ("global".equals(mode)){
-                        AA = new GotohGlobal(s1, s2, scoringMatrix, gapPenalty);
-                    }
-                    else if ("local".equals(mode)){
-                        AA = new GotohLocal(s1, s2, scoringMatrix, gapPenalty);
-                    }
-                    else if ("freeshift".equals(mode)){
-                        AA = new GotohFreeshift(s1, s2, scoringMatrix, gapPenalty);
-                    }
-                    else{
-                        System.out.println("Unknown mode " + mode);
-                        throw new IllegalArgumentException("Unknown mode " + mode);
-                    }
 
+                alg.align();
+                Alignment ali = alg.getResult();
+
+                if(check){
+                    int recalculated =
+                            CheckScore.score(ali,matrix,gapPenalty);
+
+                    if(recalculated != ali.getScore()){
+                        Output.print(ali,format);
+                    }
+                } else {
+                    Output.print(ali,format);
                 }
-                AA.align();
-                Alignment alignment = AA.getResult();
-                Output.print(alignment, format);
-
-
             }
 
-
+        } catch(IOException e){
+            System.out.println(e.getMessage());
         }
-        catch (IOException e) {
-            System.err.println("Error reading seqlib file: " + e.getMessage());
-        }
-
     }
 
     private static Map<String, String> parseArgs(String[] args) {
+
         Map<String, String> map = new HashMap<>();
+
         for (int i = 0; i < args.length; i++) {
-            //checken ob arg eine Flag ist
-            if (args[i].startsWith("--") || args[i].startsWith("-")) {
+
+            if (args[i].startsWith("-")) {
 
                 String key = args[i].replaceFirst("^-+", "");
 
-                //check das nächste Ding keine weitere Flag
-                if (i + 1 < args.length && !args[i + 1].startsWith("--")){
+                if (i + 1 < args.length && !args[i + 1].startsWith("--")) {
                     map.put(key, args[i + 1]);
                     i++;
-                    //wenn weitere Flag dann war es ein boolean arg
                 } else {
                     map.put(key, "true");
                 }
             }
         }
+
         return map;
     }
-
-
-
 }

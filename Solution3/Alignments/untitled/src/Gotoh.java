@@ -31,13 +31,25 @@ public abstract class Gotoh extends AlignmentAlgorithm {
         for (int i = 1; i <= seqLen; i++) {
             for (int j = 1; j <= seqLen2; j++) {
                 int score = scoringMatrix.score(seq1.charAt(i-1), seq2.charAt(j-1));
-                int Mscore = Math.max(Math.max(I[i-1][j-1], D[i-1][j-1]), M[i-1][j-1]) + score;
-                int Iscore = Math.max(I[i-1][j] + gapextend, M[i-1][j] + gapopen + gapextend);
-                int Dscore = Math.max(D[i][j-1]+gapextend, M[i][j-1]+gapopen + gapextend);
 
-                M[i][j] = adjust(Mscore);
-                I[i][j] = adjust(Iscore);
-                D[i][j] = adjust(Dscore);
+                I[i][j] = adjust(Math.max(
+                        I[i-1][j] + gapextend,
+                        M[i-1][j] + gapopen + gapextend
+                ));
+
+                D[i][j] = adjust(Math.max(
+                        D[i][j-1] + gapextend,
+                        M[i][j-1] + gapopen + gapextend
+                ));
+
+                M[i][j] = adjust(Math.max(
+                        M[i-1][j-1] + score,
+                        Math.max(I[i][j], D[i][j])
+                ));
+
+                //M[i][j] = adjust(Mscore);
+                //I[i][j] = adjust(Iscore);
+                //D[i][j] = adjust(Dscore);
             }
         }
     }
