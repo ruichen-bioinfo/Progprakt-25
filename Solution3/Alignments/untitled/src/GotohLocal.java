@@ -44,9 +44,7 @@ public class GotohLocal extends Gotoh {
         StringBuilder aligned2 = new StringBuilder();
         int current = 0;
         double maxscore = Double.NEGATIVE_INFINITY;
-        int currentscoreM = 0;
-        int currentscoreD = 0;
-        int currentscoreI = 0;
+
         int startI = 0;
         int startJ = 0;
 
@@ -58,7 +56,7 @@ public class GotohLocal extends Gotoh {
                     startI = i;
                     startJ = j;
                 }
-                if (I[i][j] > maxscore){
+                /*if (I[i][j] > maxscore){
                     maxscore = I[i][j];
                     current = 2;
                     startI = i;
@@ -69,7 +67,7 @@ public class GotohLocal extends Gotoh {
                     current = 3;
                     startI = i;
                     startJ = j;
-                }
+                }*/
             }
         }
         double Aliscore = maxscore;
@@ -80,9 +78,9 @@ public class GotohLocal extends Gotoh {
         int endJ = 0;
 
         while (true) {
-            if (current == 1 && M[i][j] == 0) break;
-            if (current == 2 && I[i][j] == 0) break;
-            if (current == 3 && D[i][j] == 0) break;
+            if (current == 1 && Math.abs(M[i][j]) < EPS) break;
+            if (current == 2 && Math.abs(I[i][j]) < EPS) break;
+            if (current == 3 && Math.abs(D[i][j]) < EPS) break;
             if (i == 0) {
                 aligned1.append('-');
                 aligned2.append(seq2.charAt(j-1));

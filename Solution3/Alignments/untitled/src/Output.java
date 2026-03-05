@@ -13,8 +13,9 @@ public class Output {
     public static void printScores(Alignment ali) {
         System.out.println(ali.getId1() + " " + ali.getId2() + " " + ali.getScore());
     }
-
+//test
     public static void printAli(Alignment ali) {
+
         String seq1 = ali.getSeq1();
         String seq2 = ali.getSeq2();
 
@@ -34,33 +35,19 @@ public class Output {
         StringBuilder full1 = new StringBuilder();
         StringBuilder full2 = new StringBuilder();
 
-        // Prefix: nur eine Seite auffüllen
-        if (pre1.length() > pre2.length()) {
-            full1.append(pre1);
-            full2.append("-".repeat(pre1.length() - pre2.length())).append(pre2);
-        } else if (pre2.length() > pre1.length()) {
-            full1.append("-".repeat(pre2.length() - pre1.length())).append(pre1);
-            full2.append(pre2);
-        } else {
-            full1.append(pre1);
-            full2.append(pre2);
-        }
+        // Prefix ausgleichen
+        int maxPre = Math.max(pre1.length(), pre2.length());
+        full1.append("-".repeat(maxPre - pre1.length())).append(pre1);
+        full2.append("-".repeat(maxPre - pre2.length())).append(pre2);
 
-        // Kern
+        // Alignment
         full1.append(a1);
         full2.append(a2);
 
-        // Suffix: nur eine Seite auffüllen
-        if (suf1.length() > suf2.length()) {
-            full1.append(suf1);
-            full2.append(suf2).append("-".repeat(suf1.length() - suf2.length()));
-        } else if (suf2.length() > suf1.length()) {
-            full1.append(suf1).append("-".repeat(suf2.length() - suf1.length()));
-            full2.append(suf2);
-        } else {
-            full1.append(suf1);
-            full2.append(suf2);
-        }
+        // Suffix ausgleichen
+        int maxSuf = Math.max(suf1.length(), suf2.length());
+        full1.append(suf1).append("-".repeat(maxSuf - suf1.length()));
+        full2.append(suf2).append("-".repeat(maxSuf - suf2.length()));
 
         System.out.println(">" + ali.getId1() + " " + ali.getId2() + " " + ali.getScore());
         System.out.println(ali.getId1() + ": " + full1);
