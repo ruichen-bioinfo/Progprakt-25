@@ -2,49 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task 10: Genome to Protein Pipeline</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10: Genome to Protein Pipeline - Gruppe 11</title>
     <style>
-        body { font-family: sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; }
-        .form-group { margin-bottom: 20px; border: 1px solid #ddd; padding: 15px; border-radius: 5px; background: #f9f9f9; }
-        label { display: block; font-weight: bold; margin-bottom: 5px; }
-        input[type="file"] { width: 100%; padding: 8px; box-sizing: border-box; }
-        button { background: #e67e22; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; }
-        button:hover { background: #d35400; }
-        a { text-decoration: none; color: #3498db; }
-        .hint { font-size: 0.9em; color: #666; margin-top: 5px; }
+        /* ── Global ── */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333; margin: 0; padding: 0; line-height: 1.6;
+        }
+
+        /* ── Header ── */
+        header {
+            background-color: #2c3e50; color: #ecf0f1;
+            padding: 2rem 0; text-align: center; position: relative;
+        }
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p  { margin: 8px 0 0; font-weight: 300; color: #bdc3c7; font-size: 1rem; }
+        .back-link {
+            position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
+            color: #bdc3c7; text-decoration: none; font-size: 0.9rem;
+        }
+        .back-link:hover { color: white; }
+
+        /* ── Container ── */
+        .container { max-width: 750px; margin: 30px auto; padding: 0 20px; }
+
+        /* ── Card ── */
+        .card {
+            background: white; border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 24px; margin-bottom: 20px;
+        }
+        .card h3 {
+            border-bottom: 2px solid #e67e22; color: #e67e22;
+            font-size: 1.05rem; margin: 0 0 16px; padding-bottom: 8px;
+        }
+        .card p.desc { color: #666; font-size: 0.9rem; margin: 0 0 16px; }
+
+        /* ── Step badge ── */
+        .step-badge {
+            background: #e67e22; border-radius: 50%; color: white;
+            display: inline-block; font-size: 0.8rem; font-weight: 700;
+            height: 22px; line-height: 22px; margin-right: 8px;
+            text-align: center; width: 22px;
+        }
+
+        /* ── Form elements ── */
+        .flabel {
+            display: block; color: #555; font-size: 0.88rem;
+            font-weight: 600; margin: 14px 0 5px;
+        }
+        .flabel:first-child { margin-top: 0; }
+        input[type=file] {
+            border: 1px solid #ccc; border-radius: 5px; color: #333;
+            font-family: inherit; font-size: 0.9rem; outline: none;
+            padding: 8px 10px; width: 100%; box-sizing: border-box;
+            background: #fafafa;
+        }
+        .hint { color: #888; font-size: 0.82rem; margin-top: 5px; }
+        .hint code {
+            background: #f0f0f0; border-radius: 3px;
+            font-size: 0.85rem; padding: 1px 5px;
+        }
+
+        /* ── Pipeline flow diagram ── */
+        .pipeline {
+            align-items: center; display: flex; flex-wrap: wrap;
+            gap: 6px; margin: 12px 0; font-size: 0.85rem;
+        }
+        .pipe-step {
+            background: #fef3e2; border: 1px solid #f0a500; border-radius: 4px;
+            color: #7d4e00; font-family: 'Courier New', monospace;
+            font-size: 0.82rem; padding: 4px 10px;
+        }
+        .pipe-arrow { color: #bdc3c7; font-size: 1rem; }
+
+        /* ── Button ── */
+        .btn {
+            background: #e67e22; border: none; border-radius: 5px; color: white;
+            cursor: pointer; font-family: inherit; font-size: 0.95rem;
+            font-weight: 600; padding: 10px 26px; transition: background 0.15s;
+            margin-top: 18px;
+        }
+        .btn:hover { background: #d35400; }
+
+        footer { text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.8rem; }
     </style>
 </head>
 <body>
 
-    <p><a href="gruppe11.html">&larr; Back to Dashboard</a></p>
+    <!-- ── Header ── -->
+    <header>
+        <a href="gruppe11.html" class="back-link">&larr; Group Home</a>
+        <h1>Genome &rarr; Protein Pipeline</h1>
+        <p>Task 10 &mdash; Gruppe 11 &middot; LMU Programmierpraktikum WS2025/26</p>
+    </header>
 
-    <h1>Genome -> Protein Pipeline</h1>
-    <p>Upload a genome FASTA file and its feature table to extract all protein sequences.</p>
+    <div class="container">
 
-    <form action="cgi-bin/pipeline.py" method="post" enctype="multipart/form-data">
-
-        <div class="form-group">
-            <label>Genome FASTA file:</label>
-            <input type="file" name="genome" required>
-            <div class="hint">
-                Nucleotide sequence of the genome (FASTA format).
+        <!-- ── Pipeline overview ── -->
+        <div class="card">
+            <h3>Pipeline Overview</h3>
+            <p class="desc">
+                Upload a genome FASTA file and its feature table to extract
+                all annotated protein sequences via a three-step pipeline.
+            </p>
+            <div class="pipeline">
+                <span class="pipe-step">genome2orf.py</span>
+                <span class="pipe-arrow">&rarr;</span>
+                <span class="pipe-step">dna2mrna.py</span>
+                <span class="pipe-arrow">&rarr;</span>
+                <span class="pipe-step">mrna2aa.py</span>
             </div>
         </div>
 
-        <div class="form-group">
-            <label>Feature table (tab-separated):</label>
-            <input type="file" name="features" required>
-            <div class="hint">
-                Feature table containing CDS annotations (e.g. from NCBI).
+        <!-- ── Upload Form ── -->
+        <form action="cgi-bin/pipeline.py" method="post" enctype="multipart/form-data">
+
+            <!-- Step 1: Genome file -->
+            <div class="card">
+                <h3><span class="step-badge">1</span> Genome FASTA File</h3>
+                <span class="flabel">Upload nucleotide genome sequence</span>
+                <input type="file" name="genome" required accept=".fasta,.fa,.fna,.txt">
+                <div class="hint">
+                    Nucleotide sequence in FASTA format. Accepted extensions:
+                    <code>.fasta</code> <code>.fa</code> <code>.fna</code>
+                </div>
             </div>
-        </div>
 
-        <button type="submit">Run Pipeline</button>
-    </form>
+            <!-- Step 2: Feature table -->
+            <div class="card">
+                <h3><span class="step-badge">2</span> Feature Table</h3>
+                <span class="flabel">Upload CDS feature annotations (tab-separated)</span>
+                <input type="file" name="features" required accept=".txt,.tsv,.tab">
+                <div class="hint">
+                    Feature table from NCBI containing CDS annotations.
+                    Tab-separated format with columns for start, stop, strand, and locus tag.
+                </div>
+            </div>
 
-    <p style="margin-top: 30px; font-size: 0.9em;">
-        The pipeline runs: <code>genome2orf.py</code> -> <code>dna2mrna.py</code> -> <code>mrna2aa.py</code>
-    </p>
+            <!-- Submit -->
+            <button type="submit" class="btn">Run Pipeline</button>
+
+        </form>
+
+    </div>
+
+    <footer>&copy; 2026 Group 11 &mdash; LMU Munich | Practical Course Bioinformatics</footer>
 
 </body>
 </html>
