@@ -1,51 +1,172 @@
-  GNU nano 7.2                                                                                        task7.html                                                                                        Modified
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Aufgabe 7: Prosite Scanner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7: Prosite Scanner - Gruppe 11</title>
     <style>
-        body { font-family: sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; }
-        .form-group { margin-bottom: 20px; border: 1px solid #ddd; padding: 15px; border-radius: 5px; }
-        label { display: block; font-weight: bold; margin-bottom: 5px; }
-        textarea { width: 100%; height: 150px; font-family: monospace; }
-        input[type="text"] { width: 100%; padding: 8px; box-sizing: border-box; }
-        button { background: #27ae60; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; }
-        button:hover { background: #2ecc71; }
-        a { text-decoration: none; color: #3498db; }
+        /* ── Global ── */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333; margin: 0; padding: 0; line-height: 1.6;
+        }
+
+        /* ── Header ── */
+        header {
+            background-color: #2c3e50; color: #ecf0f1;
+            padding: 2rem 0; text-align: center; position: relative;
+        }
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p  { margin: 8px 0 0; font-weight: 300; color: #bdc3c7; font-size: 1rem; }
+        .back-link {
+            position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
+            color: #bdc3c7; text-decoration: none; font-size: 0.9rem;
+        }
+        .back-link:hover { color: white; }
+
+        /* ── Container ── */
+        .container { max-width: 750px; margin: 30px auto; padding: 0 20px; }
+
+        /* ── Card ── */
+        .card {
+            background: white; border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 24px; margin-bottom: 20px;
+        }
+        .card h3 {
+            border-bottom: 2px solid #27ae60; color: #27ae60;
+            font-size: 1.05rem; margin: 0 0 16px; padding-bottom: 8px;
+        }
+        .card p.desc { color: #666; font-size: 0.9rem; margin: 0 0 16px; }
+
+        /* ── Step badge ── */
+        .step-badge {
+            background: #27ae60; border-radius: 50%; color: white;
+            display: inline-block; font-size: 0.8rem; font-weight: 700;
+            height: 22px; line-height: 22px; margin-right: 8px;
+            text-align: center; width: 22px;
+        }
+
+        /* ── Form elements ── */
+        .flabel {
+            display: block; color: #555; font-size: 0.88rem;
+            font-weight: 600; margin: 14px 0 5px;
+        }
+        .flabel:first-child { margin-top: 0; }
+        input[type=text] {
+            border: 1px solid #ccc; border-radius: 5px; color: #333;
+            font-family: inherit; font-size: 0.9rem; outline: none;
+            padding: 8px 10px; transition: border-color 0.2s;
+            width: 100%; box-sizing: border-box;
+        }
+        input[type=text]:focus { border-color: #27ae60; }
+        textarea {
+            border: 1px solid #ccc; border-radius: 5px; color: #333;
+            font-family: 'Courier New', monospace; font-size: 0.85rem;
+            line-height: 1.5; min-height: 130px; outline: none;
+            padding: 8px 10px; resize: vertical; transition: border-color 0.2s;
+            width: 100%; box-sizing: border-box;
+        }
+        textarea:focus { border-color: #27ae60; }
+        .hint { color: #888; font-size: 0.82rem; margin-top: 5px; }
+
+        /* ── Or divider ── */
+        .or {
+            align-items: center; color: #aaa; display: flex;
+            font-size: 0.82rem; gap: 8px; margin: 12px 0;
+        }
+        .or::before, .or::after { border-top: 1px solid #e0e0e0; content: ''; flex: 1; }
+
+        /* ── Checkbox row ── */
+        .ck-row {
+            align-items: center; display: flex; gap: 8px;
+            margin-bottom: 8px; font-size: 0.9rem;
+        }
+        .ck-row input { accent-color: #27ae60; }
+
+        /* ── Button row ── */
+        .btn-row { align-items: center; display: flex; gap: 12px; margin-top: 18px; }
+        .btn {
+            background: #27ae60; border: none; border-radius: 5px; color: white;
+            cursor: pointer; font-family: inherit; font-size: 0.95rem;
+            font-weight: 600; padding: 10px 26px; transition: background 0.15s;
+        }
+        .btn:hover { background: #2ecc71; }
+        .btn-reset {
+            background: #ecf0f1; border: 1px solid #bdc3c7; border-radius: 5px;
+            color: #555; cursor: pointer; font-family: inherit;
+            font-size: 0.95rem; padding: 10px 20px; transition: background 0.15s;
+        }
+        .btn-reset:hover { background: #dde4e6; }
+
+        footer { text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.8rem; }
     </style>
 </head>
 <body>
 
-    <p><a href="gruppe11.html">&larr; Back to overview</a></p>
+    <!-- ── Header ── -->
+    <header>
+        <a href="gruppe11.html" class="back-link">&larr; Group Home</a>
+        <h1>Prosite Pattern Scanner</h1>
+        <p>Task 7 &mdash; Gruppe 11 &middot; LMU Programmierpraktikum WS2025/26</p>
+    </header>
 
-    <h1>Aufgabe 7: Prosite Pattern Scanner</h1>
+    <div class="container">
 
+        <form action="cgi-bin/psscan.py" method="post">
 
-    <form action="cgi-bin/psscan.py" method="post">
+            <!-- ── Step 1: Sequence Input ── -->
+            <div class="card">
+                <h3><span class="step-badge">1</span> Sequence Input</h3>
+                <p class="desc">Paste a protein sequence in FASTA format.</p>
 
-        <div class="form-group">
-            <label>1. FASTA Sequence Input:</label>
-            <textarea name="fasta" placeholder=">Header&#10;MKTIIALSYIFCLVFADYKDDDD..."></textarea>
-        </div>
+                <span class="flabel">FASTA Sequence</span>
+                <textarea name="fasta"
+                    placeholder=">Header&#10;MKTIIALSYIFCLVFADYKDDDD..."></textarea>
+                <div class="hint">
+                    Include the &gt;header line. Only standard amino acid characters are accepted.
+                </div>
+            </div>
 
-        <div class="form-group">
-            <label>2. Pattern Source Select:</label>
+            <!-- ── Step 2: Pattern Source ── -->
+            <div class="card">
+                <h3><span class="step-badge">2</span> Pattern Source</h3>
+                <p class="desc">Choose a pattern to scan for — either enter it manually or load from Prosite by ID.</p>
 
-            <p><strong>Option A: Manual Pattern</strong></p>
-            <input type="text" name="pattern" placeholder="z.B. [LIVMF]-H-x(2)-G-{STC}">
+                <!-- Option A: manual -->
+                <span class="flabel">Option A &mdash; Manual Pattern</span>
+                <input type="text" name="pattern"
+                    placeholder="e.g. [LIVMF]-H-x(2)-G-{STC}">
+                <div class="hint">
+                    Prosite syntax: <code>[ABC]</code> = any of A,B,C &nbsp;|&nbsp;
+                    <code>{STC}</code> = not S,T,C &nbsp;|&nbsp;
+                    <code>x(2)</code> = any 2 residues
+                </div>
 
-            <p style="text-align: center; margin: 10px 0;">-- OR --</p>
+                <div class="or">or</div>
 
-            <p><strong>Option B: Prosite ID (Web)</strong></p>
-            <input type="checkbox" name="use_web" id="use_web"> <label for="use_web" style="display:inline;">Load From Web</label>
-            <input type="text" name="prosite_id" placeholder="z.B. PS00001" style="margin-top:5px;">
-        </div>
+                <!-- Option B: Prosite ID -->
+                <span class="flabel">Option B &mdash; Load from Prosite (web)</span>
+                <div class="ck-row">
+                    <input type="checkbox" name="use_web" id="use_web">
+                    <label for="use_web">Fetch pattern from Prosite website</label>
+                </div>
+                <input type="text" name="prosite_id" placeholder="e.g. PS00001">
+                <div class="hint">Enter the Prosite pattern ID (PS followed by 5 digits).</div>
+            </div>
 
-        <button type="submit">Scan start</button>
-        <input type="reset" value="Reset" style="margin-left: 10px; padding: 10px;">
-    </form>
+            <!-- ── Submit ── -->
+            <div class="btn-row">
+                <button type="submit" class="btn">Scan Sequence</button>
+                <input type="reset" value="Reset" class="btn-reset">
+            </div>
+
+        </form>
+
+    </div>
+
+    <footer>&copy; 2026 Group 11 &mdash; LMU Munich | Practical Course Bioinformatics</footer>
 
 </body>
 </html>
-
