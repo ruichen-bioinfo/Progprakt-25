@@ -1,12 +1,151 @@
 <!DOCTYPE html>
-<html>
-<head><title>Aufgabe 5</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5: SwissProt AC Search - Gruppe 11</title>
+    <style>
+        /* ── Global ── */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* ── Header ── */
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p  { margin: 8px 0 0; font-weight: 300; color: #bdc3c7; font-size: 1rem; }
+        .back-link {
+            position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
+            color: #bdc3c7; text-decoration: none; font-size: 0.9rem;
+        }
+        .back-link:hover { color: white; }
+
+        /* ── Container ── */
+        .container { max-width: 700px; margin: 30px auto; padding: 0 20px; }
+
+        /* ── Card ── */
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            border-bottom: 2px solid #3498db;
+            color: #2980b9;
+            font-size: 1.05rem;
+            margin: 0 0 16px;
+            padding-bottom: 8px;
+        }
+        .card p.desc { color: #666; font-size: 0.9rem; margin: 0 0 16px; }
+
+        /* ── Form elements ── */
+        .flabel {
+            display: block; color: #555; font-size: 0.88rem;
+            font-weight: 600; margin: 14px 0 5px;
+        }
+        .flabel:first-child { margin-top: 0; }
+        input[type=text] {
+            border: 1px solid #ccc; border-radius: 5px; color: #333;
+            font-family: inherit; font-size: 0.9rem; outline: none;
+            padding: 8px 10px; transition: border-color 0.2s;
+            width: 100%; box-sizing: border-box;
+        }
+        input[type=text]:focus { border-color: #3498db; }
+
+        /* ── Hint text ── */
+        .hint { color: #888; font-size: 0.82rem; margin-top: 5px; }
+
+        /* ── Button ── */
+        .btn {
+            background: #3498db; border: none; border-radius: 5px; color: white;
+            cursor: pointer; font-family: inherit; font-size: 0.95rem;
+            font-weight: 600; padding: 10px 26px; transition: background 0.15s;
+            margin-top: 18px;
+        }
+        .btn:hover { background: #2980b9; }
+
+        /* ── Examples box ── */
+        .examples {
+            background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 5px;
+            font-family: 'Courier New', monospace; font-size: 0.85rem;
+            padding: 10px 14px; margin-top: 8px;
+        }
+        .examples span { color: #2980b9; cursor: pointer; margin-right: 12px; }
+        .examples span:hover { text-decoration: underline; }
+
+        /* ── Footer ── */
+        footer {
+            text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.8rem;
+        }
+    </style>
+</head>
 <body>
-    <h1>SwissProt AC Search</h1>
-    <form action="cgi-bin/acsearch.py" method="get">
-        <label>Accession Number:</label>
-        <input type="text" name="ac" placeholder="P12345">
-        <button type="submit">Get FASTA</button>
-    </form>
+
+    <!-- ── Header ── -->
+    <header>
+        <a href="gruppe11.html" class="back-link">&larr; Group Home</a>
+        <h1>SwissProt AC Search</h1>
+        <p>Task 5 &mdash; Gruppe 11 &middot; LMU Programmierpraktikum WS2025/26</p>
+    </header>
+
+    <div class="container">
+
+        <!-- ── Search Form ── -->
+        <div class="card">
+            <h3>Retrieve FASTA by Accession Number</h3>
+            <p class="desc">
+                Enter a UniProtKB/SwissProt accession number to retrieve the full
+                FASTA sequence entry.
+            </p>
+
+            <form action="cgi-bin/acsearch.py" method="get">
+
+                <span class="flabel">Accession Number</span>
+                <input type="text" name="ac" placeholder="e.g. P12345"
+                       id="ac-input">
+                <div class="hint">
+                    Format: one or two letters followed by five digits (e.g. P12345, Q9Y6K9)
+                </div>
+
+                <!-- Clickable examples -->
+                <span class="flabel">Quick examples</span>
+                <div class="examples">
+                    <span onclick="document.getElementById('ac-input').value='P12345'">P12345</span>
+                    <span onclick="document.getElementById('ac-input').value='Q9Y6K9'">Q9Y6K9</span>
+                    <span onclick="document.getElementById('ac-input').value='P00533'">P00533</span>
+                    <span onclick="document.getElementById('ac-input').value='P68871'">P68871</span>
+                </div>
+
+                <button type="submit" class="btn">Get FASTA</button>
+
+            </form>
+        </div>
+
+        <!-- ── Info box ── -->
+        <div class="card">
+            <h3>About This Tool</h3>
+            <p class="desc">
+                Queries the UniProtKB REST API and returns the sequence in standard
+                FASTA format. Results are displayed directly in the browser.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>&copy; 2026 Group 11 &mdash; LMU Munich | Practical Course Bioinformatics</footer>
+
 </body>
 </html>
