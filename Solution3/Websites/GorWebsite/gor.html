@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOR Secondary Structure Prediction — Gruppe 11</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p  { margin: 8px 0 0; font-weight: 300; color: #bdc3c7; font-size: 1rem; }
+        .back-link {
+            position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
+            color: #bdc3c7; text-decoration: none; font-size: 0.9rem;
+        }
+        .back-link:hover { color: white; }
+
+        .container { max-width: 1000px; margin: 20px auto; padding: 0 20px; }
+
+        /* ── tabs ── */
+        .tabs { display: flex; gap: 0; border-bottom: 2px solid #3498db; flex-wrap: wrap; }
+        .tab-btn {
+            background: white; border: 1px solid #ddd; border-bottom: none;
+            border-radius: 6px 6px 0 0; color: #555; cursor: pointer;
+            font-family: inherit; font-size: 0.92rem; padding: 9px 20px;
+            margin-right: 4px; transition: background 0.15s, color 0.15s;
+        }
+        .tab-btn:hover { background: #eaf4fb; color: #2980b9; }
+        .tab-btn.active { background: #3498db; color: white; border-color: #3498db; font-weight: 600; }
+
+        /* ── panels ── */
+        .panel { display: none; }
+        .panel.active { display: block; }
+
+        /* ── card ── */
+        .card {
+            background: white; border-radius: 0 8px 8px 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 24px; margin-bottom: 20px;
+        }
+        .card h3 {
+            border-bottom: 2px solid #3498db; color: #2980b9;
+            font-size: 1.05rem; margin: 0 0 16px; padding-bottom: 8px;
+        }
+        .card p.desc { color: #666; font-size: 0.9rem; margin: 0 0 16px; }
+
+        /* ── form ── */
+        .flabel {
+            display: block; color: #555; font-size: 0.88rem;
+            font-weight: 600; margin: 14px 0 5px;
+        }
+        .flabel:first-child { margin-top: 0; }
+        input[type=text], textarea, select, input[type=file] {
+            border: 1px solid #ccc; border-radius: 5px; color: #333;
+            font-family: inherit; font-size: 0.9rem; outline: none;
+            padding: 8px 10px; transition: border-color 0.2s; width: 100%; box-sizing: border-box;
+        }
+        input:focus, textarea:focus, select:focus { border-color: #3498db; }
+        textarea { font-family: 'Courier New', monospace; font-size: 0.85rem;
+                   min-height: 110px; resize: vertical; line-height: 1.5; }
+
+        /* ── radio group ── */
+        .rg { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+        .rg label {
+            align-items: center; background: #f8f9fa; border: 1px solid #ddd;
+            border-radius: 5px; cursor: pointer; display: flex;
+            font-size: 0.9rem; gap: 7px; padding: 7px 14px; transition: 0.15s;
+        }
+        .rg label:hover { background: #eaf4fb; border-color: #3498db; }
+        .rg input { accent-color: #3498db; }
+
+        /* ── model list ── */
+        .mlist { display: flex; flex-direction: column; gap: 6px; }
+        .mitem {
+            align-items: center; background: #f8f9fa; border: 1px solid #ddd;
+            border-radius: 5px; cursor: pointer; display: flex;
+            gap: 10px; padding: 8px 14px; transition: 0.15s;
+        }
+        .mitem:hover { background: #eaf4fb; border-color: #3498db; }
+        .mitem input { accent-color: #3498db; }
+        .mbadge {
+            background: #2980b9; border-radius: 4px; color: white;
+            font-size: 0.75rem; font-weight: 600; padding: 2px 8px;
+        }
+        .mname { flex: 1; font-size: 0.9rem; }
+
+        /* ── or divider ── */
+        .or {
+            align-items: center; color: #aaa; display: flex;
+            font-size: 0.82rem; gap: 8px; margin: 10px 0;
+        }
+        .or::before, .or::after { border-top: 1px solid #e0e0e0; content: ''; flex: 1; }
+
+        /* ── button ── */
+        .btn {
+            background: #3498db; border: none; border-radius: 5px; color: white;
+            cursor: pointer; font-family: inherit; font-size: 0.95rem;
+            font-weight: 600; padding: 10px 26px; transition: background 0.15s;
+        }
+        .btn:hover { background: #2980b9; }
+        .btn-warn { background: #e67e22; }
+        .btn-warn:hover { background: #d35400; }
+        .btn-row { align-items: center; display: flex; gap: 14px; flex-wrap: wrap; margin-top: 18px; }
+        .btn-hint { color: #888; font-size: 0.85rem; }
+
+        /* ── two-column ── */
+        .two { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 640px) { .two { grid-template-columns: 1fr; } }
+
+        /* ── legend ── */
+        .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 0.88rem; margin-bottom: 14px; }
+        .ldot { border-radius: 3px; display: inline-block; height: 12px;
+                margin-right: 5px; vertical-align: middle; width: 20px; }
+
+        /* ── warning box ── */
+        .wbox {
+            background: #fef9e7; border: 1px solid #f0c040; border-radius: 5px;
+            color: #7d6608; font-size: 0.88rem; margin-bottom: 16px; padding: 10px 14px;
+        }
+
+        /* ── stats ── */
+        .sgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px,1fr));
+                 gap: 14px; margin-bottom: 16px; }
+        .scard { background: #f8f9fa; border: 1px solid #ddd; border-radius: 6px;
+                 padding: 14px; text-align: center; }
+        .sval { color: #2980b9; font-size: 1.6rem; font-weight: 700; }
+        .slbl { color: #888; font-size: 0.8rem; margin-top: 3px; }
+
+        /* ── table ── */
+        table { border-collapse: collapse; font-size: 0.88rem; width: 100%; }
+        th { border-bottom: 2px solid #3498db; color: #2980b9; padding: 8px; text-align: right; }
+        th:first-child { text-align: left; }
+        td { border-bottom: 1px solid #eee; color: #444; padding: 6px 8px; text-align: right; }
+        td:first-child { color: #333; font-weight: 600; text-align: left; }
+
+        /* ── download buttons ── */
+        a.dl-btn {
+            background: #ecf0f1; border: 1px solid #bdc3c7; border-radius: 5px;
+            color: #2c3e50; display: inline-block; font-size: 0.88rem; font-weight: 600;
+            padding: 7px 16px; text-decoration: none; transition: background 0.15s;
+        }
+        a.dl-btn:hover { background: #dde4e6; }
+
+        footer {
+            background: #2c3e50; color: #bdc3c7; font-size: 0.85rem;
+            margin-top: 30px; padding: 1.2rem; text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="gruppe11.html" class="back-link">← Group Home</a>
+    <h1>GOR Secondary Structure Prediction</h1>
+    <p>Gruppe 11 · LMU Programmierpraktikum WS2025/26</p>
+</header>
+
+<div class="container">
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="go('train',this)">Train</button>
+        <button class="tab-btn"        onclick="go('predict',this)">Predict</button>
+        <button class="tab-btn"        onclick="go('validate',this)">Validate</button>
+        <button class="tab-btn"        onclick="go('crossval',this)">5-Fold CV</button>
+        <button class="tab-btn"        onclick="go('results',this)">Results</button>
+    </div>
+
+    <!-- ══════════════════════════════ TRAIN ══════════════════════════════ -->
+    <div class="panel active" id="p-train">
+        <div class="card">
+            <h3>Train a GOR Model</h3>
+            <p class="desc">
+                Upload a seclib (.db) database and train a GOR model file.
+                The resulting .mod file will be saved to GORFiles/models/ and available for prediction.
+            </p>
+            <form action="cgi-bin/gor_train.py" method="post" enctype="multipart/form-data">
+
+                <span class="flabel">Training database</span>
+                <input type="file" name="db_file" accept=".db,.txt">
+                <div class="or">or use built-in dataset</div>
+                <div class="rg">
+                    <label><input type="radio" name="db_preset" value="cb513" checked> CB513 (513 proteins)</label>
+                    <label><input type="radio" name="db_preset" value="none"> Uploaded file only</label>
+                </div>
+
+                <span class="flabel">Method</span>
+                <div class="rg">
+                    <label><input type="radio" name="method" value="gor1"> GOR I</label>
+                    <label><input type="radio" name="method" value="gor3" checked> GOR III</label>
+                    <label><input type="radio" name="method" value="gor4"> GOR IV</label>
+                </div>
+
+                <span class="flabel">Output model filename</span>
+                <div style="display:flex;align-items:center;gap:10px;">
+                    <input type="text" name="model_name" value="my_model" style="width:200px;">
+                    <span style="color:#888;font-size:.85rem;">→ saved as &lt;name&gt;_&lt;method&gt;.mod</span>
+                </div>
+
+                <div class="btn-row">
+                    <button type="submit" class="btn">▶ Run Training</button>
+                    <span class="btn-hint">Results appear on the next page</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════ PREDICT ══════════════════════════════ -->
+    <div class="panel" id="p-predict">
+        <div class="card">
+            <h3>Predict Secondary Structure</h3>
+            <div class="legend">
+                <span><span class="ldot" style="background:#e74c3c;"></span>H = α-Helix</span>
+                <span><span class="ldot" style="background:#3498db;"></span>E = β-Sheet</span>
+                <span><span class="ldot" style="background:#95a5a6;"></span>C = Coil</span>
+            </div>
+            <form action="cgi-bin/gor_predict.py" method="post" enctype="multipart/form-data">
+                <div class="two">
+                    <div>
+                        <span class="flabel">Input sequence (FASTA)</span>
+                        <textarea name="fasta_text"
+                            placeholder=">ProteinID&#10;MKLNFSGRAVTPEKL..."></textarea>
+                        <div class="or">or upload FASTA file</div>
+                        <input type="file" name="fasta_file" accept=".fasta,.fa,.txt">
+                    </div>
+                    <div>
+                        <span class="flabel">Model</span>
+                        <div class="mlist">
+                            <label class="mitem">
+                                <input type="radio" name="model_choice" value="cb513_gor1">
+                                <span class="mname">CB513</span><span class="mbadge">GOR I</span>
+                            </label>
+                            <label class="mitem">
+                                <input type="radio" name="model_choice" value="cb513_gor3" checked>
+                                <span class="mname">CB513</span><span class="mbadge">GOR III</span>
+                            </label>
+                            <label class="mitem">
+                                <input type="radio" name="model_choice" value="cb513_gor4">
+                                <span class="mname">CB513</span><span class="mbadge">GOR IV</span>
+                            </label>
+                            <label class="mitem">
+                                <input type="radio" name="model_choice" value="upload">
+                                <span class="mname">Upload custom .mod file</span>
+                            </label>
+                        </div>
+                        <div style="margin-top:8px;">
+                            <input type="file" name="model_file" accept=".mod,.txt">
+                        </div>
+
+                        <span class="flabel" style="margin-top:16px;">Options</span>
+                        <div class="rg">
+                            <label>
+                                <input type="checkbox" name="probabilities" value="1">
+                                Show probabilities (0–9)
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-row">
+                    <button type="submit" class="btn">▶ Run Prediction</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════ VALIDATE ══════════════════════════════ -->
+    <div class="panel" id="p-validate">
+        <div class="card">
+            <h3>Validate GOR Predictions</h3>
+            <p class="desc">
+                Compute Q3 accuracy, SOV score and per-class metrics (QH, QE, QC)
+                by comparing a prediction file against a reference seclib database.
+            </p>
+            <form action="cgi-bin/gor_validate.py" method="post" enctype="multipart/form-data">
+                <div class="two">
+                    <div>
+                        <span class="flabel">Predictions file (predict.jar --format txt output)</span>
+                        <textarea name="pred_text"
+                            placeholder=">1a0aA00&#10;AS MKRESHK...&#10;PS CCCCHHHH..."></textarea>
+                        <div class="or">or upload file</div>
+                        <input type="file" name="pred_file" accept=".txt">
+                    </div>
+                    <div>
+                        <span class="flabel">Reference database</span>
+                        <div class="rg" style="flex-direction:column;">
+                            <label><input type="radio" name="ref_preset" value="cb513" checked>
+                                CB513 (built-in)</label>
+                            <label><input type="radio" name="ref_preset" value="none">
+                                Upload custom reference</label>
+                        </div>
+                        <div style="margin-top:8px;">
+                            <input type="file" name="ref_file" accept=".db,.txt">
+                        </div>
+                        <div class="rg" style="margin-top:14px;">
+                            <label>
+                                <input type="checkbox" name="show_detailed" value="1" checked>
+                                Show per-protein details
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-row">
+                    <button type="submit" class="btn">▶ Run Validation</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════ CROSS-VAL ══════════════════════════════ -->
+    <div class="panel" id="p-crossval">
+        <div class="card">
+            <h3>5-Fold Cross-Validation</h3>
+            <p class="desc">
+                Evaluate GOR I/III/IV on CB513 using 5-fold cross-validation.
+                Reports mean Q3 and SOV across all folds.
+            </p>
+            <div class="wbox">
+                ⚠ This can take 3–8 minutes per method. Do not close the browser tab.
+            </div>
+            <form action="cgi-bin/gor_crossval.py" method="post">
+                <span class="flabel">Method</span>
+                <div class="rg">
+                    <label><input type="radio" name="method" value="gor1"> GOR I</label>
+                    <label><input type="radio" name="method" value="gor3" checked> GOR III</label>
+                    <label><input type="radio" name="method" value="gor4"> GOR IV</label>
+                    <label><input type="radio" name="method" value="all"> All (compare)</label>
+                </div>
+                <span class="flabel">Random seed</span>
+                <input type="text" name="seed" value="42" style="width:80px;">
+                <div class="btn-row">
+                    <button type="submit" class="btn btn-warn">▶ Start 5-CV</button>
+                    <span class="btn-hint">~3–8 min per method on CB513</span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════ RESULTS ══════════════════════════════ -->
+    <div class="panel" id="p-results">
+
+        <div class="card">
+            <h3>5-CV Benchmark — CB513</h3>
+            <div class="sgrid">
+                <div class="scard"><div class="sval" id="q3g1">—</div><div class="slbl">GOR I Q3</div></div>
+                <div class="scard"><div class="sval" id="q3g3">—</div><div class="slbl">GOR III Q3</div></div>
+                <div class="scard"><div class="sval" id="q3g4">—</div><div class="slbl">GOR IV Q3</div></div>
+                <div class="scard">
+                    <div class="sval" style="color:#e67e22;">~77%</div>
+                    <div class="slbl">PSIPRED (reference)</div>
+                </div>
+            </div>
+            <p style="color:#999;font-size:.85rem;">Run the 5-Fold CV tab to populate these values.</p>
+        </div>
+
+        <div class="card">
+            <h3>Per-Class SOV Scores</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Method</th>
+                        <th style="color:#e74c3c;">SOV_H</th>
+                        <th style="color:#3498db;">SOV_E</th>
+                        <th style="color:#95a5a6;">SOV_C</th>
+                        <th>SOV</th>
+                        <th>Q3</th>
+                    </tr>
+                </thead>
+                <tbody id="sov-body">
+                    <tr>
+                        <td colspan="6" style="text-align:center;color:#aaa;padding:16px;">
+                            No data yet — run 5-CV first
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>Download Pre-trained Models</h3>
+            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:4px;">
+                <a href="GORFiles/models/cb513_gor1.mod" class="dl-btn" download>⬇ cb513_gor1.mod</a>
+                <a href="GORFiles/models/cb513_gor3.mod" class="dl-btn" download>⬇ cb513_gor3.mod</a>
+                <a href="GORFiles/models/cb513_gor4.mod" class="dl-btn" download>⬇ cb513_gor4.mod</a>
+            </div>
+        </div>
+
+    </div>
+
+</div><!-- .container -->
+
+<footer>
+    Gruppe 11 · Programmierpraktikum WS2025/26 · Institut für Informatik, LMU München
+</footer>
+
+<script>
+function go(name, btn) {
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('p-' + name).classList.add('active');
+    btn.classList.add('active');
+}
+</script>
+</body>
+</html>
