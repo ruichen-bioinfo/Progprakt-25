@@ -2,39 +2,145 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task 8: Genome Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8: Genome Report - Gruppe 11</title>
     <style>
-        body { font-family: sans-serif; max-width: 800px; margin: 20px auto; padding: 20px; }
-        .form-group { margin-bottom: 20px; border: 1px solid #ddd; padding: 15px; border-radius: 5px; background: #f9f9f9; }
-        label { display: block; font-weight: bold; margin-bottom: 5px; }
-        input[type="text"] { width: 100%; padding: 8px; box-sizing: border-box; }
-        button { background: #e67e22; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; }
-        button:hover { background: #d35400; }
-        a { text-decoration: none; color: #3498db; }
-        .hint { font-size: 0.9em; color: #666; margin-top: 5px; }
+        /* ── Global ── */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333; margin: 0; padding: 0; line-height: 1.6;
+        }
+
+        /* ── Header ── */
+        header {
+            background-color: #2c3e50; color: #ecf0f1;
+            padding: 2rem 0; text-align: center; position: relative;
+        }
+        header h1 { margin: 0; font-size: 2.2rem; }
+        header p  { margin: 8px 0 0; font-weight: 300; color: #bdc3c7; font-size: 1rem; }
+        .back-link {
+            position: absolute; left: 20px; top: 50%; transform: translateY(-50%);
+            color: #bdc3c7; text-decoration: none; font-size: 0.9rem;
+        }
+        .back-link:hover { color: white; }
+
+        /* ── Container ── */
+        .container { max-width: 700px; margin: 30px auto; padding: 0 20px; }
+
+        /* ── Card ── */
+        .card {
+            background: white; border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 24px; margin-bottom: 20px;
+        }
+        .card h3 {
+            border-bottom: 2px solid #e67e22; color: #e67e22;
+            font-size: 1.05rem; margin: 0 0 16px; padding-bottom: 8px;
+        }
+        .card p.desc { color: #666; font-size: 0.9rem; margin: 0 0 16px; }
+
+        /* ── Form elements ── */
+        .flabel {
+            display: block; color: #555; font-size: 0.88rem;
+            font-weight: 600; margin: 14px 0 5px;
+        }
+        .flabel:first-child { margin-top: 0; }
+        input[type=text] {
+            border: 1px solid #ccc; border-radius: 5px; color: #333;
+            font-family: 'Courier New', monospace; font-size: 0.9rem; outline: none;
+            padding: 8px 10px; transition: border-color 0.2s;
+            width: 100%; box-sizing: border-box;
+        }
+        input[type=text]:focus { border-color: #e67e22; }
+        .hint { color: #888; font-size: 0.82rem; margin-top: 5px; }
+        .hint code {
+            background: #f0f0f0; border-radius: 3px;
+            font-size: 0.85rem; padding: 1px 5px;
+        }
+
+        /* ── Examples ── */
+        .examples {
+            background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 5px;
+            font-family: 'Courier New', monospace; font-size: 0.85rem;
+            padding: 10px 14px; margin-top: 8px;
+        }
+        .examples span {
+            color: #e67e22; cursor: pointer; display: inline-block;
+            margin-right: 12px; margin-bottom: 4px;
+        }
+        .examples span:hover { text-decoration: underline; }
+
+        /* ── Button ── */
+        .btn {
+            background: #e67e22; border: none; border-radius: 5px; color: white;
+            cursor: pointer; font-family: inherit; font-size: 0.95rem;
+            font-weight: 600; padding: 10px 26px; transition: background 0.15s;
+            margin-top: 18px;
+        }
+        .btn:hover { background: #d35400; }
+
+        footer { text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.8rem; }
     </style>
 </head>
 <body>
 
-    <p><a href="gruppe11.html">&larr; Back to Dashboard</a></p>
+    <!-- ── Header ── -->
+    <header>
+        <a href="gruppe11.html" class="back-link">&larr; Group Home</a>
+        <h1>Genome Report Search</h1>
+        <p>Task 8 &mdash; Gruppe 11 &middot; LMU Programmierpraktikum WS2025/26</p>
+    </header>
 
-    <h1>Aufgabe 8: Genome Report Search</h1>
-    <p>Search for <strong>complete</strong> bacterial genomes from NCBI matching your regex.</p>
-    
- 
-    <form action="cgi-bin/genome_length.py" method="get">
-        
-        <div class="form-group">
-            <label>Organism Name (Regex):</label>
-            <input type="text" name="organism" placeholder="e.g. Escherichia coli  Mycobacterium" required>
-            <div class="hint">
-                You can enter multiple regex patterns separated by spaces.<br>
-                Example: <code>^Escherichia.*coli$</code>
-            </div>
+    <div class="container">
+
+        <!-- ── Search Form ── -->
+        <div class="card">
+            <h3>Search Bacterial Genomes</h3>
+            <p class="desc">
+                Search for <strong>complete</strong> bacterial genomes from NCBI
+                matching your regular expression. Multiple patterns can be entered
+                separated by spaces.
+            </p>
+
+            <form action="cgi-bin/genome_length.py" method="get">
+
+                <span class="flabel">Organism Name (Regex)</span>
+                <input type="text" name="organism" id="org-input" required
+                    placeholder="e.g. Escherichia.*coli">
+                <div class="hint">
+                    Supports full Python regex syntax. Examples:<br>
+                    <code>^Escherichia.*coli$</code> &nbsp;
+                    <code>Mycobacterium</code> &nbsp;
+                    <code>Bacillus subtilis</code>
+                </div>
+
+                <!-- Clickable examples -->
+                <span class="flabel">Quick examples</span>
+                <div class="examples">
+                    <span onclick="document.getElementById('org-input').value='Escherichia.*coli'">Escherichia.*coli</span>
+                    <span onclick="document.getElementById('org-input').value='Mycobacterium tuberculosis'">Mycobacterium tuberculosis</span>
+                    <span onclick="document.getElementById('org-input').value='Bacillus subtilis'">Bacillus subtilis</span>
+                </div>
+
+                <button type="submit" class="btn">Search Genomes</button>
+
+            </form>
         </div>
 
-        <button type="submit">Search Genomes</button>
-    </form>
+        <!-- ── Info box ── -->
+        <div class="card">
+            <h3>About This Tool</h3>
+            <p class="desc">
+                Queries the NCBI genome reports for complete bacterial genomes.
+                Returns matching organism names, genome sizes, and GC content.
+                Only complete (non-draft) assemblies are included.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>&copy; 2026 Group 11 &mdash; LMU Munich | Practical Course Bioinformatics</footer>
 
 </body>
 </html>
