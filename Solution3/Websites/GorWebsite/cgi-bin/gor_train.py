@@ -27,11 +27,11 @@ if "db_file" in form and form["db_file"].filename:
 elif db_preset in C.PRESET_DBS:
     db_path = C.PRESET_DBS[db_preset]
 else:
-    print("<p>❌ No Database Found，Please Upload File or Use Preset Data.</p>")
+    print("<p>X No Database Found，Please Upload File or Use Preset Data.</p>")
     sys.exit(0)
 
 if not os.path.isfile(db_path):
-    print(f"<p>❌ Database File doesn't Exist: {db_path}</p>")
+    print(f"<p>X Database File doesn't Exist: {db_path}</p>")
     sys.exit(0)
 
 # Output model path
@@ -59,7 +59,7 @@ sys.stdout.flush()
 
 t0 = time.time()
 try:
-    proc = subprocess.run(cmd, capture_output=True, text=True, timeout=C.TIMEOUT)
+    proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True, timeout=C.TIMEOUT)
     elapsed = round(time.time() - t0, 1)
 
     if proc.stdout:

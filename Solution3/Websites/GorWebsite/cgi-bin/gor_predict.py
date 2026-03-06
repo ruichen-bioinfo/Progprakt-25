@@ -31,7 +31,7 @@ elif fasta_text:
     tmp_fasta.write(fasta_text)
     tmp_fasta.close()
 else:
-    print("<p>❌ Please Upload Sequence(Paste or Upload)</p>")
+    print("<p>X Please Upload Sequence(Paste or Upload)</p>")
     sys.exit(0)
 
 # Analyse Model Path
@@ -44,16 +44,16 @@ if model_choice == "upload":
         tmp_model.close()
         model_path = tmp_model.name
     else:
-        print("<p>❌ Please Upload Model File</p>")
+        print("<p>X Please Upload Model File</p>")
         sys.exit(0)
 elif model_choice in C.PRESET_MODELS:
     model_path = C.PRESET_MODELS[model_choice]
 else:
-    print(f"<p>❌ Unknown Model: {H.escape(model_choice)}</p>")
+    print(f"<p>X Unknown Model: {H.escape(model_choice)}</p>")
     sys.exit(0)
 
 if not os.path.isfile(model_path):
-    print(f"<p>❌ Model doesn't Exist: {H.escape(model_path)}<br>Please Train the Model First.</p>")
+    print(f"<p>X Model doesn't Exist: {H.escape(model_path)}<br>Please Train the Model First.</p>")
     sys.exit(0)
 
 # CONSTRUCTION!!!
@@ -84,7 +84,7 @@ pre{background:#000;border:1px solid #252a35;padding:1rem;white-space:pre-wrap;
 .legend{display:flex;gap:1.5rem;margin-bottom:1rem;font-size:12px;}
 .ldot{display:inline-block;width:18px;height:10px;border-radius:2px;margin-right:4px;vertical-align:middle;}
 </style></head><body>
-<h2>🔬 GOR Prediction Result</h2>
+<h2> GOR Prediction Result</h2>
 <div class="legend">
   <span><span class="ldot" style="background:#e05c73"></span>H = α-Helix</span>
   <span><span class="ldot" style="background:#5b8dee"></span>E = β-Sheet</span>
@@ -95,7 +95,7 @@ sys.stdout.flush()
 
 t0 = time.time()
 try:
-    proc = subprocess.run(cmd, capture_output=True, text=True, timeout=C.TIMEOUT)
+    proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True, timeout=C.TIMEOUT)
     elapsed = round(time.time() - t0, 1)
 
     if proc.returncode != 0:

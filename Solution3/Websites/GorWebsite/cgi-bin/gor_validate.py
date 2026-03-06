@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""
-cgi-bin/gor_validate.py
+
+
 # Format：pred_file or pred_text, ref_preset or ref_file, show_detailed
 # Usage: java -jar GORFiles/jars/validateGor.jar -p <pred> -r <ref> -s <sum> -d <det> -f txt
-"""
+
 import cgi, cgitb, os, sys, subprocess, tempfile, time, html as H
 cgitb.enable()
 sys.path.insert(0, os.path.dirname(__file__))
@@ -30,7 +30,7 @@ elif pred_text:
     tmp_pred.write(pred_text)
     tmp_pred.close()
 else:
-    print("<p>❌ Please Upload Prediction Result.</p>")
+    print("<p>X Please Upload Prediction Result.</p>")
     sys.exit(0)
 
 # reference db
@@ -44,11 +44,11 @@ if "ref_file" in form and form["ref_file"].filename:
 elif ref_preset in C.PRESET_DBS:
     ref_path = C.PRESET_DBS[ref_preset]
 else:
-    print("<p>❌ Please Select or Upload Ref-Database.</p>")
+    print("<p>X Please Select or Upload Ref-Database.</p>")
     sys.exit(0)
 
 if not os.path.isfile(ref_path):
-    print(f"<p>❌ Ref-Database doesn't Exist: {H.escape(ref_path)}</p>")
+    print(f"<p>X Ref-Database doesn't Exist: {H.escape(ref_path)}</p>")
     sys.exit(0)
 
 # Temp-Output for show
@@ -84,7 +84,7 @@ sys.stdout.flush()
 
 t0 = time.time()
 try:
-    proc = subprocess.run(cmd, capture_output=True, text=True, timeout=C.TIMEOUT)
+    proc = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True, timeout=C.TIMEOUT)
     elapsed = round(time.time() - t0, 1)
 
     if proc.returncode != 0:
