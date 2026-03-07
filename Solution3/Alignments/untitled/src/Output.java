@@ -80,35 +80,66 @@ public static void printAli(Alignment ali) {
 }
 
     public static void printHtml(Alignment ali) {
+
+        String seq1 = ali.getSeq1();
+        String seq2 = ali.getSeq2();
+
         String a1 = ali.getAligned1();
         String a2 = ali.getAligned2();
 
+        int startI = ali.getStartI();
+        int endI   = ali.getEndI();
+        int startJ = ali.getStartJ();
+        int endJ   = ali.getEndJ();
+
+        String pre1 = seq1.substring(0, startI);
+        String pre2 = seq2.substring(0, startJ);
+
+        String suf1 = seq1.substring(endI);
+        String suf2 = seq2.substring(endJ);
+
+        StringBuilder full1 = new StringBuilder();
+        StringBuilder full2 = new StringBuilder();
+
+        int maxPre = Math.max(pre1.length(), pre2.length());
+        full1.append("-".repeat(maxPre - pre1.length())).append(pre1);
+        full2.append("-".repeat(maxPre - pre2.length())).append(pre2);
+
+        full1.append(a1);
+        full2.append(a2);
+
+        int maxSuf = Math.max(suf1.length(), suf2.length());
+        full1.append(suf1).append("-".repeat(maxSuf - suf1.length()));
+        full2.append(suf2).append("-".repeat(maxSuf - suf2.length()));
+
+        String f1 = full1.toString();
+        String f2 = full2.toString();
+
         int matches = 0;
-        int alignedLen = a1.length();
-        for (int i = 0; i < alignedLen; i++) {
-            char c1 = a1.charAt(i);
-            char c2 = a2.charAt(i);
-            if (c1 != '-' && c2 != '-' && c1 == c2) {
-                matches++;
-            }
+        for (int i = 0; i < f1.length(); i++) {
+            char c1 = f1.charAt(i);
+            char c2 = f2.charAt(i);
+            if (c1 != '-' && c2 != '-' && c1 == c2) matches++;
         }
-        int idPct = alignedLen == 0 ? 0 : (int) Math.round(100.0 * matches / alignedLen);
+
+        int idPct = f1.length() == 0 ? 0 : (int)Math.round(100.0 * matches / f1.length());
 
         System.out.println("<html><body>");
-        System.out.println("<h3>" + ali.getId1() + " vs " + ali.getId2() + "</h3>");
+        System.out.println("<h3>" + esc(ali.getId1()) + " vs " + esc(ali.getId2()) + "</h3>");
+
         System.out.println("<p>");
         System.out.println("Score: " + ali.getScore() + "<br>");
-        System.out.println("Alignment length: " + alignedLen + "<br>");
+        System.out.println("Alignment length: " + f1.length() + "<br>");
         System.out.println("Matches: " + matches + "<br>");
         System.out.println("Identity: " + idPct + "%<br>");
-        System.out.println("Start/End (i): " + ali.getStartI() + " .. " + ali.getEndI() + "<br>");
-        System.out.println("Start/End (j): " + ali.getStartJ() + " .. " + ali.getEndJ());
+        System.out.println("Start/End (i): " + startI + " .. " + endI + "<br>");
+        System.out.println("Start/End (j): " + startJ + " .. " + endJ);
         System.out.println("</p>");
 
         System.out.println("<pre>");
-        System.out.println(a1);
-        System.out.println(matchLine(a1, a2));
-        System.out.println(a2);
+        System.out.println(esc(f1));
+        System.out.println(matchLine(f1, f2));
+        System.out.println(esc(f2));
         System.out.println("</pre>");
 
         System.out.println("</body></html>");
