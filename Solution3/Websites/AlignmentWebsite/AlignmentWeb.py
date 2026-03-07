@@ -163,13 +163,6 @@
                    validate with Q3 &amp; SOV scores, and run 5-fold cross-validation.</p>
                 <a href="gor.html" class="btn" style="background:#8e44ad;">Launch Tool</a>
             </div>
-
-            <!-- Pairwise Alignment -->
-            <div class="tool-card" style="border-left-color: #e67e22;">
-                <h4>Pairwise Sequence Alignment</h4>
-                <p>Align two sequences using Gotoh or Needleman-Wunsch with BLOSUM62, PAM250 and more.</p>
-                <a href="cgi-bin/AlignmentWeb.py" class="btn" style="background:#e67e22;">Launch Tool</a>
-            </div>
         </div>
 
         <!-- Git Guide -->
