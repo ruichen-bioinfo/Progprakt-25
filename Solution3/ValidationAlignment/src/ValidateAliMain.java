@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Locale;
+import java.nio.file.Paths;
 
 public class ValidateAliMain {
 
@@ -11,7 +12,7 @@ public class ValidateAliMain {
             return;
         }
 
-        Path inputFile = Path.of(args[1]);
+        Path inputFile = Paths.get(args[1]);
 
         ValidationInputReader reader = new ValidationInputReader();
         AlignmentMetrics metrics = new AlignmentMetrics();
