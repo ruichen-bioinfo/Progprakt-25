@@ -1,11 +1,13 @@
+import java.util.Map;
+
 public class AlignmentMetrics {
 
     public ValidationResult evaluate(PairAlignment candidate, PairAlignment reference) {
         double sensitivity = computeSensitivity(candidate, reference);
         double specificity = computeSpecificity(candidate, reference);
+        double coverage = computeCoverage(candidate, reference);
 
         // erstmal nur Platzhalter
-        double coverage = 0.0;
         double meanShiftError = 0.0;
         double inverseMeanShiftError = 0.0;
 
@@ -36,7 +38,21 @@ public class AlignmentMetrics {
     }
 
     public double computeCoverage(PairAlignment candidate, PairAlignment reference) {
-        return 0.0;
+        Map<Integer, Integer> candidateMap = AlignmentMappingUtils.mapSeq2ToSeq1(candidate);
+        Map<Integer, Integer> referenceMap = AlignmentMappingUtils.mapSeq2ToSeq1(reference);
+
+        int candidateAligned = candidateMap.size();
+        if (candidateAligned == 0) {
+            return 0.0;
+        }
+
+        int definedShiftCount = 0;
+        for (Integer targetResidue : candidateMap.keySet()) {
+            if (referenceMap.containsKey(targetResidue)) {
+                definedShiftCount++;
+            }
+        }
+        return (double) definedShiftCount / candidateAligned;
     }
 
     public double computeMeanShiftError(PairAlignment candidate, PairAlignment reference) {
