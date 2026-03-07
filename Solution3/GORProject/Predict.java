@@ -81,16 +81,9 @@ public class Predict {
                 try {
                     MafEntry e = readMafFastaAlignment(aln);
                     if (e == null) continue;
-                    String ps = predictGor5FromQueryAligned(e.as, e.alignedSeqs, model);
-                    System.out.println("> " + e.id);
-                    System.out.println("AS " + e.as);
-                    System.out.println("PS " + ps);
+                    Prediction pred = predictGor5FromQueryAligned(e.as, e.alignedSeqs, model);
                     String ref = refMap.get(e.id);
-                    if (ref != null) {
-                        System.out.println("RS " + ref);
-                        System.out.println("MT " + matchLine(ps, ref));
-                    }
-                    System.out.println();
+                    writeTxt(System.out, e.id, e.as, pred, probabilities, ref);
                 } catch (Exception ex) {
                     System.err.println("SKIP " + aln.getName() + ": " + ex.getMessage());
                 }
@@ -433,13 +426,26 @@ public class Predict {
         }
     }
 
-    static String predictGor5FromQueryAligned(String queryAligned,List<String>alignedSeqs,GorModel model){
+    static Prediction predictGor5FromQueryAligned(String queryAligned,List<String>alignedSeqs,GorModel model){
         int L=queryAligned.length();double[][]colSum=new double[3][L];int[]colCount=new int[L];
         for(String aligned:alignedSeqs){if(aligned.length()!=L)continue;String ungapped=keepAAOnly(aligned);if(ungapped.isEmpty())continue;Prediction p=predictOne(ungapped,model,true);double[][]prob=p.scores;int pos=0;for(int col=0;col<L;col++){char ch=aligned.charAt(col);if(!isAA(ch))continue;if(pos>=ungapped.length())break;for(int st=0;st<3;st++)colSum[st][col]+=prob[st][pos];colCount[col]++;pos++;}}
         Prediction queryPred=predictOne(queryAligned,model,true);double[][]queryProb=queryPred.scores;for(int col=0;col<L;col++){for(int st=0;st<3;st++)colSum[st][col]+=queryProb[st][col];colCount[col]++;}
         char[]colPred=new char[L];for(int col=0;col<L;col++){int best=0;if(colSum[1][col]>colSum[best][col])best=1;if(colSum[2][col]>colSum[best][col])best=2;colPred[col]=SS_ORDER.charAt(best);}
-        StringBuilder ps=new StringBuilder();for(int col=0;col<L;col++){char qc=queryAligned.charAt(col);if(!isGap(qc))ps.append(colPred[col]);}
-        return ps.toString();
+        // Build output PS (ungapped) and normalized avg probs for each output position
+        StringBuilder ps=new StringBuilder();
+        List<double[]> probList=new ArrayList<>();
+        for(int col=0;col<L;col++){
+            char qc=queryAligned.charAt(col);
+            if(!isGap(qc)){
+                ps.append(colPred[col]);
+                int cnt=Math.max(1,colCount[col]);
+                probList.add(new double[]{colSum[0][col]/cnt, colSum[1][col]/cnt, colSum[2][col]/cnt});
+            }
+        }
+        int outLen=ps.length();
+        double[][]outProbs=new double[3][outLen];
+        for(int i=0;i<outLen;i++){outProbs[0][i]=probList.get(i)[0];outProbs[1][i]=probList.get(i)[1];outProbs[2][i]=probList.get(i)[2];}
+        return new Prediction(ps.toString(), outProbs);
     }
 
     static String escape(String s){return s.replace("&","&amp;").replace("<","&lt;").replace(">","&gt;");}
