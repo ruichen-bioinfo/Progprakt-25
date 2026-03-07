@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOR Secondary Structure Prediction — Gruppe 11</title>
+    <title>GOR Secondary Structure Prediction N/A Gruppe 11</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -31,7 +31,7 @@
 
         .container { max-width: 1000px; margin: 20px auto; padding: 0 20px; }
 
-        /* ── tabs ── */
+        /* -- tabs -- */
         .tabs { display: flex; gap: 0; border-bottom: 2px solid #3498db; flex-wrap: wrap; }
         .tab-btn {
             background: white; border: 1px solid #ddd; border-bottom: none;
@@ -41,12 +41,17 @@
         }
         .tab-btn:hover { background: #eaf4fb; color: #2980b9; }
         .tab-btn.active { background: #3498db; color: white; border-color: #3498db; font-weight: 600; }
+        .info-box {
+            background: #eaf4fb; border-left: 4px solid #3498db;
+            border-radius: 0 5px 5px 0; padding: 10px 14px;
+            font-size: .85rem; color: #555; margin: 0 0 14px; line-height: 1.6;
+        }
 
-        /* ── panels ── */
+        /* -- panels -- */
         .panel { display: none; }
         .panel.active { display: block; }
 
-        /* ── card ── */
+        /* -- card -- */
         .card {
             background: white; border-radius: 0 8px 8px 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 24px; margin-bottom: 20px;
@@ -57,7 +62,7 @@
         }
         .card p.desc { color: #666; font-size: 0.9rem; margin: 0 0 16px; }
 
-        /* ── form ── */
+        /* -- form -- */
         .flabel {
             display: block; color: #555; font-size: 0.88rem;
             font-weight: 600; margin: 14px 0 5px;
@@ -72,7 +77,7 @@
         textarea { font-family: 'Courier New', monospace; font-size: 0.85rem;
                    min-height: 110px; resize: vertical; line-height: 1.5; }
 
-        /* ── radio group ── */
+        /* -- radio group -- */
         .rg { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
         .rg label {
             align-items: center; background: #f8f9fa; border: 1px solid #ddd;
@@ -82,7 +87,7 @@
         .rg label:hover { background: #eaf4fb; border-color: #3498db; }
         .rg input { accent-color: #3498db; }
 
-        /* ── model list ── */
+        /* -- model list -- */
         .mlist { display: flex; flex-direction: column; gap: 6px; }
         .mitem {
             align-items: center; background: #f8f9fa; border: 1px solid #ddd;
@@ -97,14 +102,14 @@
         }
         .mname { flex: 1; font-size: 0.9rem; }
 
-        /* ── or divider ── */
+        /* -- or divider -- */
         .or {
             align-items: center; color: #aaa; display: flex;
             font-size: 0.82rem; gap: 8px; margin: 10px 0;
         }
         .or::before, .or::after { border-top: 1px solid #e0e0e0; content: ''; flex: 1; }
 
-        /* ── button ── */
+        /* -- button -- */
         .btn {
             background: #3498db; border: none; border-radius: 5px; color: white;
             cursor: pointer; font-family: inherit; font-size: 0.95rem;
@@ -116,22 +121,22 @@
         .btn-row { align-items: center; display: flex; gap: 14px; flex-wrap: wrap; margin-top: 18px; }
         .btn-hint { color: #888; font-size: 0.85rem; }
 
-        /* ── two-column ── */
+        /* -- two-column -- */
         .two { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
         @media (max-width: 640px) { .two { grid-template-columns: 1fr; } }
 
-        /* ── legend ── */
+        /* -- legend -- */
         .legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 0.88rem; margin-bottom: 14px; }
         .ldot { border-radius: 3px; display: inline-block; height: 12px;
                 margin-right: 5px; vertical-align: middle; width: 20px; }
 
-        /* ── warning box ── */
+        /* -- warning box -- */
         .wbox {
             background: #fef9e7; border: 1px solid #f0c040; border-radius: 5px;
             color: #7d6608; font-size: 0.88rem; margin-bottom: 16px; padding: 10px 14px;
         }
 
-        /* ── stats ── */
+        /* -- stats -- */
         .sgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px,1fr));
                  gap: 14px; margin-bottom: 16px; }
         .scard { background: #f8f9fa; border: 1px solid #ddd; border-radius: 6px;
@@ -139,14 +144,14 @@
         .sval { color: #2980b9; font-size: 1.6rem; font-weight: 700; }
         .slbl { color: #888; font-size: 0.8rem; margin-top: 3px; }
 
-        /* ── table ── */
+        /* -- table -- */
         table { border-collapse: collapse; font-size: 0.88rem; width: 100%; }
         th { border-bottom: 2px solid #3498db; color: #2980b9; padding: 8px; text-align: right; }
         th:first-child { text-align: left; }
         td { border-bottom: 1px solid #eee; color: #444; padding: 6px 8px; text-align: right; }
         td:first-child { color: #333; font-weight: 600; text-align: left; }
 
-        /* ── download buttons ── */
+        /* -- download buttons -- */
         a.dl-btn {
             background: #ecf0f1; border: 1px solid #bdc3c7; border-radius: 5px;
             color: #2c3e50; display: inline-block; font-size: 0.88rem; font-weight: 600;
@@ -163,9 +168,9 @@
 <body>
 
 <header>
-    <a href="gruppe11.html" class="back-link">← Group Home</a>
+    <a href="gruppe11.html" class="back-link">&lt;- Group Home</a>
     <h1>GOR Secondary Structure Prediction</h1>
-    <p>Gruppe 11 · LMU Programmierpraktikum WS2025/26</p>
+    <p>Gruppe 11 . LMU Programmierpraktikum WS2025/26</p>
 </header>
 
 <div class="container">
@@ -176,16 +181,26 @@
         <button class="tab-btn"        onclick="go('validate',this)">Validate</button>
         <button class="tab-btn"        onclick="go('crossval',this)">5-Fold CV</button>
         <button class="tab-btn"        onclick="go('results',this)">Results</button>
+        <button class="tab-btn"        onclick="go('dssp',this)">DSSP</button>
     </div>
 
-    <!-- ══════════════════════════════ TRAIN ══════════════════════════════ -->
+    <!-- ============================== TRAIN ============================== -->
     <div class="panel active" id="p-train">
         <div class="card">
             <h3>Train a GOR Model</h3>
             <p class="desc">
-                Upload a seclib (.db) database and train a GOR model file.
-                The resulting .mod file will be saved to GORFiles/models/ and available for prediction.
+                Train a GOR model on a protein secondary structure database in seclib format.
+                The system supports <b>GOR I</b> (single-residue statistics),
+                <b>GOR III</b> (pairwise residue information) and
+                <b>GOR IV</b> (pairwise + coupled information).
+                The resulting <code>.mod</code> file is saved server-side and immediately
+                available for prediction and validation.
             </p>
+            <div class="info-box">
+                <b>CB513 dataset:</b> 513 non-redundant protein chains (&lt;25% pairwise identity)
+                derived from PDB via the Hobohm algorithm &mdash; the standard benchmark set
+                for secondary structure prediction.
+            </div>
             <form action="cgi-bin/gor_train.py" method="post" enctype="multipart/form-data">
 
                 <span class="flabel">Training database</span>
@@ -206,52 +221,114 @@
                 <span class="flabel">Output model filename</span>
                 <div style="display:flex;align-items:center;gap:10px;">
                     <input type="text" name="model_name" value="my_model" style="width:200px;">
-                    <span style="color:#888;font-size:.85rem;">→ saved as &lt;name&gt;_&lt;method&gt;.mod</span>
+                    <span style="color:#888;font-size:.85rem;">-&gt; saved as &lt;name&gt;_&lt;method&gt;.mod</span>
                 </div>
 
                 <div class="btn-row">
-                    <button type="submit" class="btn">▶ Run Training</button>
+                    <button type="submit" class="btn">> Run Training</button>
                     <span class="btn-hint">Results appear on the next page</span>
                 </div>
             </form>
         </div>
     </div>
 
-    <!-- ══════════════════════════════ PREDICT ══════════════════════════════ -->
+    <!-- ============================== PREDICT ============================== -->
     <div class="panel" id="p-predict">
         <div class="card">
             <h3>Predict Secondary Structure</h3>
-            <div class="legend">
-                <span><span class="ldot" style="background:#e74c3c;"></span>H = α-Helix</span>
-                <span><span class="ldot" style="background:#3498db;"></span>E = β-Sheet</span>
-                <span><span class="ldot" style="background:#95a5a6;"></span>C = Coil</span>
+            <p class="desc">
+                Predict the secondary structure of a protein sequence using a trained GOR model.
+                <b>GOR I</b> uses single-residue information theory.
+                <b>GOR III</b> adds pairwise residue interactions within a 17-residue window.
+                <b>GOR IV</b> further incorporates coupled information between residue pairs.
+                <b>GOR V</b> extends GOR IV with evolutionary information from multiple sequence alignments,
+                typically improving Q3 accuracy by 3&ndash;5%.
+            </p>
+            <div class="info-box">
+                <b>Output:</b> &nbsp;
+                <span style="color:#e74c3c;font-weight:600;">H</span> = &alpha;-helix &nbsp;|&nbsp;
+                <span style="color:#3498db;font-weight:600;">E</span> = &beta;-sheet &nbsp;|&nbsp;
+                <span style="color:#888;font-weight:600;">C</span> = coil/loop &nbsp;|&nbsp;
+                <b>PH/PE/PC</b> = per-residue probabilities (0&ndash;9 scale) &nbsp;|&nbsp;
+                <b>MT</b> = match to reference + Q3 accuracy
             </div>
             <form action="cgi-bin/gor_predict.py" method="post" enctype="multipart/form-data">
                 <div class="two">
                     <div>
-                        <span class="flabel">Input sequence (FASTA)</span>
-                        <textarea name="fasta_text"
+                        <span class="flabel">Input sequence</span>
+
+                        <!-- Sequence lookup: PDB or CB513 -->
+                        <div style="background:#f8f9fa;border:1px solid #e0e0e0;border-radius:6px;
+                                    padding:10px 12px;margin-bottom:8px;">
+                            <div style="font-size:.8rem;color:#666;margin-bottom:6px;font-weight:600;">
+                                Quick sequence lookup
+                            </div>
+                            <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px;">
+                                <input type="text" id="seq-lookup-id"
+                                       placeholder="PDB ID or CB513 ID (e.g. 1MBN / 154l)"
+                                       style="width:200px;font-size:.85rem;">
+                                <button type="button" onclick="fetchSeq('pdb')"
+                                        style="padding:4px 10px;background:#3498db;color:white;
+                                               border:none;border-radius:4px;cursor:pointer;font-size:.82rem;">
+                                    Fetch PDB
+                                </button>
+                                <button type="button" onclick="fetchSeq('cb513')"
+                                        style="padding:4px 10px;background:#27ae60;color:white;
+                                               border:none;border-radius:4px;cursor:pointer;font-size:.82rem;">
+                                    Fetch CB513
+                                </button>
+                                <span id="pdb-status" style="font-size:.78rem;color:#888;"></span>
+                            </div>
+                            <div style="font-size:.75rem;color:#aaa;">
+                                <b>PDB</b>: any 4-char PDB ID &mdash; fetches from RCSB &nbsp;|&nbsp;
+                                <b>CB513</b>: use an ID from the CB513 dataset (e.g. <code>154l</code>, <code>1aazb</code>)
+                                for benchmark validation
+                            </div>
+                        </div>
+
+                        <textarea name="fasta_text" id="fasta-text-area"
                             placeholder=">ProteinID&#10;MKLNFSGRAVTPEKL..."></textarea>
                         <div class="or">or upload FASTA file</div>
                         <input type="file" name="fasta_file" accept=".fasta,.fa,.txt">
+
+                        <span class="flabel" style="margin-top:14px;">Reference structure (optional)</span>
+                        <div style="font-size:.78rem;color:#aaa;margin-bottom:6px;">
+                            Paste a known SS string (H/E/C) to compare against the prediction and compute Q3.
+                            If you fetched a <b>CB513</b> sequence, click below to auto-fill the known SS.
+                        </div>
+                        <button type="button" onclick="fetchRefSS()"
+                                style="padding:4px 10px;background:#27ae60;color:white;border:none;
+                                       border-radius:4px;cursor:pointer;font-size:.82rem;margin-bottom:6px;">
+                            Fetch SS from CB513
+                        </button>
+                        <span id="ref-status" style="font-size:.78rem;color:#888;margin-left:6px;"></span>
+                        <textarea name="ref_text" id="ref-text-area" placeholder="HHHHHCCCEEE..."
+                                  style="height:60px;"></textarea>
+                        <div class="or">or upload reference SS file</div>
+                        <input type="file" name="ref_file" accept=".ss,.txt,.dssp">
                     </div>
                     <div>
                         <span class="flabel">Model</span>
                         <div class="mlist">
                             <label class="mitem">
-                                <input type="radio" name="model_choice" value="cb513_gor1">
+                                <input type="radio" name="model_choice" value="cb513_gor1" onclick="document.getElementById('maf-box').style.display='none'">
                                 <span class="mname">CB513</span><span class="mbadge">GOR I</span>
                             </label>
                             <label class="mitem">
-                                <input type="radio" name="model_choice" value="cb513_gor3" checked>
+                                <input type="radio" name="model_choice" value="cb513_gor3" checked onclick="document.getElementById('maf-box').style.display='none'">
                                 <span class="mname">CB513</span><span class="mbadge">GOR III</span>
                             </label>
                             <label class="mitem">
-                                <input type="radio" name="model_choice" value="cb513_gor4">
+                                <input type="radio" name="model_choice" value="cb513_gor4" onclick="document.getElementById('maf-box').style.display='none'">
                                 <span class="mname">CB513</span><span class="mbadge">GOR IV</span>
                             </label>
                             <label class="mitem">
-                                <input type="radio" name="model_choice" value="upload">
+                                <input type="radio" name="model_choice" value="cb513_gor4_v" onclick="document.getElementById('maf-box').style.display='block'">
+                                <span class="mname">CB513</span><span class="mbadge" style="background:#8e44ad;">GOR V</span>
+                                <span style="font-size:.72rem;color:#999;margin-left:4px;">(requires MAF)</span>
+                            </label>
+                            <label class="mitem">
+                                <input type="radio" name="model_choice" value="upload" onclick="document.getElementById('maf-box').style.display='none'">
                                 <span class="mname">Upload custom .mod file</span>
                             </label>
                         </div>
@@ -259,26 +336,56 @@
                             <input type="file" name="model_file" accept=".mod,.txt">
                         </div>
 
+                        <!-- MAF upload for GOR V -->
+                        <div id="maf-box" style="display:none;margin-top:10px;
+                             background:#f5eeff;border:1px solid #c39bd3;border-radius:6px;padding:10px;">
+                            <span class="flabel" style="color:#8e44ad;">
+                                GOR V: Multiple Alignment
+                            </span>
+                            <div style="font-size:.78rem;color:#666;margin:6px 0 4px;">
+                                Option 1: enter CB513 protein ID to auto-lookup .aln file
+                            </div>
+                            <input type="text" name="prot_id" placeholder="CB513 ID (e.g. 154l)"
+                                   style="margin-bottom:6px;">
+                            <div class="or">Option 2: upload your own alignment file</div>
+                            <input type="file" name="aln_file" accept=".maf,.aln,.txt"
+                                   style="margin-top:4px;">
+                            <div style="font-size:.75rem;color:#888;margin-top:6px;">
+                                Accepts PSI-BLAST / ClustalW FASTA alignment format.
+                            </div>
+                        </div>
+
                         <span class="flabel" style="margin-top:16px;">Options</span>
                         <div class="rg">
                             <label>
                                 <input type="checkbox" name="probabilities" value="1">
-                                Show probabilities (0–9)
+                                Show per-residue probabilities (PH / PE / PC, scale 0&ndash;9)
                             </label>
                         </div>
                     </div>
                 </div>
                 <div class="btn-row">
-                    <button type="submit" class="btn">▶ Run Prediction</button>
+                    <button type="submit" class="btn">&gt; Run Prediction</button>
                 </div>
             </form>
         </div>
     </div>
 
-    <!-- ══════════════════════════════ VALIDATE ══════════════════════════════ -->
+    <!-- ============================== VALIDATE ============================== -->
     <div class="panel" id="p-validate">
         <div class="card">
             <h3>Validate GOR Predictions</h3>
+            <div class="info-box">
+                <b>Two validation modes:</b><br>
+                &bull; <b>CB513 benchmark</b>: run prediction on CB513.fasta sequences
+                (use "Fetch CB513" in the Predict tab), then upload the result here
+                against the built-in CB513 reference. IDs must match exactly (e.g. <code>154l</code>).<br>
+                &bull; <b>Custom dataset</b>: upload your own reference file in seclib format
+                (<code>&gt; id</code> / <code>AS seq</code> / <code>SS structure</code>) and
+                select "Upload custom reference" below.<br>
+                &bull; <b>Single arbitrary sequence</b>: use the <b>Predict</b> tab's
+                "Reference structure" field to get inline Q3 without a seclib file.
+            </div>
             <p class="desc">
                 Compute Q3 accuracy, SOV score and per-class metrics (QH, QE, QC)
                 by comparing a prediction file against a reference seclib database.
@@ -312,13 +419,13 @@
                     </div>
                 </div>
                 <div class="btn-row">
-                    <button type="submit" class="btn">▶ Run Validation</button>
+                    <button type="submit" class="btn">> Run Validation</button>
                 </div>
             </form>
         </div>
     </div>
 
-    <!-- ══════════════════════════════ CROSS-VAL ══════════════════════════════ -->
+    <!-- ============================== CROSS-VAL ============================== -->
     <div class="panel" id="p-crossval">
         <div class="card">
             <h3>5-Fold Cross-Validation</h3>
@@ -327,7 +434,7 @@
                 Reports mean Q3 and SOV across all folds.
             </p>
             <div class="wbox">
-                ⚠ This can take 3–8 minutes per method. Do not close the browser tab.
+                [!] This can take 3-8 minutes per method. Do not close the browser tab.
             </div>
             <form action="cgi-bin/gor_crossval.py" method="post">
                 <span class="flabel">Method</span>
@@ -340,71 +447,250 @@
                 <span class="flabel">Random seed</span>
                 <input type="text" name="seed" value="42" style="width:80px;">
                 <div class="btn-row">
-                    <button type="submit" class="btn btn-warn">▶ Start 5-CV</button>
-                    <span class="btn-hint">~3–8 min per method on CB513</span>
+                    <button type="submit" class="btn btn-warn">> Start 5-CV</button>
+                    <span class="btn-hint">~3-8 min per method on CB513</span>
                 </div>
             </form>
         </div>
     </div>
 
-    <!-- ══════════════════════════════ RESULTS ══════════════════════════════ -->
+    <!-- ============================== RESULTS ============================== -->
     <div class="panel" id="p-results">
 
+        <!-- Live benchmark summary -->
         <div class="card">
-            <h3>5-CV Benchmark — CB513</h3>
-            <div class="sgrid">
-                <div class="scard"><div class="sval" id="q3g1">—</div><div class="slbl">GOR I Q3</div></div>
-                <div class="scard"><div class="sval" id="q3g3">—</div><div class="slbl">GOR III Q3</div></div>
-                <div class="scard"><div class="sval" id="q3g4">—</div><div class="slbl">GOR IV Q3</div></div>
-                <div class="scard">
-                    <div class="sval" style="color:#e67e22;">~77%</div>
-                    <div class="slbl">PSIPRED (reference)</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+                <h3 style="margin:0;">Benchmark Results on CB513</h3>
+                <div style="display:flex;gap:8px;">
+                    <button onclick="loadResults()" style="padding:5px 12px;background:#3498db;color:white;
+                        border:none;border-radius:4px;cursor:pointer;font-size:.82rem;">&#8635; Refresh</button>
+                    <a href="cgi-bin/gor_psipred.py" target="_blank"
+                       style="padding:5px 12px;background:#8e44ad;color:white;text-decoration:none;
+                              border-radius:4px;font-size:.82rem;">Run PSIPRED Benchmark</a>
                 </div>
             </div>
-            <p style="color:#999;font-size:.85rem;">Run the 5-Fold CV tab to populate these values.</p>
-        </div>
+            <p style="color:#888;font-size:.82rem;margin:6px 0 14px;">
+                Run the <b>5-Fold CV</b> tab and <b>PSIPRED Benchmark</b> to populate these values.
+            </p>
 
-        <div class="card">
-            <h3>Per-Class SOV Scores</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Method</th>
-                        <th style="color:#e74c3c;">SOV_H</th>
-                        <th style="color:#3498db;">SOV_E</th>
-                        <th style="color:#95a5a6;">SOV_C</th>
-                        <th>SOV</th>
-                        <th>Q3</th>
-                    </tr>
-                </thead>
+            <!-- Q3 summary cards -->
+            <div class="sgrid" id="q3-grid">
+                <div class="scard"><div class="sval" id="q3g1">N/A</div><div class="slbl">GOR I Q3</div></div>
+                <div class="scard"><div class="sval" id="q3g3">N/A</div><div class="slbl">GOR III Q3</div></div>
+                <div class="scard"><div class="sval" id="q3g4">N/A</div><div class="slbl">GOR IV Q3</div></div>
+                <div class="scard"><div class="sval" id="q3psipred" style="color:#e67e22;">N/A</div>
+                    <div class="slbl">PSIPRED Q3</div></div>
+            </div>
+
+            <!-- Full comparison table -->
+            <h4 style="margin:18px 0 8px;color:#555;">Full Metrics Comparison</h4>
+            <div style="overflow-x:auto;">
+            <table id="results-table">
+                <thead><tr>
+                    <th>Method</th><th>Q3</th><th>SOV</th>
+                    <th style="color:#e74c3c;">QH</th><th style="color:#3498db;">QE</th>
+                    <th style="color:#95a5a6;">QC</th>
+                    <th style="color:#e74c3c;">SOV_H</th><th style="color:#3498db;">SOV_E</th>
+                    <th style="color:#95a5a6;">SOV_C</th>
+                </tr></thead>
                 <tbody id="sov-body">
-                    <tr>
-                        <td colspan="6" style="text-align:center;color:#aaa;padding:16px;">
-                            No data yet — run 5-CV first
-                        </td>
-                    </tr>
+                    <tr><td colspan="9" style="text-align:center;color:#aaa;padding:16px;">
+                        No data yet &mdash; run 5-CV and PSIPRED Benchmark first
+                    </td></tr>
                 </tbody>
             </table>
-        </div>
-
-        <div class="card">
-            <h3>Download Pre-trained Models</h3>
-            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:4px;">
-                <a href="GORFiles/models/cb513_gor1.mod" class="dl-btn" download>⬇ cb513_gor1.mod</a>
-                <a href="GORFiles/models/cb513_gor3.mod" class="dl-btn" download>⬇ cb513_gor3.mod</a>
-                <a href="GORFiles/models/cb513_gor4.mod" class="dl-btn" download>⬇ cb513_gor4.mod</a>
             </div>
+            <p id="results-status" style="font-size:.78rem;color:#aaa;margin-top:8px;"></p>
         </div>
 
+        <script>
+        function loadResults() {
+            document.getElementById('results-status').textContent = 'Loading...';
+            fetch('cgi-bin/gor_results.py?_=' + Date.now())
+                .then(function(r){ return r.json(); })
+                .then(function(data) {
+                    renderResults(data);
+                    document.getElementById('results-status').textContent =
+                        'Last updated: ' + new Date().toLocaleTimeString();
+                })
+                .catch(function(e){
+                    document.getElementById('results-status').textContent = 'Could not load results: ' + e;
+                });
+        }
+
+        function fmtPct(v) {
+            return (v === null || v === undefined || isNaN(v)) ? 'N/A' : v.toFixed(1) + '%';
+        }
+
+        function renderResults(data) {
+            // Update Q3 cards
+            var methods = ['gor1','gor3','gor4'];
+            var cardIds = ['q3g1','q3g3','q3g4'];
+            methods.forEach(function(m, i) {
+                var key = 'cv_' + m;
+                var el = document.getElementById(cardIds[i]);
+                if (data[key] && data[key].q3) {
+                    el.textContent = data[key].q3.toFixed(1) + '%';
+                    el.style.color = '#27ae60';
+                }
+            });
+            var psEl = document.getElementById('q3psipred');
+            if (data.psipred && data.psipred.q3) {
+                psEl.textContent = data.psipred.q3.toFixed(1) + '%';
+                psEl.style.color = '#e67e22';
+            }
+
+            // Build comparison table
+            var rows = [];
+            var methodLabels = {
+                'cv_gor1': 'GOR I (5-CV)',
+                'cv_gor3': 'GOR III (5-CV)',
+                'cv_gor4': 'GOR IV (5-CV)',
+                'psipred': 'PSIPRED (reference)'
+            };
+            var order = ['cv_gor1','cv_gor3','cv_gor4','psipred'];
+            order.forEach(function(key) {
+                if (!data[key]) return;
+                var d = data[key];
+                var isPsi = key === 'psipred';
+                var style = isPsi ? ' style="font-weight:600;background:#fff8f0;"' : '';
+                rows.push('<tr' + style + '>' +
+                    '<td>' + (methodLabels[key] || key) + '</td>' +
+                    '<td><b>' + fmtPct(d.q3) + '</b></td>' +
+                    '<td>' + fmtPct(d.sov) + '</td>' +
+                    '<td>' + fmtPct(d.qH) + '</td>' +
+                    '<td>' + fmtPct(d.qE) + '</td>' +
+                    '<td>' + fmtPct(d.qC) + '</td>' +
+                    '<td>' + fmtPct(d.sovH) + '</td>' +
+                    '<td>' + fmtPct(d.sovE) + '</td>' +
+                    '<td>' + fmtPct(d.sovC) + '</td>' +
+                    '</tr>');
+            });
+
+            var tbody = document.getElementById('sov-body');
+            if (rows.length > 0) {
+                tbody.innerHTML = rows.join('');
+            }
+        }
+
+        // Auto-load on tab switch
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hook into tab switch
+            var tabs = document.querySelectorAll('.tab-btn');
+            tabs.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    if (this.dataset.tab === 'results') {
+                        setTimeout(loadResults, 100);
+                    }
+                });
+            });
+        });
+        </script>
+
+    </div>
+
+
+    <!-- DSSP -->
+    <div class="panel" id="p-dssp">
+        <div class="card">
+            <h3>DSSP Secondary Structure Analysis</h3>
+            <p class="desc">
+                Look up pre-computed DSSP results for any protein in the PDB.
+                Visualizes H/E/C secondary structure composition and the full residue-level assignment.
+            </p>
+            <form action="cgi-bin/gor_dssp.py" method="get">
+                <span class="flabel">PDB ID (4 characters)</span>
+                <div style="display:flex;align-items:center;gap:10px;">
+                    <input type="text" name="pdb_id" placeholder="e.g. 1MBN"
+                           maxlength="4" style="width:120px;text-transform:uppercase;">
+                    <span style="color:#888;font-size:.85rem;">Enter any 4-character PDB identifier</span>
+                </div>
+                <div style="margin-top:10px;background:#f8f9fa;border:1px solid #e0e0e0;
+                            border-radius:5px;padding:10px 14px;font-size:.85rem;">
+                    Quick examples:&nbsp;
+                    <span style="color:#3498db;cursor:pointer;margin-right:10px;"
+                          onclick="document.querySelector(&quot;[name=pdb_id]&quot;).value='1MBN'">1MBN</span>
+                    <span style="color:#3498db;cursor:pointer;margin-right:10px;"
+                          onclick="document.querySelector(&quot;[name=pdb_id]&quot;).value='1TIM'">1TIM</span>
+                    <span style="color:#3498db;cursor:pointer;"
+                          onclick="document.querySelector(&quot;[name=pdb_id]&quot;).value='2LZM'">2LZM</span>
+                </div>
+                <div class="btn-row">
+                    <button type="submit" class="btn">Run DSSP</button>
+                    <span class="btn-hint">Uses pre-computed DSSP files from server database</span>
+                </div>
+            </form>
+        </div>
     </div>
 
 </div><!-- .container -->
 
 <footer>
-    Gruppe 11 · Programmierpraktikum WS2025/26 · Institut für Informatik, LMU München
+    Gruppe 11 . Programmierpraktikum WS2025/26 . Institut f&uuml;r Informatik, LMU M&uuml;nchen
 </footer>
 
 <script>
+function toggleGorV(show) {
+    var el = document.getElementById('gorv-opts');
+    if (el) el.style.display = show ? 'block' : 'none';
+}
+
+function fetchRefSS() {
+    var id = document.getElementById('seq-lookup-id').value.trim();
+    if (!id) {
+        document.getElementById('ref-status').textContent = 'Enter a CB513 ID in the lookup box first';
+        document.getElementById('ref-status').style.color = '#e74c3c';
+        return;
+    }
+    var status = document.getElementById('ref-status');
+    status.textContent = 'Fetching...';
+    status.style.color = '#888';
+    fetch('cgi-bin/gor_fetch_seq.py?source=cb513_ss&id=' + encodeURIComponent(id))
+        .then(function(r){ return r.text(); })
+        .then(function(txt) {
+            txt = txt.trim();
+            if (txt.startsWith('ERROR:')) {
+                status.textContent = txt.replace('ERROR:','').trim();
+                status.style.color = '#e74c3c';
+            } else {
+                document.getElementById('ref-text-area').value = txt;
+                status.textContent = 'SS loaded for ' + id;
+                status.style.color = '#27ae60';
+            }
+        })
+        .catch(function(){
+            document.getElementById('ref-status').textContent = 'Request failed';
+            document.getElementById('ref-status').style.color = '#e74c3c';
+        });
+}
+
+function fetchSeq(source) {
+    var id = document.getElementById('seq-lookup-id').value.trim();
+    if (!id) {
+        document.getElementById('pdb-status').textContent = 'Enter an ID first';
+        return;
+    }
+    var status = document.getElementById('pdb-status');
+    status.textContent = 'Fetching...';
+    status.style.color = '#888';
+    fetch('cgi-bin/gor_fetch_seq.py?source=' + source + '&id=' + encodeURIComponent(id))
+        .then(function(r) { return r.text(); })
+        .then(function(txt) {
+            if (txt.trim().startsWith('ERROR:')) {
+                status.textContent = txt.replace('ERROR: ','').trim();
+                status.style.color = '#e74c3c';
+            } else {
+                document.getElementById('fasta-text-area').value = txt.trim();
+                status.textContent = 'Loaded ' + id;
+                status.style.color = '#27ae60';
+            }
+        })
+        .catch(function() {
+            status.textContent = 'Request failed';
+            status.style.color = '#e74c3c';
+        });
+}
+
 function go(name, btn) {
     document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
