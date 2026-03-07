@@ -31,12 +31,14 @@ public class Main {
         String matrixfile = options.get("m");
         String mode = options.get("mode");
         String format = options.get("format");
+        String aliFile = options.get("ali");
 
         int gapOpen = Integer.parseInt(options.getOrDefault("go","-12"));
         int gapExtend = Integer.parseInt(options.getOrDefault("ge","-1"));
 
         boolean nw = options.containsKey("nw");
         boolean check = options.containsKey("check");
+        boolean database = options.containsKey("DB");
 
         GapPenalty gapPenalty = new GapPenalty(gapOpen,gapExtend);
 
@@ -103,6 +105,11 @@ public class Main {
 
                 alg.align();
                 Alignment ali = alg.getResult();
+                Alignment homstrad = null;
+
+                if(database){
+                    homstrad = AlignmentReader.readAli(Path.of(aliFile), matrix, gapPenalty);
+                }
 
                 if(check){
                     double recalculated =
@@ -113,6 +120,10 @@ public class Main {
                     }
                 } else {
                     Output.print(ali,format);
+                    if(database && homstrad != null){
+                        System.out.println("<h3>HOMSTRAD Reference Alignment</h3>");
+                        Output.print(homstrad, format);
+                    }
                 }
             }
 
