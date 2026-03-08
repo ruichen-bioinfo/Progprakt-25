@@ -7,9 +7,7 @@ public class AlignmentMetrics {
         double specificity = computeSpecificity(candidate, reference);
         double coverage = computeCoverage(candidate, reference);
         double meanShiftError = computeMeanShiftError(candidate, reference);
-
-        // erstmal nur Platzhalter
-        double inverseMeanShiftError = 0.0;
+        double inverseMeanShiftError = computeInverseMeanShiftError(candidate, reference);
 
         return new ValidationResult(sensitivity, specificity, coverage,
                 meanShiftError, inverseMeanShiftError);
@@ -56,6 +54,7 @@ public class AlignmentMetrics {
     }
 
     public double computeMeanShiftError(PairAlignment candidate, PairAlignment reference) {
+        // seq1 = template seq2 = target mapping: target -> template-residuum
         Map<Integer, Integer> candidateMap = AlignmentMappingUtils.mapSeq2ToSeq1(candidate);
         Map<Integer, Integer> referenceMap = AlignmentMappingUtils.mapSeq2ToSeq1(reference);
 
@@ -82,6 +81,29 @@ public class AlignmentMetrics {
     }
 
     public double computeInverseMeanShiftError(PairAlignment candidate, PairAlignment reference) {
-        return 0.0;
+        // seq2 = template seq1 = target mapping target -> template-residuum
+        Map<Integer, Integer> candidateMap = AlignmentMappingUtils.mapSeq1ToSeq2(candidate);
+        Map<Integer, Integer> referenceMap = AlignmentMappingUtils.mapSeq1ToSeq2(reference);
+
+        int definedCount = 0;
+        int shiftSum = 0;
+
+        for (Integer targetResidue : candidateMap.keySet()) {
+            if (!referenceMap.containsKey(targetResidue)) {
+                continue;
+            }
+
+            int candidateTemplatePos = candidateMap.get(targetResidue);
+            int referenceTemplatePos = referenceMap.get(targetResidue);
+
+            shiftSum += Math.abs(candidateTemplatePos - referenceTemplatePos);
+            definedCount++;
+        }
+
+        if (definedCount == 0) {
+            return 0.0;
+        }
+
+        return (double) shiftSum / definedCount;
     }
 }
