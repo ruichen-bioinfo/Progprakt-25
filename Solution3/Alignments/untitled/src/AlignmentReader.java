@@ -53,8 +53,8 @@ public class AlignmentReader {
             }
         }
 
-        Sequence seq1 = new Sequence(id1, seq1string);
-        Sequence seq2 = new Sequence(id2, seq2string);
+        Sequence seq1 = new Sequence(seq1string, id1);
+        Sequence seq2 = new Sequence(seq2string, id2);
 
         Alignment ali = new Alignment(
                 id1, id2,

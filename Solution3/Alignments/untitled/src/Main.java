@@ -32,6 +32,7 @@ public class Main {
         String mode = options.get("mode");
         String format = options.get("format");
         String aliFile = options.get("ali");
+        String DPmatrixFile = options.get("dpmatrices");
 
         int gapOpen = Integer.parseInt(options.getOrDefault("go","-12"));
         int gapExtend = Integer.parseInt(options.getOrDefault("ge","-1"));
@@ -39,6 +40,10 @@ public class Main {
         boolean nw = options.containsKey("nw");
         boolean check = options.containsKey("check");
         boolean database = options.containsKey("DB");
+        boolean DPmatrix = false;
+        if(DPmatrixFile != null) {
+           DPmatrix = true;
+        }
 
         GapPenalty gapPenalty = new GapPenalty(gapOpen,gapExtend);
 
@@ -104,10 +109,17 @@ public class Main {
                 }
 
                 alg.align();
+                if (DPmatrix) {
+                    Output.printDP(alg);
+                }
                 Alignment ali = alg.getResult();
                 Alignment homstrad = null;
 
                 if(database){
+                    if(aliFile == null){
+                        System.out.println("Missing --ali file");
+                        return;
+                    }
                     homstrad = AlignmentReader.readAli(Path.of(aliFile), matrix, gapPenalty);
                 }
 
