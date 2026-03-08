@@ -6,9 +6,9 @@ public class AlignmentMetrics {
         double sensitivity = computeSensitivity(candidate, reference);
         double specificity = computeSpecificity(candidate, reference);
         double coverage = computeCoverage(candidate, reference);
+        double meanShiftError = computeMeanShiftError(candidate, reference);
 
         // erstmal nur Platzhalter
-        double meanShiftError = 0.0;
         double inverseMeanShiftError = 0.0;
 
         return new ValidationResult(sensitivity, specificity, coverage,
@@ -56,7 +56,29 @@ public class AlignmentMetrics {
     }
 
     public double computeMeanShiftError(PairAlignment candidate, PairAlignment reference) {
-        return 0.0;
+        Map<Integer, Integer> candidateMap = AlignmentMappingUtils.mapSeq2ToSeq1(candidate);
+        Map<Integer, Integer> referenceMap = AlignmentMappingUtils.mapSeq2ToSeq1(reference);
+
+        int definedCount = 0;
+        int shiftSum = 0;
+
+        for (Integer targetResidue : candidateMap.keySet()) {
+            if (!referenceMap.containsKey(targetResidue)) {
+                continue;
+            }
+
+            int candidateTemplatePos = candidateMap.get(targetResidue);
+            int referenceTemplatePos = referenceMap.get(targetResidue);
+
+            shiftSum += Math.abs(candidateTemplatePos - referenceTemplatePos);
+            definedCount++;
+        }
+
+        if (definedCount == 0) {
+            return 0.0;
+        }
+
+        return (double) shiftSum / definedCount;
     }
 
     public double computeInverseMeanShiftError(PairAlignment candidate, PairAlignment reference) {
