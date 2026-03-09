@@ -58,5 +58,15 @@ public abstract class Gotoh extends AlignmentAlgorithm {
         return value;
     }
 
+    public double[][] getM() {
+        return M;
+    }
+    public double[][] getI() {
+        return I;
+    }
+    public double[][] getD() {
+        return D;
+    }
+
 
 }

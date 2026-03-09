@@ -37,4 +37,8 @@ public abstract class NeedlemanWunsch extends AlignmentAlgorithm {
     protected static boolean eq(double a, double b) {
         return Math.abs(a - b) < 1e-6;
     }
+
+    public double[][] getDP(){
+        return dp;
+    }
 }

@@ -158,4 +158,31 @@ public static void printAli(Alignment ali) {
         if (s == null) return "";
         return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;");
     }
+    public static void printDP(AlignmentAlgorithm alg){
+        if (alg instanceof NeedlemanWunsch) {
+
+        double[][] dp = ((NeedlemanWunsch) alg).getDP();
+        printMatrix("DP-Matrix", dp);
+
+
+        }
+        if (alg instanceof Gotoh) {
+            double[][] M = ((Gotoh) alg).getM();
+            double[][] D = ((Gotoh) alg).getD();
+            double[][] I = ((Gotoh) alg).getI();
+            printMatrix("M", M);
+            printMatrix("D", D);
+            printMatrix("I", I);
+        }
+    }
+
+    private static void printMatrix(String name, double[][] m) {
+        System.out.println(name + ":");
+        for (double[] row : m) {
+            for (double v : row) {
+                System.out.print(v + " ");
+            }
+            System.out.println();
+        }
+    }
 }
