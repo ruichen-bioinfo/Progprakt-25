@@ -1,0 +1,3 @@
+MainPage:https://bioclient1.bio.ifi.lmu.de/~chenru/gruppe11.html
+GorPage:https://bioclient1.bio.ifi.lmu.de/~chenru/gor.html
+AliPage:https://bioclient1.bio.ifi.lmu.de/~wendrichj/AlignmentWeb.py
