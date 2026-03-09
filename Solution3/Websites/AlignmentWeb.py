@@ -25,7 +25,7 @@ if(seq1 and seq2):
     seq2 = seq2.replace(" ", "").replace("\n", "")
 
 
-
+showids = form.getvalue("showids")
 matrix = form.getvalue("matrix") or "blosum62"
 go = form.getvalue("go") or "-12"
 ge = form.getvalue("ge") or "-1"
@@ -78,14 +78,18 @@ Pairs:<br>
 </div>
 <div style="flex:1;">
 <h3>Database search</h3>
-<p>Single PDB_ID search (Substring)<p>
+<p>Single PDB_ID search (Prefix)<p>
 <small>Outputs all Alignments of the Protein's Family</small></p>
-<small>Example: "1qh8a" or "qh"</small></p>
+<small>Example: "1qh8a" or "1q"</small></p>
 PDB_ID: <input type="text" name="pdb1single"><br><br>
 
 <p>Two PDB_ID search<p>
+<small>Pairwise Alignment of the two Proteins and Homstrad Reference</small></p>
+<small>Example: "1pfc" and "1cqka"</small></p>
 PDB_ID 1: <input type="text" name="pdb1"><br><br>
 PDB_ID 2: <input type="text" name="pdb2"><br><br>
+<small>List Database Entries</small></p>
+<input type="submit" name="showids" value="Show available IDs">
 
 </div>
 </div>
@@ -127,6 +131,7 @@ Gap Extend:
 #print("seq2:", seq2)
 #print("</pre>")
 
+
 if form_file and form_file.filename:
     fasta = form_file.file.read().decode("utf-8")
     seqs = {}
@@ -151,6 +156,25 @@ try:
 except Exception as e:
     print("<pre>DB ERROR:", e, "</pre>")
 
+if showids:
+    cursor.execute("""
+    SELECT seq_id AS id, 'Homstrad' AS source
+    FROM alignment_member
+    UNION
+    SELECT accession AS id, source 
+    FROM sequences
+    ORDER BY id
+    """)
+
+    print("<table border='1'>")
+    print("<tr><th>ID</th><th>Source</th></tr>")
+
+    for id, source in cursor:
+        print(f"<tr><td>{id}</td><td>{source}</td></tr>")
+
+    print("</table>")
+
+
 if pdb1single and len(pdb1single) >= 2:
     seqs = {}
     homstradalis= {}
@@ -165,7 +189,7 @@ if pdb1single and len(pdb1single) >= 2:
     )
     """
 
-    cursor.execute(query, ("%" + pdb1single + "%",)) #soll substring suche sein
+    cursor.execute(query, (pdb1single + "%",)) #soll Praefix suche sein
 
     rows = cursor.fetchall()
 
@@ -203,15 +227,33 @@ if(pdb1 and pdb2):
 
     rows = cursor.fetchall()
 
+
     print("<pre>")
     print("Input:", pdb1, pdb2)
     print("Rows found:", len(rows))
     print("</pre>")
 
-    for seq_id, aligned_sequence in rows:
-        seq = aligned_sequence.replace("-", "").replace(".", "").replace("/", "")
-        seqs[seq_id] = seq
-        homstradalis[seq_id] = aligned_sequence
+    if len(rows) == 0:
+
+        query = """
+        SELECT accession, sequence
+        FROM sequences
+        WHERE accession IN (%s,%s)
+        """
+
+        cursor.execute(query, (pdb1, pdb2))
+        rows = cursor.fetchall()
+
+        if rows > 1:
+            print(f"no Homstrad Reference Alignment available for {pdb1} and {pdb2}")
+
+        for acc, seq in rows:
+            seqs[acc] = seq
+    else:
+        for seq_id, aligned_sequence in rows:
+            seq = aligned_sequence.replace("-", "").replace(".", "").replace("/", "")
+            seqs[seq_id] = seq
+            homstradalis[seq_id] = aligned_sequence
 
     names = list(seqs.keys())
 
