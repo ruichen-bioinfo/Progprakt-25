@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
 
+import time
+print("Content-type:text/html\n\n")
+start = time.time()
+print("A", time.time() - start)
+import subprocess
+print("C", time.time() - start)
+
 import sys
 import mysql.connector
 from db_config import DB_CONFIG
