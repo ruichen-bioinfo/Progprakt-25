@@ -77,7 +77,11 @@ def main():
         "Run_F": output_dir / "run_F_validation_results.txt",
         "Run_G": output_dir / "run_G_validation_results.txt",
         "Run_H": output_dir / "run_H_validation_results.txt",
-        "Run_I": output_dir / "run_I_validation_results.txt"
+        "Run_I": output_dir / "run_I_validation_results.txt",
+        "Run_J": output_dir / "run_J_validation_results.txt",
+        "Run_K": output_dir / "run_K_validation_results.txt",
+        "Run_L": output_dir / "run_L_validation_results.txt",
+        "Run_M": output_dir / "run_M_validation_results.txt"
     }
 
     all_summaries = {}
