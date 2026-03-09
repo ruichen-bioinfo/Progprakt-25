@@ -302,6 +302,14 @@
                             Fetch SS from CB513
                         </button>
                         <span id="ref-status" style="font-size:.78rem;color:#888;margin-left:6px;"></span>
+
+                        <!-- NEW: PDB DSSP quick lookup -->
+                        <div style="margin-top:10px; display:flex; align-items:center; gap:6px;">
+                            <span style="font-size:.78rem;color:#888;">PDB DSSP:</span>
+                            <input type="text" id="pdb-ref-id" placeholder="e.g. 1MBN" style="width:100px;">
+                            <button type="button" onclick="fetchPDBRef()" style="padding:4px 8px;background:#8e44ad;color:white;border:none;border-radius:4px;">Fetch DSSP</button>
+                        </div>
+
                         <textarea name="ref_text" id="ref-text-area" placeholder="HHHHHCCCEEE..."
                                   style="height:60px;"></textarea>
                         <div class="or">or upload reference SS file</div>
@@ -661,6 +669,35 @@ function fetchRefSS() {
         .catch(function(){
             document.getElementById('ref-status').textContent = 'Request failed';
             document.getElementById('ref-status').style.color = '#e74c3c';
+        });
+}
+
+// NEW: Fetch DSSP SS from PDB ID
+function fetchPDBRef() {
+    var id = document.getElementById('pdb-ref-id').value.trim();
+    if (!id) {
+        alert('Enter a PDB ID');
+        return;
+    }
+    var status = document.getElementById('ref-status');
+    status.textContent = 'Fetching DSSP...';
+    status.style.color = '#888';
+    fetch('cgi-bin/gor_dssp.py?pdb_id=' + encodeURIComponent(id) + '&plain=1')
+        .then(r => r.text())
+        .then(txt => {
+            txt = txt.trim();
+            if (txt.startsWith('ERROR:')) {
+                status.textContent = txt.replace('ERROR:', '').trim();
+                status.style.color = '#e74c3c';
+            } else {
+                document.getElementById('ref-text-area').value = txt;
+                status.textContent = 'DSSP loaded for ' + id;
+                status.style.color = '#27ae60';
+            }
+        })
+        .catch(() => {
+            status.textContent = 'Request failed';
+            status.style.color = '#e74c3c';
         });
 }
 

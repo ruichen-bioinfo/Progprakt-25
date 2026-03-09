@@ -90,9 +90,18 @@ if "ref_file" in form and form["ref_file"].filename:
     tmp_ref.write(form["ref_file"].file.read())
     tmp_ref.close()
 elif ref_text:
+    # From FASTA read wholeID
+    seq_id = "seq"
+    try:
+        with open(tmp_fasta.name) as f_fa:
+            first_line = f_fa.readline().strip()
+            if first_line.startswith('>'):
+                seq_id = first_line[1:].strip()
+    except Exception:
+        pass
     tmp_ref = tempfile.NamedTemporaryFile(delete=False, suffix=".ss",
                                           dir=C.TMP_DIR, mode="w")
-    # Write as simple SS string (jar loadRefSS handles plain string too)
+    tmp_ref.write(f">{seq_id}\n")
     tmp_ref.write(ref_text)
     tmp_ref.close()
 
@@ -123,8 +132,17 @@ print(f"""<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Predict</title
 body{{font-family:monospace;background:#0d0f14;color:#c8cdd8;padding:2rem;margin:0;}}
 h2{{color:#eef0f5;margin-bottom:.3rem;font-family:'Segoe UI',sans-serif;}}
 .subtitle{{color:#636e7e;font-size:.85rem;margin-bottom:1.4rem;font-family:'Segoe UI',sans-serif;}}
-pre{{background:#060809;border:1px solid #1e2530;border-radius:6px;padding:1.2rem;
-     white-space:pre-wrap;line-height:1.8;font-size:13px;overflow-x:auto;}}
+pre{{
+    background:#060809;
+    border:1px solid #1e2530;
+    border-radius:6px;
+    padding:1.2rem;
+    white-space:pre-wrap;
+    line-height:1.8;
+    font-size:13px;
+    overflow-x:auto;
+    font-family:'Courier New', Courier, monospace;   /* monospace!!! */
+}}
 .ok{{color:#00d4aa}}.err{{color:#e05c73}}
 .back{{color:#00d4aa;text-decoration:none;font-family:'Segoe UI',sans-serif;font-size:.9rem;}}
 /* sequence lines */
