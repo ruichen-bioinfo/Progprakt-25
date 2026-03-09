@@ -1,7 +1,9 @@
-#!/usr/bin/env python3
 from dataclasses import dataclass
 from itertools import combinations
 from pathlib import Path
+
+
+ALLOWED_AMINO_ACIDS = set("ACDEFGHIKLMNPQRSTVWY")
 
 
 @dataclass
@@ -99,6 +101,13 @@ def remove_double_gap_columns(seq1: str, seq2: str):
     return "".join(cleaned1), "".join(cleaned2)
 
 
+def is_valid_protein_sequence(seq: str):
+    for c in seq:
+        if c not in ALLOWED_AMINO_ACIDS:
+            return False
+    return True
+
+
 def build_reference_pairs(entries):
     pairs = []
 
@@ -110,6 +119,16 @@ def build_reference_pairs(entries):
 
         raw_seq1 = ref_seq1.replace("-", "")
         raw_seq2 = ref_seq2.replace("-", "")
+
+        if not raw_seq1 or not raw_seq2:
+            continue
+
+        # nur Standardaminosaeuren zulassen
+        if not is_valid_protein_sequence(raw_seq1):
+            continue
+
+        if not is_valid_protein_sequence(raw_seq2):
+            continue
 
         pair = ReferencePair(
             family=entry1.family,
@@ -132,7 +151,6 @@ def choose_one_pair_per_family(entries):
     if not family_pairs:
         return None
 
-    # erstmal einfach das erste Paar der Familie nehmen
     return family_pairs[0]
 
 
@@ -198,7 +216,7 @@ def main():
     output_dir = Path("output")
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    max_pairs = 10
+    max_pairs = 400
     selected_pairs = collect_limited_reference_pairs(homstrad_root, max_pairs)
 
     write_seqlib(selected_pairs, output_dir / "homstrad.seqlib")
