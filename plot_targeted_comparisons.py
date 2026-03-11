@@ -60,6 +60,10 @@ def collect_summaries(output_dir: Path):
         "Run_K": output_dir / "run_K_validation_results.txt",
         "Run_L": output_dir / "run_L_validation_results.txt",
         "Run_M": output_dir / "run_M_validation_results.txt",
+        "Run_N": output_dir / "run_N_validation_results.txt",
+        "Run_O": output_dir / "run_O_validation_results.txt",
+        "Run_P": output_dir / "run_P_validation_results.txt",
+        "Run_Q": output_dir / "run_Q_validation_results.txt"
     }
 
     all_summaries = {}
@@ -280,6 +284,32 @@ def main():
         pam_mode_labels,
         "PAM250 + Gotoh: global vs freeshift (shift metrics)",
         plot_dir / "pam_mode_shift.png"
+    )
+
+
+    # 8. PAM250: refined gap tuning
+    pam_refined_runs = ["Run_B", "Run_N", "Run_O", "Run_P", "Run_Q"]
+    pam_refined_labels = [
+        "go=-12 ge=-1",
+        "go=-14 ge=-2",
+        "go=-14 ge=-3",
+        "go=-16 ge=-2",
+        "go=-16 ge=-3"
+    ]
+
+    plot_quality_subset(
+        all_summaries,
+        pam_refined_runs,
+        pam_refined_labels,
+        "PAM250 + Gotoh: refined gap tuning",
+        plot_dir / "pam_refined_quality.png"
+    )
+    plot_shift_subset(
+        all_summaries,
+        pam_refined_runs,
+        pam_refined_labels,
+        "PAM250 + Gotoh: refined gap tuning (shift metrics)",
+        plot_dir / "pam_refined_shift.png"
     )
 
     print("Done. Plots written to plots_targeted/")
