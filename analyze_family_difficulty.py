@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from pathlib import Path
 from statistics import mean
 import matplotlib.pyplot as plt
@@ -154,8 +155,11 @@ def plot_family_scatter(summary_a, summary_b, run_a_name, run_b_name, metric, ou
 
 
 def run_comparison(run_a_name, run_b_name, output_dir: Path, plot_dir: Path):
-    run_a_file = output_dir / f"{run_a_name}_validation_results.txt"
-    run_b_file = output_dir / f"{run_b_name}_validation_results.txt"
+    file_a_name = run_a_name.replace("Run_", "run_")
+    file_b_name = run_b_name.replace("Run_", "run_")
+
+    run_a_file = output_dir / f"{file_a_name}_validation_results.txt"
+    run_b_file = output_dir / f"{file_b_name}_validation_results.txt"
 
     if not run_a_file.exists():
         print(f"Missing file: {run_a_file}")
